@@ -59,13 +59,23 @@ def pill(dd,lines,font,y_center,bg,fg,stroke=0,lh=70,padx=40,pady=22,r=30):
     dd.rounded_rectangle([x0,y0,x0+bw,y0+bh],radius=r,fill=bg)
     for j,(l,w_) in enumerate(zip(lines,ws)):
         dd.text((CX-w_/2,y0+pady+j*lh-4),l,font=font,fill=fg,stroke_width=stroke,stroke_fill=(0,25,60,255))
-for i,nt in enumerate(notes):
-    im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,56)
-    pill(dd,wrap_balanced(nt,fn,SAFE_R-SAFE_L-80,dd),fn,1330,(8,35,85,205),(255,255,255,255),1)
-    im.save(f'{tmp}/note{i}.png')
-cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52)
-pill(cd,wrap_balanced(a.cta,cf,SAFE_R-SAFE_L-80,cd),cf,1330,(255,204,0,245),(10,40,90,255),0,lh=66,r=50)
-cim.save(f'{tmp}/cta.png')
+def draw_sub(dd,lines,font,yc,fill=(255,255,255,255),lh=72):
+    # kiểu phụ đề: không khung nền, chữ trắng viền đậm + bóng mờ → che ít hình nhất
+    y0=yc-len(lines)*lh/2
+    for j,l in enumerate(lines):
+        w_=dd.textlength(l,font=font); x=CX-w_/2; y=y0+j*lh
+        dd.text((x+3,y+4),l,font=font,fill=(0,0,0,120),stroke_width=8,stroke_fill=(0,0,0,120))
+        dd.text((x,y),l,font=font,fill=fill,stroke_width=6,stroke_fill=(0,25,60,255))
+def render_overlays(note_y,cta_y):
+    from PIL import ImageFilter
+    for i,nt in enumerate(notes):
+        im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,60)
+        draw_sub(dd,wrap_balanced(nt,fn,SAFE_R-SAFE_L,dd),fn,note_y[i])
+        im.save(f'{tmp}/note{i}.png')
+    cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52)
+    pill(cd,wrap_balanced(a.cta,cf,SAFE_R-SAFE_L-80,cd),cf,cta_y,(255,204,0,245),(10,40,90,255),0,lh=66,r=50)
+    cim.save(f'{tmp}/cta.png')
+
 # tiêu đề
 t=Image.new('RGBA',(W,540),(0,0,0,0)); d=ImageDraw.Draw(t); f1=fnt(F,44)
 if a.pill:
@@ -110,6 +120,29 @@ if a.end<=0:
     ci=5+K; cs=max(0.5,D-2.5)
     NOTES+=f"[{ci}:v]format=rgba,fade=in:st={cs:.2f}:d=0.3:alpha=1[cta];[{prev}][cta]overlay=0:0:enable='gte(t,{cs:.2f})'[wc];"; prev='wc'
 NOTES+=f"[{prev}]null[vN];"
+# --- chọn vị trí chữ tự động: tránh vùng có chuyển động nhiều (phần máy đang chạy) ---
+import numpy as np
+CANDS=[700,960,1220,1430]   # tâm dọc ứng viên (né tiêu đề phía trên và vùng chú thích TikTok phía dưới)
+try:
+    raw=subprocess.run(['ffmpeg','-loglevel','error','-i',a.src,'-t',str(D),'-vf',
+        f"{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=8,scale=108:192,format=gray",
+        '-f','rawvideo','-'],capture_output=True,check=True).stdout
+    fr=np.frombuffer(raw,np.uint8).reshape(-1,192,108).astype(np.float32)
+    mot=np.abs(np.diff(fr,axis=0)); det=np.abs(np.diff(fr,axis=2))[:-1,:, :]
+    def best_y(t0,t1):
+        i0,i1=int(t0*8),max(int(t0*8)+1,int(t1*8)); m=mot[i0:i1].mean(0); dd_=det[i0:i1].mean(0)
+        sc=[]
+        for yc in CANDS:
+            r0,r1=(yc-110)//10,(yc+110)//10
+            sc.append(m[r0:r1,15:93].mean()*1.0+dd_[r0:r1,15:92].mean()*0.25)
+        return CANDS[int(np.argmin(sc))]
+except Exception as ex:
+    print('Không phân tích được chuyển động, dùng vị trí mặc định:',ex); best_y=lambda t0,t1:1430
+_ny=[]; _st=1.4; _tail=2.7 if a.end<=0 else 0.2; _seg=(D-_st-_tail)/K if K else 0
+for i in range(K): _ny.append(best_y(_st+i*_seg,_st+(i+1)*_seg))
+_cy=best_y(max(0,D-2.5),D)
+print('Vị trí chữ (tâm dọc):',_ny,'CTA:',_cy)
+render_overlays(_ny,_cy)
 fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
     f"scale=w='trunc(1080*(1+0.05*t/{D})/2)*2':h='trunc(1920*(1+0.05*t/{D})/2)*2':eval=frame,crop=1080:1920,eq=brightness=0.04:gamma=1.15:contrast=1.04:saturation=1.12[v0];"
     "[v0][1:v]overlay=0:0[v1];[v1][2:v]overlay=0:0[v2];"
