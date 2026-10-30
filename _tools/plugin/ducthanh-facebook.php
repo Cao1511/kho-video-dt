@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Đức Thành – Đăng Facebook
  * Description: Tự động đăng bài ảnh (ảnh đại diện + nội dung) lên Fanpage khi xuất bản sản phẩm hoặc bài viết.
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: Đức Thành
  * Requires PHP: 7.4
  */
@@ -174,6 +174,29 @@ add_action( 'rest_api_init', function () {
 			delete_post_meta( $id, 'dtfb_fb_id' );
 			update_post_meta( $id, 'dtfb_status', 'Đã huỷ lịch cũ ' . current_time( 'mysql' ) );
 			return array( 'id' => $id, 'deleted' => $full );
+		},
+	) );
+} );
+
+/* Sửa nội dung bài Facebook do plugin đăng – chỉ quản trị viên */
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'dtfb/v1', '/fbedit', array(
+		'methods'             => 'POST',
+		'permission_callback' => function () { return current_user_can( 'manage_options' ); },
+		'callback'            => function ( $req ) {
+			$id  = (int) $req['id'];
+			$msg = (string) $req['message'];
+			$fb  = get_post_meta( $id, 'dtfb_fb_id', true );
+			if ( ! $fb || $msg === '' ) { return new WP_Error( 'dtfb', 'Thiếu bài Facebook hoặc nội dung.', array( 'status' => 400 ) ); }
+			$full = strpos( $fb, '_' ) === false ? get_option( 'dtfb_page_id' ) . '_' . $fb : $fb;
+			$r = dtfb_api_post( $full, array( 'message' => $msg ) );
+			if ( is_wp_error( $r ) ) {
+				$pid = substr( $full, strpos( $full, '_' ) + 1 );
+				$r   = dtfb_api_post( $pid, array( 'name' => $msg ) );
+			}
+			if ( is_wp_error( $r ) ) { return new WP_Error( 'dtfb', $r->get_error_message(), array( 'status' => 400 ) ); }
+			update_post_meta( $id, 'dtfb_message', sanitize_textarea_field( $msg ) );
+			return array( 'id' => $id, 'fb' => $full, 'result' => $r );
 		},
 	) );
 } );
