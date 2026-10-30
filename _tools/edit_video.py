@@ -74,9 +74,15 @@ pr=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','f
 D=min(float(pr['format']['duration']),a.max); E=a.end; T=D+E
 has_a=any(s['codec_type']=='audio' for s in pr['streams']) and not a.mute
 flip='hflip,' if a.flip else ''
+MINN=3.0  # mỗi câu hiện tối thiểu 3 giây cho kịp đọc
+_avail=D-1.4-(2.7 if a.end<=0 else 0.2)
+_kmax=max(0,int(_avail//MINN))
+if len(notes)>_kmax:
+    print(f'CẢNH BÁO: video chỉ đủ chỗ cho {_kmax} câu thuyết minh (mỗi câu ≥{MINN}s); bỏ bớt: {notes[_kmax:]}')
+    notes=notes[:_kmax]
 K=len(notes); NOTES=''; prev='v3'
 if K:
-    st0=1.6; tail=2.7 if a.end<=0 else 0.2; seg=(D-st0-tail)/K
+    st0=1.4; tail=2.7 if a.end<=0 else 0.2; seg=(D-st0-tail)/K
     for i in range(K):
         s_=st0+i*seg; e_=s_+seg-0.15
         NOTES+=f"[{5+i}:v]format=rgba,fade=in:st={s_:.2f}:d=0.3:alpha=1,fade=out:st={e_-0.3:.2f}:d=0.3:alpha=1[n{i}];[{prev}][n{i}]overlay=0:0:enable='between(t,{s_:.2f},{e_:.2f})'[w{i}];"
