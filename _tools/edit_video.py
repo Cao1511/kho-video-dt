@@ -10,7 +10,7 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--pill',default='XEM MÁY CHẠY THỰC TẾ'); ap.add_argument('--line1',required=True); ap.add_argument('--line2',default='')
 ap.add_argument('--phone',default='0989 139 855'); ap.add_argument('--flip',action='store_true',help='lật ngang (mặc định KHÔNG lật)'); ap.add_argument('--no-flip',action='store_true',help='(giữ để tương thích, không cần nữa)'); ap.add_argument('--mute',action='store_true'); ap.add_argument('--music',default=''); ap.add_argument('--music-vol',type=float,default=0.8)
-ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--end',type=float,default=2.7); ap.add_argument('--end-style',default='brand',choices=['brand','contact'],help='brand: chỉ logo + tên + lời mời nhắn tin (mặc định); contact: thêm số ĐT + website'); ap.add_argument('--cta',default='Nhắn tin cho kênh để được tư vấn'); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
+ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--end',type=float,default=0.0,help='giây cảnh kết; 0 = không có cảnh kết (mặc định), lời mời nhắn tin hiện ở 2,5 s cuối'); ap.add_argument('--end-style',default='brand',choices=['brand','contact'],help='brand: chỉ logo + tên + lời mời nhắn tin (mặc định); contact: thêm số ĐT + website'); ap.add_argument('--cta',default='Nhắn tin cho kênh để được tư vấn'); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
 a=ap.parse_args()
 tmp=tempfile.mkdtemp()
 logo=Image.open(os.path.join(HERE,'logo-duc-thanh.png')).convert('RGBA')
@@ -28,10 +28,7 @@ for y in range(0,H*2,330):
 wm.rotate(28,resample=Image.BICUBIC).crop((W//2,H//2,W//2+W,H//2+H)).save(f'{tmp}/wm.png')
 # lớp cố định: dải màu, logo, hotline (tránh vùng UI của TikTok/Reels)
 ov=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(ov)
-for y in range(560): d.line([(0,y),(W,y)],fill=(5,30,70,int(170*(1-y/560))))
-for y in range(1300,1620):
-    al=int(190*min(1,(y-1300)/120)) if y<1420 else int(190*max(0,1-(y-1520)/100)) if y>1520 else 190
-    d.line([(0,y),(W,y)],fill=(5,30,70,al))
+for y in range(380): d.line([(0,y),(W,y)],fill=(0,0,0,int(90*(1-y/380)**2)))
 ov.alpha_composite(badge(140),(W-204,170))
 if a.contact_line:
     ct(d,1395,'Tư vấn – báo giá: '+a.phone,fnt(F,52),(255,255,255,255)); ct(d,1470,'mayducthanh.vn',fnt(FB,42),(255,214,0,255))
@@ -47,6 +44,9 @@ for i,nt in enumerate(notes):
     hh=len(lines)*72+40; dd.rounded_rectangle([60,y0-20,W-60,y0-20+hh],radius=28,fill=(5,30,70,170))
     for j,l in enumerate(lines): ct(dd,y0+j*72,l,fn,(255,255,255,255),2)
     im.save(f'{tmp}/note{i}.png')
+cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52); cw=cd.textlength(a.cta,font=cf); cx=(W-cw)/2-50
+cd.rounded_rectangle([cx,1290,cx+cw+100,1400],radius=55,fill=(255,204,0,245)); cd.text((cx+50,1312),a.cta,font=cf,fill=(10,40,90,255))
+cim.save(f'{tmp}/cta.png')
 # tiêu đề
 t=Image.new('RGBA',(W,540),(0,0,0,0)); d=ImageDraw.Draw(t); f1=fnt(F,44)
 if a.pill:
@@ -76,11 +76,14 @@ has_a=any(s['codec_type']=='audio' for s in pr['streams']) and not a.mute
 flip='hflip,' if a.flip else ''
 K=len(notes); NOTES=''; prev='v3'
 if K:
-    st0=1.6; seg=(D-st0-0.2)/K
+    st0=1.6; tail=2.7 if a.end<=0 else 0.2; seg=(D-st0-tail)/K
     for i in range(K):
         s_=st0+i*seg; e_=s_+seg-0.15
         NOTES+=f"[{5+i}:v]format=rgba,fade=in:st={s_:.2f}:d=0.3:alpha=1,fade=out:st={e_-0.3:.2f}:d=0.3:alpha=1[n{i}];[{prev}][n{i}]overlay=0:0:enable='between(t,{s_:.2f},{e_:.2f})'[w{i}];"
         prev=f'w{i}'
+if a.end<=0:
+    ci=5+K; cs=max(0.5,D-2.5)
+    NOTES+=f"[{ci}:v]format=rgba,fade=in:st={cs:.2f}:d=0.3:alpha=1[cta];[{prev}][cta]overlay=0:0:enable='gte(t,{cs:.2f})'[wc];"; prev='wc'
 NOTES+=f"[{prev}]null[vN];"
 fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
     f"scale=w='trunc(1080*(1+0.05*t/{D})/2)*2':h='trunc(1920*(1+0.05*t/{D})/2)*2':eval=frame,crop=1080:1920,eq=contrast=1.06:saturation=1.15[v0];"
@@ -88,9 +91,9 @@ fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:
     "[3:v]format=rgba,fade=in:st=0.15:d=0.4:alpha=1[ti];[v2][ti]overlay=x='-200+200*min(1,(t-0.15)/0.4)':y=0:enable='gte(t,0.15)'[v3];"
     + NOTES +
     f"[vN]format=yuv420p,trim=duration={D},setpts=PTS-STARTPTS[main];"
-    "[4:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p,fade=in:st=0:d=0.4[end];[main][end]concat=n=2:v=1:a=0[vout];")
+    + ("[4:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p,fade=in:st=0:d=0.4[end];[main][end]concat=n=2:v=1:a=0[vout];" if E>0 else "[main]null[vout];"))
 if a.music:
-    mi=5+len(notes)  # chỉ số input nhạc
+    mi=5+len(notes)+(1 if E<=0 else 0)  # chỉ số input nhạc
     mus=f"[{mi}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=duration={T},volume={a.music_vol},afade=in:d=0.5,afade=out:st={max(0,T-1.5)}:d=1.5[mus];"
     if has_a: fc+=mus+f"[0:a]atrim=duration={D},aresample=48000,aformat=channel_layouts=stereo,volume=0.35,apad=whole_dur={T}[orig];[orig][mus]amix=inputs=2:duration=longest:normalize=0[aout]"
     else: fc+=mus.replace('[mus];','[aout]')
@@ -98,8 +101,9 @@ else:
     fc+= (f"[0:a]atrim=duration={D},aresample=48000,afade=out:st={max(0,D-0.7)}:d=0.7,apad=whole_dur={T}[aout]" if has_a
       else f"anullsrc=r=48000:cl=stereo,atrim=duration={T}[aout]")
 cmd=['ffmpeg','-loglevel','error','-y','-i',a.src]
-for p,dur in (('wm',D),('ov',D),('title',D),('end',E)): cmd+=['-loop','1','-t',str(dur),'-i',f'{tmp}/{p}.png']
+for p,dur in (('wm',D),('ov',D),('title',D),('end',max(E,0.1))): cmd+=['-loop','1','-t',str(dur),'-i',f'{tmp}/{p}.png']
 for i in range(len(notes)): cmd+=['-loop','1','-t',str(D),'-i',f'{tmp}/note{i}.png']
+if E<=0: cmd+=['-loop','1','-t',str(D),'-i',f'{tmp}/cta.png']
 if a.music: cmd+=['-stream_loop','-1','-i',a.music]
 cmd+=['-filter_complex',fc,'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p',
       '-c:a','aac','-b:a','160k','-movflags','+faststart','-t',str(T),a.out]
