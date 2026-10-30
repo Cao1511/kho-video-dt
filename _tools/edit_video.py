@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Edit video Đức Thành: lật ngang, logo, chữ chìm, tiêu đề trượt vào, dòng hotline, cảnh kết.
-Dùng: python3 edit_video.py SRC OUT --pill "XEM MÁY CHẠY THỰC TẾ" --line1 "MÁY CHIẾT RÓT" --line2 "DUNG DỊCH" [--phone "0989 139 855"] [--no-flip] [--mute]
+Dùng: python3 edit_video.py SRC OUT --pill "XEM MÁY CHẠY THỰC TẾ" --line1 "MÁY CHIẾT RÓT" --line2 "DUNG DỊCH" [--phone "0989 139 855"] [--no-flip] [--mute] [--music nhac.mp3 --music-vol 0.8]  (--mute + --music = chỉ nhạc; chỉ --music = nhạc + tiếng gốc nhỏ)
 """
 import argparse, os, subprocess, json, tempfile
 from PIL import Image, ImageDraw, ImageFont
@@ -9,7 +9,7 @@ F='/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf'; FB='/usr/share/fonts/op
 HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--pill',default='XEM MÁY CHẠY THỰC TẾ'); ap.add_argument('--line1',required=True); ap.add_argument('--line2',default='')
-ap.add_argument('--phone',default='0989 139 855'); ap.add_argument('--no-flip',action='store_true'); ap.add_argument('--mute',action='store_true')
+ap.add_argument('--phone',default='0989 139 855'); ap.add_argument('--no-flip',action='store_true'); ap.add_argument('--mute',action='store_true'); ap.add_argument('--music',default=''); ap.add_argument('--music-vol',type=float,default=0.8)
 ap.add_argument('--end',type=float,default=2.7); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
 a=ap.parse_args()
 tmp=tempfile.mkdtemp()
@@ -64,10 +64,17 @@ fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:
     "[3:v]format=rgba,fade=in:st=0.15:d=0.4:alpha=1[ti];[v2][ti]overlay=x='-200+200*min(1,(t-0.15)/0.4)':y=0:enable='gte(t,0.15)'[v3];"
     f"[v3]format=yuv420p,trim=duration={D},setpts=PTS-STARTPTS[main];"
     "[4:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p,fade=in:st=0:d=0.4[end];[main][end]concat=n=2:v=1:a=0[vout];")
-fc+= (f"[0:a]atrim=duration={D},aresample=48000,afade=out:st={max(0,D-0.7)}:d=0.7,apad=whole_dur={T}[aout]" if has_a
+if a.music:
+    mi=5  # chỉ số input nhạc (sau 5 input: video + 4 ảnh)
+    mus=f"[{mi}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=duration={T},volume={a.music_vol},afade=in:d=0.5,afade=out:st={max(0,T-1.5)}:d=1.5[mus];"
+    if has_a: fc+=mus+f"[0:a]atrim=duration={D},aresample=48000,aformat=channel_layouts=stereo,volume=0.35,apad=whole_dur={T}[orig];[orig][mus]amix=inputs=2:duration=longest:normalize=0[aout]"
+    else: fc+=mus.replace('[mus];','[aout]')
+else:
+    fc+= (f"[0:a]atrim=duration={D},aresample=48000,afade=out:st={max(0,D-0.7)}:d=0.7,apad=whole_dur={T}[aout]" if has_a
       else f"anullsrc=r=48000:cl=stereo,atrim=duration={T}[aout]")
 cmd=['ffmpeg','-loglevel','error','-y','-i',a.src]
 for p,dur in (('wm',D),('ov',D),('title',D),('end',E)): cmd+=['-loop','1','-t',str(dur),'-i',f'{tmp}/{p}.png']
+if a.music: cmd+=['-stream_loop','-1','-i',a.music]
 cmd+=['-filter_complex',fc,'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p',
       '-c:a','aac','-b:a','160k','-movflags','+faststart','-t',str(T),a.out]
 subprocess.check_call(cmd); print('OK',a.out,round(T,2),'s')
