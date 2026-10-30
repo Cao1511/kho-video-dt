@@ -10,7 +10,7 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--pill',default='XEM MÁY CHẠY THỰC TẾ'); ap.add_argument('--line1',required=True); ap.add_argument('--line2',default='')
 ap.add_argument('--phone',default='0989 139 855'); ap.add_argument('--flip',action='store_true',help='lật ngang (mặc định KHÔNG lật)'); ap.add_argument('--no-flip',action='store_true',help='(giữ để tương thích, không cần nữa)'); ap.add_argument('--mute',action='store_true'); ap.add_argument('--music',default=''); ap.add_argument('--music-vol',type=float,default=0.8)
-ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--end',type=float,default=2.7); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
+ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--end',type=float,default=2.7); ap.add_argument('--end-style',default='brand',choices=['brand','contact'],help='brand: chỉ logo + tên + lời mời nhắn tin (mặc định); contact: thêm số ĐT + website'); ap.add_argument('--cta',default='Nhắn tin cho kênh để được tư vấn'); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
 a=ap.parse_args()
 tmp=tempfile.mkdtemp()
 logo=Image.open(os.path.join(HERE,'logo-duc-thanh.png')).convert('RGBA')
@@ -61,9 +61,13 @@ for y in range(H): d.line([(0,y),(W,y)],fill=(8+int(10*y/H),52+int(30*y/H),120+i
 bl=badge(380); e.alpha_composite(bl,((W-bl.size[0])//2,330))
 ct(d,820,'MÁY ĐÓNG GÓI – CHIẾT RÓT',fnt(F,62),(255,255,255,255),0); ct(d,900,'ĐỨC THÀNH',fnt(F,96),(255,214,0,255),0)
 ct(d,1060,'Tư vấn – lắp đặt – bảo hành tận nơi',fnt(FB,46),(220,235,255,255),0)
-d.rounded_rectangle([140,1190,W-140,1330],radius=70,fill=(255,204,0,255))
-fp=fnt(F,84); w=d.textlength(a.phone,font=fp); d.text(((W-w)/2,1215),a.phone,font=fp,fill=(10,40,90,255))
-ct(d,1360,'Hotline / Zalo',fnt(FB,42),(255,255,255,255),0); ct(d,1470,'mayducthanh.vn',fnt(F,58),(255,255,255,255),0)
+if a.end_style=='contact':
+    d.rounded_rectangle([140,1190,W-140,1330],radius=70,fill=(255,204,0,255))
+    fp=fnt(F,84); w=d.textlength(a.phone,font=fp); d.text(((W-w)/2,1215),a.phone,font=fp,fill=(10,40,90,255))
+    ct(d,1360,'Hotline / Zalo',fnt(FB,42),(255,255,255,255),0); ct(d,1470,'mayducthanh.vn',fnt(F,58),(255,255,255,255),0)
+else:
+    fc_=fnt(F,52); w=d.textlength(a.cta,font=fc_); x0=(W-w)/2-50
+    d.rounded_rectangle([x0,1200,x0+w+100,1310],radius=55,fill=(255,204,0,255)); d.text((x0+50,1222),a.cta,font=fc_,fill=(10,40,90,255))
 e.convert('RGB').save(f'{tmp}/end.png')
 # thông tin nguồn
 pr=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration:stream=codec_type','-of','json',a.src]))
