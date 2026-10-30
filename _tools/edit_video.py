@@ -64,8 +64,8 @@ def draw_sub(dd,lines,font,yc,fill=(255,221,0,255),lh=62):
     y0=yc-len(lines)*lh/2
     for j,l in enumerate(lines):
         w_=dd.textlength(l,font=font); x=CX-w_/2; y=y0+j*lh
-        dd.text((x+3,y+4),l,font=font,fill=(0,0,0,140),stroke_width=7,stroke_fill=(0,0,0,140))
-        dd.text((x,y),l,font=font,fill=fill,stroke_width=5,stroke_fill=(0,20,50,255))
+        dd.text((x+3,y+4),l,font=font,fill=(0,0,0,80),stroke_width=5,stroke_fill=(0,0,0,80))
+        dd.text((x,y),l,font=font,fill=fill,stroke_width=3,stroke_fill=(0,20,50,170))
 def render_overlays(note_y,cta_y):
     from PIL import ImageFilter
     for i,nt in enumerate(notes):
