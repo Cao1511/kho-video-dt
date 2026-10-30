@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Đức Thành – Đăng Facebook
  * Description: Tự động đăng bài ảnh (ảnh đại diện + nội dung) lên Fanpage khi xuất bản sản phẩm hoặc bài viết.
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: Đức Thành
  * Requires PHP: 7.4
  */
@@ -151,6 +151,29 @@ add_action( 'rest_api_init', function () {
 			foreach ( $out as $k => $v ) { if ( is_wp_error( $v ) ) { $out[ $k ] = $v->get_error_message(); } }
 			if ( isset( $out['posts'] ) ) { foreach ( $out['posts'] as $k => $v ) { if ( is_wp_error( $v ) ) { $out['posts'][ $k ] = $v->get_error_message(); } } }
 			return $out;
+		},
+	) );
+} );
+
+/* Huỷ bài đã hẹn lịch (chưa đăng) do plugin tạo – chỉ quản trị viên */
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'dtfb/v1', '/fbcancel', array(
+		'methods'             => 'POST',
+		'permission_callback' => function () { return current_user_can( 'manage_options' ); },
+		'callback'            => function ( $req ) {
+			$id  = (int) $req['id'];
+			$fb  = get_post_meta( $id, 'dtfb_fb_id', true );
+			if ( ! $fb ) { return new WP_Error( 'dtfb', 'Không có bài Facebook.', array( 'status' => 400 ) ); }
+			$full = strpos( $fb, '_' ) === false ? get_option( 'dtfb_page_id' ) . '_' . $fb : $fb;
+			$chk  = dtfb_api_get( $full, array( 'fields' => 'is_published' ) );
+			if ( is_wp_error( $chk ) ) { return new WP_Error( 'dtfb', $chk->get_error_message(), array( 'status' => 400 ) ); }
+			if ( ! empty( $chk['is_published'] ) ) { return new WP_Error( 'dtfb', 'Bài đã đăng – không huỷ.', array( 'status' => 400 ) ); }
+			$tok = get_option( 'dtfb_token' );
+			$res = dtfb_parse( wp_remote_request( DTFB_API . $full . '?access_token=' . rawurlencode( $tok ), array( 'method' => 'DELETE', 'timeout' => 20 ) ) );
+			if ( is_wp_error( $res ) ) { return new WP_Error( 'dtfb', $res->get_error_message(), array( 'status' => 400 ) ); }
+			delete_post_meta( $id, 'dtfb_fb_id' );
+			update_post_meta( $id, 'dtfb_status', 'Đã huỷ lịch cũ ' . current_time( 'mysql' ) );
+			return array( 'id' => $id, 'deleted' => $full );
 		},
 	) );
 } );
