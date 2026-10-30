@@ -35,7 +35,7 @@ if a.contact_line:
 ov.save(f'{tmp}/ov.png')
 notes=[n.strip() for n in a.notes.split('|') if n.strip()]
 # Vùng an toàn: tránh cột nút bên phải (like/bình luận/chia sẻ) và vùng chú thích phía dưới của TikTok/Reels
-SAFE_L, SAFE_R = 60, 900          # chữ nằm trong x 60..900
+SAFE_L, SAFE_R = 150, 930         # khối chữ căn giữa màn hình, rộng tối đa 780px để không chạm cột nút bên phải
 CX = (SAFE_L+SAFE_R)/2            # tâm ngang của khối chữ
 def wrap_balanced(text, font, maxw, dd):
     words=text.split()
