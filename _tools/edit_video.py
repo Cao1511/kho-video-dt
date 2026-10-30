@@ -34,18 +34,37 @@ if a.contact_line:
     ct(d,1395,'Tư vấn – báo giá: '+a.phone,fnt(F,52),(255,255,255,255)); ct(d,1470,'mayducthanh.vn',fnt(FB,42),(255,214,0,255))
 ov.save(f'{tmp}/ov.png')
 notes=[n.strip() for n in a.notes.split('|') if n.strip()]
-for i,nt in enumerate(notes):
-    im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,54)
-    words=nt.split(); lines=[]; cur=''
+# Vùng an toàn: tránh cột nút bên phải (like/bình luận/chia sẻ) và vùng chú thích phía dưới của TikTok/Reels
+SAFE_L, SAFE_R = 60, 900          # chữ nằm trong x 60..900
+CX = (SAFE_L+SAFE_R)/2            # tâm ngang của khối chữ
+def wrap_balanced(text, font, maxw, dd):
+    words=text.split()
+    if dd.textlength(text,font=font)<=maxw: return [text]
+    best=None
+    for k in range(1,len(words)):          # chia 2 dòng sao cho 2 dòng dài gần bằng nhau
+        l1,l2=' '.join(words[:k]),' '.join(words[k:])
+        w1,w2=dd.textlength(l1,font=font),dd.textlength(l2,font=font)
+        if max(w1,w2)<=maxw:
+            sc=abs(w1-w2)
+            if best is None or sc<best[0]: best=(sc,[l1,l2])
+    if best: return best[1]
+    lines=[];cur=''                         # quá dài: xuống dòng thường
     for w_ in words:
-        if dd.textlength((cur+' '+w_).strip(),font=fn)>W-180: lines.append(cur); cur=w_
+        if dd.textlength((cur+' '+w_).strip(),font=font)>maxw: lines.append(cur); cur=w_
         else: cur=(cur+' '+w_).strip()
-    lines.append(cur); y0=1380-len(lines)*35
-    hh=len(lines)*72+40; dd.rounded_rectangle([60,y0-20,W-60,y0-20+hh],radius=28,fill=(5,30,70,170))
-    for j,l in enumerate(lines): ct(dd,y0+j*72,l,fn,(255,255,255,255),2)
+    return lines+[cur]
+def pill(dd,lines,font,y_center,bg,fg,stroke=0,lh=70,padx=40,pady=22,r=30):
+    ws=[dd.textlength(l,font=font) for l in lines]; bw=max(ws)+2*padx; bh=len(lines)*lh+2*pady-8
+    x0=CX-bw/2; y0=y_center-bh/2
+    dd.rounded_rectangle([x0,y0,x0+bw,y0+bh],radius=r,fill=bg)
+    for j,(l,w_) in enumerate(zip(lines,ws)):
+        dd.text((CX-w_/2,y0+pady+j*lh-4),l,font=font,fill=fg,stroke_width=stroke,stroke_fill=(0,25,60,255))
+for i,nt in enumerate(notes):
+    im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,56)
+    pill(dd,wrap_balanced(nt,fn,SAFE_R-SAFE_L-80,dd),fn,1330,(8,35,85,205),(255,255,255,255),1)
     im.save(f'{tmp}/note{i}.png')
-cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52); cw=cd.textlength(a.cta,font=cf); cx=(W-cw)/2-50
-cd.rounded_rectangle([cx,1290,cx+cw+100,1400],radius=55,fill=(255,204,0,245)); cd.text((cx+50,1312),a.cta,font=cf,fill=(10,40,90,255))
+cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52)
+pill(cd,wrap_balanced(a.cta,cf,SAFE_R-SAFE_L-80,cd),cf,1330,(255,204,0,245),(10,40,90,255),0,lh=66,r=50)
 cim.save(f'{tmp}/cta.png')
 # tiêu đề
 t=Image.new('RGBA',(W,540),(0,0,0,0)); d=ImageDraw.Draw(t); f1=fnt(F,44)
