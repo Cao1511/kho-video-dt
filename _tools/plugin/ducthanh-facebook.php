@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Đức Thành – Đăng Facebook
  * Description: Tự động đăng bài ảnh (ảnh đại diện + nội dung) lên Fanpage khi xuất bản sản phẩm hoặc bài viết.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Đức Thành
  * Requires PHP: 7.4
  */
@@ -134,6 +134,26 @@ function dtfb_publish( $post_id, $force = false, $when = 0 ) {
 	update_option( 'dtfb_last_log', $now . ' – Đã đăng – ' . get_the_title( $post ) . ' (ID ' . $fb . ')', false );
 	return $r;
 }
+
+/* Kiểm tra bài đã hẹn lịch / trạng thái bài trên Fanpage (chỉ quản trị viên) */
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'dtfb/v1', '/fbcheck', array(
+		'methods'             => 'GET',
+		'permission_callback' => function () { return current_user_can( 'manage_options' ); },
+		'callback'            => function ( $req ) {
+			$page = get_option( 'dtfb_page_id' );
+			$out  = array();
+			$out['scheduled'] = dtfb_api_get( $page . '/scheduled_posts', array( 'fields' => 'id,message,scheduled_publish_time,is_published', 'limit' => 50 ) );
+			$ids = array_filter( array_map( 'trim', explode( ',', (string) $req['ids'] ) ) );
+			foreach ( $ids as $i ) {
+				$out['posts'][ $i ] = dtfb_api_get( $i, array( 'fields' => 'is_published,scheduled_publish_time,created_time,permalink_url' ) );
+			}
+			foreach ( $out as $k => $v ) { if ( is_wp_error( $v ) ) { $out[ $k ] = $v->get_error_message(); } }
+			if ( isset( $out['posts'] ) ) { foreach ( $out['posts'] as $k => $v ) { if ( is_wp_error( $v ) ) { $out['posts'][ $k ] = $v->get_error_message(); } } }
+			return $out;
+		},
+	) );
+} );
 
 /* Đăng hoặc hẹn lịch từ xa: POST /wp-json/dtfb/v1/push {id, when(unix, tùy chọn)} */
 add_action( 'rest_api_init', function () {
