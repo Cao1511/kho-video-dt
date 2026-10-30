@@ -92,7 +92,7 @@ if a.end<=0:
     NOTES+=f"[{ci}:v]format=rgba,fade=in:st={cs:.2f}:d=0.3:alpha=1[cta];[{prev}][cta]overlay=0:0:enable='gte(t,{cs:.2f})'[wc];"; prev='wc'
 NOTES+=f"[{prev}]null[vN];"
 fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
-    f"scale=w='trunc(1080*(1+0.05*t/{D})/2)*2':h='trunc(1920*(1+0.05*t/{D})/2)*2':eval=frame,crop=1080:1920,eq=contrast=1.06:saturation=1.15[v0];"
+    f"scale=w='trunc(1080*(1+0.05*t/{D})/2)*2':h='trunc(1920*(1+0.05*t/{D})/2)*2':eval=frame,crop=1080:1920,eq=brightness=0.04:gamma=1.15:contrast=1.04:saturation=1.12[v0];"
     "[v0][1:v]overlay=0:0[v1];[v1][2:v]overlay=0:0[v2];"
     "[3:v]format=rgba,fade=in:st=0.15:d=0.4:alpha=1[ti];[v2][ti]overlay=x='-200+200*min(1,(t-0.15)/0.4)':y=0:enable='gte(t,0.15)'[v3];"
     + NOTES +
