@@ -10,7 +10,7 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--pill',default='XEM MÁY CHẠY THỰC TẾ'); ap.add_argument('--line1',required=True); ap.add_argument('--line2',default='')
 ap.add_argument('--phone',default='0989 139 855'); ap.add_argument('--flip',action='store_true',help='lật ngang (mặc định KHÔNG lật)'); ap.add_argument('--no-flip',action='store_true',help='(giữ để tương thích, không cần nữa)'); ap.add_argument('--mute',action='store_true'); ap.add_argument('--music',default=''); ap.add_argument('--music-vol',type=float,default=0.8)
-ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--end',type=float,default=0.0,help='giây cảnh kết; 0 = không có cảnh kết (mặc định), lời mời nhắn tin hiện ở 2,5 s cuối'); ap.add_argument('--end-style',default='brand',choices=['brand','contact'],help='brand: chỉ logo + tên + lời mời nhắn tin (mặc định); contact: thêm số ĐT + website'); ap.add_argument('--cta',default='Nhắn tin cho kênh để được tư vấn'); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
+ap.add_argument('--notes',default='',help='các câu thuyết minh, ngăn bởi |, hiện lần lượt ở 1/3 dưới'); ap.add_argument('--contact-line',action='store_true',help='hiện dòng hotline suốt video (mặc định tắt)'); ap.add_argument('--note-pos',default='bottom',choices=['bottom','auto'],help='bottom: cố định phía dưới (mặc định); auto: tự né vùng chuyển động'); ap.add_argument('--end',type=float,default=0.0,help='giây cảnh kết; 0 = không có cảnh kết (mặc định), lời mời nhắn tin hiện ở 2,5 s cuối'); ap.add_argument('--end-style',default='brand',choices=['brand','contact'],help='brand: chỉ logo + tên + lời mời nhắn tin (mặc định); contact: thêm số ĐT + website'); ap.add_argument('--cta',default='Nhắn tin cho kênh để được tư vấn'); ap.add_argument('--max',type=float,default=170.0,help='cắt tối đa (giây)')
 a=ap.parse_args()
 tmp=tempfile.mkdtemp()
 logo=Image.open(os.path.join(HERE,'logo-duc-thanh.png')).convert('RGBA')
@@ -59,17 +59,17 @@ def pill(dd,lines,font,y_center,bg,fg,stroke=0,lh=70,padx=40,pady=22,r=30):
     dd.rounded_rectangle([x0,y0,x0+bw,y0+bh],radius=r,fill=bg)
     for j,(l,w_) in enumerate(zip(lines,ws)):
         dd.text((CX-w_/2,y0+pady+j*lh-4),l,font=font,fill=fg,stroke_width=stroke,stroke_fill=(0,25,60,255))
-def draw_sub(dd,lines,font,yc,fill=(255,255,255,255),lh=72):
+def draw_sub(dd,lines,font,yc,fill=(255,221,0,255),lh=62):
     # kiểu phụ đề: không khung nền, chữ trắng viền đậm + bóng mờ → che ít hình nhất
     y0=yc-len(lines)*lh/2
     for j,l in enumerate(lines):
         w_=dd.textlength(l,font=font); x=CX-w_/2; y=y0+j*lh
-        dd.text((x+3,y+4),l,font=font,fill=(0,0,0,120),stroke_width=8,stroke_fill=(0,0,0,120))
-        dd.text((x,y),l,font=font,fill=fill,stroke_width=6,stroke_fill=(0,25,60,255))
+        dd.text((x+3,y+4),l,font=font,fill=(0,0,0,140),stroke_width=7,stroke_fill=(0,0,0,140))
+        dd.text((x,y),l,font=font,fill=fill,stroke_width=5,stroke_fill=(0,20,50,255))
 def render_overlays(note_y,cta_y):
     from PIL import ImageFilter
     for i,nt in enumerate(notes):
-        im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,60)
+        im=Image.new('RGBA',(W,H),(0,0,0,0)); dd=ImageDraw.Draw(im); fn=fnt(F,50)
         draw_sub(dd,wrap_balanced(nt,fn,SAFE_R-SAFE_L,dd),fn,note_y[i])
         im.save(f'{tmp}/note{i}.png')
     cim=Image.new('RGBA',(W,H),(0,0,0,0)); cd=ImageDraw.Draw(cim); cf=fnt(F,52)
@@ -139,8 +139,8 @@ try:
 except Exception as ex:
     print('Không phân tích được chuyển động, dùng vị trí mặc định:',ex); best_y=lambda t0,t1:1430
 _ny=[]; _st=1.4; _tail=2.7 if a.end<=0 else 0.2; _seg=(D-_st-_tail)/K if K else 0
-for i in range(K): _ny.append(best_y(_st+i*_seg,_st+(i+1)*_seg))
-_cy=best_y(max(0,D-2.5),D)
+for i in range(K): _ny.append(best_y(_st+i*_seg,_st+(i+1)*_seg) if a.note_pos=='auto' else 1340)
+_cy=best_y(max(0,D-2.5),D) if a.note_pos=='auto' else 1340
 print('Vị trí chữ (tâm dọc):',_ny,'CTA:',_cy)
 render_overlays(_ny,_cy)
 fc=(f"[0:v]{flip}scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
