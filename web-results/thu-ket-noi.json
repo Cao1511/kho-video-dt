@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 1,
+    "name": "Đức Thành"
+   },
+   "step": "me"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 272,
+    "name": "Máy chiết rót 4 vòi tự động",
+    "status": "publish"
+   },
+   "step": "sp"
+  }
+ ],
+ "time": "2026-10-31 06:43:13"
+}
