@@ -1,0 +1,4 @@
+{"steps":[
+ {"id":"me","method":"GET","path":"/wp/v2/users/me?context=edit","pick":["id","name"]},
+ {"id":"sp","method":"GET","path":"/wc/v3/products/272?_fields=id,name,status","pick":["id","name","status"]}
+]}
