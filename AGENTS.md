@@ -13,7 +13,7 @@ Người dùng sẽ nói kiểu:
 
 ## Bước 1 – Xác định đúng máy (STT)
 
-Tải bảng "DS mẫu máy" (đã chia sẻ công khai, chỉ đọc):
+Bảng "DS mẫu máy": https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/edit?usp=sharing (đã chia sẻ công khai, chỉ đọc). Tải về dạng CSV:
 ```bash
 curl -sL "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0" -o /tmp/ds-may.csv
 ```
