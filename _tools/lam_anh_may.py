@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Khuon anh san pham Duc Thanh – theo mau _tools/mau-anh/mau-2-may-dan-nhan.png
+"""Khuon anh san pham Duc Thanh – dung khung chuan _tools/mau-anh/khung-chuan.png (moi may dung khung nay)
 
 Vi du:
   python _tools/lam_anh_may.py --may may.png --minh-hoa sp.png --out anh/1/1.png \
@@ -10,7 +10,7 @@ Vi du:
 
 --may       anh may PNG nen trong suot (tot nhat; nen trang thi tu tach nen)
 --ten       ten may, | de xuong dong (2 dong la dep nhat)
---model     (tuy chon) ma may, ghi trong khung trang bo tron
+--model     (tuy chon) ma may -> ghi trong khung trang; KHONG co ma thi bo, khung trang tu bien mat
 --o         dung 3 lan: "icon:dong 1|dong 2|dong 3"; dong bat dau bang * thi in dam
             icon: chai, banh-rang, chinh-xac, toc-do, cong-suat, man-hinh, plc, kg,
                   the-tich, inox, thung, voi, nhiet-do, tui
@@ -205,14 +205,40 @@ def text_narrow(base, xy, t, f, fill):
     base.alpha_composite(lay, (int(xy[0]), int(xy[1] - h / 2)))
 
 
-def build(a):
-    # ---------- nen trang, giua sang hon ----------
-    g = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(g).ellipse([80, 60, 1180, 1060], fill=255)
-    g = g.filter(ImageFilter.GaussianBlur(200))
-    img = Image.composite(Image.new("RGB", (W, H), (255, 255, 255)), Image.new("RGB", (W, H), (240, 243, 247)), g).convert("RGBA")
+KHUNG = os.path.join(HERE, "mau-anh", "khung-chuan.png")   # khung chuan cua nguoi dung
+PILL = (38, 1163, 415, 1218)                               # khung trang ghi ma may
+SEPS = (738, 1003)                                         # 2 vach ngan o thong so
 
-    # ---------- may: to, dat sat tren dai xanh ----------
+
+def xoa_khung_trang(fr):
+    """May khong co ma: xoa khung trang, to lai bang mau nen xanh (noi suy theo cot)."""
+    x1, y1, x2, y2 = PILL
+    ya, yb = y1 - 6, y2 + 5
+    px = fr.load()
+    for x in range(x1 - 4, x2 + 5):
+        ca, cb = px[x, ya], px[x, yb]
+        for y in range(ya + 1, yb):
+            t = (y - ya) / (yb - ya)
+            px[x, y] = tuple(int(ca[i] + (cb[i] - ca[i]) * t) for i in range(4))
+    return fr
+
+
+def build(a):
+    frame = Image.open(KHUNG).convert("RGBA").resize((W, H), Image.LANCZOS)
+    if not a.model:
+        frame = xoa_khung_trang(frame)
+
+    # mat na: phan khong phai nen trang (logo + dai xanh) -> luon nam tren cung, may nam phia sau
+    r, g, b, _ = frame.split()
+    mn = ImageChops.darker(ImageChops.darker(r, g), b)
+    top_mask = mn.point(lambda v: 255 if v < 236 else 0)
+    keep = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(keep).rectangle([0, 990, W, H], fill=255)
+    ImageDraw.Draw(keep).rectangle([40, 30, 370, 290], fill=255)
+    top_mask = ImageChops.multiply(top_mask, keep).filter(ImageFilter.GaussianBlur(0.8))
+
+    img = frame.copy()
+    # ---------- may ----------
     may = trim(cut_background(Image.open(a.may)))
     may = fit(may, 1150, TOP_R - 250)
     mx = (W - may.width) // 2 + 20
@@ -222,97 +248,7 @@ def build(a):
     sh = sh.filter(ImageFilter.GaussianBlur(20))
     img = Image.composite(Image.new("RGBA", (W, H), (110, 118, 130, 255)), img, sh.point(lambda v: int(v * 0.5)))
     img.alpha_composite(may, (mx, my))
-
-    # ---------- dai xanh (ve to S lan) ----------
-    big = img.resize((W * S, H * S), Image.LANCZOS)
-    # do dung theo anh mau: phang toi x=360, cong xuong (420,1060), cheo toi (468,1165), cong vao day (560,1238)
-    curve = bezier((360, TOP_L), (398, TOP_L), (410, 1036), (420, 1060))
-    curve2 = [(420, 1060)] + [(420 + (468 - 420) * k / 20, 1060 + (1165 - 1060) * k / 20) for k in range(1, 21)]
-    curve2 = curve2 + bezier((468, 1165), (478, 1200), (500, 1236), (560, 1238))[1:]
-    left = [(0, TOP_L)] + curve + curve2[1:] + [(0, BOT)]
-    right = [(0, TOP_R), (W, TOP_R), (W, BOT), (0, BOT)]
-
-    shd = Image.new("L", (W * S, H * S), 0)
-    ImageDraw.Draw(shd).polygon(sc(left), fill=255)
-    ImageDraw.Draw(shd).polygon(sc(right), fill=255)
-    shd = shd.filter(ImageFilter.GaussianBlur(10 * S)).point(lambda v: v // 5)
-    big = Image.composite(Image.new("RGBA", big.size, (60, 80, 120, 255)), big, shd)
-
-    big.paste(grad(W * S, H * S, R_LEFT, R_RIGHT, True), (0, 0), mask(right))
-    big.paste(grad(W * S, H * S, L_TOP, L_BOT, False), (0, 0), mask(left))
-    st = Image.new("L", (W * S, H * S), 0)
-    ImageDraw.Draw(st).polygon(sc([(170, TOP_L), (290, TOP_L), (420, BOT), (300, BOT)]), fill=70)
-    st = ImageChops.multiply(st.filter(ImageFilter.GaussianBlur(40 * S)), mask(left))
-    big = Image.composite(Image.new("RGBA", big.size, (90, 175, 255, 255)), big, st)
-
-    glow_line(big, [(424, TOP_R), (W, TOP_R)], CYAN, 4, 5)
-    glow_line(big, [(0, BOT - 5), (W, BOT - 5)], CYAN, 5, 6)
-    glow_line(big, [(0, TOP_L)] + curve + curve2[1:], CYAN, 4, 5)
-
-    d = ImageDraw.Draw(big)
-    # ---------- ten may ----------
-    lines = [x.strip() for x in a.ten.split("|") if x.strip()]
-    has_model = bool(a.model)
-    name_h = (BOT - TOP_L) - (95 if has_model else 40)
-    size = 64
-    while size > 30:
-        f = font("black", size)
-        if max(tw(f, t) for t in lines) <= 385 and size * 1.08 * len(lines) <= name_h:
-            break
-        size -= 1
-    lh = size * 1.1
-    cx_name = 226
-    y0 = TOP_L + 14 + (name_h - lh * len(lines)) / 2 + lh / 2
-    tsh = Image.new("RGBA", big.size, (0, 0, 0, 0))
-    td = ImageDraw.Draw(tsh)
-    for i, t in enumerate(lines):
-        td.text((cx_name * S, (y0 + i * lh + 3) * S), t, font=font("black", size * S), fill=(0, 30, 90, 150), anchor="mm")
-    big.alpha_composite(tsh.filter(ImageFilter.GaussianBlur(4 * S)))
-    for i, t in enumerate(lines):
-        d.text((cx_name * S, (y0 + i * lh) * S), t, font=font("black", size * S), fill=WHITE, anchor="mm")
-
-    # ---------- khung ma may ----------
-    if has_model:
-        py1, py2 = BOT - 82, BOT - 24
-        px1, px2 = 38, 412
-        d.rounded_rectangle(sc([(px1, py1), (px2, py2)]), radius=(py2 - py1) / 2 * S, fill=WHITE)
-        ms = 46
-        while ms > 24 and tw(font("black", ms), a.model) > (px2 - px1 - 40):
-            ms -= 1
-        d.text((((px1 + px2) / 2) * S, ((py1 + py2) / 2 + 1) * S), a.model, font=font("black", ms * S), fill=MODEL_BLUE, anchor="mm")
-
-    # ---------- 3 o thong so ----------
-    specs = []
-    for s in a.o[:3]:
-        k, txt = s.split(":", 1)
-        specs.append((k.strip(), [x for x in txt.split("|") if x.strip()]))
-    starts = [473, 738, 1003]          # vi tri 3 o theo anh mau
-    r = 39
-    gap = 12
-    def fw(t, size):
-        return tw(font("bold" if t.startswith("*") else "med", size), t.lstrip("*").strip()) * CX
-    avail = [ (starts[1] - starts[0]) - 17 - 2 * r - gap - 4,
-              (starts[2] - starts[1]) - 17 - 2 * r - gap - 4,
-              (W - starts[2]) - 17 - 2 * r - gap - 4 ]
-    cy = (TOP_R + BOT) / 2 + 1
-    ts = 25
-    while ts > 17:
-        if all(fw(t, ts) <= avail[i] for i, (_, tl) in enumerate(specs) for t in tl) and \
-           all(ts * 1.3 * len(tl) <= (BOT - TOP_R) - 34 for _, tl in specs):
-            break
-        ts -= 1
-    lh2 = ts * 1.3
-    for i, (kind, tl) in enumerate(specs):
-        icx = starts[i] + 17 + r
-        icon(d, kind, icx * S, cy * S, r * S)
-        ty0 = cy - lh2 * len(tl) / 2 + lh2 / 2
-        for j, t in enumerate(tl):
-            text_narrow(big, ((icx + r + gap) * S, (ty0 + j * lh2) * S), t.lstrip("*").strip(),
-                        font("bold" if t.startswith("*") else "med", ts * S), WHITE)
-        if i > 0:
-            d.line(sc([(starts[i], TOP_R + 36), (starts[i], BOT - 36)]), fill=(200, 225, 255), width=int(2 * S))
-
-    img = big.resize((W, H), Image.LANCZOS)
+    img = Image.composite(frame, img, top_mask)          # dai xanh + logo de len tren may
 
     # ---------- minh hoa goc phai ----------
     if a.minh_hoa:
@@ -320,11 +256,69 @@ def build(a):
         mh = fit(mh, 290, 270)
         img.alpha_composite(mh, (W - 36 - mh.width, 36))
 
-    # ---------- logo ----------
-    logo = trim(cut_background(Image.open(os.path.join(HERE, "mau-anh", "logo-duc-thanh-lon.png"))))
-    logo = fit(logo, 280, 225)
-    img.alpha_composite(logo, (60, 50))
+    # ---------- chu + icon: ve to S lan tren lop trong suot ----------
+    big = Image.new("RGBA", (W * S, H * S), (0, 0, 0, 0))
+    d = ImageDraw.Draw(big)
 
+    # ten may: canh giua o xanh ben trai, tu co chu cho vua khung
+    lines = [x.strip() for x in a.ten.split("|") if x.strip()]
+    top_y = TOP_L + 10
+    bot_y = (PILL[1] - 8) if a.model else (BOT - 14)
+    max_w = 370
+    size = 66
+    while size > 26:
+        f = font("black", size)
+        if max(tw(f, t) for t in lines) <= max_w and size * 1.12 * len(lines) <= (bot_y - top_y):
+            break
+        size -= 1
+    lh = size * 1.12
+    cx_name = (PILL[0] + PILL[2]) / 2
+    y0 = (top_y + bot_y) / 2 - lh * len(lines) / 2 + lh / 2
+    shl = Image.new("RGBA", big.size, (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shl)
+    for i, t in enumerate(lines):
+        sd.text((cx_name * S, (y0 + i * lh + 3) * S), t, font=font("black", size * S), fill=(0, 30, 90, 140), anchor="mm")
+    big.alpha_composite(shl.filter(ImageFilter.GaussianBlur(4 * S)))
+    for i, t in enumerate(lines):
+        d.text((cx_name * S, (y0 + i * lh) * S), t, font=font("black", size * S), fill=WHITE, anchor="mm")
+
+    # ma may trong khung trang
+    if a.model:
+        x1, y1, x2, y2 = PILL
+        ms = 46
+        while ms > 20 and tw(font("black", ms), a.model) > (x2 - x1 - 44):
+            ms -= 1
+        d.text((((x1 + x2) / 2) * S, ((y1 + y2) / 2 + 1) * S), a.model, font=font("black", ms * S), fill=MODEL_BLUE, anchor="mm")
+
+    # 3 o thong so (vach ngan da co san trong khung)
+    specs = []
+    for sp in a.o[:3]:
+        k, txt = sp.split(":", 1)
+        specs.append((k.strip(), [x for x in txt.split("|") if x.strip()]))
+    starts = [473, SEPS[0], SEPS[1]]
+    ends = [SEPS[0], SEPS[1], W - 6]
+    r_ = 39
+    gap = 12
+    def fw(t, size):
+        return tw(font("bold" if t.startswith("*") else "med", size), t.lstrip("*").strip()) * CX
+    avail = [ends[i] - starts[i] - 17 - 2 * r_ - gap - 6 for i in range(3)]
+    cy = (TOP_R + BOT) / 2 + 1
+    ts = 25
+    while ts > 15:
+        if all(fw(t, ts) <= avail[i] for i, (_, tl) in enumerate(specs) for t in tl) and \
+           all(ts * 1.3 * len(tl) <= (BOT - TOP_R) - 30 for _, tl in specs):
+            break
+        ts -= 1
+    lh2 = ts * 1.3
+    for i, (kind, tl) in enumerate(specs):
+        icx = starts[i] + 17 + r_
+        icon(d, kind, icx * S, cy * S, r_ * S)
+        ty0 = cy - lh2 * len(tl) / 2 + lh2 / 2
+        for j, t in enumerate(tl):
+            text_narrow(big, ((icx + r_ + gap) * S, (ty0 + j * lh2) * S), t.lstrip("*").strip(),
+                        font("bold" if t.startswith("*") else "med", ts * S), WHITE)
+
+    img.alpha_composite(big.resize((W, H), Image.LANCZOS))
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     img.convert("RGB").save(a.out, optimize=True)
     print("Da luu:", a.out)
