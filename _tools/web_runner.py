@@ -88,7 +88,7 @@ def run_step(step, ctx):
         out = [{"stt": r[0].strip(), "ten": col(r, "Tên máy", 1), "link": col(r, "Link mẫu/thông số", 2),
                 "trang_thai": col(r, "Trạng thái", 4), "thoi_gian": col(r, "Thời gian đăng", 5)}
                for r in rows[2:] if len(r) >= 3 and r[0].strip() and (r[1].strip() or r[2].strip())]
-        return {"ok": st == 200, "status": st, "data": out}
+        return {"ok": st == 200, "status": st, "data": out, "head": [[h, h.encode("unicode_escape").decode()] for h in head]}
     if "sheet_update" in step:
         # ghi vao Google Sheet qua Apps Script (secret SHEET_URL, SHEET_KEY)
         url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
