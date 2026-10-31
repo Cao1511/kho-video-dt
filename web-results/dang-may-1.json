@@ -1,0 +1,82 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 356,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 10,
+   "step": 1
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 356,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+   },
+   "step": "fb"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 3
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 4
+  }
+ ],
+ "time": "2026-10-31 09:18:06"
+}
