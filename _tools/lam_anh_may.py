@@ -26,7 +26,7 @@ W = H = 1254
 S = 4                       # ve to 4 lan roi thu nho -> mep muot
 
 # --- kich thuoc & mau lay tu anh mau ---
-TOP_L, TOP_R, BOT = 1012, 1066, 1240   # dinh o ten / dinh dai thong so / day dai xanh
+TOP_L, TOP_R, BOT = 1012, 1064, 1238   # dinh o ten / dinh dai thong so / day dai xanh
 PANEL_R = 372                          # mep phai phan phang cua o ten
 DIAG_BOT = 520                         # duong cheo cham day o x nay
 L_TOP, L_BOT = (2, 108, 220), (0, 86, 180)
@@ -192,7 +192,7 @@ def glow_line(base, pts, color, width, blur):
     base.alpha_composite(lay2)
 
 
-CX = 0.8   # chu thong so hep lai nhu mau
+CX = 0.72   # chu thong so hep lai nhu mau
 
 
 def text_narrow(base, xy, t, f, fill):
@@ -225,8 +225,10 @@ def build(a):
 
     # ---------- dai xanh (ve to S lan) ----------
     big = img.resize((W * S, H * S), Image.LANCZOS)
-    curve = bezier((PANEL_R, TOP_L), (PANEL_R + 46, TOP_L), (PANEL_R + 50, TOP_R - 22), (PANEL_R + 72, TOP_R + 10))
-    curve2 = bezier((PANEL_R + 72, TOP_R + 10), (PANEL_R + 98, TOP_R + 85), (DIAG_BOT - 20, BOT - 4), (DIAG_BOT + 60, BOT))
+    # do dung theo anh mau: phang toi x=360, cong xuong (420,1060), cheo toi (468,1165), cong vao day (560,1238)
+    curve = bezier((360, TOP_L), (398, TOP_L), (410, 1036), (420, 1060))
+    curve2 = [(420, 1060)] + [(420 + (468 - 420) * k / 20, 1060 + (1165 - 1060) * k / 20) for k in range(1, 21)]
+    curve2 = curve2 + bezier((468, 1165), (478, 1200), (500, 1236), (560, 1238))[1:]
     left = [(0, TOP_L)] + curve + curve2[1:] + [(0, BOT)]
     right = [(0, TOP_R), (W, TOP_R), (W, BOT), (0, BOT)]
 
@@ -243,7 +245,7 @@ def build(a):
     st = ImageChops.multiply(st.filter(ImageFilter.GaussianBlur(40 * S)), mask(left))
     big = Image.composite(Image.new("RGBA", big.size, (90, 175, 255, 255)), big, st)
 
-    glow_line(big, [(PANEL_R + 60, TOP_R), (W, TOP_R)], CYAN, 4, 5)
+    glow_line(big, [(424, TOP_R), (W, TOP_R)], CYAN, 4, 5)
     glow_line(big, [(0, BOT - 5), (W, BOT - 5)], CYAN, 5, 6)
     glow_line(big, [(0, TOP_L)] + curve + curve2[1:], CYAN, 4, 5)
 
@@ -259,7 +261,7 @@ def build(a):
             break
         size -= 1
     lh = size * 1.1
-    cx_name = 28 + 385 / 2
+    cx_name = 226
     y0 = TOP_L + 14 + (name_h - lh * len(lines)) / 2 + lh / 2
     tsh = Image.new("RGBA", big.size, (0, 0, 0, 0))
     td = ImageDraw.Draw(tsh)
@@ -284,32 +286,31 @@ def build(a):
     for s in a.o[:3]:
         k, txt = s.split(":", 1)
         specs.append((k.strip(), [x for x in txt.split("|") if x.strip()]))
-    x0 = DIAG_BOT - 58
-    cw = (W - 12 - x0) / 3
-    cy = (TOP_R + BOT) / 2 + 2
-    r = 41
+    starts = [473, 738, 1003]          # vi tri 3 o theo anh mau
+    r = 39
     gap = 12
-    avail = cw - 2 * r - gap - 8
     def fw(t, size):
         return tw(font("bold" if t.startswith("*") else "med", size), t.lstrip("*").strip()) * CX
-    ts = 26
+    avail = [ (starts[1] - starts[0]) - 17 - 2 * r - gap - 4,
+              (starts[2] - starts[1]) - 17 - 2 * r - gap - 4,
+              (W - starts[2]) - 17 - 2 * r - gap - 4 ]
+    cy = (TOP_R + BOT) / 2 + 1
+    ts = 25
     while ts > 17:
-        if all(fw(t, ts) <= avail for _, tl in specs for t in tl) and \
+        if all(fw(t, ts) <= avail[i] for i, (_, tl) in enumerate(specs) for t in tl) and \
            all(ts * 1.3 * len(tl) <= (BOT - TOP_R) - 34 for _, tl in specs):
             break
         ts -= 1
     lh2 = ts * 1.3
     for i, (kind, tl) in enumerate(specs):
-        cx0 = x0 + i * cw
-        block = 2 * r + gap + max(fw(t, ts) for t in tl)
-        bx = cx0 + (cw - block) / 2
-        icon(d, kind, (bx + r) * S, cy * S, r * S)
+        icx = starts[i] + 17 + r
+        icon(d, kind, icx * S, cy * S, r * S)
         ty0 = cy - lh2 * len(tl) / 2 + lh2 / 2
         for j, t in enumerate(tl):
-            text_narrow(big, ((bx + 2 * r + gap) * S, (ty0 + j * lh2) * S), t.lstrip("*").strip(),
+            text_narrow(big, ((icx + r + gap) * S, (ty0 + j * lh2) * S), t.lstrip("*").strip(),
                         font("bold" if t.startswith("*") else "med", ts * S), WHITE)
         if i > 0:
-            d.line(sc([(cx0, TOP_R + 32), (cx0, BOT - 32)]), fill=(200, 225, 255), width=int(2 * S))
+            d.line(sc([(starts[i], TOP_R + 36), (starts[i], BOT - 36)]), fill=(200, 225, 255), width=int(2 * S))
 
     img = big.resize((W, H), Image.LANCZOS)
 
