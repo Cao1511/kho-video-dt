@@ -214,7 +214,7 @@ def build(a):
 
     # ---------- may: to, dat sat tren dai xanh ----------
     may = trim(cut_background(Image.open(a.may)))
-    may = fit(may, 1150, TOP_R - 190)
+    may = fit(may, 1150, TOP_R - 250)
     mx = (W - may.width) // 2 + 20
     my = TOP_R + 4 - may.height
     sh = Image.new("L", (W, H), 0)
@@ -317,7 +317,7 @@ def build(a):
     # ---------- minh hoa goc phai ----------
     if a.minh_hoa:
         mh = trim(cut_background(Image.open(a.minh_hoa)))
-        mh = fit(mh, 300, 330)
+        mh = fit(mh, 290, 270)
         img.alpha_composite(mh, (W - 36 - mh.width, 36))
 
     # ---------- logo ----------
