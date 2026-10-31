@@ -44,11 +44,11 @@ Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh 
 Bố cục (ảnh vuông 1254 × 1254 px hoặc lớn hơn cùng tỉ lệ 1:1):
 - **Nền:** trắng / xám rất nhạt, sạch, có bóng đổ nhẹ dưới chân máy.
 - **Góc trên trái:** logo Đức Thành (cao ~18–20% ảnh).
-- **Giữa:** máy chiếm phần lớn ảnh (~65–75% chiều cao phía trên dải xanh), nhìn chéo 3/4, nét, sáng, inox bóng.
-- **Góc trên phải (tuỳ chọn):** hình minh hoạ sản phẩm mà máy xử lý (vd bát bột/hạt cho máy trộn, chai/lọ cho máy chiết rót, túi gói cho máy đóng gói). Chỉ dùng khi đúng công dụng trong link.
+- **Giữa:** máy chiếm phần lớn ảnh (~65–75% chiều cao phía trên dải xanh), nhìn chéo 3/4, nét, sáng, inox bóng. Tách nền sạch: không còn khung/viền xám của ảnh gốc, có bóng đổ mềm dưới chân máy.
+- **Góc trên phải (BẮT BUỘC có, như mẫu):** hình minh hoạ sản phẩm mà máy xử lý, chiếm ~20–25% bề ngang, không che máy (vd bát bột/hạt cho máy trộn, chai/lọ cho máy chiết rót, lọ có nắp nhôm cho máy viền nắp, túi gói cho máy đóng gói). Phải đúng công dụng trong link.
 - **Dải xanh dưới cùng (~22–25% chiều cao):**
   - Nền xanh dương đậm (khoảng #0047AB → #005AC1), có vệt sáng/đường chéo xanh nhạt ở mép trên bên trái như mẫu.
-  - Bên trái: TÊN MÁY chữ IN HOA, trắng, đậm (font sans-serif đậm, có dấu tiếng Việt đúng), 2–3 dòng, vd "MÁY TRỘN / THÙNG IBC / 1500 LÍT". Lấy theo cột B của Sheet, thêm con số chính nếu có (dung tích, số vòi…).
+  - Bên trái: TÊN MÁY chữ IN HOA, trắng, đậm (font sans-serif đậm, có dấu tiếng Việt đúng), 2–3 dòng, vd "MÁY TRỘN / THÙNG IBC / 1500 LÍT". Lấy theo cột B của Sheet, thêm con số chính nếu có (dung tích, số vòi…). Ngắt dòng theo cụm nghĩa, mỗi dòng cân nhau (vd "MÁY VIỀN NẮP / TỰ ĐỘNG" hoặc "MÁY VIỀN / NẮP NHÔM"), KHÔNG để 1 chữ lẻ một dòng. Chữ cùng cỡ, to như mẫu. Model (vd ZS-YG100) bỏ ra, không ghi lên ảnh.
   - Bên phải: 3 ô đặc điểm, mỗi ô = icon tròn viền trắng + 2 dòng chữ trắng ngắn (≤ 3–4 từ/dòng), ngăn bởi vạch dọc mảnh màu trắng mờ.
 - Toàn bộ chữ trên ảnh: tiếng Việt có dấu, đúng chính tả, không lỗi font. Kiểm tra từng chữ sau khi tạo (ảnh AI hay viết sai dấu) — sai thì sửa/ghép chữ lại bằng code (vd Pillow), không để chữ lỗi.
 
@@ -79,7 +79,7 @@ Bố cục (ảnh vuông 1254 × 1254 px hoặc lớn hơn cùng tỉ lệ 1:1):
    git push origin video
    ```
    Push bị từ chối → `git pull --rebase origin video` rồi push lại.
-3. Báo lại người dùng:
+3. Báo lại người dùng (HIỂN THỊ ĐÚNG ẢNH CUỐI `anh/<STT>/1.png` trong chat, không hiện ảnh trung gian như ảnh máy tách nền):
    - "Đã lưu ảnh cho STT <số> – <tên máy>"
    - Link: `https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/1.png`
    - 3 thông số đã dùng và nguồn (link/ảnh) để người dùng kiểm tra.
