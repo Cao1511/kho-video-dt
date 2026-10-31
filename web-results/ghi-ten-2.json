@@ -1,0 +1,92 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "2",
+      "ok": true,
+      "row": 4,
+      "ghi": [
+       "Tên máy "
+      ]
+     },
+     {
+      "stt": "1",
+      "ok": true,
+      "row": 3,
+      "ghi": []
+     }
+    ]
+   },
+   "step": 0
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": [
+    {
+     "stt": "1",
+     "ten": "Máy viền nắp",
+     "link": "https://www.zonesun.com/products/zonesun-zs-yg100-automatic-rotary-vial-bottle-aluminum-flip-off-caps-crimping-machine?variant=46648937480358&country=AE&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AYCX9vIsOznE0jdZnwx5vuln3DeSCApeKwAApDImzdOrw4ngAHK1jt-Q7rU",
+     "trang_thai": "Đã đăng",
+     "thoi_gian": "31/10/2026 16:17"
+    },
+    {
+     "stt": "2",
+     "ten": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "link": "https://www.zonesunautopack.com/products/zonesun-zs-tb822d-automatic-plastic-glass-flat-bottle-cap-and-round-bottle-double-sides-labeling-machine-label-sticker",
+     "trang_thai": "Đã đăng",
+     "thoi_gian": "31/10/2026 16:45"
+    },
+    {
+     "stt": "3",
+     "ten": "Máy dán nhãn chai tròn tự động",
+     "link": "https://www.zonesunautopack.com/products/zonesun-zs-tb822-round-bottle-labeling-machine-for-beverage-milk-juice-bottles",
+     "trang_thai": "Đã có ảnh",
+     "thoi_gian": ""
+    }
+   ],
+   "head": [
+    [
+     "STT",
+     "STT"
+    ],
+    [
+     "Tên máy",
+     "T\\xean m\\xe1y"
+    ],
+    [
+     "Link mẫu/thông số",
+     "Link m\\u1eabu/th\\xf4ng s\\u1ed1"
+    ],
+    [
+     "Link ảnh",
+     "Link \\u1ea3nh"
+    ],
+    [
+     "Trạng thái",
+     "Tr\\u1ea1ng th\\xe1i"
+    ],
+    [
+     "Thời gian đăng",
+     "Th\\u1eddi gian \\u0111\\u0103ng"
+    ],
+    [
+     "Link web",
+     "Link web"
+    ],
+    [
+     "Link Facebook",
+     "Link Facebook"
+    ]
+   ],
+   "step": 1
+  }
+ ],
+ "time": "2026-10-31 09:54:40"
+}
