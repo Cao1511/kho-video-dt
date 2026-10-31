@@ -20,6 +20,7 @@ Dinh dang file lenh:
 - "path" la duong dan sau /wp-json.
 - "{{buoc.truong}}" duoc thay bang ket qua cua buoc truoc.
 - "pick" chi giu cac truong can (kho cong khai, khong ghi het du lieu).
+- "sheet": true -> doc Google Sheet DS mau may (STT, ten, link).
 - "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
 """
@@ -72,6 +73,15 @@ def pick(data, fields):
 
 def run_step(step, ctx):
     step = subst(step, ctx)
+    if "sheet" in step:
+        # tai Google Sheet "DS mau may" (cong khai) dang CSV
+        import csv, io
+        url = "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0"
+        st, body, _ = call("GET", url, auth=False)
+        rows = list(csv.reader(io.StringIO(body.decode("utf-8", "replace"))))
+        out = [{"stt": r[0].strip(), "ten": r[1].strip(), "link": r[2].strip()} for r in rows[2:]
+               if len(r) >= 3 and r[0].strip() and r[1].strip()]
+        return {"ok": st == 200, "status": st, "data": out}
     if "wait" in step:
         time.sleep(min(60, float(step["wait"])))
         return {"wait": step["wait"]}
