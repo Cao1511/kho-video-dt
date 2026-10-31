@@ -94,7 +94,28 @@ def run_step(step, ctx):
         url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
         if not url or not key:
             return {"ok": False, "error": "chua cai SHEET_URL/SHEET_KEY tren GitHub"}
-        data = json.dumps({"key": key, "updates": step["sheet_update"]}).encode()
+        # do ten cot that trong Sheet (co the co dau cach thua / go kieu to hop) va giu ten may nguoi dung da dien
+        import csv, io, unicodedata
+        norm = lambda t: unicodedata.normalize("NFC", str(t)).strip().lower()
+        surl = "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0"
+        _, sb, _ = call("GET", surl, auth=False)
+        rows = list(csv.reader(io.StringIO(sb.decode("utf-8", "replace"))))
+        raw_head = rows[1] if len(rows) > 1 else []
+        hmap = {norm(h): h for h in raw_head}
+        cur = {r[0].strip(): r for r in rows[2:] if r and r[0].strip()}
+        updates = []
+        for u in step["sheet_update"]:
+            fields = {}
+            for k, v in u.get("fields", {}).items():
+                real = hmap.get(norm(k), k)
+                if norm(k) == norm("Tên máy") and not u.get("ghi_de_ten"):
+                    j = raw_head.index(real) if real in raw_head else 1
+                    r = cur.get(str(u.get("stt")).strip(), [])
+                    if j < len(r) and r[j].strip():
+                        continue          # nguoi dung da dien ten -> giu nguyen
+                fields[real] = v
+            updates.append({**u, "fields": fields, "ghi_de_ten": True})
+        data = json.dumps({"key": key, "updates": updates}).encode()
         st, body, _ = call("POST", url, data, {"Content-Type": "application/json"}, auth=False)
         try:
             res = json.loads(body)
