@@ -20,6 +20,7 @@ Dinh dang file lenh:
 - "path" la duong dan sau /wp-json.
 - "{{buoc.truong}}" duoc thay bang ket qua cua buoc truoc.
 - "pick" chi giu cac truong can (kho cong khai, khong ghi het du lieu).
+- "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
 """
 import base64, glob, json, mimetypes, os, re, sys, time
@@ -71,6 +72,9 @@ def pick(data, fields):
 
 def run_step(step, ctx):
     step = subst(step, ctx)
+    if "wait" in step:
+        time.sleep(min(60, float(step["wait"])))
+        return {"wait": step["wait"]}
     if "warm" in step:
         out = []
         for u in step["warm"]:
