@@ -1,0 +1,102 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    }
+   ],
+   "step": "a"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    },
+    {
+     "id": 272,
+     "name": "Máy chiết rót 4 vòi tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    },
+    {
+     "id": 235,
+     "name": "Máy đóng gói chất lỏng định lượng piston",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/"
+    }
+   ],
+   "step": "b"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 25,
+     "name": "Máy chiết rót chất lỏng",
+     "slug": "may-chiet-rot-chat-long"
+    },
+    {
+     "id": 30,
+     "name": "Máy dán nhãn",
+     "slug": "may-dan-nhan"
+    },
+    {
+     "id": 29,
+     "name": "Thiết bị phụ trợ",
+     "slug": "thiet-bi-phu-tro"
+    }
+   ],
+   "step": "c"
+  }
+ ],
+ "time": "2026-10-31 12:49:34"
+}

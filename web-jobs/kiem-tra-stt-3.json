@@ -1,5 +1,0 @@
-{"steps":[
-{"id":"a","method":"GET","path":"/wc/v3/products?search=TB822&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"b","method":"GET","path":"/wc/v3/products?search=d%C3%A1n%20nh%C3%A3n&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"c","method":"GET","path":"/wc/v3/products/categories?include=30,29,25&_fields=id,name,slug","pick":["id","name","slug"]}
-]}
