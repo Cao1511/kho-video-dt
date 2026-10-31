@@ -17,7 +17,8 @@ Bảng "DS mẫu máy": https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkU
 ```bash
 curl -sL "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0" -o /tmp/ds-may.csv
 ```
-Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh (công thức tự động, bỏ qua). Dòng 1 là tiêu đề lớn, dòng 2 là tên cột.
+Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh (công thức tự động, bỏ qua), E = Trạng thái, F = Thời gian đăng, G = Link web, H = Link Facebook. Dòng 1 là tiêu đề lớn, dòng 2 là tên cột.
+- **Dòng có link nhưng CHƯA có tên máy** (người dùng hay chỉ dán link): Codex tự đọc trang link, đặt tên máy tiếng Việt ngắn gọn, đúng loại máy (vd "Máy dán nhãn chai tròn", "Máy viền nắp") và ghi vào Sheet ở Bước 4.
 
 - Người dùng nói số STT → lấy đúng dòng đó.
 - Người dùng đưa tên máy / link / ảnh → tìm dòng khớp:
@@ -90,13 +91,18 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    git push origin video
    ```
    Push bị từ chối → `git pull --rebase origin video` rồi push lại.
-3. Báo lại người dùng (HIỂN THỊ ĐÚNG ẢNH CUỐI `anh/<STT>/1.png` trong chat, không hiện ảnh trung gian như ảnh máy tách nền):
+3. **Cập nhật Google Sheet** (Codex không ghi thẳng vào Sheet; ghi qua GitHub Actions). Tạo file `web-jobs/codex-anh-stt-<STT>.json` rồi commit + push cùng ảnh (hoặc ngay sau):
+   ```json
+   {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy tiếng Việt>","Trạng thái":"Đã có ảnh"}}]}]}
+   ```
+   Tên máy chỉ được ghi khi ô đang trống (người dùng đã điền thì giữ nguyên). Sau ~1 phút `git pull` và xem `web-results/codex-anh-stt-<STT>.json` có `"ok": true`; lỗi "chưa cài SHEET_URL/SHEET_KEY" thì báo người dùng.
+4. Báo lại người dùng (HIỂN THỊ ĐÚNG ẢNH CUỐI `anh/<STT>/1.png` trong chat, không hiện ảnh trung gian như ảnh máy tách nền):
    - "Đã lưu ảnh cho STT <số> – <tên máy>"
    - Link: `https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/1.png`
    - 3 thông số đã dùng và nguồn (link/ảnh) để người dùng kiểm tra.
    - Google Sheet cột D tự hiện ảnh sau vài phút (không cần sửa Sheet).
 
 ## Không được làm
-- KHÔNG sửa/xoá `_tools/`, `.github/`, `web-jobs/`, `web-results/`, `AGENTS.md`.
+- KHÔNG sửa/xoá `_tools/`, `.github/`, `web-results/`, `AGENTS.md`. Trong `web-jobs/` chỉ được thêm file `codex-anh-stt-<STT>.json` như trên.
 - KHÔNG xoá ảnh của máy khác.
 - KHÔNG đưa mật khẩu, token, thông tin bí mật vào kho (kho công khai).

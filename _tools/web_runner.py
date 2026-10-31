@@ -20,7 +20,9 @@ Dinh dang file lenh:
 - "path" la duong dan sau /wp-json.
 - "{{buoc.truong}}" duoc thay bang ket qua cua buoc truoc.
 - "pick" chi giu cac truong can (kho cong khai, khong ghi het du lieu).
-- "sheet": true -> doc Google Sheet DS mau may (STT, ten, link).
+- "sheet": true -> doc Google Sheet DS mau may (STT, ten, link, trang thai...).
+- "sheet_update": [{"stt":"3","fields":{"Tên máy":"...","Trạng thái":"Đã đăng","Thời gian đăng":"...","Link web":"https://...","Link Facebook":"https://..."}}]
+  -> ghi vao Sheet (khong ghi de Tên máy nguoi dung da dien, tru khi "ghi_de_ten": true).
 - "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
 """
@@ -79,9 +81,26 @@ def run_step(step, ctx):
         url = "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0"
         st, body, _ = call("GET", url, auth=False)
         rows = list(csv.reader(io.StringIO(body.decode("utf-8", "replace"))))
-        out = [{"stt": r[0].strip(), "ten": r[1].strip(), "link": r[2].strip()} for r in rows[2:]
-               if len(r) >= 3 and r[0].strip() and r[1].strip()]
+        head = [h.strip() for h in rows[1]] if len(rows) > 1 else []
+        def col(r, name, i):
+            j = head.index(name) if name in head else i
+            return r[j].strip() if j < len(r) else ""
+        out = [{"stt": r[0].strip(), "ten": col(r, "Tên máy", 1), "link": col(r, "Link mẫu/thông số", 2),
+                "trang_thai": col(r, "Trạng thái", 4), "thoi_gian": col(r, "Thời gian đăng", 5)}
+               for r in rows[2:] if len(r) >= 3 and r[0].strip() and (r[1].strip() or r[2].strip())]
         return {"ok": st == 200, "status": st, "data": out}
+    if "sheet_update" in step:
+        # ghi vao Google Sheet qua Apps Script (secret SHEET_URL, SHEET_KEY)
+        url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
+        if not url or not key:
+            return {"ok": False, "error": "chua cai SHEET_URL/SHEET_KEY tren GitHub"}
+        data = json.dumps({"key": key, "updates": step["sheet_update"]}).encode()
+        st, body, _ = call("POST", url, data, {"Content-Type": "application/json"}, auth=False)
+        try:
+            res = json.loads(body)
+        except Exception:
+            res = {"ok": False, "error": body[:200].decode("utf-8", "replace")}
+        return {"ok": bool(res.get("ok")), "status": st, "data": res}
     if "wait" in step:
         time.sleep(min(60, float(step["wait"])))
         return {"wait": step["wait"]}

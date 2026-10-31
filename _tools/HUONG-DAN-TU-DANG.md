@@ -14,7 +14,7 @@ Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống
 ## Bước 1 – Chọn máy
 1. Đọc bảng: lệnh `{"steps":[{"sheet":true}]}` → danh sách `{stt, ten, link}`.
 2. Đọc `danh-sach/da-dang.json` (các STT đã đăng).
-3. Chọn STT **nhỏ nhất** thoả cả 3: có tên + link; CHƯA có trong `da-dang.json`; ĐÃ có ảnh `anh/<STT>/1.png` trong kho (ảnh do Codex làm theo khung chuẩn). Máy chưa có ảnh → bỏ qua, ghi trong báo cáo "STT x chưa có ảnh".
+3. Chọn STT **nhỏ nhất** thoả cả 3: có link (tên máy có thể TRỐNG – khi đó tự đặt tên từ trang link); CHƯA có trong `da-dang.json` và cột Trạng thái khác "Đã đăng"; ĐÃ có ảnh `anh/<STT>/1.png` trong kho (ảnh do Codex làm theo khung chuẩn). Máy chưa có ảnh → bỏ qua, ghi trong báo cáo "STT x chưa có ảnh" và cập nhật Sheet Trạng thái "Chưa có ảnh" (gộp vào lệnh ở Bước 6).
 4. Không còn máy nào → kết thúc, báo 1 dòng "Không có máy mới để đăng".
 5. Chống đăng trùng: lệnh GET `/wc/v3/products?search=<mã máy hoặc tên>&status=any&_fields=id,name,status,permalink` (pick id,name,status,permalink). Đã có bài cùng máy → ghi STT đó vào `da-dang.json` (kèm `"ghi_chu":"da co san tren web"`), chọn máy khác.
 
@@ -66,6 +66,11 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng file webp):
 - Đọc kết quả: `ok: true`; bước `kt` có `status: publish`; trong `meta_data` tìm `dtfb_status` = "Đã đăng … (ID pageid_postid)" → link Facebook `https://www.facebook.com/<ID>`. Nếu là "Lỗi …" → ghi nguyên văn vào báo cáo (lỗi code 190/200 = mã Fanpage hết hạn, người dùng phải lấy mã mới).
 - Bước nào lỗi (ok false): KHÔNG thử đăng lại lung tung. Nếu sản phẩm đã tạo nhưng chưa publish thì để nguyên bản nháp, báo lỗi nguyên văn.
 
-## Bước 6 – Dọn dẹp và ghi nhận
-1. `git rm` file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push.
+## Bước 6 – Dọn dẹp, ghi vào Google Sheet và ghi nhận
+1. Lệnh cập nhật Sheet `web-jobs/sheet-stt-<STT>.json` (giờ Việt Nam, dạng `31/10/2026 16:41`):
+   ```json
+   {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy>","Trạng thái":"Đã đăng","Thời gian đăng":"<dd/mm/yyyy HH:MM>","Link web":"<link web>","Link Facebook":"https://www.facebook.com/<ID>"}}]}]}
+   ```
+   Đăng lỗi → "Trạng thái":"Lỗi – <tóm tắt>". Máy bị bỏ qua vì chưa có ảnh → thêm phần tử `{"stt":"x","fields":{"Trạng thái":"Chưa có ảnh"}}` (chỉ khi ô Trạng thái đang trống/khác). Kết quả lỗi "chưa cài SHEET_URL/SHEET_KEY" → ghi vào báo cáo, không coi là lỗi đăng bài.
+2. `git rm` file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push.
 2. Báo cáo (gửi bằng SendUserMessage): "Đã đăng STT <số> – <tên máy>: <link web> | Facebook: <link>" + mục thông số trang nguồn không có (nếu có) + máy bị bỏ qua vì chưa có ảnh (nếu có).
