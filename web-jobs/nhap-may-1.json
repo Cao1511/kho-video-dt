@@ -1,0 +1,87 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh.webp",
+   "filename": "may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy viền nắp lọ tự động ZS-YG100 – Đức Thành",
+    "title": "Máy viền nắp lọ tự động ZS-YG100"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy viền nắp lọ tự động ZS-YG100",
+    "slug": "may-vien-nap-lo-tu-dong",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy viền nắp lọ tự động ZS-YG100</h2>\n<p><strong>Máy viền nắp lọ tự động ZS-YG100</strong> là máy cấp nắp và viền (siết) <strong>nắp nhôm flip-off</strong> cho lọ thủy tinh, thường gặp ở lọ thuốc tiêm, lọ kháng sinh bột, lọ serum và tinh chất. Máy tự cấp lọ, tự cấp nắp, đặt nắp lên miệng lọ rồi dùng các đầu viền con lăn quay để ép mép nhôm ôm kín cổ lọ.</p>\n<p>Máy đạt năng suất <strong>10.000–13.000 chai/giờ</strong>, điều khiển bằng <strong>màn hình cảm ứng màu</strong>. Thiết kế gọn, liền khối, có thể chạy độc lập hoặc ghép sau máy chiết rót trong dây chuyền đóng lọ. Kích thước lọ và nắp được tùy chỉnh theo mẫu thực tế của khách hàng.</p>\n<h2>Ứng dụng của máy viền nắp lọ</h2>\n<ul>\n<li><strong>Dược phẩm:</strong> lọ thuốc tiêm, lọ kháng sinh dạng bột, lọ dung dịch dùng nắp nhôm flip-off.</li>\n<li><strong>Mỹ phẩm:</strong> lọ serum, tinh chất, ống chiết dạng lọ thủy tinh có nắp nhôm.</li>\n<li><strong>Thú y, phòng thí nghiệm:</strong> lọ vắc-xin, lọ hóa chất, lọ mẫu cần đóng kín bằng nắp nhôm.</li>\n<li><strong>Dây chuyền đóng lọ:</strong> đặt sau máy chiết rót để cấp nắp và viền nắp tự động.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tbody>\n<tr><th>Model</th><td>ZS-YG100</td></tr>\n<tr><th>Năng suất</th><td>10.000–13.000 chai/giờ</td></tr>\n<tr><th>Loại nắp</th><td>Nắp nhôm flip-off (nắp nhôm lật) cho lọ thủy tinh</td></tr>\n<tr><th>Kích thước lọ, nắp</th><td>Tùy chỉnh theo mẫu của khách hàng</td></tr>\n<tr><th>Cấp nắp</th><td>Phễu rung điện từ</td></tr>\n<tr><th>Điều khiển</th><td>Màn hình cảm ứng màu</td></tr>\n<tr><th>Nguồn điện</th><td>380V/50Hz (có tùy chọn 220V)</td></tr>\n<tr><th>Công suất</th><td>2 kW</td></tr>\n<tr><th>Kích thước máy (D × R × C)</th><td>Khoảng 2050 × 1595 × 1430 mm</td></tr>\n</tbody>\n</table>\n<h2>Cấu tạo máy viền nắp lọ ZS-YG100</h2>\n<ul>\n<li><strong>Mâm quay cấp lọ:</strong> nhận lọ, sắp xếp và đưa lọ vào đường dẫn một cách liên tục.</li>\n<li><strong>Phễu rung cấp nắp:</strong> phễu rung điện từ xếp nắp đúng chiều, đưa nắp êm và ổn định xuống vị trí đặt nắp.</li>\n<li><strong>Cụm đầu viền con lăn quay:</strong> các đầu viền quay tròn, ép mép nhôm ôm sát cổ lọ.</li>\n<li><strong>Đường ra lọ:</strong> máng dẫn lọ đã viền nắp ra ngoài để chuyển sang công đoạn tiếp theo.</li>\n<li><strong>Bảng điều khiển:</strong> màn hình cảm ứng màu, nút khởi động và dừng khẩn cấp.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Lọ được đưa vào mâm quay, cơ cấu định hướng sắp xếp lọ và đưa vào đường dẫn.</li>\n<li>Phễu rung cấp nắp nhôm đúng chiều, nắp được đặt lên miệng lọ.</li>\n<li>Lọ có nắp đi vào cụm đầu viền, con lăn quay ép mép nhôm ôm kín cổ lọ.</li>\n<li>Lọ đã viền nắp theo máng ra ngoài, chu trình lặp lại liên tục.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Năng suất cao, chạy liên tục</h3>\n<p>Kiểu cấp lọ bằng mâm quay và đầu viền dạng quay giúp máy chạy liên tục, đạt 10.000–13.000 chai/giờ, phù hợp xưởng sản xuất vừa và nhỏ.</p>\n<h3>Viền nắp chắc, đồng đều</h3>\n<p>Đầu viền con lăn quay ép mép nhôm đều quanh cổ lọ, cho mối viền chắc chắn và độ lặp lại cao giữa các lọ.</p>\n<h3>Cấp nắp êm, ít ồn</h3>\n<p>Phễu rung điện từ đưa nắp ổn định, giảm tiếng ồn và hạn chế kẹt nắp trong quá trình chạy.</p>\n<h3>Gọn, dễ ghép dây chuyền</h3>\n<p>Máy liền khối, có thể đặt độc lập hoặc nối sau máy chiết rót lọ để tự động hóa toàn bộ công đoạn đóng lọ.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Gửi mẫu lọ và nắp thực tế để Đức Thành cấu hình đúng kích thước trước khi giao máy.</li>\n<li>Dùng nắp nhôm cùng một loại, đúng kích thước; nắp méo hoặc lẫn loại dễ gây kẹt ở phễu rung.</li>\n<li>Kiểm tra lực viền trên vài lọ đầu ca trước khi chạy hàng loạt.</li>\n<li>Vệ sinh mâm quay, máng dẫn và đầu viền sau mỗi ca; kiểm tra nguồn điện đúng điện áp máy.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy viền nắp ZS-YG100 dùng cho loại nắp nào?</h3>\n<p>Máy dùng cho nắp nhôm flip-off (nắp nhôm có nút lật) trên lọ thủy tinh, loại nắp phổ biến ở lọ thuốc tiêm, lọ kháng sinh và lọ serum.</p>\n<h3>Máy có chạy được nhiều cỡ lọ không?</h3>\n<p>Kích thước lọ và nắp được tùy chỉnh theo mẫu của khách. Khi cần đổi sang cỡ khác, anh chị gửi mẫu để Đức Thành tư vấn phương án thay bộ phận phù hợp.</p>\n<h3>Máy có ghép được với máy chiết rót không?</h3>\n<p>Có. Máy có thể đặt sau máy chiết rót lọ để tạo thành dây chuyền chiết rót và viền nắp tự động.</p>\n<h3>Giá máy viền nắp lọ ZS-YG100 bao nhiêu?</h3>\n<p>Giá tùy cấu hình và kích thước lọ. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-duoc-my-pham/\">máy dược &amp; mỹ phẩm</a>, <a href=\"/may-chiet-rot-lien-tuc-zs-sv6x/\">máy chiết rót liên tục ZS-SV6X</a>, <a href=\"/may-dan-nhan-chai-lo-tu-dong/\">máy dán nhãn chai lọ tự động ZS-TB500</a>.</p>\n",
+    "short_description": "<ul class=\"dt-short\">\n<li>Năng suất <strong>10.000–13.000 chai/giờ</strong></li>\n<li>Viền (siết) <strong>nắp nhôm flip-off</strong> cho lọ thủy tinh</li>\n<li>Cấp nắp bằng <strong>phễu rung điện từ</strong>, cấp lọ bằng mâm quay</li>\n<li>Điều khiển <strong>màn hình cảm ứng màu</strong>, công suất 2 kW</li>\n<li>Kích thước lọ, nắp: <strong>tùy chỉnh theo mẫu</strong> của khách</li>\n</ul>\n",
+    "categories": [
+     {
+      "id": 27
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy viền nắp lọ tự động ZS-YG100 – viền nắp nhôm flip-off cho lọ thuốc tiêm, lọ kháng sinh, lọ serum với năng suất 10.000–13.000 chai/giờ.\n\nXưởng đóng lọ vẫn viền nắp nhôm bằng tay hoặc máy đơn? Máy viền nắp (máy siết nắp nhôm) ZS-YG100 tự cấp lọ, tự cấp nắp và viền kín cổ lọ, chạy liên tục cả ca.\n\n✅ Năng suất 10.000–13.000 chai/giờ\n✅ Viền nắp nhôm flip-off cho lọ thủy tinh\n✅ Cấp nắp bằng phễu rung điện từ, cấp lọ bằng mâm quay\n✅ Đầu viền con lăn quay, mối viền chắc và đồng đều\n✅ Màn hình cảm ứng màu, công suất 2 kW\n🎯 Phù hợp: dược phẩm, mỹ phẩm (serum, tinh chất), thú y, phòng thí nghiệm\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang dùng lọ cỡ bao nhiêu? Nhắn Fanpage để Đức Thành tư vấn cấu hình viền nắp phù hợp.\n\n#mayviennap #maysietnapnhom #mayduocpham #maymypham #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy viền nắp lọ tự động ZS-YG100 | Đức Thành",
+     "rank_math_description": "Máy viền nắp nhôm flip-off cho lọ thủy tinh, năng suất 10.000–13.000 chai/giờ, màn hình cảm ứng. Tư vấn, báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy viền nắp"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,images,meta_data",
+   "pick": [
+    "id",
+    "status"
+   ]
+  }
+ ]
+}
