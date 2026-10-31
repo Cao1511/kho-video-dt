@@ -1,0 +1,48 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "3",
+      "ok": true,
+      "row": 5,
+      "ghi": [
+       "Tên máy "
+      ]
+     },
+     {
+      "stt": "3",
+      "ok": true,
+      "row": 5,
+      "ghi": []
+     },
+     {
+      "stt": "3",
+      "ok": true,
+      "row": 5,
+      "ghi": []
+     },
+     {
+      "stt": "3",
+      "ok": true,
+      "row": 5,
+      "ghi": []
+     },
+     {
+      "stt": "3",
+      "ok": true,
+      "row": 5,
+      "ghi": []
+     }
+    ]
+   },
+   "step": 0
+  }
+ ],
+ "time": "2026-10-31 09:53:51"
+}
