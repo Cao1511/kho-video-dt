@@ -1,0 +1,49 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 355,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 355
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 356,
+    "slug": "may-vien-nap-lo-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=356"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 356,
+    "status": "draft"
+   },
+   "step": "kt"
+  }
+ ],
+ "time": "2026-10-31 09:12:22"
+}
