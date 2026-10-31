@@ -1,0 +1,153 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 357,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/10/may-dan-nhan-nap-va-chai-tron-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 357
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 358,
+    "slug": "may-dan-nhan-nap-va-chai-tron",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=358"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 358,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 5
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 358,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/",
+    "meta_data": [
+     {
+      "id": 1087,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1104,
+      "key": "dtfb_message",
+      "value": "Máy dán nhãn nắp và chai tròn ZS-TB822D – dán nhãn mặt nắp và quấn nhãn thân chai trong cùng một lượt chạy.\nThay vì dùng hai máy riêng, máy dán nhãn 2 đầu này giúp xưởng mỹ phẩm, thực phẩm dán nhãn hũ kem, lọ, chai tròn nhanh và đều tay hơn.\n\n✅ Năng suất 25–45 chai/phút (tùy cỡ chai)\n✅ Đường kính chai Φ25–100 mm\n✅ Độ chính xác dán ±1,0 mm\n✅ Nhãn dài 20–285 mm, cao 20–150 mm\n✅ Màn hình cảm ứng, mắt điện dò sản phẩm, băng tải xích\n✅ Hai đầu dán chạy cùng lúc hoặc độc lập\n🎯 Phù hợp: hũ kem, lọ mỹ phẩm, chai thực phẩm, hóa chất gia dụng, dược phẩm\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn cần dán nhãn nắp, thân hay cả hai? Nhắn tin cho Đức Thành để được tư vấn mẫu phù hợp.\n\n#maydannhan #maydannhannapvachaitron #maydannhanchaitron #maydongoi #ducthanh"
+     },
+     {
+      "id": 1105,
+      "key": "rank_math_title",
+      "value": "Máy dán nhãn nắp và chai tròn ZS-TB822D | Đức Thành"
+     },
+     {
+      "id": 1106,
+      "key": "rank_math_description",
+      "value": "Máy dán nhãn nắp và chai tròn ZS-TB822D: 2 đầu dán, 25–45 chai/phút, chai Φ25–100 mm, chính xác ±1 mm. Hotline 0974 708 603."
+     },
+     {
+      "id": 1107,
+      "key": "rank_math_focus_keyword",
+      "value": "máy dán nhãn nắp và chai tròn"
+     },
+     {
+      "id": 1108,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122131128813472642"
+     },
+     {
+      "id": 1109,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-10-31 16:44:46 (ID 1369168222940597_122131128813472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dan-nhan/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 7
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dan-nhan/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 8
+  }
+ ],
+ "time": "2026-10-31 09:45:41"
+}
