@@ -41,21 +41,29 @@ Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh 
 **Ảnh mẫu bắt buộc phải xem trước khi làm:** `_tools/mau-anh/mau-1-may-tron-ibc.png` (máy trộn thùng IBC 1500 lít).
 **Logo:** `_tools/mau-anh/logo-duc-thanh-lon.png` (dùng logo thật này, KHÔNG tự vẽ lại logo; không méo, không đổi màu).
 
-Bố cục (ảnh vuông 1254 × 1254 px hoặc lớn hơn cùng tỉ lệ 1:1):
-- **Nền:** trắng / xám rất nhạt, sạch, có bóng đổ nhẹ dưới chân máy.
-- **Góc trên trái:** logo Đức Thành (cao ~18–20% ảnh).
-- **Giữa:** máy chiếm phần lớn ảnh (~65–75% chiều cao phía trên dải xanh), nhìn chéo 3/4, nét, sáng, inox bóng. Tách nền sạch: không còn khung/viền xám của ảnh gốc, có bóng đổ mềm dưới chân máy.
-- **Góc trên phải (BẮT BUỘC có, như mẫu):** hình minh hoạ sản phẩm mà máy xử lý, chiếm ~20–25% bề ngang, không che máy (vd bát bột/hạt cho máy trộn, chai/lọ cho máy chiết rót, lọ có nắp nhôm cho máy viền nắp, túi gói cho máy đóng gói). Phải đúng công dụng trong link.
-- **Dải xanh dưới cùng (~22–25% chiều cao):**
-  - Nền xanh dương đậm (khoảng #0047AB → #005AC1), có vệt sáng/đường chéo xanh nhạt ở mép trên bên trái như mẫu.
-  - Bên trái: TÊN MÁY chữ IN HOA, trắng, đậm (font sans-serif đậm, có dấu tiếng Việt đúng), 2–3 dòng, vd "MÁY TRỘN / THÙNG IBC / 1500 LÍT". Lấy theo cột B của Sheet, thêm con số chính nếu có (dung tích, số vòi…). Ngắt dòng theo cụm nghĩa, mỗi dòng cân nhau (vd "MÁY VIỀN NẮP / TỰ ĐỘNG" hoặc "MÁY VIỀN / NẮP NHÔM"), KHÔNG để 1 chữ lẻ một dòng. Chữ cùng cỡ, to như mẫu. Model (vd ZS-YG100) bỏ ra, không ghi lên ảnh.
-  - Bên phải: 3 ô đặc điểm, mỗi ô = icon tròn viền trắng + 2 dòng chữ trắng ngắn (≤ 3–4 từ/dòng), ngăn bởi vạch dọc mảnh màu trắng mờ.
-- Toàn bộ chữ trên ảnh: tiếng Việt có dấu, đúng chính tả, không lỗi font. Kiểm tra từng chữ sau khi tạo (ảnh AI hay viết sai dấu) — sai thì sửa/ghép chữ lại bằng code (vd Pillow), không để chữ lỗi.
+### BẮT BUỘC dùng khuôn có sẵn `_tools/lam_anh_may.py` — KHÔNG tự vẽ dải xanh, logo, chữ, icon
 
-**Cách làm khuyến nghị để máy không bị vẽ sai:**
-1. Tách nền ảnh máy thật (rembg hoặc công cụ tương đương), đặt lên nền trắng, chỉnh sáng/độ nét.
-2. Có thể dùng AI để làm sạch, làm bóng, thêm bóng đổ, hình minh hoạ góc phải — nhưng KHÔNG thay đổi hình dáng, số vòi, số trục, bảng điều khiển, kết cấu của máy.
-3. Ghép logo, dải xanh, chữ và icon bằng code (Pillow/HTML render) để chữ chuẩn và logo đúng.
+Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo thật, font Inter có dấu, icon, bóng đổ). Codex chỉ chuẩn bị 2 ảnh + chữ rồi chạy lệnh. Không sửa file khuôn; thấy cần sửa thì báo người dùng.
+
+1. **Ảnh máy nền trong suốt** (`may.png`): lấy ảnh máy thật (ảnh người dùng đưa hoặc ảnh từ link), tách nền bằng rembg:
+   ```bash
+   pip install "rembg[cpu]" pillow
+   rembg i anh-goc.jpg may.png
+   ```
+   Mở `may.png` kiểm tra: máy đủ, không mất phần inox sáng (phễu, nắp, mép trên), không còn nền/viền xám, không còn logo/chữ nhà cung cấp. Thiếu thì thử ảnh gốc khác hoặc model `rembg i -m isnet-general-use`. KHÔNG dùng AI vẽ lại máy.
+2. **Ảnh minh hoạ góc phải** (`minh-hoa.png`, nên có): sản phẩm máy xử lý, nền trắng hoặc trong suốt, không chữ (vd 2 lọ nắp nhôm cho máy viền nắp, bát bột/hạt cho máy trộn, chai cho máy chiết rót, túi gói cho máy đóng gói). Được dùng AI tạo ảnh này.
+3. **Chữ:**
+   - `--ten`: tên máy IN HOA, 2–3 dòng ngăn bằng `|`, ngắt theo cụm nghĩa, không để 1 chữ lẻ một dòng, mỗi dòng ≤ 13 ký tự. Không ghi model. Vd `"MÁY VIỀN NẮP|TỰ ĐỘNG"`, `"MÁY TRỘN|THÙNG IBC|1500 LÍT"`.
+   - 3 lần `--o "icon:dòng 1|dòng 2"`, mỗi dòng ≤ 11 ký tự (dài quá chữ sẽ bị thu nhỏ). Vd `"toc-do:10–13 nghìn|chai/giờ"`, `"cong-suat:Công suất|2 kW"`, `"man-hinh:Màn hình|cảm ứng"`.
+   - Icon có sẵn: `toc-do` (tốc độ), `cong-suat` (điện/công suất), `man-hinh` (màn hình cảm ứng), `plc` (điều khiển PLC), `kg` (khối lượng), `the-tich` (dung tích/chất lỏng), `inox` (inox/an toàn), `thung` (thùng/hộp), `voi` (vòi chiết), `chai` (chai/lọ), `nhiet-do` (nhiệt), `tui` (túi gói).
+4. **Chạy:**
+   ```bash
+   python _tools/lam_anh_may.py --may may.png --minh-hoa minh-hoa.png --out anh/<STT>/1.png \
+     --ten "MÁY VIỀN NẮP|TỰ ĐỘNG" \
+     --o "toc-do:10–13 nghìn|chai/giờ" --o "cong-suat:Công suất|2 kW" --o "man-hinh:Màn hình|cảm ứng"
+   ```
+   Không để file `may.png`, `minh-hoa.png` trong kho (để ở thư mục tạm ngoài kho).
+5. Mở `anh/<STT>/1.png` kiểm tra: máy không bị cắt, không đè logo, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
 
 **Không được:**
 - Vẽ thêm chi tiết máy không có thật, đổi kết cấu máy.
