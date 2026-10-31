@@ -1,0 +1,32 @@
+name: Dang web mayducthanh.vn
+on:
+  push:
+    branches: [video]
+    paths: ['web-jobs/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: dang-web
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: video
+      - name: Chay lenh dang web
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: python3 _tools/web_runner.py
+      - name: Luu ket qua
+        run: |
+          git config user.name "dang-web-bot"
+          git config user.email "dang-web-bot@users.noreply.github.com"
+          git add -A web-jobs web-results
+          git diff --cached --quiet && exit 0
+          git commit -m "Ket qua dang web"
+          for i in 1 2 3; do git pull --rebase origin video && git push origin HEAD:video && break; sleep 3; done
