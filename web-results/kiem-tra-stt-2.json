@@ -1,0 +1,221 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "trung"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    },
+    {
+     "id": 272,
+     "name": "Máy chiết rót 4 vòi tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    },
+    {
+     "id": 235,
+     "name": "Máy đóng gói chất lỏng định lượng piston",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/"
+    }
+   ],
+   "step": "trung2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 24,
+     "name": "Máy chiết rót",
+     "slug": "may-chiet-rot",
+     "count": 2
+    },
+    {
+     "id": 25,
+     "name": "Máy chiết rót chất lỏng",
+     "slug": "may-chiet-rot-chat-long",
+     "count": 2
+    },
+    {
+     "id": 26,
+     "name": "Máy chiết rót dịch sệt, kem",
+     "slug": "may-chiet-rot-dich-set-kem",
+     "count": 0
+    },
+    {
+     "id": 30,
+     "name": "Máy dán nhãn",
+     "slug": "may-dan-nhan",
+     "count": 2
+    },
+    {
+     "id": 20,
+     "name": "Máy đóng gói",
+     "slug": "may-dong-goi",
+     "count": 2
+    },
+    {
+     "id": 21,
+     "name": "Máy đóng gói dạng bột",
+     "slug": "may-dong-goi-dang-bot",
+     "count": 1
+    },
+    {
+     "id": 22,
+     "name": "Máy đóng gói dạng hạt",
+     "slug": "may-dong-goi-dang-hat",
+     "count": 0
+    },
+    {
+     "id": 23,
+     "name": "Máy đóng gói dạng lỏng, dịch sệt",
+     "slug": "may-dong-goi-dang-long-dich-set",
+     "count": 1
+    },
+    {
+     "id": 27,
+     "name": "Máy dược &amp; mỹ phẩm",
+     "slug": "may-duoc-my-pham",
+     "count": 5
+    },
+    {
+     "id": 31,
+     "name": "Máy in date",
+     "slug": "may-in-date",
+     "count": 0
+    },
+    {
+     "id": 32,
+     "name": "Máy seal màng",
+     "slug": "may-seal-mang",
+     "count": 0
+    },
+    {
+     "id": 28,
+     "name": "Máy trộn nguyên liệu",
+     "slug": "may-tron-nguyen-lieu",
+     "count": 2
+    },
+    {
+     "id": 33,
+     "name": "Máy viền mí lon",
+     "slug": "may-vien-mi-lon",
+     "count": 0
+    },
+    {
+     "id": 29,
+     "name": "Thiết bị phụ trợ",
+     "slug": "thiet-bi-phu-tro",
+     "count": 3
+    },
+    {
+     "id": 16,
+     "name": "Uncategorized",
+     "slug": "uncategorized",
+     "count": 0
+    }
+   ],
+   "step": "dm"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 324,
+     "name": "Máy đóng gói túi zip có sẵn nằm ngang",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tui-zip-nam-ngang/"
+    },
+    {
+     "id": 321,
+     "name": "Máy trộn thùng IBC 1500 lít",
+     "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    },
+    {
+     "id": 272,
+     "name": "Máy chiết rót 4 vòi tự động",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    },
+    {
+     "id": 235,
+     "name": "Máy đóng gói chất lỏng định lượng piston",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/"
+    }
+   ],
+   "step": "sp"
+  }
+ ],
+ "time": "2026-10-31 09:43:26"
+}
