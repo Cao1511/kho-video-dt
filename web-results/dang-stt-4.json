@@ -1,0 +1,153 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 361,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 361
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 362,
+    "slug": "may-dong-goi-vi-nhom-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=362"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 362,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 5
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 362,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/",
+    "meta_data": [
+     {
+      "id": 1139,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1156,
+      "key": "dtfb_message",
+      "value": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H – đóng gói vỉ dải hai mặt nhôm cho kẹo viên và thực phẩm dạng viên nhỏ.\nĐóng gói tay chậm, mối hàn không đều? Máy đóng gói vỉ nhôm (máy ép vỉ strip) làm trọn cấp liệu, hàn, tạo đường xé và cắt vỉ tự động.\n\n✅ Năng suất đến 400 sản phẩm/phút\n✅ Tần suất dập 10–40 lần/phút\n✅ Khổ màng tối đa 160 mm, cuộn Φ300 mm\n✅ Công suất 2,75 kW, điện 380V, khí nén 0,6 MPa\n✅ PLC màn hình cảm ứng, kéo màng servo, vỏ inox\n🎯 Phù hợp: xưởng kẹo, thực phẩm dạng viên, miếng nhỏ\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn kích thước bao nhiêu, cần vỉ mấy viên? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maydonggoivinhom #maydonggoivi #maydonggoi #ducthanh"
+     },
+     {
+      "id": 1157,
+      "key": "rank_math_title",
+      "value": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H | Đức Thành"
+     },
+     {
+      "id": 1158,
+      "key": "rank_math_description",
+      "value": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H năng suất ≤400 SP/phút, khổ màng 160 mm, 2,75 kW, PLC cảm ứng. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1159,
+      "key": "rank_math_focus_keyword",
+      "value": "máy đóng gói vỉ nhôm"
+     },
+     {
+      "id": 1160,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122131408143472642"
+     },
+     {
+      "id": 1161,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-01 16:55:12 (ID 1369168222940597_122131408143472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dong-goi/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 7
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dong-goi/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 8
+  }
+ ],
+ "time": "2026-11-01 09:56:04"
+}
