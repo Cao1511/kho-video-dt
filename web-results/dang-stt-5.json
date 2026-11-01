@@ -1,0 +1,153 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 363,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-cap-lieu-chan-khong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 363
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 364,
+    "slug": "may-cap-lieu-chan-khong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=364"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 364,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-cap-lieu-chan-khong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 5
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 364,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-cap-lieu-chan-khong/",
+    "meta_data": [
+     {
+      "id": 1165,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1182,
+      "key": "dtfb_message",
+      "value": "Máy cấp liệu chân không ZKS-3 – hút và đưa bột, hạt lên phễu máy đóng gói, máy trộn qua đường ống kín.\nĐổ liệu thủ công vừa mệt vừa bụi? Máy hút liệu chân không (máy nạp liệu chân không) cấp liệu liên tục, sạch, gọn cho xưởng sản xuất.\n\n✅ Năng suất 1200 kg/h\n✅ Công suất 3 kW\n✅ Bồn inox Ф290×950 mm\n✅ Vận chuyển kín, hạn chế bụi\n✅ Chiều dài ống tùy chỉnh theo xưởng\n🎯 Phù hợp: xưởng thực phẩm, dược phẩm, hạt nhựa, bột và hạt các loại\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang cần cấp loại nguyên liệu gì, cao bao nhiêu mét? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maycaplieuchankhong #mayhutlieu #thietbiphutro #ducthanh"
+     },
+     {
+      "id": 1183,
+      "key": "rank_math_title",
+      "value": "Máy cấp liệu chân không ZKS-3 | Đức Thành"
+     },
+     {
+      "id": 1184,
+      "key": "rank_math_description",
+      "value": "Máy cấp liệu chân không ZKS-3 năng suất 1200 kg/h, 3 kW, bồn inox, hút bột và hạt qua ống kín. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1185,
+      "key": "rank_math_focus_keyword",
+      "value": "máy cấp liệu chân không"
+     },
+     {
+      "id": 1186,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122131457169472642"
+     },
+     {
+      "id": 1187,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-01 19:52:33 (ID 1369168222940597_122131457169472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-cap-lieu-chan-khong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/thiet-bi-phu-tro/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 7
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-cap-lieu-chan-khong/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/thiet-bi-phu-tro/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 8
+  }
+ ],
+ "time": "2026-11-01 12:54:06"
+}
