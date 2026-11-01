@@ -1,0 +1,119 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-cap-lieu-chan-khong-duc-thanh.webp",
+   "filename": "may-cap-lieu-chan-khong-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy cấp liệu chân không ZKS-3 – Đức Thành",
+    "title": "Máy cấp liệu chân không ZKS-3"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy cấp liệu chân không ZKS-3",
+    "slug": "may-cap-lieu-chan-khong",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu Máy cấp liệu chân không ZKS-3</h2>\n<p><strong>Máy cấp liệu chân không ZKS-3</strong> (còn gọi là máy hút liệu chân không, máy nạp liệu chân không) dùng lực hút chân không để đưa nguyên liệu dạng <strong>bột và hạt</strong> từ thùng chứa lên phễu máy đóng gói, máy trộn hoặc các thiết bị khác qua đường ống kín.</p>\n<p>Máy đạt năng suất <strong>1200 kg/h</strong>, công suất <strong>3 kW</strong>, bồn chứa bằng inox kích thước <strong>Ф290×950 mm</strong>. Vận chuyển kín giúp hạn chế bụi bay, giảm nhiễm bẩn nguyên liệu và giảm công bê vác thủ công. Chiều dài đường ống có thể tùy chỉnh theo bố trí nhà xưởng.</p>\n<h2>Ứng dụng</h2>\n<ul>\n<li>Cấp liệu cho phễu máy đóng gói bột, máy đóng gói hạt.</li>\n<li>Nạp nguyên liệu vào máy trộn, máy khuấy, máy tạo hạt.</li>\n<li>Cấp hạt nhựa cho máy ép phun, cấp liệu cho máy nghiền.</li>\n<li>Nhà máy dược phẩm, thực phẩm hướng tới tiêu chuẩn GMP và sản xuất sạch.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tr><th>Model</th><td>ZKS-3</td></tr>\n<tr><th>Năng suất cấp liệu</th><td>1200 kg/h</td></tr>\n<tr><th>Công suất</th><td>3 kW</td></tr>\n<tr><th>Kích thước bồn</th><td>Ф290×950 mm</td></tr>\n<tr><th>Nguyên liệu phù hợp</th><td>Bột và hạt</td></tr>\n<tr><th>Vật liệu</th><td>Thân inox</td></tr>\n<tr><th>Kiểu vận chuyển</th><td>Hút chân không, đường ống kín</td></tr>\n</table>\n<h2>Cấu tạo</h2>\n<ul>\n<li>Bồn chứa – tách liệu bằng inox, ghép bằng vòng kẹp, dễ tháo vệ sinh.</li>\n<li>Cụm van và đường khí trên nắp bồn.</li>\n<li>Cửa hút liệu nối với ống dẫn từ thùng chứa nguyên liệu.</li>\n<li>Tủ điện có bộ hiển thị và nút điều khiển, đặt trên khung có bánh xe di chuyển.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Máy tạo chân không trong bồn và đường ống.</li>\n<li>Chênh lệch áp suất giữa trong ống và không khí bên ngoài tạo dòng khí chạy qua ống.</li>\n<li>Dòng khí cuốn theo bột, hạt từ thùng chứa vào bồn.</li>\n<li>Nguyên liệu được xả xuống phễu của thiết bị phía dưới, chu trình lặp lại liên tục.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Vận chuyển kín, sạch</h3>\n<p>Nguyên liệu đi trong đường ống kín, hạn chế bụi ra môi trường và nhiễm bẩn sản phẩm.</p>\n<h3>Năng suất 1200 kg/h</h3>\n<p>Đáp ứng cấp liệu liên tục cho dây chuyền đóng gói, trộn nguyên liệu.</p>\n<h3>Gọn, dễ bố trí</h3>\n<p>Chiếm ít diện tích, phù hợp xưởng có mặt bằng hẹp; chiều dài ống tùy chỉnh.</p>\n<h3>Giảm sức lao động</h3>\n<p>Không cần bê vác, đổ liệu thủ công lên phễu cao.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Cấp nguồn điện đúng thông số, nối đất an toàn cho tủ điện.</li>\n<li>Kiểm tra độ kín các vòng kẹp và mối nối ống trước khi chạy.</li>\n<li>Vệ sinh bồn và bộ lọc định kỳ, đặc biệt khi đổi loại nguyên liệu.</li>\n<li>Nguyên liệu ẩm, vón cục cần tư vấn trước để chọn cấu hình phù hợp.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy cấp liệu chân không ZKS-3 hút được bao nhiêu kg mỗi giờ?</h3>\n<p>Năng suất cấp liệu của model ZKS-3 là 1200 kg/h.</p>\n<h3>Máy dùng cho loại nguyên liệu nào?</h3>\n<p>Phù hợp nguyên liệu dạng bột và dạng hạt như bột thực phẩm, bột dược, hạt ngũ cốc, hạt nhựa.</p>\n<h3>Có lắp được với máy đóng gói, máy trộn đang có không?</h3>\n<p>Được. Máy xả liệu trực tiếp xuống phễu của máy đóng gói, máy trộn hoặc máy ép phun.</p>\n<h3>Giá Máy cấp liệu chân không ZKS-3 bao nhiêu?</h3>\n<p>Giá phụ thuộc cấu hình và chiều dài đường ống. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi thông tin qua <a href=\"/lien-he/\">trang liên hệ</a> để được báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> – tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <strong>0974 708 603 – 0989 139 855</strong>.</p>\n<p>Xem thêm: <a href=\"/thiet-bi-phu-tro/\">Thiết bị phụ trợ</a>, <a href=\"/may-dong-goi-dang-bot/\">Máy đóng gói dạng bột</a>, <a href=\"https://mayducthanh.vn/may-tron-lap-phuong/\">Máy trộn lập phương inox 304</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Năng suất cấp liệu <strong>1200 kg/h</strong></li>\n<li>Công suất <strong>3 kW</strong>, dẫn động điện</li>\n<li>Kích thước bồn <strong>Ф290×950 mm</strong>, thân inox</li>\n<li>Hút và vận chuyển <strong>bột, hạt</strong> trong đường ống kín, hạn chế bụi</li>\n<li>Chiều dài đường ống có thể tùy chỉnh theo mặt bằng xưởng</li>\n</ul>",
+    "categories": [
+     {
+      "id": 29
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy cấp liệu chân không ZKS-3 – hút và đưa bột, hạt lên phễu máy đóng gói, máy trộn qua đường ống kín.\nĐổ liệu thủ công vừa mệt vừa bụi? Máy hút liệu chân không (máy nạp liệu chân không) cấp liệu liên tục, sạch, gọn cho xưởng sản xuất.\n\n✅ Năng suất 1200 kg/h\n✅ Công suất 3 kW\n✅ Bồn inox Ф290×950 mm\n✅ Vận chuyển kín, hạn chế bụi\n✅ Chiều dài ống tùy chỉnh theo xưởng\n🎯 Phù hợp: xưởng thực phẩm, dược phẩm, hạt nhựa, bột và hạt các loại\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang cần cấp loại nguyên liệu gì, cao bao nhiêu mét? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maycaplieuchankhong #mayhutlieu #thietbiphutro #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy cấp liệu chân không ZKS-3 | Đức Thành",
+     "rank_math_description": "Máy cấp liệu chân không ZKS-3 năng suất 1200 kg/h, 3 kW, bồn inox, hút bột và hạt qua ống kín. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy cấp liệu chân không"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/thiet-bi-phu-tro/"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/thiet-bi-phu-tro/"
+   ]
+  }
+ ]
+}
