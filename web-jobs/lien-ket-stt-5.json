@@ -1,4 +1,0 @@
-{"steps":[
-{"id":"dm","method":"GET","path":"/wc/v3/products/categories?per_page=50&_fields=id,name,slug,count","pick":["id","name","slug","count"]},
-{"id":"sp","method":"GET","path":"/wc/v3/products?per_page=40&status=publish&category=29,21,22,28&_fields=id,name,permalink","pick":["id","name","permalink"]}
-]}
