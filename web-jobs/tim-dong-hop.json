@@ -1,4 +1,0 @@
-{"steps":[
- {"id":"a","method":"GET","path":"/wc/v3/products?search=%C4%91%C3%B3ng%20h%E1%BB%99p&status=any&per_page=20&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
- {"id":"b","method":"GET","path":"/wc/v3/products?search=h%E1%BB%99p&status=any&per_page=20&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]}
-]}
