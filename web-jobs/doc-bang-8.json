@@ -1,0 +1,6 @@
+{"steps":[{"sheet":true},
+{"id":"tim","method":"GET","path":"/wc/v3/products?search=cấp liệu&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
+{"id":"tim2","method":"GET","path":"/wc/v3/products?search=ZKS&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
+{"id":"dm","method":"GET","path":"/wc/v3/products/categories?per_page=50&_fields=id,name,slug,count","pick":["id","name","slug","count"]},
+{"id":"sp","method":"GET","path":"/wc/v3/products?per_page=30&status=publish&_fields=id,name,permalink,categories","pick":["id","name","permalink"]}
+]}
