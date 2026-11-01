@@ -1,0 +1,122 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-dong-goi-vi-nhom-tu-dong-duc-thanh.webp",
+   "filename": "may-dong-goi-vi-nhom-tu-dong-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H – Đức Thành",
+    "title": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H",
+    "slug": "may-dong-goi-vi-nhom-tu-dong",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu Máy đóng gói vỉ nhôm tự động ZS-DPP180H</h2>\n<p><strong>Máy đóng gói vỉ nhôm tự động ZS-DPP180H</strong> là máy đóng gói dạng vỉ dải (strip) hai mặt nhôm, dùng để đóng gói kẹo và các sản phẩm thực phẩm dạng viên nhỏ. Máy đạt năng suất <strong>tối đa 400 sản phẩm/phút</strong>, phù hợp xưởng sản xuất cần đóng gói kín, đẹp và đồng đều.</p>\n<p>Máy gom đủ các công đoạn <strong>cấp liệu rung – xếp hàng – tạo đường xé – cắt – kéo màng – chuyển thành phẩm</strong> trên một thân máy gọn. Điều khiển bằng <strong>PLC màn hình cảm ứng</strong>, có điều chỉnh nhiệt độ hàn và kéo màng bằng động cơ servo giúp vị trí sản phẩm, đường xé và đường cắt chính xác.</p>\n<h2>Ứng dụng</h2>\n<ul>\n<li>Đóng gói vỉ nhôm cho kẹo viên.</li>\n<li>Đóng gói các sản phẩm thực phẩm dạng viên, dạng miếng nhỏ khác.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tr><th>Model</th><td>ZS-DPP180H</td></tr>\n<tr><th>Năng suất</th><td>≤ 400 sản phẩm/phút</td></tr>\n<tr><th>Tần suất dập</th><td>10–40 lần/phút</td></tr>\n<tr><th>Khổ vật liệu đóng gói tối đa</th><td>160 mm</td></tr>\n<tr><th>Đường kính cuộn vật liệu</th><td>300 mm</td></tr>\n<tr><th>Khí nén</th><td>0,6 MPa</td></tr>\n<tr><th>Điện áp</th><td>380V</td></tr>\n<tr><th>Tổng công suất</th><td>2,75 kW</td></tr>\n<tr><th>Kích thước máy</th><td>1300 × 700 × 1800 mm</td></tr>\n<tr><th>Kích thước thùng đóng gói</th><td>1450 × 880 × 1800 mm</td></tr>\n<tr><th>Trọng lượng máy</th><td>700 kg</td></tr>\n</table>\n<h2>Cấu tạo</h2>\n<ul>\n<li>Phễu chứa và bộ cấp liệu rung.</li>\n<li>Cơ cấu xếp sản phẩm thẳng hàng theo cả hàng.</li>\n<li>Bộ hàn nhiệt có điều chỉnh nhiệt độ, cụm tạo đường xé và dao cắt.</li>\n<li>Cơ cấu kéo màng dẫn động bằng servo.</li>\n<li>Băng tải ra thành phẩm.</li>\n<li>Tủ điều khiển PLC màn hình cảm ứng, vỏ máy inox.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Sản phẩm từ phễu được cấp liệu rung đưa xuống đường dẫn.</li>\n<li>Sản phẩm được xếp thẳng hàng theo cả hàng trước khi vào vị trí hàn.</li>\n<li>Hai lớp màng nhôm được hàn kín bao lấy sản phẩm, đồng thời tạo đường xé.</li>\n<li>Cơ cấu servo kéo dải vỉ đi đúng bước, dao cắt cắt vỉ theo kích thước cài đặt.</li>\n<li>Vỉ thành phẩm theo băng tải ra ngoài.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Năng suất cao</h3>\n<p>Năng suất tới 400 sản phẩm/phút, tần suất dập điều chỉnh 10–40 lần/phút theo yêu cầu sản xuất.</p>\n<h3>Vị trí, đường xé và đường cắt chính xác</h3>\n<p>Kéo màng bằng servo giúp sản phẩm nằm đúng vị trí trong vỉ, đường xé và đường cắt đều.</p>\n<h3>Dễ vận hành</h3>\n<p>PLC màn hình cảm ứng, điều chỉnh nhiệt độ hàn trực tiếp trên máy.</p>\n<h3>Gọn, bền, vệ sinh</h3>\n<p>Thiết kế nhỏ gọn, vỏ inox. Có thể chọn thêm bộ in date và phát hiện lỗi.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Cấp khí nén ổn định 0,6 MPa và nguồn điện 380V đúng thông số.</li>\n<li>Dùng cuộn vật liệu khổ không quá 160 mm, đường kính cuộn không quá 300 mm.</li>\n<li>Chỉnh nhiệt độ hàn phù hợp loại màng nhôm để mối hàn kín, không cháy màng.</li>\n<li>Vệ sinh phễu, đường dẫn và dao cắt định kỳ.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy đóng gói vỉ nhôm ZS-DPP180H chạy được bao nhiêu sản phẩm mỗi phút?</h3>\n<p>Tối đa 400 sản phẩm/phút, tần suất dập 10–40 lần/phút.</p>\n<h3>Máy dùng khổ màng bao nhiêu?</h3>\n<p>Khổ vật liệu đóng gói tối đa 160 mm, đường kính cuộn 300 mm.</p>\n<h3>Máy có in date được không?</h3>\n<p>Có thể chọn thêm bộ in date và bộ phát hiện lỗi.</p>\n<h3>Giá Máy đóng gói vỉ nhôm tự động ZS-DPP180H bao nhiêu?</h3>\n<p>Giá phụ thuộc cấu hình và yêu cầu sản phẩm. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi thông tin qua <a href=\"/lien-he/\">trang liên hệ</a> để được báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> – tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <strong>0974 708 603 – 0989 139 855</strong>.</p>\n<p>Xem thêm: <a href=\"/may-dong-goi/\">Máy đóng gói</a>, <a href=\"https://mayducthanh.vn/may-dong-goi-tui-zip-nam-ngang/\">Máy đóng gói túi zip có sẵn nằm ngang</a>, <a href=\"https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/\">Máy đóng gói chất lỏng định lượng piston</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Năng suất <strong>≤ 400 sản phẩm/phút</strong>, tần suất dập <strong>10–40 lần/phút</strong></li>\n<li>Khổ vật liệu đóng gói tối đa <strong>160 mm</strong>, đường kính cuộn <strong>300 mm</strong></li>\n<li>Tổng công suất <strong>2,75 kW</strong>, điện <strong>380V</strong>, khí nén <strong>0,6 MPa</strong></li>\n<li>Điều khiển PLC màn hình cảm ứng, kéo màng bằng servo, vỏ inox</li>\n<li>Tích hợp cấp liệu rung, xếp hàng, tạo đường xé, cắt và băng tải thành phẩm</li>\n</ul>",
+    "categories": [
+     {
+      "id": 20
+     },
+     {
+      "id": 22
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H – đóng gói vỉ dải hai mặt nhôm cho kẹo viên và thực phẩm dạng viên nhỏ.\nĐóng gói tay chậm, mối hàn không đều? Máy đóng gói vỉ nhôm (máy ép vỉ strip) làm trọn cấp liệu, hàn, tạo đường xé và cắt vỉ tự động.\n\n✅ Năng suất đến 400 sản phẩm/phút\n✅ Tần suất dập 10–40 lần/phút\n✅ Khổ màng tối đa 160 mm, cuộn Φ300 mm\n✅ Công suất 2,75 kW, điện 380V, khí nén 0,6 MPa\n✅ PLC màn hình cảm ứng, kéo màng servo, vỏ inox\n🎯 Phù hợp: xưởng kẹo, thực phẩm dạng viên, miếng nhỏ\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn kích thước bao nhiêu, cần vỉ mấy viên? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maydonggoivinhom #maydonggoivi #maydonggoi #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H | Đức Thành",
+     "rank_math_description": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H năng suất ≤400 SP/phút, khổ màng 160 mm, 2,75 kW, PLC cảm ứng. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy đóng gói vỉ nhôm"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-dong-goi/"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-dong-goi/"
+   ]
+  }
+ ]
+}
