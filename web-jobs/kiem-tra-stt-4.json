@@ -1,6 +1,0 @@
-{"steps":[
-{"id":"a","method":"GET","path":"/wc/v3/products?search=DPP180H&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"b","method":"GET","path":"/wc/v3/products?search=v%E1%BB%89&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"c","method":"GET","path":"/wc/v3/products?status=publish&per_page=30&_fields=id,name,permalink,categories","pick":["id","name","permalink"]},
-{"id":"d","method":"GET","path":"/wc/v3/products/categories?per_page=50&_fields=id,name,slug,count","pick":["id","name","slug","count"]}
-]}
