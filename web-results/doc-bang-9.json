@@ -1,0 +1,36 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script>\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }())\n  </script>\n  <link rel=\"icon\"",
+   "step": "tim"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script>\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }())\n  </script>\n  <link rel=\"icon\"",
+   "step": "tim2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script>\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }())\n  </script>\n  <link rel=\"icon\"",
+   "step": "tim3"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script>\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }())\n  </script>\n  <link rel=\"icon\"",
+   "step": "dm"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script>\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }())\n  </script>\n  <link rel=\"icon\"",
+   "step": "sp"
+  }
+ ],
+ "time": "2026-11-01 12:42:55"
+}
