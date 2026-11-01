@@ -1,4 +1,0 @@
-{"steps":[{"wait":45},
-{"id":"tim","method":"GET","path":"/wc/v3/products?search=ZKS&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"tim3","method":"GET","path":"/wc/v3/products?search=ch%C3%A2n%20kh%C3%B4ng&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]}
-]}

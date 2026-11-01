@@ -1,0 +1,77 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "wait": 45,
+   "step": 0
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "tim"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 324,
+     "name": "Máy đóng gói túi zip có sẵn nằm ngang",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tui-zip-nam-ngang/"
+    },
+    {
+     "id": 321,
+     "name": "Máy trộn thùng IBC 1500 lít",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    },
+    {
+     "id": 272,
+     "name": "Máy chiết rót 4 vòi tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    }
+   ],
+   "step": "tim3"
+  }
+ ],
+ "time": "2026-11-01 12:44:22"
+}
