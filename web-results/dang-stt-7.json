@@ -1,0 +1,153 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 367,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 367
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 368,
+    "slug": "may-suc-rua-lo-bang-khi",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=368"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 368,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 5
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 368,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/",
+    "meta_data": [
+     {
+      "id": 1217,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1234,
+      "key": "dtfb_message",
+      "value": "Máy súc rửa lọ bằng khí tự động ZS-WB48 – thổi sạch bụi bẩn trong và ngoài lọ thủy tinh trước khi chiết rót.\nRửa chai lọ thủ công chậm, dễ sót bụi, khó đáp ứng dây chuyền tốc độ cao? Máy rửa chai bằng khí (máy thổi khí làm sạch lọ vial) ZS-WB48 lật úp chai và thổi khí nén, làm sạch lòng chai không để lại cặn.\n\n✅ Năng suất 12.000–13.000 chai/giờ\n✅ 48 vòi thổi khí trên mâm quay\n✅ Áp suất khí rửa 0,8–1 MPa\n✅ Công suất 3 kW, điều khiển màn hình cảm ứng\n✅ Cấp chai bằng vít định vị, hạn chế kẹt chai\n🎯 Phù hợp: xưởng dược phẩm, mỹ phẩm, thực phẩm, dây chuyền chiết rót tự động\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang dùng loại lọ nào, cần rửa bao nhiêu chai mỗi giờ? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maysucrualo #mayruachai #mayduocpham #ducthanh"
+     },
+     {
+      "id": 1235,
+      "key": "rank_math_title",
+      "value": "Máy súc rửa lọ bằng khí ZS-WB48 | Đức Thành"
+     },
+     {
+      "id": 1236,
+      "key": "rank_math_description",
+      "value": "Máy súc rửa lọ bằng khí tự động ZS-WB48: 48 vòi, 12.000–13.000 chai/giờ, khí 0,8–1 MPa, 3 kW. Tư vấn, báo giá: 0974 708 603."
+     },
+     {
+      "id": 1237,
+      "key": "rank_math_focus_keyword",
+      "value": "máy súc rửa lọ"
+     },
+     {
+      "id": 1238,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122131647435472642"
+     },
+     {
+      "id": 1239,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-02 10:46:16 (ID 1369168222940597_122131647435472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 7
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 8
+  }
+ ],
+ "time": "2026-11-02 03:47:27"
+}
