@@ -1,0 +1,153 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 365,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-tao-hat-tang-soi-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 365
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 366,
+    "slug": "may-tao-hat-tang-soi",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=366"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 366,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 5
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 366,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/",
+    "meta_data": [
+     {
+      "id": 1191,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1208,
+      "key": "dtfb_message",
+      "value": "Máy tạo hạt tầng sôi FL-120 – trộn, tạo hạt và sấy khô bột nguyên liệu trong cùng một máy.\nTạo hạt thủ công lâu, hạt không đều, sấy mất nhiều công đoạn? Máy sấy tạo hạt tầng sôi (máy tạo hạt một bước) giúp ra hạt đều, xốp, khô nhanh chỉ trong một mẻ.\n\n✅ Buồng chứa 420 L, mẻ 80–160 kg\n✅ Công suất quạt 18,5 kW\n✅ Nhiệt độ làm việc đến 120°C\n✅ Thời gian mẻ khoảng 15–30 phút\n✅ Thu hồi nguyên liệu trên 99%\n🎯 Phù hợp: xưởng dược phẩm, thực phẩm chức năng, cà phê hòa tan, bột đồ uống\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang cần tạo hạt cho loại bột nào, mỗi mẻ bao nhiêu kg? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maytaohattangsoi #maysaytaohat #mayduocpham #ducthanh"
+     },
+     {
+      "id": 1209,
+      "key": "rank_math_title",
+      "value": "Máy tạo hạt tầng sôi FL-120 | Đức Thành"
+     },
+     {
+      "id": 1210,
+      "key": "rank_math_description",
+      "value": "Máy tạo hạt tầng sôi FL-120: trộn, tạo hạt, sấy trong một máy, mẻ 80–160 kg, quạt 18,5 kW, thu hồi trên 99%. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1211,
+      "key": "rank_math_focus_keyword",
+      "value": "máy tạo hạt tầng sôi"
+     },
+     {
+      "id": 1212,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122131597473472642"
+     },
+     {
+      "id": 1213,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-02 07:55:13 (ID 1369168222940597_122131597473472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-tao-hat-tang-soi/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 7
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-tao-hat-tang-soi/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 8
+  }
+ ],
+ "time": "2026-11-02 00:56:03"
+}
