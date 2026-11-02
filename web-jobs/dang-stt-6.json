@@ -1,0 +1,122 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-tao-hat-tang-soi-duc-thanh.webp",
+   "filename": "may-tao-hat-tang-soi-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy tạo hạt tầng sôi FL-120 – Đức Thành",
+    "title": "Máy tạo hạt tầng sôi FL-120"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy tạo hạt tầng sôi FL-120",
+    "slug": "may-tao-hat-tang-soi",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy tạo hạt tầng sôi FL-120</h2>\n<p><strong>Máy tạo hạt tầng sôi FL-120</strong> (còn gọi là máy sấy tạo hạt tầng sôi, máy tạo hạt một bước) kết hợp <strong>trộn, tạo hạt và sấy khô trong cùng một thiết bị</strong>. Bột nguyên liệu được thổi sôi bằng luồng khí nóng sạch, dung dịch tá dược dính được phun sương để kết dính bột thành hạt, đồng thời hơi ẩm được sấy và hút ra ngoài liên tục.</p>\n<p>Model FL-120 có buồng chứa <strong>420 lít</strong>, xử lý <strong>80–160 kg mỗi mẻ</strong>, quạt <strong>18,5 kW</strong>, tỷ lệ thu hồi nguyên liệu <strong>trên 99%</strong>. Máy phù hợp xưởng dược phẩm, thực phẩm chức năng, thực phẩm cần tạo hạt đều, xốp, dễ hòa tan.</p>\n<h2>Ứng dụng</h2>\n<ul>\n<li>Dược phẩm: tạo hạt để dập viên, đóng nang, cốm pha uống.</li>\n<li>Thực phẩm: cà phê hòa tan, bột đồ uống, bột sữa, đường, hương liệu.</li>\n<li>Sấy khô bột, hạt ẩm sau công đoạn tạo hạt ướt.</li>\n<li>Bao phủ (coating) hạt theo yêu cầu công nghệ.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tr><th>Model</th><td>FL-120</td></tr>\n<tr><th>Đường kính buồng chứa</th><td>1200 mm</td></tr>\n<tr><th>Thể tích buồng chứa</th><td>420 L</td></tr>\n<tr><th>Khối lượng mỗi mẻ</th><td>80–160 kg</td></tr>\n<tr><th>Công suất quạt</th><td>18,5 kW</td></tr>\n<tr><th>Áp suất hơi</th><td>0,1–0,4 MPa</td></tr>\n<tr><th>Tiêu hao hơi</th><td>211 kg</td></tr>\n<tr><th>Khí nén</th><td>1 m³/phút</td></tr>\n<tr><th>Nhiệt độ làm việc</th><td>Đến 120°C, điều chỉnh được</td></tr>\n<tr><th>Tỷ lệ thu hồi nguyên liệu</th><td>Trên 99%</td></tr>\n<tr><th>Thời gian một mẻ</th><td>15–30 phút (tùy nguyên liệu)</td></tr>\n<tr><th>Độ ẩm sau sấy</th><td>0,2%</td></tr>\n<tr><th>Độ ồn</th><td>≤ 75 dB</td></tr>\n<tr><th>Khối lượng máy</th><td>1300 kg</td></tr>\n<tr><th>Kích thước</th><td>2,2 × 1,65 × 3,3 m</td></tr>\n</table>\n<h2>Cấu tạo</h2>\n<ul>\n<li>Thân máy chính và buồng gia nhiệt phía sau.</li>\n<li>Bộ lọc khí sơ cấp và trung cấp làm sạch không khí đầu vào.</li>\n<li>Bộ gia nhiệt đưa khí vào tới nhiệt độ cài đặt.</li>\n<li>Buồng tầng sôi chứa nguyên liệu.</li>\n<li>Bơm dịch và đầu phun sương hai dòng (dịch + khí nén) phun tá dược dính.</li>\n<li>Quạt hút và cửa xả khí thải.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Cho bột nguyên liệu vào buồng tầng sôi.</li>\n<li>Không khí được hút qua bộ lọc, gia nhiệt tới nhiệt độ cài đặt rồi thổi từ dưới lên, làm bột sôi đều.</li>\n<li>Bơm đưa dung dịch tá dược dính tới đầu phun, phun sương lên lớp bột đang sôi; các hạt bột kết dính thành hạt.</li>\n<li>Khí nóng làm bay hơi ẩm liên tục, hơi ẩm theo khí thải ra ngoài; kết thúc mẻ thu được hạt khô, đều.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Ba công đoạn trong một máy</h3>\n<p>Trộn, tạo hạt và sấy diễn ra trong cùng thiết bị, giảm chuyển liệu qua nhiều máy và tiết kiệm mặt bằng.</p>\n<h3>Trao đổi nhiệt hiệu quả</h3>\n<p>Nguyên liệu được thổi sôi trong khí nóng sạch nên tiếp xúc nhiệt đều, rút ngắn thời gian sấy còn khoảng 15–30 phút mỗi mẻ.</p>\n<h3>Thu hồi nguyên liệu cao</h3>\n<p>Tỷ lệ thu hồi trên 99%, hạn chế hao hụt bột trong quá trình tạo hạt.</p>\n<h3>Mẻ lớn cho sản xuất công nghiệp</h3>\n<p>Buồng 420 L, xử lý 80–160 kg mỗi mẻ, đáp ứng sản lượng của xưởng quy mô vừa và lớn.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Chuẩn bị nguồn hơi 0,1–0,4 MPa và khí nén đủ lưu lượng trước khi lắp đặt.</li>\n<li>Vệ sinh bộ lọc và buồng tầng sôi sau mỗi lần đổi nguyên liệu.</li>\n<li>Thử nghiệm tỷ lệ tá dược dính, tốc độ phun và nhiệt độ với từng loại bột để có hạt đạt yêu cầu.</li>\n<li>Nối đất an toàn cho tủ điện, kiểm tra quạt và đường ống trước khi chạy.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy tạo hạt tầng sôi FL-120 chạy được bao nhiêu kg mỗi mẻ?</h3>\n<p>Model FL-120 xử lý khoảng 80–160 kg mỗi mẻ, thể tích buồng 420 L.</p>\n<h3>Một mẻ tạo hạt mất bao lâu?</h3>\n<p>Khoảng 15–30 phút tùy loại nguyên liệu và độ ẩm yêu cầu.</p>\n<h3>Máy có dùng để sấy riêng được không?</h3>\n<p>Được. Ngoài tạo hạt, máy có thể dùng để sấy bột, hạt ẩm và bao phủ hạt.</p>\n<h3>Giá máy tạo hạt tầng sôi FL-120 bao nhiêu?</h3>\n<p>Giá phụ thuộc cấu hình và yêu cầu nguyên liệu. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi thông tin qua <a href=\"/lien-he/\">trang liên hệ</a> để được báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> – tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <strong>0974 708 603 – 0989 139 855</strong>.</p>\n<p>Xem thêm: <a href=\"/may-duoc-my-pham/\">Máy dược &amp; mỹ phẩm</a>, <a href=\"/may-tron-nguyen-lieu/\">Máy trộn nguyên liệu</a>, <a href=\"https://mayducthanh.vn/may-cap-lieu-chan-khong/\">Máy cấp liệu chân không ZKS-3</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Trộn – tạo hạt – sấy trong <strong>một máy</strong>, một quy trình khép kín</li>\n<li>Thể tích buồng chứa <strong>420 L</strong>, mẻ <strong>80–160 kg</strong></li>\n<li>Công suất quạt <strong>18,5 kW</strong>, nhiệt độ làm việc đến <strong>120°C</strong></li>\n<li>Tỷ lệ thu hồi nguyên liệu <strong>trên 99%</strong>, độ ẩm sau sấy tới <strong>0,2%</strong></li>\n<li>Thời gian một mẻ khoảng <strong>15–30 phút</strong> tùy nguyên liệu</li>\n</ul>",
+    "categories": [
+     {
+      "id": 27
+     },
+     {
+      "id": 28
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy tạo hạt tầng sôi FL-120 – trộn, tạo hạt và sấy khô bột nguyên liệu trong cùng một máy.\nTạo hạt thủ công lâu, hạt không đều, sấy mất nhiều công đoạn? Máy sấy tạo hạt tầng sôi (máy tạo hạt một bước) giúp ra hạt đều, xốp, khô nhanh chỉ trong một mẻ.\n\n✅ Buồng chứa 420 L, mẻ 80–160 kg\n✅ Công suất quạt 18,5 kW\n✅ Nhiệt độ làm việc đến 120°C\n✅ Thời gian mẻ khoảng 15–30 phút\n✅ Thu hồi nguyên liệu trên 99%\n🎯 Phù hợp: xưởng dược phẩm, thực phẩm chức năng, cà phê hòa tan, bột đồ uống\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang cần tạo hạt cho loại bột nào, mỗi mẻ bao nhiêu kg? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maytaohattangsoi #maysaytaohat #mayduocpham #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy tạo hạt tầng sôi FL-120 | Đức Thành",
+     "rank_math_description": "Máy tạo hạt tầng sôi FL-120: trộn, tạo hạt, sấy trong một máy, mẻ 80–160 kg, quạt 18,5 kW, thu hồi trên 99%. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy tạo hạt tầng sôi"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-duoc-my-pham/"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-duoc-my-pham/"
+   ]
+  }
+ ]
+}
