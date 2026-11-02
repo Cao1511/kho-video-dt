@@ -1,7 +1,0 @@
-{"steps":[
-{"id":"a","method":"GET","path":"/wc/v3/products?search=t%E1%BA%A7ng%20s%C3%B4i&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"b","method":"GET","path":"/wc/v3/products?search=FL-120&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"c","method":"GET","path":"/wc/v3/products?search=t%E1%BA%A1o%20h%E1%BA%A1t&status=any&_fields=id,name,status,permalink","pick":["id","name","status","permalink"]},
-{"id":"d","method":"GET","path":"/wc/v3/products/categories?include=27,28,29&_fields=id,name,slug,count","pick":["id","name","slug","count"]},
-{"id":"e","method":"GET","path":"/wc/v3/products?category=27,28&status=publish&per_page=10&_fields=id,name,permalink","pick":["id","name","permalink"]}
-]}

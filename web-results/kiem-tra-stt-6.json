@@ -1,0 +1,157 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "a"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "b"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 364,
+     "name": "Máy cấp liệu chân không ZKS-3",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-cap-lieu-chan-khong/"
+    },
+    {
+     "id": 362,
+     "name": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/"
+    },
+    {
+     "id": 360,
+     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
+    },
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 324,
+     "name": "Máy đóng gói túi zip có sẵn nằm ngang",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tui-zip-nam-ngang/"
+    },
+    {
+     "id": 321,
+     "name": "Máy trộn thùng IBC 1500 lít",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
+    }
+   ],
+   "step": "c"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 27,
+     "name": "Máy dược &amp; mỹ phẩm",
+     "slug": "may-duoc-my-pham",
+     "count": 6
+    },
+    {
+     "id": 28,
+     "name": "Máy trộn nguyên liệu",
+     "slug": "may-tron-nguyen-lieu",
+     "count": 2
+    },
+    {
+     "id": 29,
+     "name": "Thiết bị phụ trợ",
+     "slug": "thiet-bi-phu-tro",
+     "count": 6
+    }
+   ],
+   "step": "d"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 321,
+     "name": "Máy trộn thùng IBC 1500 lít",
+     "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    }
+   ],
+   "step": "e"
+  }
+ ],
+ "time": "2026-11-02 00:53:43"
+}
