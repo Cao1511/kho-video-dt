@@ -1,0 +1,137 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "a"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    },
+    {
+     "id": 324,
+     "name": "Máy đóng gói túi zip có sẵn nằm ngang",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tui-zip-nam-ngang/"
+    },
+    {
+     "id": 272,
+     "name": "Máy chiết rót 4 vòi tự động",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
+    },
+    {
+     "id": 268,
+     "name": "Máy trộn lập phương inox 304",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-tron-lap-phuong/"
+    },
+    {
+     "id": 235,
+     "name": "Máy đóng gói chất lỏng định lượng piston",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/"
+    }
+   ],
+   "step": "b"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 24,
+     "name": "Máy chiết rót",
+     "slug": "may-chiet-rot"
+    },
+    {
+     "id": 25,
+     "name": "Máy chiết rót chất lỏng",
+     "slug": "may-chiet-rot-chat-long"
+    },
+    {
+     "id": 26,
+     "name": "Máy chiết rót dịch sệt, kem",
+     "slug": "may-chiet-rot-dich-set-kem"
+    },
+    {
+     "id": 30,
+     "name": "Máy dán nhãn",
+     "slug": "may-dan-nhan"
+    },
+    {
+     "id": 20,
+     "name": "Máy đóng gói",
+     "slug": "may-dong-goi"
+    },
+    {
+     "id": 21,
+     "name": "Máy đóng gói dạng bột",
+     "slug": "may-dong-goi-dang-bot"
+    },
+    {
+     "id": 22,
+     "name": "Máy đóng gói dạng hạt",
+     "slug": "may-dong-goi-dang-hat"
+    },
+    {
+     "id": 23,
+     "name": "Máy đóng gói dạng lỏng, dịch sệt",
+     "slug": "may-dong-goi-dang-long-dich-set"
+    },
+    {
+     "id": 27,
+     "name": "Máy dược &amp; mỹ phẩm",
+     "slug": "may-duoc-my-pham"
+    },
+    {
+     "id": 31,
+     "name": "Máy in date",
+     "slug": "may-in-date"
+    },
+    {
+     "id": 32,
+     "name": "Máy seal màng",
+     "slug": "may-seal-mang"
+    },
+    {
+     "id": 28,
+     "name": "Máy trộn nguyên liệu",
+     "slug": "may-tron-nguyen-lieu"
+    },
+    {
+     "id": 33,
+     "name": "Máy viền mí lon",
+     "slug": "may-vien-mi-lon"
+    },
+    {
+     "id": 29,
+     "name": "Thiết bị phụ trợ",
+     "slug": "thiet-bi-phu-tro"
+    },
+    {
+     "id": 16,
+     "name": "Uncategorized",
+     "slug": "uncategorized"
+    }
+   ],
+   "step": "c"
+  }
+ ],
+ "time": "2026-11-02 03:44:05"
+}
