@@ -1,0 +1,122 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-suc-rua-lo-bang-khi-duc-thanh.webp",
+   "filename": "may-suc-rua-lo-bang-khi-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy súc rửa lọ bằng khí tự động ZS-WB48 – Đức Thành",
+    "title": "Máy súc rửa lọ bằng khí tự động ZS-WB48"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
+    "slug": "may-suc-rua-lo-bang-khi",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy súc rửa lọ bằng khí tự động ZS-WB48</h2>\n<p><strong>Máy súc rửa lọ bằng khí tự động ZS-WB48</strong> là máy rửa chai kiểu mâm quay, dùng <strong>khí nén áp suất 0,8–1 MPa</strong> để thổi sạch bụi bẩn bên trong và bên ngoài lọ thủy tinh, chai nhỏ trước khi chiết rót. Máy có <strong>48 vòi thổi khí</strong>, cho năng suất ổn định <strong>12.000–13.000 chai/giờ</strong>.</p>\n<p>Chai được lật úp trong quá trình thổi giúp khí làm sạch lòng chai, không để lại cặn. Vít định vị kết hợp kết cấu quay giúp cấp chai êm, hạn chế kẹt chai; cảm biến quang điện nhận biết chai giúp máy chạy đồng bộ, chính xác. Máy rửa chai bằng khí ZS-WB48 có thể ghép vào dây chuyền chiết rót – đóng nắp – dán nhãn tự động.</p>\n<h2>Ứng dụng</h2>\n<ul>\n<li>Ngành dược phẩm: làm sạch lọ thủy tinh, vial trước khi chiết rót.</li>\n<li>Ngành mỹ phẩm: rửa chai tinh dầu, serum, lọ nhỏ.</li>\n<li>Ngành thực phẩm: làm sạch chai lọ trước công đoạn chiết rót.</li>\n<li>Lắp đầu dây chuyền đóng gói tự động.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tr><th>Model</th><td>ZS-WB48</td></tr>\n<tr><th>Điện áp</th><td>110/220/380 V, 50–60 Hz</td></tr>\n<tr><th>Công suất</th><td>3 kW</td></tr>\n<tr><th>Năng suất</th><td>12.000–13.000 chai/giờ</td></tr>\n<tr><th>Số vòi thổi khí</th><td>48 vòi</td></tr>\n<tr><th>Kích thước chai</th><td>Tùy chỉnh theo chai thực tế</td></tr>\n<tr><th>Tỷ lệ chai hỏng</th><td>≤ 3%</td></tr>\n<tr><th>Áp suất khí rửa</th><td>0,8–1 MPa</td></tr>\n<tr><th>Chiều cao băng tải</th><td>850–900 mm (điều chỉnh được)</td></tr>\n<tr><th>Kích thước máy (D × R × C)</th><td>Khoảng 3500 × 1750 × 1750 mm</td></tr>\n<tr><th>Trọng lượng máy</th><td>Khoảng 800 kg</td></tr>\n</table>\n<p><em>Thông số mang tính tham khảo, có thể thay đổi theo sản phẩm thực tế của khách hàng.</em></p>\n<h2>Cấu tạo</h2>\n<ul>\n<li><strong>Màn hình cảm ứng:</strong> thao tác trực quan, chỉnh thông số trong lúc chạy.</li>\n<li><strong>Cảm biến quang điện:</strong> phát hiện chai để máy hoạt động đồng bộ.</li>\n<li><strong>Cụm rửa chai 48 vòi:</strong> thổi khí làm sạch trong và ngoài chai.</li>\n<li><strong>Hệ thống cấp chai bằng vít định vị:</strong> băng tải nghiêng cấp chai êm, vít tách chai, tránh va đập làm hỏng chai.</li>\n<li><strong>Đĩa xả chai quay:</strong> đưa chai đã làm sạch sang công đoạn tiếp theo ổn định.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Chai được đưa vào máy qua băng tải nghiêng và vít định vị; vít tách chai và đưa vào mâm quay.</li>\n<li>Cảm biến quang điện xác nhận có chai để máy chạy đồng bộ.</li>\n<li>Tại cụm rửa, chai được lật úp, các vòi khí áp suất 0,8–1 MPa thổi sạch bên trong và bên ngoài chai.</li>\n<li>Đĩa xả quay đưa chai sạch ra băng tải, chuyển sang công đoạn chiết rót.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Năng suất cao, chạy ổn định</h3>\n<p>48 vòi thổi khí trên mâm quay cho năng suất 12.000–13.000 chai/giờ, phù hợp dây chuyền sản xuất liên tục.</p>\n<h3>Làm sạch bằng khí, hạn chế nhiễm chéo</h3>\n<p>Chai được lật úp và thổi khí áp suất điều chỉnh được, làm sạch lòng chai không để lại cặn, không cần dùng nước.</p>\n<h3>Cấp chai êm, ít kẹt</h3>\n<p>Vít định vị và kết cấu quay giúp chai vào máy nhẹ nhàng, hạn chế va đập và kẹt chai.</p>\n<h3>Dễ vận hành, dễ đổi cỡ chai</h3>\n<p>Điều khiển bằng màn hình cảm ứng; vít định vị và tấm dẫn hướng thay nhanh khi đổi cỡ chai.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Cấp khí nén sạch, khô, đủ áp suất 0,8–1 MPa để chai được làm sạch tốt.</li>\n<li>Thay đúng bộ vít định vị và tấm dẫn hướng khi đổi kích thước chai.</li>\n<li>Chỉnh chiều cao băng tải (850–900 mm) khớp với các máy trước và sau trong dây chuyền.</li>\n<li>Vệ sinh vòi thổi và kiểm tra cảm biến định kỳ.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy súc rửa lọ bằng khí ZS-WB48 rửa được bao nhiêu chai mỗi giờ?</h3>\n<p>Máy đạt khoảng 12.000–13.000 chai/giờ với 48 vòi thổi khí.</p>\n<h3>Máy có dùng được cho nhiều cỡ chai không?</h3>\n<p>Kích thước chai được tùy chỉnh theo yêu cầu; khi đổi cỡ chai chỉ cần thay vít định vị và tấm dẫn hướng phù hợp.</p>\n<h3>Máy cần khí nén áp suất bao nhiêu?</h3>\n<p>Áp suất khí rửa từ 0,8–1 MPa; máy dùng điện 110/220/380 V, công suất 3 kW.</p>\n<h3>Giá máy súc rửa lọ bằng khí ZS-WB48 bao nhiêu?</h3>\n<p>Giá phụ thuộc cỡ chai và cấu hình dây chuyền. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu qua <a href=\"/lien-he/\">trang liên hệ</a> để được báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> – tư vấn, lắp đặt và bảo hành tận nơi.<br>Hotline/Zalo: <strong>0974 708 603 – 0989 139 855</strong></p>\n<p>Xem thêm: <a href=\"/may-duoc-my-pham/\">Máy dược &amp; mỹ phẩm</a>, <a href=\"https://mayducthanh.vn/may-vien-nap-lo-tu-dong/\">Máy viền nắp lọ tự động ZS-YG100</a>, <a href=\"https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/\">Máy chiết rót liên tục ZS-SV6X</a>, <a href=\"https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/\">Máy dán nhãn chai tròn tự động ZS-TB822</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Năng suất <strong>12.000–13.000 chai/giờ</strong></li>\n<li><strong>48 vòi</strong> thổi khí làm sạch trong và ngoài lọ</li>\n<li>Áp suất khí rửa <strong>0,8–1 MPa</strong>, có cơ chế lật úp chai</li>\n<li>Công suất <strong>3 kW</strong>, điều khiển màn hình cảm ứng</li>\n<li>Dùng cho dược phẩm, mỹ phẩm, thực phẩm; ghép được vào dây chuyền tự động</li>\n</ul>",
+    "categories": [
+     {
+      "id": 27
+     },
+     {
+      "id": 29
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy súc rửa lọ bằng khí tự động ZS-WB48 – thổi sạch bụi bẩn trong và ngoài lọ thủy tinh trước khi chiết rót.\nRửa chai lọ thủ công chậm, dễ sót bụi, khó đáp ứng dây chuyền tốc độ cao? Máy rửa chai bằng khí (máy thổi khí làm sạch lọ vial) ZS-WB48 lật úp chai và thổi khí nén, làm sạch lòng chai không để lại cặn.\n\n✅ Năng suất 12.000–13.000 chai/giờ\n✅ 48 vòi thổi khí trên mâm quay\n✅ Áp suất khí rửa 0,8–1 MPa\n✅ Công suất 3 kW, điều khiển màn hình cảm ứng\n✅ Cấp chai bằng vít định vị, hạn chế kẹt chai\n🎯 Phù hợp: xưởng dược phẩm, mỹ phẩm, thực phẩm, dây chuyền chiết rót tự động\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang dùng loại lọ nào, cần rửa bao nhiêu chai mỗi giờ? Nhắn tin cho Đức Thành để được tư vấn cấu hình phù hợp.\n\n#maysucrualo #mayruachai #mayduocpham #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy súc rửa lọ bằng khí ZS-WB48 | Đức Thành",
+     "rank_math_description": "Máy súc rửa lọ bằng khí tự động ZS-WB48: 48 vòi, 12.000–13.000 chai/giờ, khí 0,8–1 MPa, 3 kW. Tư vấn, báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy súc rửa lọ"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-duoc-my-pham/"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-duoc-my-pham/"
+   ]
+  }
+ ]
+}
