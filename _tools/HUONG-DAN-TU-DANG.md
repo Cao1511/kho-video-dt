@@ -51,6 +51,8 @@ E
 ```
 
 ## Bước 5 – Một lệnh: tạo + đăng + kiểm tra + nạp cache
+**Bài mẫu chuẩn 2 ảnh (người dùng đã duyệt 03/11/2026):** STT 8 – sản phẩm `may-chiet-rot-han-kin-ong-nhua` (lệnh mẫu: `web-results/dang-stt-8.json` và lịch sử git của `web-jobs/dang-stt-8.json`). Làm y như vậy: ảnh 1 (khung chuẩn) là ảnh bìa, ảnh 2 (máy nền trắng chữ chìm) trong thư viện; Facebook 1 bài 2 ảnh; chờ 20 giây trước khi đọc `dtfb_status` (đăng nhiều ảnh lâu hơn). Lấy thông số từ bảng "Parameter"/"Specification" trên trang; nếu WebFetch tóm tắt thiếu số liệu thì tìm trang cùng mã máy bằng WebSearch.
+
 File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh, plugin Facebook tự đăng bài 2 ảnh. Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
 ```json
 {"steps":[
@@ -61,7 +63,7 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (
  {"id":"sp","method":"POST","path":"/wc/v3/products","body":{"name":"…","slug":"…","status":"draft","type":"simple","description":"…","short_description":"…","categories":[{"id":27}],"catalog_visibility":"visible","images":[{"id":"{{anh.id}}"},{"id":"{{anh2.id}}"}],"meta_data":[{"key":"dtfb_message","value":"…"}]},"pick":["id","slug","status","permalink"]},
  {"id":"seo","method":"POST","path":"/rankmath/v1/updateMeta","body":{"objectID":"{{sp.id}}","objectType":"post","meta":{"rank_math_title":"…","rank_math_description":"…","rank_math_focus_keyword":"…"}},"pick":[]},
  {"id":"pub","method":"PUT","path":"/wc/v3/products/{{sp.id}}","body":{"status":"publish"},"pick":["id","status","permalink"]},
- {"wait":12},
+ {"wait":20},
  {"id":"kt","method":"GET","path":"/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data","pick":["id","status","permalink","meta_data"]},
  {"warm":["/","{{pub.permalink}}","/<slug-danh-muc>/"]},
  {"warm":["/","{{pub.permalink}}","/<slug-danh-muc>/"]}
