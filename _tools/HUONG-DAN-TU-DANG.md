@@ -23,7 +23,7 @@ print('CHO DANG:',c)"
    Danh sách rỗng → KẾT THÚC NGAY, báo 1 dòng "Không có máy mới để đăng" (không đọc Sheet, không làm gì thêm).
 2. Có máy chờ → đọc bảng: lệnh `{"steps":[{"sheet":true}]}` → `{stt, ten, link, trang_thai}`. Chọn STT **nhỏ nhất** trong danh sách chờ có link và Trạng thái khác "Đã đăng". (Máy có link nhưng chưa có ảnh → chỉ nhắc trong báo cáo "STT x chưa có ảnh", không cần ghi Sheet.)
 3. Nếu có `anh/<STT>/thong-tin.json` (Codex lưu sẵn tên, mã máy, thông số) → dùng luôn, chỉ WebFetch trang link khi thiếu thông số.
-4. Chống đăng trùng: KHÔNG cần lệnh riêng – bước `trung` (tên bài chứa mã máy) và `trung2` (cùng slug) ở đầu lệnh Bước 5 tự dừng nếu web đã có bài. Máy không có mã → bỏ bước `trung`, giữ `trung2`. Khi kết quả báo `da_co` → ghi STT đó vào `da-dang.json` kèm `"ghi_chu":"da co san tren web"`, báo cáo, kết thúc.
+4. KHÔNG kiểm tra trùng: người dùng yêu cầu (03/11/2026) – trên web đã có máy giống/cùng mã thì CỨ ĐĂNG bình thường (slug trùng thì đặt slug khác, vd thêm mã máy).
 
 ## Bước 2 – Lấy thông số
 - WebFetch link ở cột "Link mẫu" (lấy nguyên link từ kết quả WebFetch bảng: https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/edit?usp=sharing). Link quá dài/bị từ chối → WebSearch "<mã máy> <tên tiếng Anh>" rồi WebFetch kết quả đúng mã máy.
@@ -63,8 +63,6 @@ E
 File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh; plugin Facebook chỉ đăng ảnh bìa (ảnh 1). Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
 ```json
 {"steps":[
- {"id":"trung","method":"GET","path":"/wc/v3/products?search=<mã máy>&status=any&per_page=50&_fields=id,name,status,permalink","abort_if_name_has":"<mã máy>","pick":["id"]},
- {"id":"trung2","method":"GET","path":"/wc/v3/products?slug=<slug>&status=any&_fields=id,name,status,permalink","abort_if_any":true,"pick":["id"]},
  {"id":"anh","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh.webp","filename":"<slug>-duc-thanh.webp","pick":["id","source_url"]},
  {"id":"alt","method":"POST","path":"/wp/v2/media/{{anh.id}}","body":{"alt_text":"<Tên máy> – Đức Thành","title":"<Tên máy>"},"pick":["id"]},
  {"id":"anh2","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh-2.webp","filename":"<slug>-duc-thanh-2.webp","pick":["id","source_url"]},
