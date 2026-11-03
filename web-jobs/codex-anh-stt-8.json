@@ -1,0 +1,25 @@
+{
+  "steps": [
+    {
+      "sheet_update": [
+        {
+          "stt": "8",
+          "fields": {
+            "Trạng thái": "Đã có ảnh",
+            "Tên máy": "Máy chiết rót hàn kín ống nhựa tự động",
+            "Link ảnh": [
+              {
+                "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/8/1.png",
+                "text": "Ảnh 1"
+              },
+              {
+                "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/8/2.png",
+                "text": "Ảnh 2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
