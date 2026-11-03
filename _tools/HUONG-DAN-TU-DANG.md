@@ -41,18 +41,24 @@ Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống
 ```bash
 python3 - <<'E'
 from PIL import Image
-im=Image.open('anh/<STT>/1.png').convert('RGB'); im.thumbnail((1000,1000),Image.LANCZOS)
-im.save('<slug>-duc-thanh.webp','WEBP',quality=80,method=6)
+import os
+for n in ('1','2'):                      # anh 1 = khung chuan (anh bia), anh 2 = may nen trang chu chim
+    f='anh/<STT>/'+n+'.png'
+    if os.path.exists(f):
+        im=Image.open(f).convert('RGB'); im.thumbnail((1000,1000),Image.LANCZOS)
+        im.save('<slug>-duc-thanh'+('' if n=='1' else '-2')+'.webp','WEBP',quality=80,method=6)
 E
 ```
 
 ## Bước 5 – Một lệnh: tạo + đăng + kiểm tra + nạp cache
-File `web-jobs/dang-stt-<STT>.json` (commit cùng file webp):
+File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh, plugin Facebook tự đăng bài 2 ảnh. Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
 ```json
 {"steps":[
  {"id":"anh","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh.webp","filename":"<slug>-duc-thanh.webp","pick":["id","source_url"]},
  {"id":"alt","method":"POST","path":"/wp/v2/media/{{anh.id}}","body":{"alt_text":"<Tên máy> – Đức Thành","title":"<Tên máy>"},"pick":["id"]},
- {"id":"sp","method":"POST","path":"/wc/v3/products","body":{"name":"…","slug":"…","status":"draft","type":"simple","description":"…","short_description":"…","categories":[{"id":27}],"catalog_visibility":"visible","images":[{"id":"{{anh.id}}"}],"meta_data":[{"key":"dtfb_message","value":"…"}]},"pick":["id","slug","status","permalink"]},
+ {"id":"anh2","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh-2.webp","filename":"<slug>-duc-thanh-2.webp","pick":["id","source_url"]},
+ {"id":"alt2","method":"POST","path":"/wp/v2/media/{{anh2.id}}","body":{"alt_text":"<Tên máy> – ảnh máy – Đức Thành","title":"<Tên máy> – ảnh máy"},"pick":["id"]},
+ {"id":"sp","method":"POST","path":"/wc/v3/products","body":{"name":"…","slug":"…","status":"draft","type":"simple","description":"…","short_description":"…","categories":[{"id":27}],"catalog_visibility":"visible","images":[{"id":"{{anh.id}}"},{"id":"{{anh2.id}}"}],"meta_data":[{"key":"dtfb_message","value":"…"}]},"pick":["id","slug","status","permalink"]},
  {"id":"seo","method":"POST","path":"/rankmath/v1/updateMeta","body":{"objectID":"{{sp.id}}","objectType":"post","meta":{"rank_math_title":"…","rank_math_description":"…","rank_math_focus_keyword":"…"}},"pick":[]},
  {"id":"pub","method":"PUT","path":"/wc/v3/products/{{sp.id}}","body":{"status":"publish"},"pick":["id","status","permalink"]},
  {"wait":12},
@@ -72,5 +78,5 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng file webp):
    {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy>","Trạng thái":"Đã đăng","Thời gian đăng":"<dd/mm/yyyy HH:MM>","Link web":"<link web>","Link Facebook":"https://www.facebook.com/<ID>"}}]}]}
    ```
    Đăng lỗi → "Trạng thái":"Lỗi – <tóm tắt>". Máy bị bỏ qua vì chưa có ảnh → thêm phần tử `{"stt":"x","fields":{"Trạng thái":"Chưa có ảnh"}}` (chỉ khi ô Trạng thái đang trống/khác). Kết quả lỗi "chưa cài SHEET_URL/SHEET_KEY" → ghi vào báo cáo, không coi là lỗi đăng bài.
-2. `git rm` file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push.
+2. `git rm` các file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push.
 2. Báo cáo (gửi bằng SendUserMessage): "Đã đăng STT <số> – <tên máy>: <link web> | Facebook: <link>" + mục thông số trang nguồn không có (nếu có) + máy bị bỏ qua vì chưa có ảnh (nếu có).

@@ -8,7 +8,8 @@ const KEY = 'DAT_MAT_MA_CUA_ANH_O_DAY';   // <-- doi thanh mat ma rieng (giong s
 
 const HEADER_ROW = 2, FIRST_ROW = 3;
 const NEW_COLS = ['Trạng thái', 'Thời gian đăng', 'Link web', 'Link Facebook'];
-const LOCKED = ['STT', 'Link ảnh'];        // khong cho ghi de 2 cot nay
+const NORM = t => String(t).normalize('NFC').trim().toLowerCase();
+const LOCKED = ['STT'];                   // khong cho ghi de cot nay
 
 function sheet_() { return SpreadsheetApp.getActiveSpreadsheet().getSheets()[0]; }
 
@@ -49,14 +50,22 @@ function doPost(e) {
       if (i < 0) { results.push({ stt: u.stt, ok: false, error: 'khong thay STT' }); return; }
       const row = FIRST_ROW + i, done = [];
       Object.keys(u.fields || {}).forEach(name => {
-        const c = head.indexOf(name);
-        if (c < 0 || LOCKED.indexOf(name) >= 0) return;
+        const c = head.map(NORM).indexOf(NORM(name));
+        if (c < 0 || LOCKED.map(NORM).indexOf(NORM(name)) >= 0) return;
         const cell = sh.getRange(row, c + 1);
-        if (name === 'Tên máy' && String(cell.getValue()).trim() && !u.ghi_de_ten) return; // khong ghi de ten nguoi dung da dien
+        if (NORM(name) === NORM('Tên máy') && String(cell.getValue()).trim() && !u.ghi_de_ten) return; // khong ghi de ten nguoi dung da dien
         const v = u.fields[name];
-        if (/^https?:\/\//.test(String(v))) cell.setRichTextValue(SpreadsheetApp.newRichTextValue()
-            .setText(name === 'Link Facebook' ? 'Xem Facebook' : 'Xem bài web').setLinkUrl(String(v)).build());
-        else cell.setValue(v);
+        if (Array.isArray(v)) {                 // nhieu link trong 1 o: [{text, url}, ...]
+          const parts = v.filter(x => x && x.url);
+          const text = parts.map(x => x.text || 'Xem').join('  |  ');
+          const b = SpreadsheetApp.newRichTextValue().setText(text);
+          let pos = 0;
+          parts.forEach(x => { const t = x.text || 'Xem'; b.setLinkUrl(pos, pos + t.length, String(x.url)); pos += t.length + 5; });
+          cell.setRichTextValue(b.build());
+        } else if (/^https?:\/\//.test(String(v))) {
+          const label = name === 'Link Facebook' ? 'Xem Facebook' : name === 'Link web' ? 'Xem bài web' : 'Xem';
+          cell.setRichTextValue(SpreadsheetApp.newRichTextValue().setText(label).setLinkUrl(String(v)).build());
+        } else cell.setValue(v);
         done.push(name);
       });
       results.push({ stt: u.stt, ok: true, row: row, ghi: done });

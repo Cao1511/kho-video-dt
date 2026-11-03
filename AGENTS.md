@@ -17,7 +17,7 @@ Bảng "DS mẫu máy": https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkU
 ```bash
 curl -sL "https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/export?format=csv&gid=0" -o /tmp/ds-may.csv
 ```
-Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh (công thức tự động, bỏ qua), E = Trạng thái, F = Thời gian đăng, G = Link web, H = Link Facebook. Dòng 1 là tiêu đề lớn, dòng 2 là tên cột.
+Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh ("Ảnh 1 | Ảnh 2", ghi qua lệnh ở Bước 4), E = Trạng thái, F = Thời gian đăng, G = Link web, H = Link Facebook. Dòng 1 là tiêu đề lớn, dòng 2 là tên cột.
 - **Dòng có link nhưng CHƯA có tên máy** (người dùng hay chỉ dán link): Codex tự đọc trang link, đặt tên máy tiếng Việt ngắn gọn, đúng loại máy (vd "Máy dán nhãn chai tròn", "Máy viền nắp") và ghi vào Sheet ở Bước 4.
 
 - Người dùng nói số STT → lấy đúng dòng đó.
@@ -60,12 +60,13 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    - Icon có sẵn: `chai` (chai/lọ), `banh-rang` (vận hành/tự động), `chinh-xac` (chính xác), `toc-do` (tốc độ), `cong-suat` (điện/công suất), `man-hinh` (màn hình cảm ứng), `plc` (điều khiển PLC), `kg` (khối lượng), `the-tich` (dung tích/chất lỏng), `inox` (inox/an toàn), `thung` (thùng/hộp), `voi` (vòi chiết), `nhiet-do` (nhiệt), `tui` (túi gói).
 4. **Chạy:**
    ```bash
-   python _tools/lam_anh_may.py --may may.png --minh-hoa minh-hoa.png --out anh/<STT>/1.png \
+   python _tools/lam_anh_may.py --may may.png --minh-hoa minh-hoa.png --out anh/<STT>/1.png --out2 anh/<STT>/2.png \
      --ten "MÁY DÁN NHÃN|CHAI LỌ TỰ ĐỘNG" --model "ZS-TB500" \
      --o "chai:Dán được|*các loại chai, lọ|(Ø ≤ 100mm)" \
      --o "banh-rang:Bán tự động|- Vận hành ổn định" \
      --o "chinh-xac:Chính xác|- Thẩm mỹ cao"
    ```
+   **Luôn có `--out2 anh/<STT>/2.png`** (người dùng yêu cầu 03/11/2026): ảnh 2 = máy trên nền trắng + chữ chìm "ĐỨC THÀNH" xanh nhạt chéo (mẫu `_tools/mau-anh/mau-anh-2-may-trang.png`). Khuôn tự làm từ cùng `may.png`; máy dáng ngang ra ảnh vuông, máy dáng đứng ra ảnh dọc 3:4.
    Khuôn tự: làm máy to, đặt máy sát trên dải xanh, thêm bóng đổ, logo, dải xanh bo cong, khung mã máy, icon, chữ. Không để `may.png`, `minh-hoa.png` trong kho.
 5. Mở `anh/<STT>/1.png` so với ảnh mẫu: máy đủ và rõ (không bị cắt, không mất phần sáng), không đè logo/ảnh minh hoạ, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
 
@@ -78,8 +79,9 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
 ## Bước 4 – Lưu và đẩy lên GitHub
 
 1. Lưu vào `anh/<STT>/`:
-   - `1.png` = ảnh chính theo mẫu ở Bước 3.
-   - `2.png`, `3.png`… = ảnh phụ nếu người dùng yêu cầu (vd ảnh máy nền trắng không chữ, ảnh chi tiết).
+   - `1.png` = ảnh chính theo khung chuẩn (Bước 3).
+   - `2.png` = ảnh máy nền trắng có chữ chìm ĐỨC THÀNH (luôn làm, cùng lệnh với 1.png).
+   - `3.png`… = ảnh phụ khác nếu người dùng yêu cầu.
    - PNG, cạnh tối thiểu 1200 px, mỗi file dưới 3 MB (nén lại nếu lớn hơn).
    - Thư mục đã có ảnh: thêm số tiếp theo; chỉ ghi đè khi người dùng nói "làm lại".
 2. Đẩy lên:
@@ -93,14 +95,14 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    Push bị từ chối → `git pull --rebase origin video` rồi push lại.
 3. **Cập nhật Google Sheet** (Codex không ghi thẳng vào Sheet; ghi qua GitHub Actions). Tạo file `web-jobs/codex-anh-stt-<STT>.json` rồi commit + push cùng ảnh (hoặc ngay sau):
    ```json
-   {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy tiếng Việt>","Trạng thái":"Đã có ảnh"}}]}]}
+   {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy tiếng Việt>","Trạng thái":"Đã có ảnh","Link ảnh":[{"text":"Ảnh 1","url":"https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/1.png"},{"text":"Ảnh 2","url":"https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/2.png"}]}}]}]}
    ```
    Tên máy chỉ được ghi khi ô đang trống (người dùng đã điền thì giữ nguyên). Sau ~1 phút `git pull` và xem `web-results/codex-anh-stt-<STT>.json` có `"ok": true`; lỗi "chưa cài SHEET_URL/SHEET_KEY" thì báo người dùng.
 4. Báo lại người dùng (HIỂN THỊ ĐÚNG ẢNH CUỐI `anh/<STT>/1.png` trong chat, không hiện ảnh trung gian như ảnh máy tách nền):
    - "Đã lưu ảnh cho STT <số> – <tên máy>"
-   - Link: `https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/1.png`
+   - Link: `https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/<STT>/1.png` và `.../2.png` (hiển thị cả 2 ảnh trong chat)
    - 3 thông số đã dùng và nguồn (link/ảnh) để người dùng kiểm tra.
-   - Google Sheet cột D tự hiện ảnh sau vài phút (không cần sửa Sheet).
+   - Cột "Link ảnh" trong Sheet có "Ảnh 1 | Ảnh 2" bấm được (ghi qua lệnh ở mục 3).
 
 ## Không được làm
 - KHÔNG sửa/xoá `_tools/`, `.github/`, `web-results/`, `AGENTS.md`. Trong `web-jobs/` chỉ được thêm file `codex-anh-stt-<STT>.json` như trên.
