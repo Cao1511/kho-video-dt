@@ -1,0 +1,13 @@
+{
+ "ok": true,
+ "thu_muc": "may-dong-goi-dau-ga-71896cdf",
+ "link": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/video/may-dong-goi-dau-ga-71896cdf/may-dong-goi-dau-ga-71896cdf.mp4",
+ "giay_video": 9.5,
+ "mb": 9.9,
+ "am_thanh": "tách tiếng người, giữ tiếng máy",
+ "sheet_ok": true,
+ "stt": "2",
+ "giay_xu_ly": 49,
+ "log": "CẢNH BÁO: video chỉ đủ chỗ cho 1 câu thuyết minh (mỗi câu ≥3.0s); bỏ bớt: ['Đậu rơi vào túi', 'Hàn cắt túi liên tục']\nVị trí chữ (tâm dọc): [1340] CTA: 1340\nOK /tmp/tmp9sxenb1c/out.mp4 9.49 s\n",
+ "time": "2026-11-03 16:39:24"
+}
