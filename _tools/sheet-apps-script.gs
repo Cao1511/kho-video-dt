@@ -12,7 +12,7 @@ const NORM = t => String(t).normalize('NFC').trim().toLowerCase();
 const LOCKED = ['STT'];                   // khong cho ghi de cot nay
 
 const VIDEO_TAB = 'DS video';
-const VIDEO_COLS = ['STT', 'Tên máy', 'Link video', 'Trạng thái', 'Thời gian đăng', 'YouTube', 'Facebook', 'TikTok', 'Bài web', 'Ghi chú', 'Bài YouTube', 'Bài Facebook', 'Bài TikTok'];
+const VIDEO_COLS = ['STT', 'Tên máy', 'Link video', 'Bài YouTube', 'Bài Facebook', 'Bài TikTok', 'Trạng thái', 'Thời gian đăng', 'Link YouTube', 'Link Facebook', 'Link TikTok', 'Link bài web', 'Ghi chú'];
 
 function sheet_(tab) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();

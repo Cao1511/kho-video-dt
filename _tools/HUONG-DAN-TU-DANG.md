@@ -51,9 +51,9 @@ E
 ```
 
 ## Bước 5 – Một lệnh: tạo + đăng + kiểm tra + nạp cache
-**Bài mẫu chuẩn 2 ảnh (người dùng đã duyệt 03/11/2026):** STT 8 – sản phẩm `may-chiet-rot-han-kin-ong-nhua` (lệnh mẫu: `web-results/dang-stt-8.json` và lịch sử git của `web-jobs/dang-stt-8.json`). Làm y như vậy: ảnh 1 (khung chuẩn) là ảnh bìa, ảnh 2 (máy nền trắng chữ chìm) trong thư viện; Facebook 1 bài 2 ảnh; chờ 20 giây trước khi đọc `dtfb_status` (đăng nhiều ảnh lâu hơn). Lấy thông số từ bảng "Parameter"/"Specification" trên trang; nếu WebFetch tóm tắt thiếu số liệu thì tìm trang cùng mã máy bằng WebSearch.
+**Bài mẫu chuẩn 2 ảnh (người dùng đã duyệt 03/11/2026):** STT 8 – sản phẩm `may-chiet-rot-han-kin-ong-nhua` (lệnh mẫu: `web-results/dang-stt-8.json` và lịch sử git của `web-jobs/dang-stt-8.json`). Làm y như vậy: ảnh 1 (khung chuẩn) là ảnh bìa, ảnh 2 (máy nền trắng chữ chìm) trong thư viện ảnh trên web. **Facebook CHỈ đăng 1 ảnh bìa** (người dùng yêu cầu 03/11/2026 – 2 ảnh xấu; plugin v1.3.1 đã mặc định 1 ảnh, KHÔNG bật lại `dtfb_multi_images`). Chờ ~10 giây trước khi đọc `dtfb_status`. Lấy thông số từ bảng "Parameter"/"Specification" trên trang; nếu WebFetch tóm tắt thiếu số liệu thì tìm trang cùng mã máy bằng WebSearch.
 
-File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh, plugin Facebook tự đăng bài 2 ảnh. Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
+File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh; plugin Facebook chỉ đăng ảnh bìa (ảnh 1). Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
 ```json
 {"steps":[
  {"id":"anh","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh.webp","filename":"<slug>-duc-thanh.webp","pick":["id","source_url"]},

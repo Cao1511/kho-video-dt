@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Đức Thành – Đăng Facebook
  * Description: Tự động đăng bài ảnh (ảnh đại diện + nội dung) lên Fanpage khi xuất bản sản phẩm hoặc bài viết.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Author: Đức Thành
  * Requires PHP: 7.4
  */
@@ -110,11 +110,11 @@ function dtfb_publish( $post_id, $force = false, $when = 0 ) {
 	$page = get_option( 'dtfb_page_id' );
 	$msg  = dtfb_message( $post );
 	$img  = get_the_post_thumbnail_url( $post, 'full' );
-	/* Nhieu anh: anh dai dien + thu vien anh san pham -> 1 bai Facebook nhieu anh */
+	/* Mac dinh chi dang 1 anh bia (nguoi dung yeu cau 03/11/2026). Bat lai nhieu anh: option dtfb_multi_images = '1' */
 	$imgs  = array();
 	$thumb = get_post_thumbnail_id( $post );
 	if ( $thumb ) { $imgs[] = wp_get_attachment_url( $thumb ); }
-	if ( 'product' === $post->post_type ) {
+	if ( 'product' === $post->post_type && get_option( 'dtfb_multi_images', '0' ) === '1' ) {
 		$gal = array_filter( array_map( 'intval', explode( ',', (string) get_post_meta( $post_id, '_product_image_gallery', true ) ) ) );
 		foreach ( array_slice( $gal, 0, 9 ) as $gid ) { $u = wp_get_attachment_url( $gid ); if ( $u ) { $imgs[] = $u; } }
 	}
