@@ -28,6 +28,7 @@ Dinh dang file lenh:
 - "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
 - "abort_if_any": true (buoc GET) -> neu ket qua co phan tu thi DUNG ca lenh (chong dang trung), tra "da_co".
+- "abort_if_name_has": "ZS-YG100" (buoc GET) -> chi DUNG khi co bai ma TEN chua chuoi nay.
 - "chen_video": {"product_id": 123, "youtube": "https://www.youtube.com/watch?v=...", "ten": "Máy ..."}
   -> chen muc "Video <ten> chay thuc te" truoc "Liên hệ tư vấn và báo giá" (bo qua neu da co), tra permalink.
 - Bien san co: {{now.vn}} = gio Viet Nam "dd/mm/yyyy HH:MM"; buoc san pham co meta dtfb_fb_id -> {{<id>.fb_link}}.
@@ -219,10 +220,17 @@ def run_step(step, ctx):
                 if isinstance(m, dict) and m.get("key") == "dtfb_fb_id" and m.get("value"):
                     data["fb_link"] = "https://www.facebook.com/" + str(m["value"])
             ctx[step.get("id", "_")] = data
-        if step.get("abort_if_any") and isinstance(data, list) and data:
+        hit = []
+        if isinstance(data, list):
+            if step.get("abort_if_any"):
+                hit = data
+            elif step.get("abort_if_name_has"):
+                key = str(step["abort_if_name_has"]).lower()
+                hit = [x for x in data if isinstance(x, dict) and key in str(x.get("name", "")).lower()]
+        if hit:
             res["ok"] = False
             res["error"] = "da_co"
-            res["da_co"] = pick(data, ["id", "name", "status", "permalink"])
+            res["da_co"] = pick(hit, ["id", "name", "status", "permalink"])
     else:
         res["error"] = data if isinstance(data, str) else {
             k: data.get(k) for k in ("code", "message") if isinstance(data, dict)}
