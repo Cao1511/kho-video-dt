@@ -1,0 +1,32 @@
+{
+ "thu_muc": "thu-nghiem-e8371c3e",
+ "goc": "video-goc/thu-nghiem-e8371c3e.mp4",
+ "pill": "XEM MÁY CHẠY THỰC TẾ",
+ "line1": "MÁY ĐÓNG GÓI",
+ "line2": "ĐẬU GÀ",
+ "notes": [
+  "Đóng gói đậu gà"
+ ],
+ "note_pos": "bottom",
+ "am_thanh": "tach",
+ "caption": {
+  "ten": "thử",
+  "tu_khoa": "thử",
+  "tiktok": {
+   "title": "t",
+   "text": "t"
+  },
+  "youtube": {
+   "title": "y",
+   "text": "y"
+  },
+  "facebook": {
+   "text": "f"
+  },
+  "web": {
+   "tu_khoa": [],
+   "product_id": null
+  }
+ },
+ "sheet": null
+}
