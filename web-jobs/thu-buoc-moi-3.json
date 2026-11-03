@@ -1,0 +1,5 @@
+{"steps":[
+ {"id":"chen","chen_video":{"product_id":321,"youtube":"https://www.youtube.com/watch?v=WKE_keeEn7Y","ten":"máy trộn"}},
+ {"id":"x","method":"GET","path":"/wc/v3/products/321?_fields=id","pick":["id"]},
+ {"warm":["{{chen.permalink}}"]}
+]}
