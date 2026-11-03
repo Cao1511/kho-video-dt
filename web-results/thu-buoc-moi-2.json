@@ -1,0 +1,55 @@
+{
+ "ok": false,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 371
+    },
+    {
+     "id": 368
+    },
+    {
+     "id": 356
+    }
+   ],
+   "step": "trung"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "description": "<h2>Giới thiệu máy trộn thùng IBC 1500 lít</h2>\n<p><strong>Máy trộn thùng IBC 1500 lít</strong> (còn gọi là máy trộn thùng nâng hạ, bin blender) của Đức Thành dùng để trộn bột và hạt khô ngay trong thùng chứa di động. Máy tự kẹp thùng, nâng lên, xoay trộn, hạ xuống và nhả kẹp. Nhờ vậy nguyên liệu được trộn xong trong chính thùng IBC, rồi đẩy thẳng đến máy đóng gói mà không phải đổ sang thùng khác.</p>\n<p>Thùng trộn có thể tích tối đa <strong>1500 lít</strong>, nạp được tối đa <strong>1200 lít</strong> (khoảng <strong>750 kg</strong> nguyên liệu mỗi mẻ). Toàn bộ máy làm bằng <strong>inox</strong>, điều khiển bằng <strong>PLC</strong> nên thời gian trộn và vị trí xả được cài đặt chính xác, mẻ nào cũng đồng đều.</p>\n<h2>Ứng dụng của máy trộn thùng IBC</h2>\n<ul>\n<li><strong>Dược phẩm:</strong> trộn bột thuốc, cốm, hạt trước khi dập viên hoặc đóng gói.</li>\n<li><strong>Thực phẩm:</strong> trộn bột dinh dưỡng, gia vị, bột pha, phụ gia dạng khô.</li>\n<li><strong>Hóa chất, công nghiệp nhẹ:</strong> trộn bột và hạt khô, nguyên liệu dạng cốm.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tbody>\n<tr>\n<th>Thể tích thùng tối đa</th>\n<td>1500 lít</td>\n</tr>\n<tr>\n<th>Thể tích nạp tối đa</th>\n<td>1200 lít</td>\n</tr>\n<tr>\n<th>Khối lượng nạp tối đa</th>\n<td>750 kg</td>\n</tr>\n<tr>\n<th>Tổng công suất</th>\n<td>10,5 kW</td>\n</tr>\n<tr>\n<th>Kích thước khi xoay (rộng mặt trước × sâu × cao)</th>\n<td>3260 × 3200 × 3650 mm</td>\n</tr>\n<tr>\n<th>Trọng lượng máy</th>\n<td>3750 kg</td>\n</tr>\n<tr>\n<th>Vật liệu</th>\n<td>Inox</td>\n</tr>\n<tr>\n<th>Điều khiển</th>\n<td>PLC, bảng điều khiển một chạm</td>\n</tr>\n<tr>\n<th>Thùng trộn</th>\n<td>Tháo rời được; có nhiều cỡ thùng để thay đổi dung tích</td>\n</tr>\n</tbody>\n</table>\n<p>Cùng dòng còn có cỡ 1000 lít (nạp 800 lít, 500 kg, 8,5 kW) và 2000 lít (nạp 1600 lít, 1000 kg, 11,5 kW). Điện áp và các tùy chọn khác sẽ được tư vấn theo xưởng của bạn.</p>\n<h2>Cấu tạo máy trộn thùng IBC</h2>\n<ul>\n<li><strong>Thùng trộn IBC:</strong> đáy hình côn, bề mặt trong và ngoài đánh bóng gương, không có góc chết nên dễ xả hết liệu và dễ vệ sinh.</li>\n<li><strong>Khung nâng và cụm kẹp thùng:</strong> kẹp chặt thùng, nâng lên và xoay trộn; có chân đỡ và bánh xe để di chuyển thùng.</li>\n<li><strong>Nắp nạp liệu:</strong> khóa bằng kẹp bu lông, kín và chắc chắn.</li>\n<li><strong>Đầu nối mềm silicone:</strong> ở cửa nạp và cửa xả, hạn chế bụi bay ra ngoài.</li>\n<li><strong>Tủ điện PLC:</strong> điều khiển thời gian trộn và vị trí xả, có nút dừng khẩn cấp và đèn báo ba màu.</li>\n<li><strong>Hàng rào cách ly:</strong> kèm đèn và còi báo động khi quá tải.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Đưa thùng IBC đã nạp liệu vào vị trí của máy.</li>\n<li>Máy bắt thùng, kẹp chặt và nâng thùng lên.</li>\n<li>Thùng xoay trộn theo thời gian đã cài trên PLC. Cảm biến quang xác định vị trí để cửa xả dừng đúng chỗ.</li>\n<li>Hết mẻ, máy hạ thùng xuống và nhả kẹp. Cửa xả đã ở vị trí thuận tiện để xả liệu.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Trộn ngay trong thùng chứa</h3>\n<p>Nguyên liệu không phải đổ qua lại giữa các thùng, giảm hao hụt, giảm bụi và hạn chế nhiễm chéo giữa các mẻ.</p>\n<h3>Một máy, nhiều cỡ thùng</h3>\n<p>Thùng trộn tháo rời được, nên cùng một máy có thể dùng nhiều cỡ thùng cho các mẻ lớn nhỏ khác nhau.</p>\n<h3>Dễ vệ sinh, hợp xưởng dược phẩm</h3>\n<p>Inox, bề mặt bóng gương, không góc chết, phù hợp môi trường sản xuất yêu cầu GMP và kiểm soát từng mẻ.</p>\n<h3>Vận hành an toàn, ổn định</h3>\n<p>Điều khiển PLC một chạm, chạy êm, chiều cao quay thấp. Có hàng rào cách ly và báo động khi quá tải.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Nạp liệu tối đa 1200 lít (750 kg) mỗi mẻ, chừa khoảng trống trong thùng để liệu đảo đều.</li>\n<li>Bố trí mặt bằng đủ rộng cho kích thước khi xoay 3260 × 3200 × 3650 mm và lối đưa thùng ra vào.</li>\n<li>Kiểm tra khóa nắp và kẹp thùng trước mỗi mẻ trộn.</li>\n<li>Không đi vào vùng hàng rào cách ly khi máy đang chạy.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy trộn được tối đa bao nhiêu mỗi mẻ?</h3>\n<p>Mỗi mẻ nạp tối đa 1200 lít, tương đương khoảng 750 kg, tùy tỷ trọng nguyên liệu.</p>\n<h3>Máy có trộn được nhiều cỡ thùng không?</h3>\n<p>Có. Thùng trộn tháo rời được và có nhiều cỡ, nên máy dùng được cho các mẻ nhỏ hơn. Ngoài ra còn có cỡ 1000 lít và 2000 lít.</p>\n<h3>Máy có phù hợp trộn bột dược phẩm không?</h3>\n<p>Có. Thùng inox đánh bóng gương, không góc chết, dễ xả sạch và dễ vệ sinh, phù hợp trộn bột và hạt khô trong dược phẩm và thực phẩm.</p>\n<h3>Giá máy trộn thùng IBC bao nhiêu?</h3>\n<p>Giá phụ thuộc cỡ thùng và cấu hình. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi <a href=\"https://mayducthanh.vn/lien-he/\">yêu cầu báo giá</a> để được tư vấn.</p>\n<h2>Video máy trộn thùng IBC chạy thực tế</h2>\n<p>https://www.youtube.com/watch?v=WKE_keeEn7Y</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p>Đức Thành tư vấn cấu hình máy trộn thùng IBC theo sản lượng và nguyên liệu của bạn. Hotline: <a href=\"tel:0974708603\"><strong>0974 708 603</strong></a> – <a href=\"tel:0989139855\"><strong>0989 139 855</strong></a>. Xem thêm các <a href=\"https://mayducthanh.vn/may-tron-nguyen-lieu/\">máy trộn nguyên liệu</a> và <a href=\"https://mayducthanh.vn/may-dong-goi-dang-bot/\">máy đóng gói dạng bột</a> để hoàn thiện dây chuyền.</p>\n"
+   },
+   "step": "d"
+  },
+  {
+   "status": 200,
+   "ok": false,
+   "data": [
+    {
+     "id": 371
+    },
+    {
+     "id": 368
+    },
+    {
+     "id": 356
+    }
+   ],
+   "error": "da_co",
+   "da_co": [
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "status": "publish",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    }
+   ],
+   "step": "trung3"
+  }
+ ],
+ "time": "2026-11-03 16:16:42"
+}

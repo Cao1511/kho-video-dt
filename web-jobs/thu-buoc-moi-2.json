@@ -1,5 +1,0 @@
-{"steps":[
- {"id":"trung","method":"GET","path":"/wc/v3/products?search=ZS-YG100&status=any&per_page=50&_fields=id,name,status,permalink","abort_if_name_has":"ZS-WB999","pick":["id"]},
- {"id":"d","method":"GET","path":"/wc/v3/products/321?_fields=id,description","pick":["description"]},
- {"id":"trung3","method":"GET","path":"/wc/v3/products?search=ZS-YG100&status=any&per_page=50&_fields=id,name,status,permalink","abort_if_name_has":"zs-yg100","pick":["id"]}
-]}
