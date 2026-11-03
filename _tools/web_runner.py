@@ -21,6 +21,8 @@ Dinh dang file lenh:
 - "{{buoc.truong}}" duoc thay bang ket qua cua buoc truoc.
 - "pick" chi giu cac truong can (kho cong khai, khong ghi het du lieu).
 - "sheet": true -> doc Google Sheet DS mau may (STT, ten, link, trang thai...).
+- "sheet": {"tab": "DS video"} -> doc tab video (tra ve danh sach dong theo ten cot).
+- "sheet_update" kem "tab": "DS video" -> ghi vao tab video; "stt": "moi" = them dong moi (tra ve STT moi).
 - "sheet_update": [{"stt":"3","fields":{"Tên máy":"...","Trạng thái":"Đã đăng","Thời gian đăng":"...","Link web":"https://...","Link Facebook":"https://..."}}]
   -> ghi vao Sheet (khong ghi de Tên máy nguoi dung da dien, tru khi "ghi_de_ten": true).
 - "wait": so giay cho (toi da 60).
@@ -75,6 +77,18 @@ def pick(data, fields):
 
 def run_step(step, ctx):
     step = subst(step, ctx)
+    if "sheet" in step and isinstance(step["sheet"], dict) and step["sheet"].get("tab"):
+        # doc 1 tab bat ky qua Apps Script (vd tab "DS video")
+        url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
+        data = json.dumps({"key": key, "action": "read", "tab": step["sheet"]["tab"]}).encode()
+        st, body, _ = call("POST", url, data, {"Content-Type": "application/json"}, auth=False)
+        try:
+            res = json.loads(body)
+        except Exception:
+            return {"ok": False, "status": st, "error": body[:200].decode("utf-8", "replace")}
+        head = [h.strip() for h in res.get("head", [])]
+        rows = [dict(zip(head, [c.strip() for c in r])) for r in res.get("rows", [])]
+        return {"ok": bool(res.get("ok")), "status": st, "head": head, "data": rows}
     if "sheet" in step:
         # tai Google Sheet "DS mau may" (cong khai) dang CSV
         import csv, io
@@ -94,6 +108,14 @@ def run_step(step, ctx):
         url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
         if not url or not key:
             return {"ok": False, "error": "chua cai SHEET_URL/SHEET_KEY tren GitHub"}
+        if step.get("tab"):
+            data = json.dumps({"key": key, "tab": step["tab"], "updates": step["sheet_update"]}).encode()
+            st, body, _ = call("POST", url, data, {"Content-Type": "application/json"}, auth=False)
+            try:
+                res = json.loads(body)
+            except Exception:
+                res = {"ok": False, "error": body[:200].decode("utf-8", "replace")}
+            return {"ok": bool(res.get("ok")), "status": st, "data": res}
         # do ten cot that trong Sheet (co the co dau cach thua / go kieu to hop) va giu ten may nguoi dung da dien
         import csv, io, unicodedata
         norm = lambda t: unicodedata.normalize("NFC", str(t)).strip().lower()
