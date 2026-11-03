@@ -52,6 +52,11 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    rembg i anh-goc.jpg may.png
    ```
    Mở `may.png` kiểm tra: máy đủ, không mất phần inox sáng (phễu, nắp, mép trên), không còn nền/viền xám, không còn logo/chữ nhà cung cấp. Thiếu thì thử ảnh gốc khác hoặc model `rembg i -m isnet-general-use`. KHÔNG dùng AI vẽ lại máy.
+   **Ảnh phải NÉT và SẠCH (người dùng yêu cầu 03/11/2026):**
+   - Luôn lấy ảnh gốc độ phân giải lớn nhất (bỏ đuôi `_600x`, `_small`… trong link ảnh), không dùng ảnh thu nhỏ.
+   - **Xoá watermark/logo/chữ nhà cung cấp: KHÔNG làm mờ, KHÔNG bôi nhoè, KHÔNG phủ màu, KHÔNG dùng inpaint kiểu kéo màu xung quanh** (để lại vệt nhoè là xấu, người dùng không chấp nhận). Phải **phục hồi lại chi tiết** vùng đó cho liền mạch và nét như phần còn lại: dùng AI chỉnh sửa ảnh có mặt nạ (chỉ vùng watermark), tái tạo đúng chi tiết máy bị che (đường ống, ốc, tấm inox, nền trắng…).
+   - Chỉ được tái tạo vùng bị watermark che; KHÔNG đổi hình dáng, số đầu/vòi, bảng điều khiển, kết cấu phần còn lại của máy.
+   - Kiểm tra ở mức phóng 100%: không còn dấu vết chữ cũ, không có vệt mờ/loang/lem. Còn vệt thì làm lại hoặc chọn ảnh gốc khác ít watermark hơn. Báo người dùng nếu chi tiết phục hồi có thể khác nhỏ so với máy thật.
 2. **Ảnh minh hoạ góc phải** (`minh-hoa.png`, nên có): 1–2 sản phẩm mà máy xử lý, nền trắng, đặt cạnh nhau như mẫu (vd hũ dầu dừa + chai tương cho máy dán nhãn; lọ nắp nhôm cho máy viền nắp; bát bột/hạt cho máy trộn; chai nước cho máy chiết rót; túi gói cho máy đóng gói). Được dùng AI tạo ảnh này. Nếu có chữ trên nhãn sản phẩm thì phải là tiếng Việt đúng chính tả, không thương hiệu thật; không chắc thì để nhãn trơn.
 3. **Chữ:**
    - `--ten`: tên máy IN HOA, 2 dòng (tối đa 3) ngăn bằng `|`, ngắt theo cụm nghĩa, không để 1 chữ lẻ một dòng. Vd `"MÁY DÁN NHÃN|CHAI LỌ TỰ ĐỘNG"`, `"MÁY VIỀN NẮP|LỌ TỰ ĐỘNG"`, `"MÁY TRỘN|THÙNG IBC 1500L"`.
@@ -73,7 +78,7 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
 **Không được:**
 - Vẽ thêm chi tiết máy không có thật, đổi kết cấu máy.
 - Ghi số điện thoại, website, Zalo, giá, chữ "tốt nhất/số 1".
-- Để lại logo/chữ/watermark của nhà cung cấp gốc (vd ZONESUN) — xoá hoặc che sạch.
+- Để lại logo/chữ/watermark của nhà cung cấp gốc (vd ZONESUN) — phải xoá sạch bằng cách phục hồi chi tiết, KHÔNG che bằng vệt mờ/nhoè.
 - Dùng thông số không có trong link/ảnh.
 
 ## Bước 4 – Lưu và đẩy lên GitHub
