@@ -1,0 +1,47 @@
+name: Lam video Duc Thanh
+on:
+  push:
+    branches: [video]
+    paths: ['video-jobs/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lam-video
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: video
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Bo nho dem thu vien + mo hinh tach tieng
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/venv
+            ~/.cache/uvr
+          key: video-${{ runner.os }}-${{ hashFiles('_tools/requirements-video.txt') }}-v1
+      - name: Cai ffmpeg + thu vien
+        run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
+          if [ ! -x ~/venv/bin/python ]; then python -m venv ~/venv && ~/venv/bin/pip install -q -r _tools/requirements-video.txt; fi
+      - name: Dung video
+        env:
+          SHEET_URL: ${{ secrets.SHEET_URL }}
+          SHEET_KEY: ${{ secrets.SHEET_KEY }}
+        run: PATH=~/venv/bin:$PATH ~/venv/bin/python _tools/video_runner.py
+      - name: Luu ket qua
+        if: always()
+        run: |
+          git config user.name "lam-video-bot"
+          git config user.email "lam-video-bot@users.noreply.github.com"
+          git add -A video video-goc video-jobs video-results
+          git diff --cached --quiet && exit 0
+          git commit -m "Ket qua lam video"
+          for i in 1 2 3 4; do git pull --rebase origin video && git push origin HEAD:video && break; sleep 4; done

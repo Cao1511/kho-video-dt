@@ -6,6 +6,8 @@ import argparse, os, subprocess, json, tempfile
 from PIL import Image, ImageDraw, ImageFont
 W,H=1080,1920
 F='/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf'; FB='/usr/share/fonts/opentype/inter/Inter-Bold.otf'
+if not os.path.exists(F):  # may khong co font he thong (vd GitHub Actions) -> dung font trong kho
+    _fd=os.path.join(os.path.dirname(os.path.abspath(__file__)),'fonts'); F=os.path.join(_fd,'Inter-ExtraBold.otf'); FB=os.path.join(_fd,'Inter-Bold.otf')
 HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('src'); ap.add_argument('out')
 ap.add_argument('--pill',default='XEM MÁY CHẠY THỰC TẾ'); ap.add_argument('--line1',required=True); ap.add_argument('--line2',default='')
