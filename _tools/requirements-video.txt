@@ -3,3 +3,4 @@ torch
 audio-separator[cpu]==0.48.0
 numpy
 pillow
+audioread

@@ -27,6 +27,10 @@ Dinh dang file lenh:
   -> ghi vao Sheet (khong ghi de Tên máy nguoi dung da dien, tru khi "ghi_de_ten": true).
 - "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
+- "abort_if_any": true (buoc GET) -> neu ket qua co phan tu thi DUNG ca lenh (chong dang trung), tra "da_co".
+- "chen_video": {"product_id": 123, "youtube": "https://www.youtube.com/watch?v=...", "ten": "Máy ..."}
+  -> chen muc "Video <ten> chay thuc te" truoc "Liên hệ tư vấn và báo giá" (bo qua neu da co), tra permalink.
+- Bien san co: {{now.vn}} = gio Viet Nam "dd/mm/yyyy HH:MM"; buoc san pham co meta dtfb_fb_id -> {{<id>.fb_link}}.
 """
 import base64, glob, json, mimetypes, os, re, sys, time
 import urllib.request, urllib.error
@@ -75,8 +79,35 @@ def pick(data, fields):
     return data
 
 
+def chen_video(cv):
+    pid = cv["product_id"]; yt = cv["youtube"]; ten = cv.get("ten") or "máy"
+    vid = re.search(r"(?:v=|youtu\.be/|shorts/)([\w-]{6,})", yt)
+    vid = vid[1] if vid else yt
+    url = f"{SITE}/wp-json/wc/v3/products/{pid}?_fields=id,permalink,description"
+    st, body, _ = call("GET", url)
+    if st != 200:
+        return {"ok": False, "status": st, "error": body[:200].decode("utf-8", "replace")}
+    p = json.loads(body); desc = p.get("description", "")
+    if vid in desc:
+        return {"ok": True, "status": st, "data": {"id": pid, "permalink": p.get("permalink"), "da_co_san": True}}
+    block = f"<h2>Video {ten} chạy thực tế</h2>\n\n{yt}\n\n"
+    m = re.search(r"<h2[^>]*>\s*Liên hệ tư vấn", desc)
+    desc = desc[:m.start()] + block + desc[m.start():] if m else desc + "\n\n" + block
+    st, body, _ = call("PUT", f"{SITE}/wp-json/wc/v3/products/{pid}", json.dumps({"description": desc}).encode(),
+                       {"Content-Type": "application/json"})
+    ok = 200 <= st < 300
+    return {"ok": ok, "status": st, "data": {"id": pid, "permalink": p.get("permalink")}} if ok else \
+        {"ok": False, "status": st, "error": body[:200].decode("utf-8", "replace")}
+
+
 def run_step(step, ctx):
+    ctx.setdefault("now", {"vn": time.strftime("%d/%m/%Y %H:%M", time.gmtime(time.time() + 7 * 3600))})
     step = subst(step, ctx)
+    if "chen_video" in step:
+        r = chen_video(step["chen_video"])
+        if r.get("ok"):
+            ctx[step.get("id", "_")] = r["data"]
+        return r
     if "sheet" in step and isinstance(step["sheet"], dict) and step["sheet"].get("tab"):
         # doc 1 tab bat ky qua Apps Script (vd tab "DS video")
         url, key = os.environ.get("SHEET_URL", ""), os.environ.get("SHEET_KEY", "")
@@ -184,7 +215,14 @@ def run_step(step, ctx):
     if ok:
         res["data"] = pick(data, step.get("pick", []))
         if isinstance(data, dict):
+            for m in data.get("meta_data") or []:
+                if isinstance(m, dict) and m.get("key") == "dtfb_fb_id" and m.get("value"):
+                    data["fb_link"] = "https://www.facebook.com/" + str(m["value"])
             ctx[step.get("id", "_")] = data
+        if step.get("abort_if_any") and isinstance(data, list) and data:
+            res["ok"] = False
+            res["error"] = "da_co"
+            res["da_co"] = pick(data, ["id", "name", "status", "permalink"])
     else:
         res["error"] = data if isinstance(data, str) else {
             k: data.get(k) for k in ("code", "message") if isinstance(data, dict)}

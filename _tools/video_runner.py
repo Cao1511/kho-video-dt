@@ -76,8 +76,10 @@ def lam(spec, log):
             wav = os.path.join(w, "aud44.wav")
             sh(["ffmpeg", "-v", "error", "-y", "-i", src, "-vn", "-ac", "2", "-ar", "44100", wav])
             os.makedirs(UVR, exist_ok=True)
-            sh(["audio-separator", wav, "-m", MODEL, "--output_dir", os.path.join(w, "sep"),
-                "--model_file_dir", UVR], capture_output=True)
+            r2 = subprocess.run(["audio-separator", wav, "-m", MODEL, "--output_dir", os.path.join(w, "sep"),
+                                 "--model_file_dir", UVR], capture_output=True, text=True)
+            if r2.returncode:
+                raise RuntimeError("audio-separator: " + (r2.stderr or r2.stdout)[-700:])
             ins = glob.glob(os.path.join(w, "sep", "*Instrumental*"))
             if not ins:
                 raise RuntimeError("khong ra file Instrumental")
