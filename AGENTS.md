@@ -87,13 +87,16 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    - `1.png` = ảnh chính theo khung chuẩn (Bước 3).
    - `2.png` = ảnh máy nền trắng có chữ chìm ĐỨC THÀNH (luôn làm, cùng lệnh với 1.png).
    - `3.png`… = ảnh phụ khác nếu người dùng yêu cầu.
+   - `thong-tin.json` = thông số đã đọc ở Bước 2 (để phiên đăng bài không phải đọc lại trang nguồn, tiết kiệm thời gian):
+     `{"ten":"<tên máy tiếng Việt>","model":"<mã máy hoặc rỗng>","link":"<link mẫu>","cong_dung":"<1–2 câu>","san_pham":"<loại sản phẩm phù hợp>","thong_so":[["Tên thông số","Giá trị đúng như trang"],…],"cau_tao":["…"],"nguon_anh":"<link ảnh gốc>"}`
+     Ghi bằng Python `json.dump(..., ensure_ascii=False, indent=1)`. CHỈ ghi số liệu có thật trong trang/ảnh, chép nguyên đơn vị; không đủ thì để mảng ngắn.
    - PNG, cạnh tối thiểu 1200 px, mỗi file dưới 3 MB (nén lại nếu lớn hơn).
    - Thư mục đã có ảnh: thêm số tiếp theo; chỉ ghi đè khi người dùng nói "làm lại".
 2. Đẩy lên:
    ```bash
    git checkout video
    git pull --rebase origin video
-   git add anh/<STT>/
+   git add anh/<STT>/   # gồm 1.png, 2.png, thong-tin.json
    git commit -m "Anh may so <STT> - <ten may khong dau>"
    git push origin video
    ```

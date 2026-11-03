@@ -11,12 +11,19 @@ git pull -q --rebase origin video
 ```
 Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống. Không xoá `_tools/`, `.github/`, `AGENTS.md`, `anh/`.
 
-## Bước 1 – Chọn máy
-1. Đọc bảng: lệnh `{"steps":[{"sheet":true}]}` → danh sách `{stt, ten, link}`.
-2. Đọc `danh-sach/da-dang.json` (các STT đã đăng).
-3. Chọn STT **nhỏ nhất** thoả cả 3: có link (tên máy có thể TRỐNG – khi đó tự đặt tên từ trang link); CHƯA có trong `da-dang.json` và cột Trạng thái khác "Đã đăng"; ĐÃ có ảnh `anh/<STT>/1.png` trong kho (ảnh do Codex làm theo khung chuẩn). Máy chưa có ảnh → bỏ qua, ghi trong báo cáo "STT x chưa có ảnh" và cập nhật Sheet Trạng thái "Chưa có ảnh" (gộp vào lệnh ở Bước 6).
-4. Không còn máy nào → kết thúc, báo 1 dòng "Không có máy mới để đăng".
-5. Chống đăng trùng: lệnh GET `/wc/v3/products?search=<mã máy hoặc tên>&status=any&_fields=id,name,status,permalink` (pick id,name,status,permalink). Đã có bài cùng máy → ghi STT đó vào `da-dang.json` (kèm `"ghi_chu":"da co san tren web"`), chọn máy khác.
+## Bước 1 – Chọn máy (kiểm tra tại chỗ TRƯỚC, không có thì dừng ngay)
+1. Kiểm tra nhanh trong kho (không tốn lượt gọi Sheet):
+```bash
+cd /home/claude/kho-video-dt && python3 -c "
+import json,glob,os
+d=json.load(open('danh-sach/da-dang.json'))
+c=sorted(int(x.split('/')[1]) for x in glob.glob('anh/*/1.png') if x.split('/')[1].isdigit() and x.split('/')[1] not in d)
+print('CHO DANG:',c)"
+```
+   Danh sách rỗng → KẾT THÚC NGAY, báo 1 dòng "Không có máy mới để đăng" (không đọc Sheet, không làm gì thêm).
+2. Có máy chờ → đọc bảng: lệnh `{"steps":[{"sheet":true}]}` → `{stt, ten, link, trang_thai}`. Chọn STT **nhỏ nhất** trong danh sách chờ có link và Trạng thái khác "Đã đăng". (Máy có link nhưng chưa có ảnh → chỉ nhắc trong báo cáo "STT x chưa có ảnh", không cần ghi Sheet.)
+3. Nếu có `anh/<STT>/thong-tin.json` (Codex lưu sẵn tên, mã máy, thông số) → dùng luôn, chỉ WebFetch trang link khi thiếu thông số.
+4. Chống đăng trùng: KHÔNG cần lệnh riêng – bước `trung` (abort_if_any) ở đầu lệnh Bước 5 tự dừng nếu web đã có bài cùng mã máy/slug. Khi kết quả báo `da_co` → ghi STT đó vào `da-dang.json` kèm `"ghi_chu":"da co san tren web"`, báo cáo, kết thúc.
 
 ## Bước 2 – Lấy thông số
 - WebFetch link ở cột "Link mẫu" (lấy nguyên link từ kết quả WebFetch bảng: https://docs.google.com/spreadsheets/d/1Zwy4QBWBwFZ-wzkURH7--dRxB_BRhgOw_Tzt-1zzDVg/edit?usp=sharing). Link quá dài/bị từ chối → WebSearch "<mã máy> <tên tiếng Anh>" rồi WebFetch kết quả đúng mã máy.
@@ -56,6 +63,8 @@ E
 File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (`anh/<STT>/2.png`) thì thêm bước `anh2`/`alt2` và đưa vào `images` thứ 2 → web có 2 ảnh; plugin Facebook chỉ đăng ảnh bìa (ảnh 1). Không có ảnh 2 thì bỏ 2 bước đó và chỉ để 1 ảnh:
 ```json
 {"steps":[
+ {"id":"trung","method":"GET","path":"/wc/v3/products?search=<mã máy, hoặc từ khoá đặc trưng>&status=any&_fields=id,name,status,permalink","abort_if_any":true,"pick":["id"]},
+ {"id":"trung2","method":"GET","path":"/wc/v3/products?slug=<slug>&status=any&_fields=id,name,status,permalink","abort_if_any":true,"pick":["id"]},
  {"id":"anh","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh.webp","filename":"<slug>-duc-thanh.webp","pick":["id","source_url"]},
  {"id":"alt","method":"POST","path":"/wp/v2/media/{{anh.id}}","body":{"alt_text":"<Tên máy> – Đức Thành","title":"<Tên máy>"},"pick":["id"]},
  {"id":"anh2","method":"POST","path":"/wp/v2/media","file":"<slug>-duc-thanh-2.webp","filename":"<slug>-duc-thanh-2.webp","pick":["id","source_url"]},
@@ -63,10 +72,10 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (
  {"id":"sp","method":"POST","path":"/wc/v3/products","body":{"name":"…","slug":"…","status":"draft","type":"simple","description":"…","short_description":"…","categories":[{"id":27}],"catalog_visibility":"visible","images":[{"id":"{{anh.id}}"},{"id":"{{anh2.id}}"}],"meta_data":[{"key":"dtfb_message","value":"…"}]},"pick":["id","slug","status","permalink"]},
  {"id":"seo","method":"POST","path":"/rankmath/v1/updateMeta","body":{"objectID":"{{sp.id}}","objectType":"post","meta":{"rank_math_title":"…","rank_math_description":"…","rank_math_focus_keyword":"…"}},"pick":[]},
  {"id":"pub","method":"PUT","path":"/wc/v3/products/{{sp.id}}","body":{"status":"publish"},"pick":["id","status","permalink"]},
- {"wait":20},
+ {"wait":12},
  {"id":"kt","method":"GET","path":"/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data","pick":["id","status","permalink","meta_data"]},
  {"warm":["/","{{pub.permalink}}","/<slug-danh-muc>/"]},
- {"warm":["/","{{pub.permalink}}","/<slug-danh-muc>/"]}
+ {"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy>","Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}","Link web":"{{pub.permalink}}","Link Facebook":"{{kt.fb_link}}"}}]}
 ]}
 ```
 - Tạo file JSON bằng Python (`json.dump(..., ensure_ascii=False)`) để không lỗi dấu ngoặc kép trong HTML.
@@ -74,11 +83,7 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (
 - Đọc kết quả: `ok: true`; bước `kt` có `status: publish`; trong `meta_data` tìm `dtfb_status` = "Đã đăng … (ID pageid_postid)" → link Facebook `https://www.facebook.com/<ID>`. Nếu là "Lỗi …" → ghi nguyên văn vào báo cáo (lỗi code 190/200 = mã Fanpage hết hạn, người dùng phải lấy mã mới).
 - Bước nào lỗi (ok false): KHÔNG thử đăng lại lung tung. Nếu sản phẩm đã tạo nhưng chưa publish thì để nguyên bản nháp, báo lỗi nguyên văn.
 
-## Bước 6 – Dọn dẹp, ghi vào Google Sheet và ghi nhận
-1. Lệnh cập nhật Sheet `web-jobs/sheet-stt-<STT>.json` (giờ Việt Nam, dạng `31/10/2026 16:41`):
-   ```json
-   {"steps":[{"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy>","Trạng thái":"Đã đăng","Thời gian đăng":"<dd/mm/yyyy HH:MM>","Link web":"<link web>","Link Facebook":"https://www.facebook.com/<ID>"}}]}]}
-   ```
-   Đăng lỗi → "Trạng thái":"Lỗi – <tóm tắt>". Máy bị bỏ qua vì chưa có ảnh → thêm phần tử `{"stt":"x","fields":{"Trạng thái":"Chưa có ảnh"}}` (chỉ khi ô Trạng thái đang trống/khác). Kết quả lỗi "chưa cài SHEET_URL/SHEET_KEY" → ghi vào báo cáo, không coi là lỗi đăng bài.
-2. `git rm` các file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push.
-2. Báo cáo (gửi bằng SendUserMessage): "Đã đăng STT <số> – <tên máy>: <link web> | Facebook: <link>" + mục thông số trang nguồn không có (nếu có) + máy bị bỏ qua vì chưa có ảnh (nếu có).
+## Bước 6 – Dọn dẹp và ghi nhận (cùng 1 commit)
+Sheet đã được ghi ngay trong lệnh Bước 5 (bước cuối). Nếu bước `kt` không có `fb_link` (Facebook lỗi) thì ô Link Facebook trống – ghi lỗi trong báo cáo.
+1. `git rm` các file webp; thêm vào `danh-sach/da-dang.json`: `"<STT>": {"ten","product_id","link","facebook","ngay"}`; commit + push (1 lần).
+2. Báo cáo (SendUserMessage): "Đã đăng STT <số> – <tên máy>: <link web> | Facebook: <link>" + mục thông số trang nguồn không có (nếu có) + máy chưa có ảnh (nếu có).

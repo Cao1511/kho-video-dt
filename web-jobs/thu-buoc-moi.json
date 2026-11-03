@@ -1,0 +1,7 @@
+{"steps":[
+ {"id":"p","method":"GET","path":"/wc/v3/products/356?_fields=id,permalink,meta_data","pick":["id","permalink"]},
+ {"warm":["{{p.fb_link}}"]},
+ {"id":"yt","method":"GET","path":"/wc/v3/products?search=youtube.com%2Fwatch&_fields=id,name,description","pick":["id","name"]},
+ {"id":"trung","method":"GET","path":"/wc/v3/products?search=ZS-YG100&status=any&_fields=id,name,status,permalink","abort_if_any":true,"pick":["id"]},
+ {"wait":1}
+]}
