@@ -1,0 +1,25 @@
+{
+ "steps": [
+  {
+   "sheet_update": [
+    {
+     "stt": "11",
+     "fields": {
+      "Tên máy": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt tự động",
+      "Trạng thái": "Đã có ảnh",
+      "Link ảnh": [
+       {
+        "text": "Ảnh 1",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/11/1.png"
+       },
+       {
+        "text": "Ảnh 2",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/11/2.png"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}
