@@ -54,6 +54,16 @@ def lam(spec, log):
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", src])
     am = spec.get("am_thanh", "tach")
     out = os.path.join(w, "out.mp4")
+    sep = None
+    if am == "tach":  # tach tieng chay SONG SONG voi dung hinh cho nhanh
+        try:
+            wav = os.path.join(w, "aud44.wav")
+            sh(["ffmpeg", "-v", "error", "-y", "-i", src, "-vn", "-ac", "2", "-ar", "44100", wav])
+            os.makedirs(UVR, exist_ok=True)
+            sep = subprocess.Popen(["audio-separator", wav, "-m", MODEL, "--output_dir", os.path.join(w, "sep"),
+                                    "--model_file_dir", UVR], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        except Exception as e:
+            log.append("khong bat dau tach tieng duoc: " + repr(e)[-300:])
     cmd = [sys.executable, os.path.join(TOOLS, "edit_video.py"), src, out,
            "--pill", spec.get("pill", "XEM MÁY CHẠY THỰC TẾ"), "--line1", spec["line1"],
            "--line2", spec.get("line2", ""), "--notes", "|".join(spec.get("notes", [])),
@@ -73,13 +83,11 @@ def lam(spec, log):
     ghi_chu = {"tach": "tách tiếng người, giữ tiếng máy", "nhac": "nhạc nhà", "tat": "tắt tiếng"}.get(am, am)
     if am == "tach":
         try:
-            wav = os.path.join(w, "aud44.wav")
-            sh(["ffmpeg", "-v", "error", "-y", "-i", src, "-vn", "-ac", "2", "-ar", "44100", wav])
-            os.makedirs(UVR, exist_ok=True)
-            r2 = subprocess.run(["audio-separator", wav, "-m", MODEL, "--output_dir", os.path.join(w, "sep"),
-                                 "--model_file_dir", UVR], capture_output=True, text=True)
-            if r2.returncode:
-                raise RuntimeError("audio-separator: " + (r2.stderr or r2.stdout)[-700:])
+            if sep is None:
+                raise RuntimeError("chua chay tach tieng")
+            o2, _ = sep.communicate(timeout=900)
+            if sep.returncode:
+                raise RuntimeError("audio-separator: " + (o2 or "")[-700:])
             ins = glob.glob(os.path.join(w, "sep", "*Instrumental*"))
             if not ins:
                 raise RuntimeError("khong ra file Instrumental")

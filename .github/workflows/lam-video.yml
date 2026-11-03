@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: video
+          fetch-depth: 1
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
@@ -26,11 +27,15 @@ jobs:
           path: |
             ~/venv
             ~/.cache/uvr
-          key: video-${{ runner.os }}-${{ hashFiles('_tools/requirements-video.txt') }}-v2
+          key: video-${{ runner.os }}-${{ hashFiles('_tools/requirements-video.txt') }}-v3
       - name: Cai ffmpeg + thu vien
         run: |
-          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
           if [ ! -x ~/venv/bin/python ]; then python -m venv ~/venv && ~/venv/bin/pip install -q -r _tools/requirements-video.txt; fi
+          if [ ! -x ~/venv/bin/ffmpeg ]; then
+            curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ -C /tmp
+            cp /tmp/ffmpeg-*-static/ffmpeg /tmp/ffmpeg-*-static/ffprobe ~/venv/bin/
+          fi
+          ~/venv/bin/ffmpeg -version | head -1
       - name: Dung video
         env:
           SHEET_URL: ${{ secrets.SHEET_URL }}
