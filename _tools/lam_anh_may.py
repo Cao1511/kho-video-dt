@@ -324,6 +324,42 @@ def build(a):
     print("Da luu:", a.out)
 
 
+def build2(a):
+    """Anh 2: may tren nen trang + chu chim "DUC THANH" xanh nhat cheo (mau mau-anh-2-may-trang.png)."""
+    may = trim(cut_background(Image.open(a.may)))
+    W2, H2 = (1200, 1200) if may.width >= may.height * 1.1 else (1200, 1600)   # may ngang -> anh vuong
+    img = Image.new("RGBA", (W2, H2), (255, 255, 255, 255))
+    may = fit(may, W2 - 90, H2 - 160)
+    mx, my = (W2 - may.width) // 2, (H2 - may.height) // 2 + 10
+    sh = Image.new("L", (W2, H2), 0)
+    ImageDraw.Draw(sh).ellipse([mx + may.width * 0.08, my + may.height - 22, mx + may.width * 0.92, my + may.height + 20], fill=120)
+    sh = sh.filter(ImageFilter.GaussianBlur(18))
+    img = Image.composite(Image.new("RGBA", (W2, H2), (120, 128, 140, 255)), img, sh.point(lambda v: int(v * 0.45)))
+    img.alpha_composite(may, (mx, my))
+    # chu chim lap lai, cheo len ~20 do, mau xanh nhat nhu mau
+    f = font("bold", 46)
+    t = "ĐỨC THÀNH"
+    bw = tw(f, t) + 20
+    tile = Image.new("RGBA", (bw, 80), (0, 0, 0, 0))
+    ImageDraw.Draw(tile).text((10, 40), t, font=f, fill=(110, 165, 245, 120), anchor="lm")
+    tile = tile.rotate(20, expand=True, resample=Image.BICUBIC)
+    lay = Image.new("RGBA", (W2, H2), (0, 0, 0, 0))
+    tw_, th_ = tile.size
+    xs_even = [40, W2 // 2 + 10]                      # 2 chu moi hang, so le, khong bi cat o mep
+    xs_odd = [W2 // 4 - 40, W2 * 3 // 4 - 30]
+    y, row = 40, 0
+    while y + th_ <= H2 - 20:
+        for x in (xs_even if row % 2 == 0 else xs_odd):
+            x = max(20, min(x, W2 - tw_ - 20))
+            lay.alpha_composite(tile, (int(x), int(y)))
+        y += 250
+        row += 1
+    img.alpha_composite(lay)
+    os.makedirs(os.path.dirname(os.path.abspath(a.out2)), exist_ok=True)
+    img.convert("RGB").save(a.out2, optimize=True)
+    print("Da luu:", a.out2)
+
+
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--may", required=True)
@@ -332,7 +368,10 @@ if __name__ == "__main__":
     p.add_argument("--o", action="append", required=True)
     p.add_argument("--minh-hoa")
     p.add_argument("--out", required=True)
+    p.add_argument("--out2", help="anh 2: may nen trang + chu chim DUC THANH (vd anh/<STT>/2.png)")
     a = p.parse_args()
     if len(a.o) != 3:
         raise SystemExit("Can dung 3 lan --o")
     build(a)
+    if a.out2:
+        build2(a)

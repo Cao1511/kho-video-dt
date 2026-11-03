@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Đức Thành – Đăng Facebook
  * Description: Tự động đăng bài ảnh (ảnh đại diện + nội dung) lên Fanpage khi xuất bản sản phẩm hoặc bài viết.
- * Version: 1.2.3
+ * Version: 1.3.0
  * Author: Đức Thành
  * Requires PHP: 7.4
  */
@@ -110,7 +110,31 @@ function dtfb_publish( $post_id, $force = false, $when = 0 ) {
 	$page = get_option( 'dtfb_page_id' );
 	$msg  = dtfb_message( $post );
 	$img  = get_the_post_thumbnail_url( $post, 'full' );
-	if ( $img ) {
+	/* Nhieu anh: anh dai dien + thu vien anh san pham -> 1 bai Facebook nhieu anh */
+	$imgs  = array();
+	$thumb = get_post_thumbnail_id( $post );
+	if ( $thumb ) { $imgs[] = wp_get_attachment_url( $thumb ); }
+	if ( 'product' === $post->post_type ) {
+		$gal = array_filter( array_map( 'intval', explode( ',', (string) get_post_meta( $post_id, '_product_image_gallery', true ) ) ) );
+		foreach ( array_slice( $gal, 0, 9 ) as $gid ) { $u = wp_get_attachment_url( $gid ); if ( $u ) { $imgs[] = $u; } }
+	}
+	$imgs = array_values( array_unique( array_filter( $imgs ) ) );
+	if ( count( $imgs ) > 1 ) {
+		$sched = isset( $extra['scheduled_publish_time'] );
+		$media = array();
+		foreach ( $imgs as $u ) {
+			$up = dtfb_api_post( $page . '/photos', $sched ? array( 'url' => $u, 'published' => 'false', 'temporary' => 'true' ) : array( 'url' => $u, 'published' => 'false' ) );
+			if ( is_wp_error( $up ) ) { $media = $up; break; }
+			$media[] = array( 'media_fbid' => $up['id'] );
+		}
+		if ( is_wp_error( $media ) ) {
+			$r = $media;
+		} else {
+			$args = array_merge( array( 'message' => $msg ), $extra );
+			foreach ( $media as $i => $m ) { $args[ 'attached_media[' . $i . ']' ] = wp_json_encode( $m ); }
+			$r = dtfb_api_post( $page . '/feed', $args );
+		}
+	} elseif ( $img ) {
 		$r = dtfb_api_post( $page . '/photos', array_merge( array( 'url' => $img, 'message' => $msg ), $extra ) );
 	} else {
 		$r = dtfb_api_post( $page . '/feed', array_merge( get_option( 'dtfb_add_link', '0' ) === '1' ? array( 'message' => $msg, 'link' => get_permalink( $post ) ) : array( 'message' => $msg ), $extra ) );
