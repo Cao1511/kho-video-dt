@@ -1,0 +1,65 @@
+{
+ "ten": "Máy dán nhãn chai tròn tự động",
+ "model": "ZS-TB260R",
+ "link": "https://www.zonesuntech.com/products/automatic-round-bottle-labeling-machine-for-beverage-milk-juice-plastic-bottles",
+ "cong_dung": "Tự động dán nhãn một hoặc hai mặt trên chai tròn. Điều chỉnh thông số làm việc qua bảng điều khiển PLC.",
+ "san_pham": "Chai tròn trong ngành thực phẩm, đồ uống, mỹ phẩm và hóa phẩm.",
+ "thong_so": [
+  [
+   "Nguồn điện",
+   "AC 220 V 50/60 Hz"
+  ],
+  [
+   "Công suất",
+   "1 KW"
+  ],
+  [
+   "Tốc độ",
+   "25-50 bottles/min (depends on bottle size)"
+  ],
+  [
+   "Độ chính xác dán nhãn",
+   "± 1.0 mm"
+  ],
+  [
+   "Đường kính chai",
+   "Φ30-100 mm"
+  ],
+  [
+   "Chiều cao chai",
+   "H=30-200 mm"
+  ],
+  [
+   "Kích thước nhãn",
+   "(L)20-300 mm (H)12-130 mm"
+  ],
+  [
+   "Đường kính lõi cuộn",
+   "Φ76 mm"
+  ],
+  [
+   "Đường kính ngoài cuộn",
+   "Φ350 mm"
+  ],
+  [
+   "Kích thước băng tải",
+   "112*2000 mm(W)"
+  ],
+  [
+   "Kích thước máy",
+   "About (L)2000*(W)820*(H)1380(mm)"
+  ],
+  [
+   "Khối lượng máy",
+   "About 180 kg"
+  ]
+ ],
+ "cau_tao": [
+  "Bảng điều khiển PLC, màn hình số",
+  "Cơ cấu tách chai",
+  "Cụm dán nhãn điều chỉnh chiều cao",
+  "Cảm biến phát hiện chai, điều chỉnh độ nhạy",
+  "Băng tải"
+ ],
+ "nguon_anh": "https://cdn.shopify.com/s/files/1/1538/6957/files/8001-1_9c8a80d9-8753-4d5f-8fb0-4191c330bf13.jpg?v=1736303528"
+}
