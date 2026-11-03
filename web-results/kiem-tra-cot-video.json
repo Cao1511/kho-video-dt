@@ -1,0 +1,27 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "head": [
+    "STT",
+    "Tên máy",
+    "Link video",
+    "Bài YouTube",
+    "Bài Facebook",
+    "Bài TikTok",
+    "Trạng thái",
+    "Thời gian đăng",
+    "Link YouTube",
+    "Link Facebook",
+    "Link TikTok",
+    "Link bài web",
+    "Ghi chú"
+   ],
+   "data": [],
+   "step": 0
+  }
+ ],
+ "time": "2026-11-03 15:44:14"
+}
