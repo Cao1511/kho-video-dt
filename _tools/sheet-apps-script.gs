@@ -12,7 +12,7 @@ const NORM = t => String(t).normalize('NFC').trim().toLowerCase();
 const LOCKED = ['STT'];                   // khong cho ghi de cot nay
 
 const VIDEO_TAB = 'DS video';
-const VIDEO_COLS = ['STT', 'Tên máy', 'Link video', 'Trạng thái', 'Thời gian đăng', 'YouTube', 'Facebook', 'TikTok', 'Bài web', 'Ghi chú'];
+const VIDEO_COLS = ['STT', 'Tên máy', 'Link video', 'Trạng thái', 'Thời gian đăng', 'YouTube', 'Facebook', 'TikTok', 'Bài web', 'Ghi chú', 'Bài YouTube', 'Bài Facebook', 'Bài TikTok'];
 
 function sheet_(tab) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -24,7 +24,7 @@ function sheet_(tab) {
     src.getRange(1, 1, 2, n).copyTo(sh.getRange(1, 1, 2, n), { formatOnly: true });
     sh.getRange(1, 1, 1, n).merge().setValue('Danh sách video đăng mạng xã hội Đức Thành');
     sh.getRange(HEADER_ROW, 1, 1, n).setValues([VIDEO_COLS]);
-    [50, 260, 140, 120, 140, 130, 130, 130, 220, 260].forEach((w, i) => sh.setColumnWidth(i + 1, w));
+    [50, 260, 140, 120, 140, 130, 130, 130, 220, 260, 320, 320, 320].forEach((w, i) => sh.setColumnWidth(i + 1, w));
     sh.setFrozenRows(2);
   }
   return sh;

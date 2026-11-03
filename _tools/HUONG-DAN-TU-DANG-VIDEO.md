@@ -6,7 +6,7 @@ Video do phiên "Làm video" (skill `lam-video-ducthanh`) edit sẵn theo mẫu 
 
 Thao tác với web/Sheet qua GitHub Actions như `_tools/HUONG-DAN-TU-DANG.md` (ghi `web-jobs/<ten>.json` → commit + push → chờ workflow → `git pull` → đọc `web-results/<ten>.json`). Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống.
 
-## Bước 0 – Cập nhật TikTok còn treo từ lần trước
+## Bước 0 – Cập nhật TikTok còn treo từ lần trước (làm nhanh; không được thì thôi, người dùng chấp nhận để trống)
 Đọc tab (Bước 1). Dòng nào Trạng thái = "Đã đăng" mà cột TikTok trống và Ghi chú có `tiktok_post=<id>`: gọi `mcp__Buffer__get_post` id đó; có `externalLink` thì ghi vào cột TikTok (lệnh Bước 6), có `error` thì ghi Ghi chú "TikTok lỗi: <nguyên văn>".
 
 ## Bước 1 – Chọn video
@@ -14,11 +14,17 @@ Thao tác với web/Sheet qua GitHub Actions như `_tools/HUONG-DAN-TU-DANG.md` 
 2. Chọn STT **nhỏ nhất** có Trạng thái = "Chờ đăng" và có Link video. Không có → kết thúc, báo "Không có video mới để đăng".
 3. Thư mục video = phần đường dẫn trong Link video sau `/video/video/` (vd `.../kho-video-dt/video/video/may-xep-chai-a1b2c3d4/may-xep-chai-a1b2c3d4.mp4` → `video/may-xep-chai-a1b2c3d4/`). Đọc `caption.json` trong thư mục đó. Kiểm tra file mp4 còn trong kho và link raw trả 200/206 (`curl -s -o /dev/null -w "%{http_code}" -r 0-100 <link>`). Mất file → ghi Trạng thái "Lỗi – mất file video", dừng.
 
+## Bước 1b – Lấy nội dung bài đăng (ưu tiên nội dung trong Sheet)
+Tab "DS video" có 3 cột nội dung bài: **Bài YouTube**, **Bài Facebook**, **Bài TikTok** (phiên làm video ghi sẵn; người dùng có thể đã SỬA trong Sheet). Luôn dùng nội dung trong Sheet nếu ô có chữ; ô trống mới lấy từ `caption.json`.
+- Bài YouTube / Bài TikTok có dạng: dòng đầu `Tiêu đề: <tiêu đề>`, một dòng trống, rồi phần mô tả/caption. → title = phần sau "Tiêu đề:" ở dòng đầu; text = phần còn lại (bỏ dòng trống đầu).
+- Bài Facebook: toàn bộ ô là caption.
+- Kiểm tra lại quy tắc (không link, YouTube không liên hệ, không icon đầu caption…); nếu người dùng sửa sai quy tắc thì vẫn đăng đúng ý người dùng nhưng ghi nhắc trong báo cáo.
+
 ## Bước 2 – Đăng 3 kênh qua Buffer
 Org `6ae460e02880bef151572737`. `mcp__Buffer__create_post`, `schedulingType: automatic`, `mode: shareNow`, `assets: [{"video":{"url": LINK_VIDEO}}]` (MẢNG):
-- TikTok `6ae4617f2f1f5ed6481dad80`: text = `caption.tiktok.text`, `metadata.tiktok.title` = `caption.tiktok.title`.
-- YouTube `6ae4616a2f1f5ed6481dacd4`: text = `caption.youtube.text`, `metadata.youtube = {title: caption.youtube.title, categoryId: "28", privacy: "public", madeForKids: false}`.
-- Facebook `6ae461382f1f5ed6481dab31`: text = `caption.facebook.text`, `metadata.facebook.type = "reel"`.
+- TikTok `6ae4617f2f1f5ed6481dad80`: text/title lấy theo Bước 1b (Bài TikTok, hoặc `caption.tiktok`).
+- YouTube `6ae4616a2f1f5ed6481dacd4`: text/title theo Bước 1b (Bài YouTube, hoặc `caption.youtube`), `metadata.youtube = {title, categoryId: "28", privacy: "public", madeForKids: false}`.
+- Facebook `6ae461382f1f5ed6481dab31`: text theo Bước 1b (Bài Facebook, hoặc `caption.facebook.text`), `metadata.facebook.type = "reel"`.
 Rồi `mcp__Buffer__get_post` từng bài lấy `status` + `externalLink`. YouTube/Facebook thường `sent` ngay; TikTok hay "sending" vài phút → gọi lại get_post 2–3 lần cách nhau (làm việc khác xen giữa), vẫn chưa xong thì để Bước 0 lần sau xử lý. Bài `error` → ghi lỗi nguyên văn vào Ghi chú, không đăng lại lung tung.
 
 ## Bước 3 – Gắn link YouTube vào bài sản phẩm trên web
@@ -33,7 +39,7 @@ Lệnh:
 ```json
 {"steps":[{"tab":"DS video","sheet_update":[{"stt":"<STT>","fields":{
   "Trạng thái":"Đã đăng","Thời gian đăng":"<dd/mm/yyyy HH:MM giờ VN>",
-  "YouTube":"<link>","Facebook":"<link>","TikTok":"<link hoặc để trống nếu đang xử lý>",
+  "YouTube":"<link>","Facebook":"<link>","TikTok":"<link; chưa lấy được thì BỎ trường này (người dùng chấp nhận để trống)>",
   "Link video":"<link YouTube – vì file mp4 đã xoá khỏi kho>",
   "Bài web":"<link bài sản phẩm đã gắn video, hoặc Chưa có bài>",
   "Ghi chú":"<tiktok_post=<id> nếu TikTok còn đang xử lý; lỗi nếu có>"}}]}]}
