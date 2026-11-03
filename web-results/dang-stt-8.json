@@ -1,0 +1,184 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 369,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 369
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 370,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 370
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 371,
+    "slug": "may-chiet-rot-han-kin-ong-nhua",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=371"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 371,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 20,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 371,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/",
+    "meta_data": [
+     {
+      "id": 1246,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1264,
+      "key": "dtfb_message",
+      "value": "Máy chiết rót hàn kín ống nhựa tự động ZS-FS120 – đóng ống siro, dung dịch uống, serum, tinh dầu liều đơn 1–50 ml.\n\nXưởng đang đóng ống uống bằng tay hoặc thuê ngoài? Máy chiết rót ống nhựa (máy đóng ống monodose) ZS-FS120 tự tạo hình ống từ màng, chiết, hàn kín và cắt vỉ trên một máy.\n\n✅ 5 vòi chiết bơm nhu động, chất lỏng không qua thân bơm\n✅ Dung tích chiết 1–50 ml mỗi ống\n✅ Tốc độ cắt 15–30 lần/phút\n✅ Màng PVC+PE, nhiệt độ hàn điều chỉnh được\n✅ Màn hình cảm ứng, công suất 7 kW\n🎯 Phù hợp: siro, dung dịch uống, thực phẩm chức năng, serum, tinh dầu, nước hoa\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn đóng ống bao nhiêu ml? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maychietrotongnhua #maydongong #mayduocpham #maymypham #ducthanh"
+     },
+     {
+      "id": 1265,
+      "key": "rank_math_title",
+      "value": "Máy chiết rót hàn kín ống nhựa ZS-FS120 | Đức Thành"
+     },
+     {
+      "id": 1266,
+      "key": "rank_math_description",
+      "value": "Máy chiết rót hàn kín ống nhựa ZS-FS120: 5 vòi bơm nhu động, chiết 1–50 ml, tạo hình – hàn – cắt vỉ tự động. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1267,
+      "key": "rank_math_focus_keyword",
+      "value": "máy chiết rót hàn kín ống nhựa"
+     },
+     {
+      "id": 1268,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132104263472642"
+     },
+     {
+      "id": 1269,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-03 22:03:34 (ID 1369168222940597_122132104263472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-chiet-rot-chat-long/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "hit",
+      "hit"
+     ]
+    ],
+    [
+     "/may-chiet-rot-chat-long/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 10
+  }
+ ],
+ "time": "2026-11-03 15:05:40"
+}
