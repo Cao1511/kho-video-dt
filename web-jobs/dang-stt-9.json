@@ -1,0 +1,152 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-dan-nhan-chai-det-hai-mat-duc-thanh.webp",
+   "filename": "may-dan-nhan-chai-det-hai-mat-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy dán nhãn chai dẹt hai mặt tự độn – Đức Thành",
+    "title": "Máy dán nhãn chai dẹt hai mặt tự độn"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-dan-nhan-chai-det-hai-mat-duc-thanh-2.webp",
+   "filename": "may-dan-nhan-chai-det-hai-mat-duc-thanh-2.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh2.id}}",
+   "body": {
+    "alt_text": "Máy dán nhãn chai dẹt hai mặt tự độn – ảnh máy – Đức Thành",
+    "title": "Máy dán nhãn chai dẹt hai mặt tự độn – ảnh máy"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
+    "slug": "may-dan-nhan-chai-det-hai-mat",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy dán nhãn chai dẹt hai mặt tự động ZS-TB600</h2>\n<p><strong>Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600</strong> tự phát hiện chai đi qua và dán nhãn decal <strong>một hoặc hai mặt</strong> trên chai dẹt, chai vuông, can nhựa. Máy phù hợp chai nước giặt, dầu ô liu, nước hoa và nhiều loại chai dẹt khác.</p>\n<p>Tốc độ dán <strong>60–350 chai/phút</strong> (tùy kích cỡ chai), công suất <strong>1500 W</strong>, nguồn <strong>AC220V</strong>. Máy điều khiển bằng <strong>màn hình cảm ứng</strong>, có hai chổi ép nhãn giúp nhãn phẳng và bám chắc.</p>\n<h2>Ứng dụng của máy dán nhãn chai dẹt</h2>\n<ul>\n<li><strong>Hóa phẩm gia dụng:</strong> chai nước giặt, nước rửa chén, nước xả.</li>\n<li><strong>Thực phẩm:</strong> chai dầu ô liu và các chai dẹt đựng dầu, gia vị.</li>\n<li><strong>Mỹ phẩm, nước hoa:</strong> chai dẹt, chai vuông cần dán nhãn hai mặt.</li>\n<li><strong>Can, bình nhựa:</strong> chai dẹt có tay cầm, bề dày 20–120 mm.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\"><tbody>\n<tr><th>Model</th><td>ZS-TB600</td></tr>\n<tr><th>Nguồn điện</th><td>AC220V, 50/60Hz</td></tr>\n<tr><th>Công suất</th><td>1500 W</td></tr>\n<tr><th>Tốc độ dán nhãn</th><td>60–350 chai/phút (tùy kích cỡ chai)</td></tr>\n<tr><th>Bề dày vật chứa</th><td>20–120 mm</td></tr>\n<tr><th>Chiều cao vật chứa</th><td>30–350 mm</td></tr>\n<tr><th>Kích thước nhãn</th><td>Dài 25–300 mm, cao 15–200 mm</td></tr>\n<tr><th>Đường kính lõi cuộn nhãn</th><td>φ76 mm</td></tr>\n<tr><th>Đường kính ngoài cuộn nhãn</th><td>φ350 mm</td></tr>\n<tr><th>Kích thước máy</th><td>Khoảng 2120 × 940 × 1500 mm</td></tr>\n<tr><th>Khối lượng tịnh / cả bì</th><td>Khoảng 450 kg / 650 kg</td></tr>\n</tbody></table>\n<h2>Cấu tạo máy dán nhãn ZS-TB600</h2>\n<ul>\n<li><strong>Màn hình cảm ứng:</strong> cài đặt và theo dõi thông số dán nhãn.</li>\n<li><strong>Cảm biến phát hiện chai:</strong> nhận chai đi qua để dán nhãn đúng lúc.</li>\n<li><strong>Cảm biến khe nhãn:</strong> nhận biết vị trí nhãn trên cuộn.</li>\n<li><strong>Cơ cấu dẫn hướng chai:</strong> giữ chai đi thẳng và ổn định trên băng tải.</li>\n<li><strong>Hai chổi ép nhãn:</strong> ép nhãn phẳng lên hai mặt chai.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Chai dẹt được đưa lên băng tải và đi qua cơ cấu dẫn hướng.</li>\n<li>Cảm biến phát hiện chai và gửi tín hiệu cho bộ điều khiển.</li>\n<li>Máy bóc nhãn từ cuộn decal và dán lên một hoặc hai mặt chai.</li>\n<li>Chổi ép nhãn ép phẳng, chai thành phẩm đi ra cuối băng tải.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Dán một hoặc hai mặt</h3>\n<p>Một máy dán được nhãn mặt trước, mặt sau hoặc cả hai mặt chai, không phải chạy chai hai lần.</p>\n<h3>Năng suất cao</h3>\n<p>Tốc độ <strong>60–350 chai/phút</strong> tùy kích cỡ chai, đáp ứng dây chuyền sản xuất liên tục.</p>\n<h3>Nhãn phẳng, bám chắc</h3>\n<p>Hai chổi ép nhãn giúp nhãn không bọt khí, không nhăn trên mặt chai dẹt.</p>\n<h3>Dễ vận hành</h3>\n<p>Thông số cài trực quan trên màn hình cảm ứng, đổi kích cỡ chai và nhãn nhanh.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Chọn nhãn decal có kích thước và lõi cuộn đúng thông số của máy.</li>\n<li>Điều chỉnh cơ cấu dẫn hướng theo bề dày và chiều cao chai trước khi chạy.</li>\n<li>Vệ sinh cảm biến và chổi ép nhãn định kỳ để dán nhãn ổn định.</li>\n<li>Tốc độ thực tế phụ thuộc kích cỡ chai và nhãn, nên chạy thử mẫu của bạn.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy dán được những loại chai nào?</h3>\n<p>Máy dán chai dẹt, chai vuông, can nhựa có bề dày 20–120 mm và chiều cao 30–350 mm.</p>\n<h3>Máy dán được một mặt không?</h3>\n<p>Được. Máy dán nhãn một hoặc hai mặt tùy cài đặt.</p>\n<h3>Máy dán nhãn chai dẹt hai mặt giá bao nhiêu?</h3>\n<p>Giá phụ thuộc cấu hình và nhu cầu thực tế. Vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> – tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <strong>0974 708 603 – 0989 139 855</strong>.</p>\n<p>Xem thêm: <a href=\"https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/\">máy dán nhãn chai tròn tự động</a>, <a href=\"https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/\">máy dán nhãn chai tròn và dẹt</a>, <a href=\"https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/\">máy dán nhãn nắp và chai tròn</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Dán nhãn <strong>một hoặc hai mặt</strong> trên chai dẹt, can nhựa</li>\n<li>Tốc độ <strong>60–350 chai/phút</strong> (tùy kích cỡ chai)</li>\n<li>Công suất <strong>1500 W</strong>, nguồn AC220V</li>\n<li>Điều khiển <strong>màn hình cảm ứng</strong>, hai chổi ép nhãn</li>\n<li>Phù hợp: chai nước giặt, dầu ô liu, nước hoa, chai dẹt</li>\n</ul>",
+    "categories": [
+     {
+      "id": 30
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     },
+     {
+      "id": "{{anh2.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600 – dán nhãn một hoặc hai mặt chai nước giặt, dầu ô liu, nước hoa, tốc độ 60–350 chai/phút.\n\nDán nhãn chai dẹt bằng tay chậm, nhãn dễ lệch? Máy dán nhãn chai dẹt (máy dán decal hai mặt) ZS-TB600 tự nhận chai và dán nhãn một hoặc hai mặt, nhãn phẳng nhờ hai chổi ép.\n\n✅ Dán nhãn một hoặc hai mặt\n✅ Tốc độ 60–350 chai/phút, tùy kích cỡ chai\n✅ Chai dày 20–120 mm, cao 30–350 mm\n✅ Công suất 1500 W, AC220V\n✅ Màn hình cảm ứng, cảm biến phát hiện chai\n🎯 Phù hợp: chai nước giặt, dầu ô liu, nước hoa, can chai dẹt\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nChai của bạn kích thước bao nhiêu? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydannhanchaidet #maydannhan #maydongoi #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy dán nhãn chai dẹt hai mặt ZS-TB600 | Đức Thành",
+     "rank_math_description": "Máy dán nhãn chai dẹt hai mặt ZS-TB600: dán 1–2 mặt, 60–350 chai/phút, 1500 W, màn hình cảm ứng. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy dán nhãn chai dẹt"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/danh-muc-san-pham/may-dan-nhan/"
+   ]
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "9",
+     "fields": {
+      "Tên máy": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
