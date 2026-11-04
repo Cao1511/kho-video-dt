@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 379,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 379
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 380,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 380
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 381,
+    "slug": "day-chuyen-chiet-rot-dong-nap-dan-nhan",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=381"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 381,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 381,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/",
+    "meta_data": [
+     {
+      "id": 1336,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1354,
+      "key": "dtfb_message",
+      "value": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1 – chiết, siết nắp, dán nhãn trên một đường chạy.\n\nXưởng đang chiết, đóng nắp và dán nhãn chai xịt từng công đoạn bằng tay? Dây chuyền chiết rót đóng nắp dán nhãn (máy đóng chai xịt tự động) ZS-MPCL1 nối ba công đoạn bằng băng tải.\n\n✅ Bơm chiết inox 316, sai số ≤±1% (thử với nước)\n✅ Chai chiết φ20–160 mm, cao 30–300 mm\n✅ Đóng nắp 5–25 chai/phút, siết nắp servo\n✅ Cụm dán nhãn 60–350 chai/phút\n✅ Máy đóng nắp inox 304\n🎯 Phù hợp: chai xịt dung dịch tẩy rửa, hóa phẩm gia dụng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đóng chai xịt dung tích bao nhiêu ml? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#daychuyenchietrot #maydongchaixit #maychietrot #mayduocmypham #ducthanh"
+     },
+     {
+      "id": 1355,
+      "key": "rank_math_title",
+      "value": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 | Đức Thành"
+     },
+     {
+      "id": 1356,
+      "key": "rank_math_description",
+      "value": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1: sai số ≤±1%, đóng nắp 5–25 chai/phút. Gọi 0974 708 603 để được báo giá."
+     },
+     {
+      "id": 1357,
+      "key": "rank_math_focus_keyword",
+      "value": "dây chuyền chiết rót đóng nắp dán nhãn"
+     },
+     {
+      "id": 1358,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132275161472642"
+     },
+     {
+      "id": 1359,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-04 13:45:50 (ID 1369168222940597_122132275161472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-chiet-rot-chat-long/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 40,
+    "vua_nap": 24,
+    "san_co": 16
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "11",
+      "ok": true,
+      "row": 13,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-04 06:47:43"
+}
