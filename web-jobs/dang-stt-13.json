@@ -1,0 +1,155 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-chiet-rot-chat-long-mot-voi-duc-thanh.webp",
+   "filename": "may-chiet-rot-chat-long-mot-voi-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy chiết rót chất lỏng một vòi G1WY – Đức Thành",
+    "title": "Máy chiết rót chất lỏng một vòi G1WY"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-chiet-rot-chat-long-mot-voi-duc-thanh-2.webp",
+   "filename": "may-chiet-rot-chat-long-mot-voi-duc-thanh-2.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh2.id}}",
+   "body": {
+    "alt_text": "Máy chiết rót chất lỏng một vòi G1WY – ảnh máy – Đức Thành",
+    "title": "Máy chiết rót chất lỏng một vòi G1WY – ảnh máy"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy chiết rót chất lỏng một vòi G1WY",
+    "slug": "may-chiet-rot-chat-long-mot-voi",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy chiết rót chất lỏng một vòi G1WY</h2>\n<p><strong>Máy chiết rót chất lỏng một vòi G1WY</strong> là máy chiết định lượng bằng piston dành cho chất lỏng có độ nhớt thấp và không có gas. Máy chạy bằng khí nén, thao tác đạp chân để chiết, phù hợp xưởng nhỏ cần chiết chai nhanh và đều thay cho rót thủ công.</p>\n<p>Máy chiết <strong>5–30 chai/phút</strong> với độ chính xác <strong>±1%</strong>. Dòng G1WY có nhiều phiên bản dung tích từ 3–30 ml đến 1000–5000 ml, nên một xưởng có thể chọn đúng cỡ chai đang dùng. Máy còn được gọi là máy rót nước một đầu, máy chiết rót piston một vòi.</p>\n<h2>Ứng dụng của máy chiết rót chất lỏng</h2>\n<ul>\n<li><strong>Đồ uống:</strong> nước khoáng, nước trái cây.</li>\n<li><strong>Gia vị:</strong> nước tương, giấm.</li>\n<li><strong>Nông nghiệp:</strong> thuốc bảo vệ thực vật dạng lỏng.</li>\n<li><strong>Chất lỏng loãng khác:</strong> các sản phẩm độ nhớt thấp, không tạo gas.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tbody>\n<tr><th>Model</th><td>G1WY</td></tr>\n<tr><th>Số vòi chiết</th><td>1 vòi</td></tr>\n<tr><th>Kiểu chiết</th><td>Piston định lượng</td></tr>\n<tr><th>Dung tích chiết (các phiên bản)</th><td>3–30 ml / 10–100 ml / 30–300 ml / 50–500 ml / 100–1000 ml / 500–3000 ml / 1000–5000 ml</td></tr>\n<tr><th>Tốc độ chiết</th><td>5–30 chai/phút</td></tr>\n<tr><th>Độ chính xác</th><td>±1%</td></tr>\n<tr><th>Áp suất khí</th><td>0,4–0,6 MPa</td></tr>\n<tr><th>Nguồn điện và công suất</th><td>220V, 50/60Hz, 20W</td></tr>\n<tr><th>Kích thước máy (phiên bản 100–1000 ml)</th><td>1170 × 380 × 350 mm</td></tr>\n<tr><th>Khối lượng</th><td>25 kg</td></tr>\n</tbody>\n</table>\n<h2>Cấu tạo máy chiết rót chất lỏng một vòi G1WY</h2>\n<ul>\n<li><strong>Cơ cấu chiết piston:</strong> hút và đẩy chất lỏng theo thể tích cài đặt.</li>\n<li><strong>Một vòi chiết:</strong> rót trực tiếp vào chai, lọ.</li>\n<li><strong>Ống hút chất lỏng:</strong> dẫn nguyên liệu từ thùng chứa vào máy.</li>\n<li><strong>Bàn đạp điều khiển:</strong> đạp chân để máy chiết một lần.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Chất lỏng được piston hút từ thùng chứa qua ống hút.</li>\n<li>Người vận hành đặt chai dưới vòi và đạp bàn đạp.</li>\n<li>Piston đẩy đúng lượng chất lỏng đã cài vào chai.</li>\n<li>Lấy chai ra, đặt chai mới và lặp lại chu trình.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Chiết định lượng đều</h3>\n<p>Piston định lượng giúp mỗi chai có lượng chất lỏng gần như nhau, sai số chỉ ±1%.</p>\n<h3>Nhiều phiên bản dung tích</h3>\n<p>Có phiên bản chiết từ 3 ml đến 5000 ml, dùng được cho cả chai nhỏ lẫn can lớn.</p>\n<h3>Gọn nhẹ, dễ sử dụng</h3>\n<p>Máy nặng 25 kg, công suất chỉ 20W, vận hành bằng bàn đạp nên người mới cũng làm quen nhanh.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Chỉ dùng cho chất lỏng độ nhớt thấp, không có gas; với kem, dịch sệt nên chọn máy chiết dịch sệt.</li>\n<li>Cấp khí nén ổn định trong khoảng 0,4–0,6 MPa.</li>\n<li>Báo rõ dung tích chai để Đức Thành tư vấn đúng phiên bản.</li>\n<li>Vệ sinh ống hút, piston và vòi chiết sau mỗi ca hoặc khi đổi sản phẩm.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy chiết rót chất lỏng một vòi G1WY chiết được dung tích bao nhiêu?</h3>\n<p>Tùy phiên bản, từ 3–30 ml đến 1000–5000 ml. Anh chị cho biết dung tích chai để được tư vấn phiên bản phù hợp.</p>\n<h3>Máy chiết được bao nhiêu chai mỗi phút?</h3>\n<p>Khoảng 5–30 chai/phút, tuỳ dung tích và cách đặt chai.</p>\n<h3>Máy dùng điện áp nào?</h3>\n<p>Máy dùng điện 220V, 50/60Hz, công suất 20W và cần khí nén 0,4–0,6 MPa.</p>\n<h3>Máy chiết được những sản phẩm nào?</h3>\n<p>Phù hợp chất lỏng độ nhớt thấp, không gas như nước khoáng, nước trái cây, nước tương, giấm, thuốc bảo vệ thực vật.</p>\n<h3>Giá máy chiết rót chất lỏng một vòi G1WY bao nhiêu?</h3>\n<p>Giá tuỳ phiên bản dung tích. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-chiet-rot-chat-long/\">máy chiết rót chất lỏng</a>, <a href=\"/may-chiet-rot/\">máy chiết rót</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Chiết định lượng <strong>piston 1 vòi</strong>, đạp chân để chiết</li>\n<li>Tốc độ <strong>5–30 chai/phút</strong>, sai số <strong>±1%</strong></li>\n<li>Nhiều phiên bản dung tích: <strong>3 ml đến 5000 ml</strong></li>\n<li>Điện <strong>220V, 20W</strong>, khí nén 0,4–0,6 MPa, nặng 25 kg</li>\n<li>Phù hợp: nước khoáng, nước trái cây, nước tương, giấm, thuốc BVTV</li>\n</ul>",
+    "categories": [
+     {
+      "id": 25
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     },
+     {
+      "id": "{{anh2.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy chiết rót chất lỏng một vòi G1WY – chiết định lượng bằng piston cho nước khoáng, nước trái cây, nước tương, giấm.\n\nRót chai bằng tay chậm và mỗi chai một lượng khác nhau? Máy rót nước một đầu (máy chiết piston một vòi) G1WY chiết đều từng chai, chỉ cần đạp chân.\n\n✅ Chiết định lượng piston, 1 vòi chiết\n✅ Tốc độ 5–30 chai/phút\n✅ Sai số chiết ±1%\n✅ Nhiều phiên bản dung tích, từ 3 ml đến 5000 ml\n✅ Điện 220V, công suất 20W, nặng 25 kg\n🎯 Phù hợp: nước khoáng, nước trái cây, nước tương, giấm, thuốc bảo vệ thực vật\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang chiết loại chất lỏng nào, chai bao nhiêu ml? Nhắn Fanpage để Đức Thành tư vấn phiên bản phù hợp.\n\n#maychietrotchatlong #maychietrotmotvoi #maychietpiston #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy chiết rót chất lỏng một vòi G1WY | Đức Thành",
+     "rank_math_description": "Máy chiết rót chất lỏng một vòi G1WY: piston định lượng, 5–30 chai/phút, sai số ±1%, nhiều dung tích 3–5000 ml. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy chiết rót chất lỏng một vòi"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-chiet-rot-chat-long/"
+   ]
+  },
+  {
+   "warm_all": true
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "13",
+     "fields": {
+      "Tên máy": "Máy chiết rót chất lỏng một vòi G1WY",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
