@@ -1,0 +1,155 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh.webp",
+   "filename": "day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 – Đức Thành",
+    "title": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh-2.webp",
+   "filename": "day-chuyen-chiet-rot-dong-nap-dan-nhan-duc-thanh-2.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh2.id}}",
+   "body": {
+    "alt_text": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 – ảnh máy – Đức Thành",
+    "title": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 – ảnh máy"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
+    "slug": "day-chuyen-chiet-rot-dong-nap-dan-nhan",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1</h2>\n<p><strong>Dây chuyền chiết rót, đóng nắp và dán nhãn chai xịt tự động ZS-MPCL1</strong> gom ba công đoạn cuối của đóng chai thành một đường chạy liên tục: chiết dung dịch vào chai, cấp và siết nắp xịt, rồi dán nhãn. Dây chuyền thường dùng cho chai xịt dung dịch tẩy rửa, nước lau kính, nước xịt vệ sinh.</p>\n<p>Máy chiết ZS-VTMP80C dùng <strong>bơm chiết inox 316</strong>, sai số chiết <strong>≤±1%</strong> khi thử với nước. Máy đóng nắp ZS-XG445 chạy <strong>5–25 chai/phút</strong> tùy chai và nắp; cụm dán nhãn ZS-TB300A/B có tốc độ riêng <strong>60–350 chai/phút</strong>. Các cụm máy được nối bằng băng tải nên chai đi thẳng từ chiết, đóng nắp đến dán nhãn.</p>\n<h2>Ứng dụng của dây chuyền đóng chai xịt</h2>\n<ul>\n<li><strong>Hóa phẩm gia dụng:</strong> dung dịch tẩy rửa, nước lau bếp, nước xịt vệ sinh dạng chai xịt.</li>\n<li><strong>Xưởng đóng gói quy mô nhỏ và vừa:</strong> cần thay công đoạn chiết, đóng nắp, dán nhãn thủ công bằng một dây chuyền tự động.</li>\n<li><strong>Chai tròn nhiều kích thước:</strong> chiết được chai φ20–160 mm, cao 30–300 mm.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tbody>\n<tr><th>Model dây chuyền</th><td>ZS-MPCL1</td></tr>\n<tr><th>Máy chiết</th><td>ZS-VTMP80C</td></tr>\n<tr><th>Kích thước chai chiết</th><td>φ20–160 mm, cao 30–300 mm</td></tr>\n<tr><th>Vật liệu bơm chiết</th><td>Inox 316</td></tr>\n<tr><th>Độ chính xác chiết</th><td>≤±1% (thử với nước)</td></tr>\n<tr><th>Công suất máy chiết</th><td>2000 W</td></tr>\n<tr><th>Máy đóng nắp</th><td>ZS-XG445</td></tr>\n<tr><th>Tốc độ đóng nắp</th><td>5–25 chai/phút (tùy chai và nắp)</td></tr>\n<tr><th>Công suất máy đóng nắp</th><td>900 W</td></tr>\n<tr><th>Vật liệu máy đóng nắp</th><td>Inox 304</td></tr>\n<tr><th>Áp suất khí đóng nắp</th><td>0,6–0,8 MPa</td></tr>\n<tr><th>Máy dán nhãn</th><td>ZS-TB300A / ZS-TB300B</td></tr>\n<tr><th>Tốc độ riêng cụm dán nhãn</th><td>60–350 chai/phút (tùy kích thước chai)</td></tr>\n</tbody>\n</table>\n<h2>Cấu tạo dây chuyền ZS-MPCL1</h2>\n<ul>\n<li><strong>Máy chiết rót:</strong> bơm chiết inox 316 chiết dung dịch vào chai.</li>\n<li><strong>Máy đóng nắp:</strong> cấp nắp bằng khí nén, siết nắp bằng servo.</li>\n<li><strong>Máy dán nhãn:</strong> dán nhãn lên thân chai sau khi đã đóng nắp.</li>\n<li><strong>Băng tải:</strong> nối các cụm máy thành một đường chạy liên tục.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Chai xịt được đưa lên băng tải vào máy chiết, bơm inox 316 chiết dung dịch theo lượng cài đặt.</li>\n<li>Chai đi tiếp đến máy đóng nắp, nắp được cấp bằng khí nén và siết bằng servo.</li>\n<li>Chai đã đóng nắp chạy qua máy dán nhãn để dán nhãn thân chai.</li>\n<li>Thành phẩm ra cuối băng tải, cả dây chuyền chạy liên tục.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Ba công đoạn trên một dây chuyền</h3>\n<p>Chiết rót, đóng nắp và dán nhãn nối liền bằng băng tải, giảm số người đứng máy và giảm thao tác chuyển chai giữa các công đoạn.</p>\n<h3>Chiết chính xác, bơm inox 316</h3>\n<p>Bơm chiết inox 316 chiết dung dịch với sai số ≤±1% khi thử với nước, thuận lợi cho các dung dịch tẩy rửa.</p>\n<h3>Siết nắp servo ổn định</h3>\n<p>Nắp xịt được cấp bằng khí nén và siết bằng servo, lực siết đều giữa các chai.</p>\n<h3>Chai nhiều kích thước</h3>\n<p>Chiết được chai φ20–160 mm, cao 30–300 mm, đổi sản phẩm không cần đổi cả dây chuyền.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Gửi mẫu chai xịt, nắp xịt và nhãn để Đức Thành tư vấn cấu hình phù hợp.</li>\n<li>Cấp khí nén 0,6–0,8 MPa cho cụm đóng nắp.</li>\n<li>Tốc độ thực tế phụ thuộc kích thước chai, nắp và độ nhớt dung dịch; nên chạy thử mẫu của xưởng.</li>\n<li>Vệ sinh bơm và đường ống chiết khi đổi sản phẩm.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Dây chuyền ZS-MPCL1 đóng được loại chai nào?</h3>\n<p>Dây chuyền dành cho chai xịt dung dịch tẩy rửa; máy chiết xử lý chai φ20–160 mm, cao 30–300 mm.</p>\n<h3>Tốc độ đóng nắp là bao nhiêu?</h3>\n<p>Máy đóng nắp chạy 5–25 chai/phút tùy chai và nắp; cụm dán nhãn có tốc độ riêng 60–350 chai/phút tùy kích thước chai.</p>\n<h3>Sai số chiết rót là bao nhiêu?</h3>\n<p>Sai số chiết ≤±1% khi thử với nước.</p>\n<h3>Giá dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 bao nhiêu?</h3>\n<p>Giá tùy cấu hình. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-chiet-rot-chat-long/\">máy chiết rót chất lỏng</a>, <a href=\"/may-duoc-my-pham/\">máy dược &amp; mỹ phẩm</a>, <a href=\"/may-vien-nap-lo-tu-dong/\">máy viền nắp lọ tự động ZS-YG100</a>.</p>\n",
+    "short_description": "<ul class=\"dt-short\"><li>Một dây chuyền: <strong>chiết rót – đóng nắp – dán nhãn</strong> chai xịt</li><li>Bơm chiết <strong>inox 316</strong>, sai số chiết <strong>≤±1%</strong> (thử với nước)</li><li>Đóng nắp <strong>5–25 chai/phút</strong> tùy chai và nắp</li><li>Chai chiết <strong>φ20–160 mm, cao 30–300 mm</strong></li><li>Máy đóng nắp vỏ <strong>inox 304</strong>, siết nắp servo</li></ul>",
+    "categories": [
+     {
+      "id": 25
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     },
+     {
+      "id": "{{anh2.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1 – chiết, siết nắp, dán nhãn trên một đường chạy.\n\nXưởng đang chiết, đóng nắp và dán nhãn chai xịt từng công đoạn bằng tay? Dây chuyền chiết rót đóng nắp dán nhãn (máy đóng chai xịt tự động) ZS-MPCL1 nối ba công đoạn bằng băng tải.\n\n✅ Bơm chiết inox 316, sai số ≤±1% (thử với nước)\n✅ Chai chiết φ20–160 mm, cao 30–300 mm\n✅ Đóng nắp 5–25 chai/phút, siết nắp servo\n✅ Cụm dán nhãn 60–350 chai/phút\n✅ Máy đóng nắp inox 304\n🎯 Phù hợp: chai xịt dung dịch tẩy rửa, hóa phẩm gia dụng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đóng chai xịt dung tích bao nhiêu ml? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#daychuyenchietrot #maydongchaixit #maychietrot #mayduocmypham #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Dây chuyền chiết rót đóng nắp dán nhãn ZS-MPCL1 | Đức Thành",
+     "rank_math_description": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1: sai số ≤±1%, đóng nắp 5–25 chai/phút. Gọi 0974 708 603 để được báo giá.",
+     "rank_math_focus_keyword": "dây chuyền chiết rót đóng nắp dán nhãn"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-chiet-rot-chat-long/"
+   ]
+  },
+  {
+   "warm_all": true
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "11",
+     "fields": {
+      "Tên máy": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
