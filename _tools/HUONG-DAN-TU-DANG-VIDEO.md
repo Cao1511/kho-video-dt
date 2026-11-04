@@ -14,7 +14,9 @@ cd /home/claude/kho-video-dt
 ls video/*/*.mp4 2>/dev/null; cat danh-sach/tiktok-cho.json 2>/dev/null
 ```
 - Không có file mp4 nào trong `video/*/` VÀ `danh-sach/tiktok-cho.json` trống/không có → KẾT THÚC NGAY, báo 1 dòng "Không có video mới để đăng". (Video chờ đăng = thư mục còn file mp4; đăng xong thì file mp4 bị xoá.)
-- `tiktok-cho.json` có mục `{"<STT>": "<buffer post id>"}`: gọi `mcp__Buffer__get_post` từng id; có `externalLink` → ghi vào Sheet (gộp vào lệnh Bước 4, hoặc lệnh riêng nếu không có video mới) `"Link TikTok":[{"text":"Xem TikTok","url":"<link>"}]` rồi xoá mục đó khỏi file; `error` → ghi Ghi chú "TikTok lỗi: <nguyên văn>" và xoá mục; vẫn "sending" quá 1 ngày → xoá mục, bỏ qua.
+- `tiktok-cho.json` có mục `{"<STT>": "<buffer post id>"}` (TikTok của video ĐÃ ĐĂNG lượt trước, còn thiếu link): gọi `mcp__Buffer__get_post` từng id; có `externalLink` → ghi vào Sheet CHỈ 2 ô `{"stt":"<STT đó>","fields":{"Link TikTok":[{"text":"Xem TikTok","url":"<link>"}],"Ghi chú":""}}` (gộp vào lệnh Bước 3 của lượt này, hoặc lệnh riêng nếu không có video mới) rồi xoá mục khỏi file; `error` → chỉ ghi "Ghi chú":"TikTok lỗi: <nguyên văn>" và xoá mục; vẫn "sending" quá 1 ngày → xoá mục, bỏ qua.
+- **TUYỆT ĐỐI KHÔNG** ghi lại "Trạng thái", "Thời gian đăng", "Link YouTube", "Link Facebook"… cho video cũ (lỗi 04/11/2026: lượt 17:21 ghi đè giờ đăng STT 3 làm người dùng tưởng đăng lại).
+- Việc lấy link TikTok **KHÔNG tính là video của lượt này**: làm xong vẫn PHẢI tiếp tục Bước 1 và đăng 1 video "Chờ đăng" mới (nếu còn). (Lỗi 04/11/2026: lượt 17:21 chỉ lấy link TikTok STT 3 rồi dừng, bỏ sót STT 4.)
 
 ## Bước 1 – Một lệnh: đọc Sheet + tìm bài sản phẩm, rồi chọn video theo STT NHỎ NHẤT
 KHÔNG chọn theo thời gian file (`ls -t` vô nghĩa vì kho vừa tải về, mọi file cùng giờ – lỗi 04/11/2026 đã đăng STT 2 trước STT 1).
