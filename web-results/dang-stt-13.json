@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 392,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-chat-long-mot-voi-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 392
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 393,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-chat-long-mot-voi-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 393
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 394,
+    "slug": "may-chiet-rot-chat-long-mot-voi",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=394"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 394,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 394,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/",
+    "meta_data": [
+     {
+      "id": 1405,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1423,
+      "key": "dtfb_message",
+      "value": "Máy chiết rót chất lỏng một vòi G1WY – chiết định lượng bằng piston cho nước khoáng, nước trái cây, nước tương, giấm.\n\nRót chai bằng tay chậm và mỗi chai một lượng khác nhau? Máy rót nước một đầu (máy chiết piston một vòi) G1WY chiết đều từng chai, chỉ cần đạp chân.\n\n✅ Chiết định lượng piston, 1 vòi chiết\n✅ Tốc độ 5–30 chai/phút\n✅ Sai số chiết ±1%\n✅ Nhiều phiên bản dung tích, từ 3 ml đến 5000 ml\n✅ Điện 220V, công suất 20W, nặng 25 kg\n🎯 Phù hợp: nước khoáng, nước trái cây, nước tương, giấm, thuốc bảo vệ thực vật\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang chiết loại chất lỏng nào, chai bao nhiêu ml? Nhắn Fanpage để Đức Thành tư vấn phiên bản phù hợp.\n\n#maychietrotchatlong #maychietrotmotvoi #maychietpiston #ducthanh"
+     },
+     {
+      "id": 1424,
+      "key": "rank_math_title",
+      "value": "Máy chiết rót chất lỏng một vòi G1WY | Đức Thành"
+     },
+     {
+      "id": 1425,
+      "key": "rank_math_description",
+      "value": "Máy chiết rót chất lỏng một vòi G1WY: piston định lượng, 5–30 chai/phút, sai số ±1%, nhiều dung tích 3–5000 ml. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1426,
+      "key": "rank_math_focus_keyword",
+      "value": "máy chiết rót chất lỏng một vòi"
+     },
+     {
+      "id": 1427,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132363907472642"
+     },
+     {
+      "id": 1428,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-04 19:45:48 (ID 1369168222940597_122132363907472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-chiet-rot-chat-long/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 42,
+    "vua_nap": 26,
+    "san_co": 16
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "13",
+      "ok": true,
+      "row": 15,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-04 12:47:25"
+}
