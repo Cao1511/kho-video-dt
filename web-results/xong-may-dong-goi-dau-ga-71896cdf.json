@@ -1,0 +1,42 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "hit",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 0
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "2",
+      "ok": true,
+      "row": 4,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link YouTube",
+       "Link Facebook",
+       "Link video",
+       "Link bài web",
+       "Ghi chú"
+      ]
+     }
+    ]
+   },
+   "step": 1
+  }
+ ],
+ "time": "2026-11-04 01:24:04"
+}
