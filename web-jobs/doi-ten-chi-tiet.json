@@ -1,4 +1,0 @@
-{"steps":[
- {"id":"a","method":"GET","path":"/wc/v3/products/371?_fields=id,name,description,short_description,images,meta_data","pick":["id","name","description","short_description","images","meta_data"]},
- {"id":"b","method":"GET","path":"/wc/v3/products/366?_fields=id,name,description,short_description,images,meta_data","pick":["id","name","description","short_description","images","meta_data"]}
-]}
