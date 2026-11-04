@@ -1,0 +1,18 @@
+name: Nap cache web mayducthanh.vn
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+concurrency:
+  group: nap-cache
+  cancel-in-progress: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: video
+          sparse-checkout: _tools
+      - run: python3 _tools/nap_cache.py
