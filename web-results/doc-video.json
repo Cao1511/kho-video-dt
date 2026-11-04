@@ -58,12 +58,12 @@
      "Bài Facebook": "Máy đóng gói snack tự động: định lượng, tạo túi và hàn kín liên tục cho đóng gói thực phẩm.\nMáy đóng được từ 20 đến 500 gram mỗi túi, phù hợp máy đóng gói bim bim, hạt, bánh snack.\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nXưởng bạn đang đóng gói loại snack nào, bao nhiêu gram mỗi túi?\n#maydonggoisnack #maydonggoitudong #dongoithucpham #ducthanh",
      "Bài TikTok": "Tiêu đề: Máy đóng gói snack tự động | Đức Thành\n\nMáy đóng gói snack tự động định lượng, tạo túi và hàn kín liên tục, đóng được từ 20 đến 500 gram mỗi túi. Phù hợp máy đóng gói bim bim, hạt, bánh snack cho ngành thực phẩm. 💬 Nhắn tin cho kênh để được tư vấn & báo giá #maydonggoisnack #maydonggoitudong #dongoithucpham #ducthanh",
      "Trạng thái": "Đã đăng",
-     "Thời gian đăng": "04/11/2026 14:26",
+     "Thời gian đăng": "04/11/2026 14:23",
      "Link YouTube": "Xem YouTube",
      "Link Facebook": "Xem Facebook",
-     "Link TikTok": "",
+     "Link TikTok": "Xem TikTok",
      "Link bài web": "Chưa có bài",
-     "Ghi chú": "TikTok đang xử lý"
+     "Ghi chú": ""
     },
     {
      "STT": "4",
@@ -208,6 +208,11 @@
    "ok": true,
    "data": [
     {
+     "id": 394,
+     "name": "Máy chiết rót chất lỏng một vòi G1WY",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+    },
+    {
      "id": 381,
      "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
      "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
@@ -243,13 +248,18 @@
      "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
     }
    ],
-   "step": "tim_may-chiet-cap-nap-2-voi-tu-dong-506622bd"
+   "step": "tim_506622bd"
   },
   {
    "status": 200,
    "ok": true,
    "data": [
     {
+     "id": 394,
+     "name": "Máy chiết rót chất lỏng một vòi G1WY",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+    },
+    {
      "id": 381,
      "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
      "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
@@ -285,7 +295,7 @@
      "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
     }
    ],
-   "step": "tim_may-chiet-dong-nap-6-voi-tu-dong-cddbcf09"
+   "step": "tim_cddbcf09"
   },
   {
    "status": 200,
@@ -342,12 +352,17 @@
      "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
     }
    ],
-   "step": "tim_may-chiet-rot-dong-nap-tu-dong-de4897a1"
+   "step": "tim_de4897a1"
   },
   {
    "status": 200,
    "ok": true,
    "data": [
+    {
+     "id": 394,
+     "name": "Máy chiết rót chất lỏng một vòi G1WY",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+    },
     {
      "id": 391,
      "name": "Máy cấp nắp rung tự động",
@@ -392,19 +407,19 @@
      "id": 352,
      "name": "Máy chiết rót liên tục ZS-SV6X",
      "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    },
-    {
-     "id": 335,
-     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
     }
    ],
-   "step": "tim_may-dan-nhan-chai-vuong-1cded05e"
+   "step": "tim_1cded05e"
   },
   {
    "status": 200,
    "ok": true,
    "data": [
+    {
+     "id": 394,
+     "name": "Máy chiết rót chất lỏng một vòi G1WY",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+    },
     {
      "id": 391,
      "name": "Máy cấp nắp rung tự động",
@@ -449,134 +464,9 @@
      "id": 356,
      "name": "Máy viền nắp lọ tự động ZS-YG100",
      "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
-    },
-    {
-     "id": 352,
-     "name": "Máy chiết rót liên tục ZS-SV6X",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
     }
    ],
-   "step": "tim_may-dan-nhan-tem-nho-d8ac7235"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [
-    {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 377,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB260R",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/"
-    },
-    {
-     "id": 374,
-     "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
-    },
-    {
-     "id": 371,
-     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 366,
-     "name": "Máy sấy tầng sôi tạo hạt FL-120",
-     "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
-    },
-    {
-     "id": 360,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
-    },
-    {
-     "id": 358,
-     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
-    },
-    {
-     "id": 356,
-     "name": "Máy viền nắp lọ tự động ZS-YG100",
-     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
-    },
-    {
-     "id": 352,
-     "name": "Máy chiết rót liên tục ZS-SV6X",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    }
-   ],
-   "step": "tim_may-dong-goi-dau-ga-71896cdf"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [
-    {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 377,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB260R",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/"
-    },
-    {
-     "id": 374,
-     "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
-    },
-    {
-     "id": 371,
-     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 366,
-     "name": "Máy sấy tầng sôi tạo hạt FL-120",
-     "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
-    },
-    {
-     "id": 360,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
-    },
-    {
-     "id": 358,
-     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
-    },
-    {
-     "id": 356,
-     "name": "Máy viền nắp lọ tự động ZS-YG100",
-     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
-    },
-    {
-     "id": 352,
-     "name": "Máy chiết rót liên tục ZS-SV6X",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    }
-   ],
-   "step": "tim_may-dong-goi-dau-tu-dong-732c3140"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [],
-   "step": "tim_may-dong-goi-snack-tu-dong-0b8f1786"
+   "step": "tim_d8ac7235"
   },
   {
    "status": 200,
@@ -588,7 +478,7 @@
      "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
     }
    ],
-   "step": "tim_may-tao-nang-mem-0b7ea41f"
+   "step": "tim_0b7ea41f"
   },
   {
    "status": 200,
@@ -640,26 +530,8 @@
      "permalink": "https://mayducthanh.vn/may-dong-goi-chat-long-dinh-luong-piston/"
     }
    ],
-   "step": "tim_may-tron-lap-phuong-d8d4636e"
-  },
-  {
-   "ok": true,
-   "status": 200,
-   "data": {
-    "ok": true,
-    "results": [
-     {
-      "stt": "3",
-      "ok": true,
-      "row": 5,
-      "ghi": [
-       "Link TikTok"
-      ]
-     }
-    ]
-   },
-   "step": 11
+   "step": "tim_d8d4636e"
   }
  ],
- "time": "2026-11-04 10:23:23"
+ "time": "2026-11-04 13:23:42"
 }
