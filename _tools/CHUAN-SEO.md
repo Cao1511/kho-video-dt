@@ -39,6 +39,12 @@ Người dùng yêu cầu (04/11/2026): mọi bài phải chuẩn SEO, dễ tìm
 - **2–3 link nội bộ** tới danh mục + sản phẩm liên quan (anchor là tên máy, không "xem tại đây").
 - **Ảnh**: tên file có từ khoá không dấu; `alt_text` = từ khoá chính + mô tả ngắn (ảnh 2: "… – ảnh máy"). Có video YouTube thì nhúng vào bài (mục "Video … chạy thực tế").
 
+## 5b. Web – bài viết "Kiến thức máy móc" (Tin tức)
+- Tiêu đề 50–65 ký tự BẮT ĐẦU bằng từ khoá chính + lợi ích/con số có thật; slug = từ khoá chính không dấu.
+- 1.000–1.500 chữ hữu ích thật, trả lời đúng câu khách tìm (cách chọn, so sánh, lỗi thường gặp, bảo dưỡng, ứng dụng ngành); từ khoá chính trong câu đầu; 4–7 mục H2; có "Câu hỏi thường gặp" (3–5 câu); kết bằng kêu gọi tư vấn + hotline.
+- 3–5 link nội bộ (danh mục, bài sản phẩm, bài viết cũ liên quan) – giúp Google hiểu web và đưa khách sang trang sản phẩm.
+- Ảnh đại diện = ảnh máy liên quan đã có trên web (alt có từ khoá). Chi tiết: `_tools/HUONG-DAN-BAI-VIET.md`.
+
 ## 6. Tự kiểm trước khi đăng (đọc lại 1 lượt)
 - [ ] Từ khoá chính ở: chữ trên video / tiêu đề YouTube (50 ký tự đầu) / dòng đầu TikTok + Facebook / tên file / slug / Rank Math title.
 - [ ] Đúng số hashtag từng nền tảng; không #quangcao, #fyp.
