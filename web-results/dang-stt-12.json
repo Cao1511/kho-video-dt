@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 389,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-cap-nap-rung-tu-dong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 389
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 390,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-cap-nap-rung-tu-dong-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 390
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 391,
+    "slug": "may-cap-nap-rung-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=391"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 391,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 391,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/",
+    "meta_data": [
+     {
+      "id": 1375,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1393,
+      "key": "dtfb_message",
+      "value": "Máy cấp nắp rung tự động – sắp xếp và cấp nắp cho máy đóng nắp, thay công đoạn xếp nắp bằng tay.\n\nNắp chai, nắp vòi xịt, nắp bơm đổ vào mâm rung là tự xếp đúng chiều và chạy ra máy đóng nắp liên tục. Máy còn gọi là mâm rung cấp nắp, máy sắp xếp nắp tự động.\n\n✅ Tự động sắp xếp và cấp nắp\n✅ Vật liệu thép không gỉ (Stainless Steel)\n✅ Nguồn điện 110V/220V 50-60Hz\n✅ Tùy chỉnh theo kích thước nắp\n\n🎯 Phù hợp: dây chuyền đóng nắp chai, chai xịt, chai bơm.\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nBạn đang cần cấp loại nắp nào, đường kính khoảng bao nhiêu?\n\n#maycapnapung #maydongnap #thietbiphutro #ducthanh"
+     },
+     {
+      "id": 1394,
+      "key": "rank_math_title",
+      "value": "Máy cấp nắp rung tự động | Đức Thành"
+     },
+     {
+      "id": 1395,
+      "key": "rank_math_description",
+      "value": "Máy cấp nắp rung tự động sắp xếp, cấp nắp cho máy đóng nắp. Inox, 110V/220V, tùy chỉnh theo nắp. Tư vấn báo giá: 0974 708 603."
+     },
+     {
+      "id": 1396,
+      "key": "rank_math_focus_keyword",
+      "value": "máy cấp nắp rung tự động"
+     },
+     {
+      "id": 1397,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132314371472642"
+     },
+     {
+      "id": 1398,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-04 16:51:53 (ID 1369168222940597_122132314371472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/danh-muc-san-pham/thiet-bi-phu-tro/",
+     [
+      "404",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 41,
+    "vua_nap": 26,
+    "san_co": 15
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "12",
+      "ok": true,
+      "row": 14,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-04 09:53:21"
+}
