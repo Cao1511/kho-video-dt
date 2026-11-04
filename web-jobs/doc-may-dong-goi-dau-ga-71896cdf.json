@@ -1,3 +1,0 @@
-{"steps":[{"sheet":{"tab":"DS video"}},
-{"id":"tim","method":"GET","path":"/wc/v3/products?search=%C4%91%C3%B3ng%20g%C3%B3i%20%C4%91%E1%BA%ADu&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]},
-{"id":"tim2","method":"GET","path":"/wc/v3/products?search=VFFS&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]}]}

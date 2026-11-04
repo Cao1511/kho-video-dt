@@ -1,0 +1,121 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "head": [
+    "STT",
+    "Tên máy",
+    "Link video",
+    "Bài YouTube",
+    "Bài Facebook",
+    "Bài TikTok",
+    "Trạng thái",
+    "Thời gian đăng",
+    "Link YouTube",
+    "Link Facebook",
+    "Link TikTok",
+    "Link bài web",
+    "Ghi chú"
+   ],
+   "data": [
+    {
+     "STT": "1",
+     "Tên máy": "Máy đóng gói đậu tự động",
+     "Link video": "Xem video",
+     "Bài YouTube": "Tiêu đề: Máy đóng gói đậu tự động định lượng chính xác, chạy thực tế | Đức Thành\n\nMáy đóng gói đậu tự động: định lượng, tạo túi, hàn kín và ra thành phẩm liên tục. Còn gọi máy đóng gói hạt, ngũ cốc.\n#shorts #maydonggoi #dongoidau #ducthanh",
+     "Bài Facebook": "Máy đóng gói đậu tự động – định lượng chính xác, tạo túi và hàn kín liên tục.\nPhù hợp đóng gói đậu, hạt, ngũ cốc cho xưởng thực phẩm. Máy vận hành ổn định, ra thành phẩm đều tay.\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nXưởng bạn đang đóng gói loại hạt nào?\n#maydonggoidau #maydonggoihat #ducthanh",
+     "Bài TikTok": "Tiêu đề: Máy đóng gói đậu tự động | Đức Thành\n\nMáy đóng gói đậu tự động chạy thực tế: định lượng chính xác, tạo túi, hàn kín, ra thành phẩm liên tục. Còn gọi là máy đóng gói hạt, ngũ cốc cho xưởng thực phẩm.\n💬 Nhắn tin cho kênh để được tư vấn & báo giá\n#maydonggoidau #maydonggoihat #dongoingucoc #ducthanh",
+     "Trạng thái": "Chờ đăng",
+     "Thời gian đăng": "",
+     "Link YouTube": "",
+     "Link Facebook": "",
+     "Link TikTok": "",
+     "Link bài web": "",
+     "Ghi chú": "tách tiếng người"
+    },
+    {
+     "STT": "2",
+     "Tên máy": "Máy đóng gói đứng đậu gà",
+     "Link video": "Xem video",
+     "Bài YouTube": "Tiêu đề: Máy đóng gói đứng đậu gà, đóng túi tự động dưới 5kg | Đức Thành\n\nMáy đóng gói đậu gà tự động: tạo túi, cắt và hàn mép liên tục, phù hợp đóng gói hạt, đậu, nông sản khô.\n#shorts #maydonggoi #daoga #vffs",
+     "Bài Facebook": "Máy đóng gói đậu gà tự động – tạo túi, cắt và hàn mép liên tục, túi ra đều đẹp.\nMáy còn gọi là máy đóng gói đứng VFFS, phù hợp đóng gói đậu, hạt, nông sản khô.\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nBạn đang cần đóng gói loại sản phẩm nào?\n#maydonggoi #daoga #vffs #ducthanh",
+     "Bài TikTok": "Tiêu đề: Máy đóng gói đậu gà | Đức Thành\n\nMáy đóng gói đậu gà tự động, tạo túi, cân và cắt hàn mép liên tục. Còn gọi là máy đóng gói đứng VFFS, dùng cho đậu, hạt, nông sản khô.\n💬 Nhắn tin cho kênh để được tư vấn & báo giá\n#maydonggoi #daoga #vffs #ducthanh",
+     "Trạng thái": "Chờ đăng",
+     "Thời gian đăng": "",
+     "Link YouTube": "",
+     "Link Facebook": "",
+     "Link TikTok": "",
+     "Link bài web": "",
+     "Ghi chú": "tách tiếng người, giữ tiếng máy"
+    }
+   ],
+   "step": 0
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 374,
+     "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
+    },
+    {
+     "id": 371,
+     "name": "Máy chiết rót hàn kín ống nhựa tự động ZS-FS120",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+    },
+    {
+     "id": 368,
+     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
+     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
+    },
+    {
+     "id": 366,
+     "name": "Máy tạo hạt tầng sôi FL-120",
+     "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
+    },
+    {
+     "id": 360,
+     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
+    },
+    {
+     "id": 358,
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
+    },
+    {
+     "id": 352,
+     "name": "Máy chiết rót liên tục ZS-SV6X",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
+    },
+    {
+     "id": 335,
+     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
+    },
+    {
+     "id": 333,
+     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
+     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
+    }
+   ],
+   "step": "tim"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "tim2"
+  }
+ ],
+ "time": "2026-11-04 01:22:48"
+}
