@@ -16,17 +16,16 @@ ls video/*/*.mp4 2>/dev/null; cat danh-sach/tiktok-cho.json 2>/dev/null
 - Không có file mp4 nào trong `video/*/` VÀ `danh-sach/tiktok-cho.json` trống/không có → KẾT THÚC NGAY, báo 1 dòng "Không có video mới để đăng". (Video chờ đăng = thư mục còn file mp4; đăng xong thì file mp4 bị xoá.)
 - `tiktok-cho.json` có mục `{"<STT>": "<buffer post id>"}`: gọi `mcp__Buffer__get_post` từng id; có `externalLink` → ghi vào Sheet (gộp vào lệnh Bước 4, hoặc lệnh riêng nếu không có video mới) `"Link TikTok":[{"text":"Xem TikTok","url":"<link>"}]` rồi xoá mục đó khỏi file; `error` → ghi Ghi chú "TikTok lỗi: <nguyên văn>" và xoá mục; vẫn "sending" quá 1 ngày → xoá mục, bỏ qua.
 
-## Bước 1 – Một lệnh: đọc Sheet + tìm bài sản phẩm
-Lấy thư mục mp4 cũ nhất (`ls -tr`). Đọc `video/<thu>/caption.json`. Lệnh `web-jobs/doc-<thu>.json`:
+## Bước 1 – Một lệnh: đọc Sheet + tìm bài sản phẩm, rồi chọn video theo STT NHỎ NHẤT
+KHÔNG chọn theo thời gian file (`ls -t` vô nghĩa vì kho vừa tải về, mọi file cùng giờ – lỗi 04/11/2026 đã đăng STT 2 trước STT 1).
+Lệnh `web-jobs/doc-video.json`: bước đọc tab + 1 bước tìm bài sản phẩm cho MỖI thư mục còn mp4 (lấy `web.tu_khoa[0]` trong `video/<thu>/caption.json`; có `web.product_id` thì bỏ bước tìm của thư mục đó):
 ```json
 {"steps":[{"sheet":{"tab":"DS video"}},
- {"id":"tim","method":"GET","path":"/wc/v3/products?search=<web.tu_khoa[0] đã URL-encode>&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]},
- {"id":"tim2","method":"GET","path":"/wc/v3/products?search=<web.tu_khoa[1]>&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]}]}
+ {"id":"tim_<thu>","method":"GET","path":"/wc/v3/products?search=<tu_khoa đã URL-encode>&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]}]}
 ```
-(Có `caption.web.product_id` thì bỏ 2 bước tìm.) Trong dữ liệu Sheet tìm dòng có Link video chứa `<thu>`:
-- Trạng thái "Huỷ" → `git rm video/<thu>/<thu>.mp4`, commit, push, xét video kế tiếp (hoặc kết thúc).
-- Trạng thái "Đã đăng" → giống trên (dọn file), không đăng lại.
-- "Chờ đăng" → đăng. Không thấy dòng → vẫn đăng theo caption.json, ghi chú trong báo cáo.
+Chọn video: trong dữ liệu Sheet, dòng có Trạng thái "Chờ đăng" và Link video chứa tên một thư mục còn mp4 → lấy dòng có **STT nhỏ nhất**. Các trường hợp khác:
+- Thư mục còn mp4 nhưng dòng Sheet là "Huỷ" hoặc "Đã đăng" → `git rm video/<thu>/<thu>.mp4` (dọn, không đăng).
+- Thư mục còn mp4 mà không thấy dòng Sheet nào → đăng SAU tất cả các dòng "Chờ đăng" (ghi chú trong báo cáo).
 Bài sản phẩm: chỉ nhận khi khớp RÕ 1 bài cùng loại máy (cùng mã máy nếu có); không chắc → không gắn.
 
 ## Bước 1b – Nội dung bài đăng (ưu tiên Sheet)
