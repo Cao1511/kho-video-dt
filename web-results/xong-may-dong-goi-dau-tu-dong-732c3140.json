@@ -1,0 +1,30 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "1",
+      "ok": true,
+      "row": 3,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link YouTube",
+       "Link Facebook",
+       "Link video",
+       "Link bài web",
+       "Ghi chú"
+      ]
+     }
+    ]
+   },
+   "step": 0
+  }
+ ],
+ "time": "2026-11-04 04:29:25"
+}
