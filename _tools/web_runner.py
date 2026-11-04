@@ -27,6 +27,7 @@ Dinh dang file lenh:
   -> ghi vao Sheet (khong ghi de Tên máy nguoi dung da dien, tru khi "ghi_de_ten": true).
 - "wait": so giay cho (toi da 60).
 - "warm": mo trang nhu khach (khong dang nhap) 2 lan de nap cache.
+- {"warm_all": true}: nap lai cache CA WEB (moi san pham, danh muc, trang, bai viet) – dung SAU MOI LAN dang/sua bai.
 - "abort_if_any": true (buoc GET) -> neu ket qua co phan tu thi DUNG ca lenh (chong dang trung), tra "da_co".
 - "abort_if_name_has": "ZS-YG100" (buoc GET) -> chi DUNG khi co bai ma TEN chua chuoi nay.
 - "chen_video": {"product_id": 123, "youtube": "https://www.youtube.com/watch?v=...", "ten": "Máy ..."}
@@ -179,6 +180,30 @@ def run_step(step, ctx):
     if "wait" in step:
         time.sleep(min(60, float(step["wait"])))
         return {"wait": step["wait"]}
+    if step.get("warm_all"):
+        # nap lai cache CA WEB (dang/sua bai xoa cache nhieu trang hon 3 trang lien quan)
+        import concurrent.futures as cf
+        def jget(path):
+            try:
+                return json.loads(call("GET", SITE + path, auth=False)[1])
+            except Exception:
+                return []
+        urls = {SITE + "/"}
+        for pg in range(1, 6):
+            a = jget(f"/wp-json/wc/store/v1/products?per_page=100&page={pg}")
+            if not isinstance(a, list) or not a:
+                break
+            urls |= {x["permalink"] for x in a}
+        urls |= {c["permalink"] for c in jget("/wp-json/wc/store/v1/products/categories?per_page=100") if isinstance(c, dict) and c.get("permalink")}
+        urls |= {p["link"] for p in jget("/wp-json/wp/v2/pages?per_page=50&_fields=link") if isinstance(p, dict)}
+        urls |= {p["link"] for p in jget("/wp-json/wp/v2/posts?per_page=50&_fields=link") if isinstance(p, dict)}
+        def one(u):
+            st, _, hd = call("GET", u, auth=False)
+            return (hd.get("x-litespeed-cache") or hd.get("X-LiteSpeed-Cache") or str(st))
+        with cf.ThreadPoolExecutor(3) as ex:
+            hs = list(ex.map(one, sorted(urls)))
+        nap = sum(1 for h in hs if not str(h).startswith("hit"))
+        return {"ok": True, "warm_all": {"tong": len(hs), "vua_nap": nap, "san_co": len(hs) - nap}}
     if "warm" in step:
         out = []
         for u in step["warm"]:

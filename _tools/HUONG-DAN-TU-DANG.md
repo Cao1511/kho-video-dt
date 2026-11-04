@@ -74,11 +74,12 @@ File `web-jobs/dang-stt-<STT>.json` (commit cùng các file webp). Có ảnh 2 (
  {"wait":12},
  {"id":"kt","method":"GET","path":"/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data","pick":["id","status","permalink","meta_data"]},
  {"warm":["/","{{pub.permalink}}","/<slug-danh-muc>/"]},
+ {"warm_all":true},
  {"sheet_update":[{"stt":"<STT>","fields":{"Tên máy":"<tên máy>","Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}","Link web":"{{pub.permalink}}","Link Facebook":"{{kt.fb_link}}"}}]}
 ]}
 ```
 - Tạo file JSON bằng Python (`json.dump(..., ensure_ascii=False)`) để không lỗi dấu ngoặc kép trong HTML.
-- KHÔNG xoá toàn bộ cache web. Chỉ nạp lại như trên.
+- KHÔNG xoá toàn bộ cache web. Bước `warm_all` nạp lại CẢ WEB (đăng bài xoá cache cả trang Liên hệ, bài cũ… chứ không chỉ 3 trang) – BẮT BUỘC giữ bước này.
 - Đọc kết quả: `ok: true`; bước `kt` có `status: publish`; trong `meta_data` tìm `dtfb_status` = "Đã đăng … (ID pageid_postid)" → link Facebook `https://www.facebook.com/<ID>`. Nếu là "Lỗi …" → ghi nguyên văn vào báo cáo (lỗi code 190/200 = mã Fanpage hết hạn, người dùng phải lấy mã mới).
 - Bước nào lỗi (ok false): KHÔNG thử đăng lại lung tung. Nếu sản phẩm đã tạo nhưng chưa publish thì để nguyên bản nháp, báo lỗi nguyên văn.
 

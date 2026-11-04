@@ -44,6 +44,7 @@ Rồi `get_post` 3 bài (gọi song song). YouTube/Facebook thường `sent` nga
 {"steps":[
  {"id":"chen","chen_video":{"product_id":<id>,"youtube":"<link YouTube watch?v=…>","ten":"<tên máy>"}},
  {"warm":["/","{{chen.permalink}}"]},
+ {"warm_all":true},
  {"tab":"DS video","sheet_update":[{"stt":"<STT>","fields":{
    "Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}",
    "Link YouTube":[{"text":"Xem YouTube","url":"<link>"}],
