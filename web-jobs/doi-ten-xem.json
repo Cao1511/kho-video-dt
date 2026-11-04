@@ -1,4 +1,0 @@
-{"steps":[
- {"id":"a","method":"GET","path":"/wc/v3/products?search=ZS-FS120&status=any&_fields=id,name,slug,permalink","pick":["id","name","slug","permalink"]},
- {"id":"b","method":"GET","path":"/wc/v3/products?search=FL-120&status=any&_fields=id,name,slug,permalink","pick":["id","name","slug","permalink"]}
-]}

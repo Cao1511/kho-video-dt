@@ -1,0 +1,32 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 371,
+     "name": "Máy chiết rót hàn kín ống nhựa tự động ZS-FS120",
+     "slug": "may-chiet-rot-han-kin-ong-nhua",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+    }
+   ],
+   "step": "a"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 366,
+     "name": "Máy tạo hạt tầng sôi FL-120",
+     "slug": "may-tao-hat-tang-soi",
+     "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
+    }
+   ],
+   "step": "b"
+  }
+ ],
+ "time": "2026-11-04 04:33:16"
+}
