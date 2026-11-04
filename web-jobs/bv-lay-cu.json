@@ -1,0 +1,1 @@
+{"steps":[{"id":"p","method":"GET","path":"/wp/v2/posts?per_page=20&context=edit&_fields=id,title,link,date,meta","pick":["id","title","link","date","meta"]}]}
