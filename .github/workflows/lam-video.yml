@@ -30,7 +30,10 @@ jobs:
           key: video-${{ runner.os }}-${{ hashFiles('_tools/requirements-video.txt') }}-v3
       - name: Cai ffmpeg + thu vien
         run: |
-          if [ ! -x ~/venv/bin/python ]; then python -m venv ~/venv && ~/venv/bin/pip install -q -r _tools/requirements-video.txt; fi
+          if ! ~/venv/bin/python -c "import audio_separator, numpy, PIL" 2>/dev/null; then
+            echo "Bo luu san hong (Python doi phien ban) -> cai lai"; rm -rf ~/venv
+            python -m venv ~/venv && ~/venv/bin/pip install -q -r _tools/requirements-video.txt
+          fi
           if [ ! -x ~/venv/bin/ffmpeg ]; then
             curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ -C /tmp
             cp /tmp/ffmpeg-*-static/ffmpeg /tmp/ffmpeg-*-static/ffprobe ~/venv/bin/
@@ -41,6 +44,12 @@ jobs:
           SHEET_URL: ${{ secrets.SHEET_URL }}
           SHEET_KEY: ${{ secrets.SHEET_KEY }}
         run: PATH=~/venv/bin:$PATH ~/venv/bin/python _tools/video_runner.py
+      - name: Bao loi neu that bai
+        if: failure()
+        run: |
+          mkdir -p video-results
+          for f in video-jobs/*.json; do [ -e "$f" ] || continue; n=$(basename "$f")
+            echo "{\"ok\": false, \"error\": \"May dung loi o buoc cai dat - xem GitHub Actions; lenh van con, chay lai la duoc\"}" > "video-results/$n"; done
       - name: Luu ket qua
         if: always()
         run: |
