@@ -39,24 +39,22 @@ Cột A = STT, B = Tên máy, C = Link mẫu (link thông số), D = Link ảnh 
 
 ## Bước 3 – Thiết kế ảnh đúng mẫu
 
-**Khung chuẩn (mọi máy đều dùng):** `_tools/mau-anh/khung-chuan.png` — logo + dải xanh + khung trắng mã máy + 2 vạch ngăn. Khuôn `lam_anh_may.py` tự dùng khung này, KHÔNG vẽ khung khác. **Ảnh mẫu đã hoàn thiện:** `_tools/mau-anh/mau-2-may-dan-nhan.png` (máy dán nhãn ZS-TB500). (`mau-1-may-tron-ibc.png` là mẫu cũ, chỉ tham khảo.)
+**Khung chuẩn (mọi máy đều dùng):** `_tools/mau-anh/khung-chuan.png` — logo + dải xanh + khung trắng mã máy + 2 vạch ngăn. Khuôn `lam_anh_may.py` tự dùng khung này, KHÔNG vẽ khung khác. **Ảnh mẫu đã hoàn thiện:** `_tools/mau-anh/mau-2-may-dan-nhan.png` (máy dán nhãn ZS-TB500) và **`anh/8/1.png` + `anh/8/2.png` (chuẩn độ nét – mọi ảnh phải nét như vậy)**. (`mau-1-may-tron-ibc.png` là mẫu cũ, chỉ tham khảo.)
 **Logo:** `_tools/mau-anh/logo-duc-thanh-lon.png` (dùng logo thật này, KHÔNG tự vẽ lại logo; không méo, không đổi màu).
 
 ### BẮT BUỘC dùng khuôn có sẵn `_tools/lam_anh_may.py` — KHÔNG tự vẽ dải xanh, logo, chữ, icon
 
 Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo thật, font Inter có dấu, icon, bóng đổ). Codex chỉ chuẩn bị 2 ảnh + chữ rồi chạy lệnh. Không sửa file khuôn; thấy cần sửa thì báo người dùng.
 
-1. **Ảnh máy nền trong suốt** (`may.png`): lấy ảnh máy thật (ảnh người dùng đưa hoặc ảnh từ link), tách nền bằng rembg:
-   ```bash
-   pip install "rembg[cpu]" pillow
-   rembg i anh-goc.jpg may.png
-   ```
-   Mở `may.png` kiểm tra: máy đủ, không mất phần inox sáng (phễu, nắp, mép trên), không còn nền/viền xám, không còn logo/chữ nhà cung cấp. Thiếu thì thử ảnh gốc khác hoặc model `rembg i -m isnet-general-use`. KHÔNG dùng AI vẽ lại máy.
-   **Ảnh phải NÉT và SẠCH (người dùng yêu cầu 03/11/2026):**
-   - Luôn lấy ảnh gốc độ phân giải lớn nhất (bỏ đuôi `_600x`, `_small`… trong link ảnh), không dùng ảnh thu nhỏ.
-   - **Xoá watermark/logo/chữ nhà cung cấp: KHÔNG làm mờ, KHÔNG bôi nhoè, KHÔNG phủ màu, KHÔNG dùng inpaint kiểu kéo màu xung quanh** (để lại vệt nhoè là xấu, người dùng không chấp nhận). Phải **phục hồi lại chi tiết** vùng đó cho liền mạch và nét như phần còn lại: dùng AI chỉnh sửa ảnh có mặt nạ (chỉ vùng watermark), tái tạo đúng chi tiết máy bị che (đường ống, ốc, tấm inox, nền trắng…).
-   - Chỉ được tái tạo vùng bị watermark che; KHÔNG đổi hình dáng, số đầu/vòi, bảng điều khiển, kết cấu phần còn lại của máy.
-   - Kiểm tra ở mức phóng 100%: không còn dấu vết chữ cũ, không có vệt mờ/loang/lem. Còn vệt thì làm lại hoặc chọn ảnh gốc khác ít watermark hơn. Báo người dùng nếu chi tiết phục hồi có thể khác nhỏ so với máy thật.
+1. **Ảnh máy NÉT + SẠCH + nền trong suốt** (`may.png`) – LÀM Y NHƯ ẢNH MÁY SỐ 8 (bản làm lại 03/11/2026, người dùng khen đẹp). BẮT BUỘC cho MỌI máy, kể cả ảnh gốc trông đã sạch:
+   1. Lấy ảnh gốc lớn nhất: bỏ đuôi `_600x`, `_small`, `?width=`… trong link; ưu tiên ảnh nền trắng, thấy toàn thân máy, ít watermark nhất. Ghi lại kích thước ảnh gốc.
+   2. **Làm nét + xoá watermark bằng AI tạo/chỉnh ảnh (skill imagegen, chế độ chỉnh sửa có ảnh tham chiếu = ảnh gốc)** – KHÔNG dùng rembg/inpaint/blur trên ảnh gốc nhỏ rồi phóng to (đó là lý do ảnh máy 11 bị mờ). Lời nhắc mẫu (tiếng Anh cho AI hiểu tốt):
+      > Restore this exact product photo of an industrial machine as a sharp, high-resolution studio photo (at least 2048 px on the long side). Keep the machine IDENTICAL: same shape, proportions, number of heads/nozzles/pumps, control panels and screens, pipes, cables, frame, colors and camera angle. Remove every watermark, logo and text overlay (e.g. ZONESUN) and reconstruct the hidden parts naturally. Crisp stainless-steel edges and screws, no blur, no smearing, no added or removed parts. Transparent background (or pure white if transparency is not possible).
+   3. Nhận ảnh AI: nếu chưa trong suốt thì `rembg i -m isnet-general-use anh-ai.png may.png` (ảnh AI to và nét nên tách nền sạch). Nếu ảnh AI đã RGBA thì dùng luôn.
+   4. **Đối chiếu từng chi tiết với ảnh gốc** (mở 2 ảnh cạnh nhau, phóng to): số vòi/đầu chiết, số bơm, màn hình, nút bấm, ống dẫn, dây, khung, bánh xe/chân, hướng máy. Sai hoặc thừa/thiếu bộ phận → chạy lại AI (nhấn mạnh chi tiết bị sai), tối đa 3 lần; vẫn sai thì dùng bản gần đúng nhất và BÁO người dùng chỗ khác.
+   5. Chấm điểm: `python _tools/kiem_tra_anh.py may.png` phải **DAT** (máy ≥ 1400 px). CHUA DAT → làm lại bước 2 với độ phân giải cao hơn.
+   - Dây chuyền dài/nhiều máy (vd STT 11): vẫn làm nét cả ảnh; nếu máy quá dẹt, ưu tiên ảnh góc chéo thấy rõ máy chính.
+   - KHÔNG đổi kết cấu máy; chỉ được tái tạo phần bị watermark che. Không còn vệt mờ/loang/lem ở mức phóng 100%.
 2. **Ảnh minh hoạ góc phải** (`minh-hoa.png`, nên có): 1–2 sản phẩm mà máy xử lý, nền trắng, đặt cạnh nhau như mẫu (vd hũ dầu dừa + chai tương cho máy dán nhãn; lọ nắp nhôm cho máy viền nắp; bát bột/hạt cho máy trộn; chai nước cho máy chiết rót; túi gói cho máy đóng gói). Được dùng AI tạo ảnh này. Nếu có chữ trên nhãn sản phẩm thì phải là tiếng Việt đúng chính tả, không thương hiệu thật; không chắc thì để nhãn trơn.
 3. **Chữ:**
    - `--ten`: tên máy IN HOA, 2 dòng (tối đa 3) ngăn bằng `|`, ngắt theo cụm nghĩa, không để 1 chữ lẻ một dòng. Vd `"MÁY DÁN NHÃN|CHAI LỌ TỰ ĐỘNG"`, `"MÁY VIỀN NẮP|LỌ TỰ ĐỘNG"`, `"MÁY TRỘN|THÙNG IBC 1500L"`.
@@ -73,7 +71,7 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    ```
    **Luôn có `--out2 anh/<STT>/2.png`** (người dùng yêu cầu 03/11/2026): ảnh 2 = máy trên nền trắng + chữ chìm "ĐỨC THÀNH" xanh nhạt chéo (mẫu `_tools/mau-anh/mau-anh-2-may-trang.png`). Khuôn tự làm từ cùng `may.png`; máy dáng ngang ra ảnh vuông, máy dáng đứng ra ảnh dọc 3:4.
    Khuôn tự: làm máy to, đặt máy sát trên dải xanh, thêm bóng đổ, logo, dải xanh bo cong, khung mã máy, icon, chữ. Không để `may.png`, `minh-hoa.png` trong kho.
-5. Mở `anh/<STT>/1.png` so với ảnh mẫu: máy đủ và rõ (không bị cắt, không mất phần sáng), không đè logo/ảnh minh hoạ, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
+5. Chạy `python _tools/kiem_tra_anh.py anh/<STT>/1.png` → phải **DAT** (máy số 8 đạt ~3470; dưới 2500 là mờ, làm lại Bước 3.1). Mở `anh/<STT>/1.png` so với ảnh mẫu `anh/8/1.png`: máy đủ và rõ (không bị cắt, không mất phần sáng), không đè logo/ảnh minh hoạ, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
 
 **Không được:**
 - Vẽ thêm chi tiết máy không có thật, đổi kết cấu máy.
