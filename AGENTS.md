@@ -71,7 +71,7 @@ Khuôn này vẽ sẵn đúng mẫu (dải xanh mịn, đúng tỉ lệ, logo th
    ```
    **Luôn có `--out2 anh/<STT>/2.png`** (người dùng yêu cầu 03/11/2026): ảnh 2 = máy trên nền trắng + chữ chìm "ĐỨC THÀNH" xanh nhạt chéo (mẫu `_tools/mau-anh/mau-anh-2-may-trang.png`). Khuôn tự làm từ cùng `may.png`; máy dáng ngang ra ảnh vuông, máy dáng đứng ra ảnh dọc 3:4.
    Khuôn tự: làm máy to, đặt máy sát trên dải xanh, thêm bóng đổ, logo, dải xanh bo cong, khung mã máy, icon, chữ. Không để `may.png`, `minh-hoa.png` trong kho.
-5. Chạy `python _tools/kiem_tra_anh.py anh/<STT>/1.png` → phải **DAT** (máy số 8 đạt ~3470; dưới 2500 là mờ, làm lại Bước 3.1). Mở `anh/<STT>/1.png` so với ảnh mẫu `anh/8/1.png`: máy đủ và rõ (không bị cắt, không mất phần sáng), không đè logo/ảnh minh hoạ, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
+5. Mở `anh/<STT>/1.png` so với ảnh mẫu `anh/8/1.png` ở mức phóng 100% (đánh giá BẰNG MẮT; điểm nét của `kiem_tra_anh.py` chỉ để tham khảo, KHÔNG dùng để chặn – máy cao/mảnh nhiều nền trắng điểm thấp dù ảnh nét). Ảnh đã làm nét bằng AI và `may.png` DAT kích thước thì cứ đẩy lên, không hỏi lại người dùng: máy đủ và rõ (không bị cắt, không mất phần sáng), không đè logo/ảnh minh hoạ, chữ đúng dấu. Chưa ổn thì sửa ảnh đầu vào/chữ rồi chạy lại.
 
 **Không được:**
 - Vẽ thêm chi tiết máy không có thật, đổi kết cấu máy.

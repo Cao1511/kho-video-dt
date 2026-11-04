@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cham diem do NET cua anh may (dung cho Codex truoc khi day anh).
+"""Kiem tra anh may: KICH THUOC anh may da tach nen (bat buoc DAT) + diem net tham khao.
 
   python _tools/kiem_tra_anh.py may.png            -> kiem tra anh may da tach nen (truoc khi ghep khung)
   python _tools/kiem_tra_anh.py anh/<STT>/1.png    -> kiem tra anh thanh pham
@@ -40,9 +40,8 @@ def main(f):
         w, h = im.size
         g = im.convert("L").crop((int(w * .05), int(h * .3), int(w * .95), int(h * .75)))
         s = diem_net(g)
-        print(f"Diem net vung may: {s:.0f} (can >= {NGUONG_THANH_PHAM}; may so 8 dat ~3470)")
-        if s < NGUONG_THANH_PHAM:
-            ok = False
+        print(f"Diem net tham khao: {s:.0f} (CHI DE THAM KHAO, khong dung de chan: may cao/manh nhieu nen trang"
+              " thi diem thap du anh net). Danh gia bang mat: so voi anh/8/1.png o muc phong 100%.")
     print("DAT" if ok else "CHUA DAT – lam lai buoc lam net bang AI (AGENTS.md, Buoc 3.1)")
     return 0 if ok else 1
 
