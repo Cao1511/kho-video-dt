@@ -1,0 +1,23 @@
+{
+ "thu_muc": "may-dan-nhan-tem-nho-d8ac7235",
+ "goc": "video-goc/may-dan-nhan-tem-nho-d8ac7235.mp4",
+ "pill": "XEM MÁY CHẠY THỰC TẾ",
+ "line1": "MÁY DÁN NHÃN",
+ "line2": "TEM NHỎ",
+ "notes": [
+  "Dán tem nhỏ chính xác",
+  "Băng tải chạy liên tục",
+  "Dán ống, lọ nhỏ"
+ ],
+ "note_pos": "bottom",
+ "am_thanh": "nhac",
+ "caption": null,
+ "cho_caption": true,
+ "sheet": {
+  "stt": "moi",
+  "fields": {
+   "Tên máy": "Máy dán nhãn tem nhỏ",
+   "Trạng thái": "Chờ đăng"
+  }
+ }
+}
