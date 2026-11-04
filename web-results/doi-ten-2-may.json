@@ -1,0 +1,97 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 371,
+    "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+   },
+   "step": "a"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "sa"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 369
+   },
+   "step": "m1"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 370
+   },
+   "step": "m2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 366,
+    "name": "Máy sấy tầng sôi tạo hạt FL-120",
+    "permalink": "https://mayducthanh.vn/may-tao-hat-tang-soi/"
+   },
+   "step": "b"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "sb"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 365
+   },
+   "step": "m3"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 39,
+    "vua_nap": 28,
+    "san_co": 11
+   },
+   "step": 7
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "8",
+      "ok": true,
+      "row": 10,
+      "ghi": [
+       "Tên máy"
+      ]
+     },
+     {
+      "stt": "6",
+      "ok": true,
+      "row": 8,
+      "ghi": [
+       "Tên máy"
+      ]
+     }
+    ]
+   },
+   "step": 8
+  }
+ ],
+ "time": "2026-11-04 04:38:17"
+}
