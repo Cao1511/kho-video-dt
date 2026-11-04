@@ -1,9 +1,0 @@
-{"steps":[
- {"warm_all":true},
- {"tab":"DS video","sheet_update":[{"stt":"4","fields":{
-   "Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}",
-   "Link YouTube":[{"text":"Xem YouTube","url":"https://www.youtube.com/watch?v=LQxL9gaAqmM"}],
-   "Link Facebook":[{"text":"Xem Facebook","url":"https://facebook.com/1369168222940597_122132378145472642"}],
-   "Link video":"https://www.youtube.com/watch?v=LQxL9gaAqmM",
-   "Link bài web":"Chưa có bài",
-   "Ghi chú":"TikTok đang xử lý"}}]}]}

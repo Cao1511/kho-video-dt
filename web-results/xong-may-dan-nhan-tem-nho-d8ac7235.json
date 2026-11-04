@@ -1,0 +1,39 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 42,
+    "vua_nap": 0,
+    "san_co": 42
+   },
+   "step": 0
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "4",
+      "ok": true,
+      "row": 6,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link YouTube",
+       "Link Facebook",
+       "Link video",
+       "Link bài web",
+       "Ghi chú"
+      ]
+     }
+    ]
+   },
+   "step": 1
+  }
+ ],
+ "time": "2026-11-04 13:25:21"
+}
