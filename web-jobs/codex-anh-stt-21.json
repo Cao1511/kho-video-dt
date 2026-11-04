@@ -1,0 +1,25 @@
+{
+ "steps": [
+  {
+   "sheet_update": [
+    {
+     "stt": "21",
+     "fields": {
+      "Tên máy": "Máy chiết ống bẻ 5 kim 1 cuộn màng",
+      "Trạng thái": "Đã có ảnh",
+      "Link ảnh": [
+       {
+        "text": "Ảnh 1",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/21/1.png"
+       },
+       {
+        "text": "Ảnh 2",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/21/2.png"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}
