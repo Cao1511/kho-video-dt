@@ -14,6 +14,7 @@ Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống
 ```json
 {"steps":[
  {"id":"sp","method":"GET","path":"/wc/v3/products?search=<1–2 từ của chủ đề, URL-encode>&status=publish&per_page=10&_fields=id,name,permalink,images","pick":["id","name","permalink","images"]},
+ (nếu `sp` rỗng: thử từ khác ngắn hơn, vd "đóng gói", "chiết rót", "dán nhãn", "trộn" – cần có ảnh sản phẩm để chèn vào bài)
  {"id":"dm","method":"GET","path":"/wc/v3/products/categories?per_page=50&_fields=id,name,slug,count","pick":["id","name","slug","count"]},
  {"id":"bv","method":"GET","path":"/wp/v2/posts?per_page=20&_fields=id,title,link","pick":["id","title","link"]}]}
 ```
@@ -36,7 +37,11 @@ Commit kèm dòng Co-Authored-By/Claude-Session theo hướng dẫn hệ thống
 - **Excerpt** 1–2 câu (≤ 160 ký tự) có từ khoá.
 - **Rank Math**: `rank_math_title` ≤ 60 ký tự bắt đầu bằng từ khoá, kết thúc "| Đức Thành"; `rank_math_description` 140–160 ký tự (từ khoá + lợi ích + "0974 708 603"); `rank_math_focus_keyword` = từ khoá chính.
 - **Bài Facebook (`dtfb_message`)** theo CHUAN-SEO mục 4 dạng bài kiến thức: dòng đầu chứa từ khoá (không icon) → 2–3 câu tóm ý → 4–7 ý chính 🔹 (đọc được ngay trên Facebook, không dẫn sang web) → 1 câu hỏi mở thật → "🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi" + "📞 Hotline/Zalo: 0974 708 603 – 0989 139 855" → 3–5 hashtag. KHÔNG link, không #quangcao.
-- **Ảnh đại diện** (`featured_media`): dùng ảnh bìa (id `images[0].id`) của bài sản phẩm liên quan nhất ở bước 1; không có thì ảnh của bài viết cũ cùng nhóm (284 máy đóng gói, 271 máy chiết rót, 267 máy trộn). KHÔNG dùng ảnh trên mạng.
+- **ẢNH – BẮT BUỘC (người dùng yêu cầu 04/11/2026: bài tin tức phải có ảnh kèm theo):**
+  - **Ảnh đại diện** (`featured_media`): ảnh bìa (`images[0].id`) của bài sản phẩm liên quan nhất ở bước 1; không có thì ảnh của bài viết cũ cùng nhóm (284 máy đóng gói, 271 máy chiết rót, 267 máy trộn). Ảnh này cũng là ảnh của bài Facebook.
+  - **Chèn 1–2 ảnh máy TRONG bài** (sau đoạn mở bài và ở giữa bài), lấy từ `images` của bài sản phẩm liên quan (dùng `src` + `id`), mỗi ảnh có chú thích và bấm vào dẫn sang bài sản phẩm:
+    `<!-- wp:image {"id":<id>,"sizeSlug":"large","linkDestination":"custom"} --><figure class="wp-block-image size-large"><a href="<link sản phẩm>"><img src="<src>" alt="<từ khoá chính> – <tên máy>" class="wp-image-<id>"/></a><figcaption class="wp-element-caption"><tên máy> – Đức Thành</figcaption></figure><!-- /wp:image -->`
+  - KHÔNG dùng ảnh trên mạng, không ảnh có logo hãng khác. Không có ảnh sản phẩm phù hợp → dùng ảnh bài viết cũ cùng nhóm, vẫn phải có ảnh đại diện.
 
 ## Bước 4 – Một lệnh: tạo nháp → SEO → đăng → kiểm tra → nạp cache
 Tạo file JSON bằng Python (`json.dump(..., ensure_ascii=False)`), `web-jobs/bv-dang-<slug>.json`:
@@ -47,9 +52,14 @@ Tạo file JSON bằng Python (`json.dump(..., ensure_ascii=False)`), `web-jobs/
  {"id":"pub","method":"POST","path":"/wp/v2/posts/{{bv.id}}","body":{"status":"publish"},"pick":["id","link","status"]},
  {"wait":12},
  {"id":"kt","method":"GET","path":"/wp/v2/posts/{{bv.id}}?_fields=id,link,status,meta","pick":["id","link","status","meta"]},
- {"warm_all":true}
+ {"warm_all":true},
+ {"tab":"DS Bài viết tin tức","sheet_update":[{"stt":"moi","fields":{
+   "Tiêu đề bài viết":"<tiêu đề>","Từ khoá chính":"<từ khoá chính>","Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}",
+   "Link web":[{"text":"Xem bài web","url":"{{pub.link}}"}],
+   "Link Facebook":[{"text":"Xem Facebook","url":"{{kt.fb_link}}"}]}}]}
 ]}
 ```
+(Bước cuối ghi 1 dòng vào tab **"DS Bài viết tin tức"** của Google Sheet – người dùng theo dõi ở đó. Facebook lỗi → `kt.fb_link` trống: chạy thêm lệnh sheet_update sửa ô "Trạng thái" thành "Đã đăng web – Facebook lỗi" và "Ghi chú" ghi lỗi.)
 Đọc kết quả: `ok: true`, `kt.status = publish`; `kt.meta.dtfb_status` "Đã đăng … (ID …)" → link Facebook `https://www.facebook.com/<dtfb_fb_id>`; "Lỗi …" → ghi nguyên văn vào báo cáo (190/200 = mã Fanpage hết hạn). Bước lỗi → KHÔNG đăng lại lung tung; bài nháp để nguyên, báo lỗi.
 
 ## Bước 5 – Ghi nhận (1 commit)
