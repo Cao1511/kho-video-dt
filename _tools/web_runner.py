@@ -243,9 +243,9 @@ def run_step(step, ctx):
         if isinstance(data, dict):
             for m in data.get("meta_data") or []:
                 if isinstance(m, dict) and m.get("key") == "dtfb_fb_id" and m.get("value"):
-                    data["fb_link"] = "https://www.facebook.com/" + str(m["value"])
+                    v = str(m["value"]); data["fb_link"] = "https://www.facebook.com/" + (v if "_" in v else "1369168222940597_" + v)
             if isinstance(data.get("meta"), dict) and data["meta"].get("dtfb_fb_id"):   # bai viet (post)
-                data["fb_link"] = "https://www.facebook.com/" + str(data["meta"]["dtfb_fb_id"])
+                v = str(data["meta"]["dtfb_fb_id"]); data["fb_link"] = "https://www.facebook.com/" + (v if "_" in v else "1369168222940597_" + v)
             ctx[step.get("id", "_")] = data
         hit = []
         if isinstance(data, list):
