@@ -10,6 +10,9 @@
                     "web":{"tu_khoa":[...],"product_id":null},
                     "stt": "<STT cu khi lam lai>" (tuy chon), "thu_muc": "<thu muc cu khi lam lai>" (tuy chon)}
    -> chep video goc, ghi lenh, commit + push; in ra THU_MUC=...
+2b) (NHANH) Gui video truoc khi viet caption: noi-dung.json chi can ten/slug/line1/line2/notes/am_thanh
+   -> may dung bat dau ngay; viet caption xong thi:
+   python3 _tools/gui_video.py caption <thu_muc> <noi-dung-day-du.json>   (may dung tu lay, toi da 4 phut)
 3) Cho ket qua: python3 _tools/gui_video.py cho <thu_muc>
    -> cho GitHub dung xong (toi da ~8 phut), chep video ra /mnt/user-data/outputs/<thu_muc>.mp4, in ket qua
 """
@@ -36,6 +39,33 @@ def xem(src):
     print(f"DO_DAI={d:.1f}s  SO_CAU_TOI_DA={min(n, 4)}  (cat ngan thi tinh lai: (giay-4.1)/3)  ANH=/tmp/khung.jpg")
 
 
+def bai(nd):
+    return {"Bài YouTube": f"Tiêu đề: {nd['youtube']['title']}\n\n{nd['youtube']['text']}",
+            "Bài Facebook": nd["facebook"]["text"],
+            "Bài TikTok": f"Tiêu đề: {nd['tiktok']['title']}\n\n{nd['tiktok']['text']}"}
+
+
+def push(msg):
+    run("git", "commit", "-qm", msg + MSG)
+    for i in range(4):
+        r = subprocess.run(["git", "pull", "-q", "--rebase", "origin", "video"], cwd=REPO)
+        if r.returncode == 0 and subprocess.run(["git", "push", "-q", "origin", "video"], cwd=REPO).returncode == 0:
+            return
+        time.sleep(3)
+    sys.exit("LOI: khong push duoc len GitHub")
+
+
+def caption(thu, nd_path):
+    nd = json.load(open(nd_path, encoding="utf-8"))
+    cap = {k: nd[k] for k in ("ten", "tu_khoa", "tiktok", "youtube", "facebook", "web") if k in nd}
+    os.makedirs(os.path.join(REPO, "video-caption"), exist_ok=True)
+    with open(os.path.join(REPO, "video-caption", thu + ".json"), "w", encoding="utf-8") as f:
+        json.dump({"caption": cap, "fields": bai(nd)}, f, ensure_ascii=False, indent=1)
+    run("git", "add", "video-caption")
+    push(f"Caption {thu}")
+    print(f"DA_GUI_CAPTION {thu}")
+
+
 def gui(src, nd_path):
     nd = json.load(open(nd_path, encoding="utf-8"))
     thu = nd.get("thu_muc") or (nd["slug"].strip("-") + "-" + secrets.token_hex(4))
@@ -47,28 +77,22 @@ def gui(src, nd_path):
                         "-crf", "23", "-c:a", "aac", dst], check=True)
     else:
         shutil.copy(src, dst)
-    cap = {k: nd[k] for k in ("ten", "tu_khoa", "tiktok", "youtube", "facebook", "web") if k in nd}
-    fields = {"Tên máy": nd["ten"], "Trạng thái": "Chờ đăng",
-              "Bài YouTube": f"Tiêu đề: {nd['youtube']['title']}\n\n{nd['youtube']['text']}",
-              "Bài Facebook": nd["facebook"]["text"],
-              "Bài TikTok": f"Tiêu đề: {nd['tiktok']['title']}\n\n{nd['tiktok']['text']}"}
+    co_cap = all(k in nd for k in ("tiktok", "youtube", "facebook"))
+    cap = {k: nd[k] for k in ("ten", "tu_khoa", "tiktok", "youtube", "facebook", "web") if k in nd} if co_cap else None
+    fields = {"Tên máy": nd["ten"], "Trạng thái": "Chờ đăng"}
+    if co_cap:
+        fields.update(bai(nd))
     job = {"thu_muc": thu, "goc": f"video-goc/{thu}.mp4", "pill": nd.get("pill", "XEM MÁY CHẠY THỰC TẾ"),
            "line1": nd["line1"], "line2": nd.get("line2", ""), "notes": nd.get("notes", []),
            "note_pos": nd.get("note_pos", "bottom"), "am_thanh": nd.get("am_thanh", "tach"), "caption": cap,
+           "cho_caption": not co_cap,
            "sheet": None if nd.get("khong_ghi_sheet") else {"stt": str(nd.get("stt", "moi")), "fields": fields}}
     if nd.get("cat"):
         job["cat"] = nd["cat"]
     with open(os.path.join(REPO, "video-jobs", thu + ".json"), "w", encoding="utf-8") as f:
         json.dump(job, f, ensure_ascii=False, indent=1)
     run("git", "add", "video-goc", "video-jobs")
-    run("git", "commit", "-qm", f"Video moi {thu}" + MSG)
-    for i in range(4):
-        r = subprocess.run(["git", "pull", "-q", "--rebase", "origin", "video"], cwd=REPO)
-        if r.returncode == 0 and subprocess.run(["git", "push", "-q", "origin", "video"], cwd=REPO).returncode == 0:
-            break
-        time.sleep(3)
-    else:
-        sys.exit("LOI: khong push duoc len GitHub")
+    push(f"Video moi {thu}")
     print(f"THU_MUC={thu}  (da gui len may dung, khoang 2 phut)")
 
 
@@ -100,6 +124,8 @@ if __name__ == "__main__":
         xem(sys.argv[2])
     elif cmd == "gui":
         gui(sys.argv[2], sys.argv[3])
+    elif cmd == "caption":
+        caption(sys.argv[2], sys.argv[3])
     elif cmd == "cho":
         cho(sys.argv[2])
     else:

@@ -39,6 +39,22 @@ def duration(f):
                                           "-of", "csv=p=0", f]).decode().strip())
 
 
+def cho_caption(thu, log, toi_da=240):
+    t0 = time.time()
+    while time.time() - t0 < toi_da:
+        subprocess.run(["git", "fetch", "-q", "origin", "video"], cwd=ROOT)
+        r = subprocess.run(["git", "show", f"FETCH_HEAD:video-caption/{thu}.json"], cwd=ROOT,
+                           capture_output=True, text=True)
+        if r.returncode == 0:
+            try:
+                return json.loads(r.stdout)
+            except Exception as e:
+                log.append("caption loi: " + repr(e)); return None
+        time.sleep(6)
+    log.append("het gio cho caption -> dong Sheet chua co noi dung bai")
+    return None
+
+
 def lam(spec, log):
     t0 = time.time()
     thu = spec["thu_muc"]
@@ -108,6 +124,13 @@ def lam(spec, log):
     os.makedirs(d, exist_ok=True)
     dst = os.path.join(d, thu + ".mp4")
     shutil.copy(final, dst)
+    if spec.get("cho_caption") and not spec.get("caption"):
+        # caption duoc phien chat gui SAU (song song luc dung) -> cho toi da ~4 phut
+        cp = cho_caption(thu, log)
+        if cp:
+            spec["caption"] = cp.get("caption") or {}
+            if spec.get("sheet") is not None:
+                spec.setdefault("sheet", {}).setdefault("fields", {}).update(cp.get("fields") or {})
     cap = dict(spec.get("caption") or {})
     cap.setdefault("nhac", ghi_chu)
     with open(os.path.join(d, "caption.json"), "w", encoding="utf-8") as f:
