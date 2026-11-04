@@ -8,9 +8,9 @@
     "ok": true,
     "results": [
      {
-      "stt": "1",
+      "stt": "3",
       "ok": true,
-      "row": 3,
+      "row": 5,
       "ghi": [
        "Trạng thái",
        "Thời gian đăng",
@@ -21,25 +21,11 @@
        "Link bài web",
        "Ghi chú"
       ]
-     },
-     {
-      "stt": "3",
-      "ok": true,
-      "row": 5,
-      "ghi": [
-       "Trạng thái",
-       "Thời gian đăng",
-       "Link YouTube",
-       "Link Facebook",
-       "Link video",
-       "Link bài web",
-       "Ghi chú"
-      ]
      }
     ]
    },
    "step": 0
   }
  ],
- "time": "2026-11-04 07:26:13"
+ "time": "2026-11-04 10:24:15"
 }
