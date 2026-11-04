@@ -1,0 +1,165 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 375,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dan-nhan-chai-tron-zs-tb260r-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 375
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 376,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dan-nhan-chai-tron-zs-tb260r-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 376
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 377,
+    "slug": "may-dan-nhan-chai-tron-zs-tb260r",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=377"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 377,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 15,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 377,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/",
+    "meta_data": [
+     {
+      "id": 1306,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1324,
+      "key": "dtfb_message",
+      "value": "Máy dán nhãn chai tròn tự động ZS-TB260R – dán nhãn một hoặc hai mặt cho chai, lọ tròn 25–50 chai/phút.\n\nĐang dán nhãn chai tay, nhãn lệch và chậm? Máy dán nhãn chai tròn (máy dán decal chai tròn) ZS-TB260R tự phát hiện chai, dán nhãn đều và thẳng với độ chính xác ±1 mm.\n\n✅ Tốc độ 25–50 chai/phút (tùy kích cỡ chai)\n✅ Độ chính xác dán nhãn ±1 mm\n✅ Chai đường kính 30–100 mm, cao 30–200 mm\n✅ Nhãn dài 20–300 mm, cao 12–130 mm\n✅ Bảng điều khiển PLC, công suất 1 kW, AC 220 V\n🎯 Phù hợp: chai nhựa, chai thủy tinh đựng đồ uống, thực phẩm, mỹ phẩm, hóa phẩm\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nChai của bạn đường kính bao nhiêu và dán nhãn một hay hai mặt? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydannhanchaitron #maydannhan #maydannhantudong #ducthanh"
+     },
+     {
+      "id": 1325,
+      "key": "rank_math_title",
+      "value": "Máy dán nhãn chai tròn ZS-TB260R | Đức Thành"
+     },
+     {
+      "id": 1326,
+      "key": "rank_math_description",
+      "value": "Máy dán nhãn chai tròn ZS-TB260R: dán 1–2 mặt, 25–50 chai/phút, chính xác ±1 mm, bảng PLC. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1327,
+      "key": "rank_math_focus_keyword",
+      "value": "máy dán nhãn chai tròn"
+     },
+     {
+      "id": 1328,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132245995472642"
+     },
+     {
+      "id": 1329,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-04 10:44:44 (ID 1369168222940597_122132245995472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/danh-muc-san-pham/may-dan-nhan/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "10",
+      "ok": true,
+      "row": 12,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 10
+  }
+ ],
+ "time": "2026-11-04 03:45:43"
+}
