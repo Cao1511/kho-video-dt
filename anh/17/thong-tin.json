@@ -1,0 +1,66 @@
+{
+ "ten": "Máy đóng nang cứng tự động",
+ "model": "NJP-2200D",
+ "link": "http://www.rajxjx.com/Product-detail-id-1561770.html",
+ "cong_dung": "Tự động nạp và đóng nang cứng cho nguyên liệu bột. Máy có cơ cấu định lượng, loại nang lỗi, hệ thống PLC và màn hình cảm ứng hỗ trợ cảnh báo và dừng khi có lỗi hoặc thiếu nguyên liệu.",
+ "san_pham": "Bột dùng để đóng nang cứng; cỡ nang theo bảng nguồn NO.00#--5#, Supro/safefy capsule size:A-E",
+ "thong_so": [
+  [
+   "Model (cột bảng thông số sử dụng)",
+   "NJP-2200D"
+  ],
+  [
+   "Năng suất",
+   "2200 粒/分"
+  ],
+  [
+   "Số lỗ khuôn",
+   "18"
+  ],
+  [
+   "Cỡ nang",
+   "NO.00#--5# Supro/safefy capsule size:A-E"
+  ],
+  [
+   "Tỷ lệ cấp nang đạt theo bảng nguồn",
+   "≥99%"
+  ],
+  [
+   "Kích thước",
+   "1150×1050×1970mm"
+  ],
+  [
+   "Khối lượng",
+   "1300kg"
+  ],
+  [
+   "Nguồn điện",
+   "380V 50HZ"
+  ],
+  [
+   "Công suất",
+   "6.82kw"
+  ],
+  [
+   "Hút bụi (chép nguyên bảng nguồn)",
+   "700m²/H 2×105pa"
+  ],
+  [
+   "Độ chân không",
+   "0.02-0.06Mpa"
+  ],
+  [
+   "Độ ồn",
+   "<80dBA"
+  ]
+ ],
+ "cau_tao": [
+  "Điều khiển PLC, giao diện người-máy và màn hình cảm ứng",
+  "Cụm cấp nang và trạm định lượng",
+  "Phễu cấp bột",
+  "Cơ cấu loại nang lỗi và thu hồi nguyên liệu",
+  "Khoang làm việc có cửa bảo vệ trong suốt",
+  "Tự động cảnh báo, hiển thị lỗi và dừng khi thiếu nguyên liệu hoặc sự cố"
+ ],
+ "nguon_anh": "https://alipic.files.mozhan.com/mozhan/20240419/b81066f039ceca139ecd12f2b8ae6301.jpg"
+}
