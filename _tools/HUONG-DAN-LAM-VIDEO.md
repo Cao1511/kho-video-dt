@@ -24,10 +24,10 @@ In ra độ dài + **số câu thuyết minh tối đa** (video ngắn chỉ đ�
  "tiktok":{"title":"…","text":"…"},"youtube":{"title":"…","text":"…"},"facebook":{"text":"…"},
  "web":{"tu_khoa":["đóng gói đậu","đóng gói hạt"],"product_id":null}}
 ```
-- `line1`/`line2`: IN HOA, mỗi dòng ≤ 16–17 ký tự, chứa từ khoá. `notes`: không quá số câu tối đa ở bước 2, mỗi câu ≤ 4–5 từ, đúng điều thấy trong video, không bịa thông số.
+- `line1`/`line2`: IN HOA, mỗi dòng ≤ 16–17 ký tự, BẮT BUỘC chứa từ khoá chính (hiện ngay khung đầu). 3 giây đầu chưa thấy máy chạy rõ → dùng `cat` bỏ đoạn đầu. `notes`: không quá số câu tối đa ở bước 2, mỗi câu ≤ 4–5 từ, đúng điều thấy trong video, không bịa thông số.
 - `am_thanh`: `"tach"` (mặc định – tách tiếng người, giữ tiếng máy) | `"nhac"` (người dùng nói "thêm nhạc") | `"tat"`. Thêm `"cat":{"bat_dau":0,"giay":15}` khi người dùng bảo cắt ngắn; `"note_pos":"auto"` khi giữa màn hình nền trắng/sáng.
-- Caption (KHÔNG link, KHÔNG icon đầu caption, không "nhất/số 1", không #quangcao; chỉ điều thấy trong video):
-  - TikTok: `title` = từ khoá + " | Đức Thành"; `text`: câu đầu bắt đầu bằng từ khoá; 1–2 câu tên gọi khác + ngành; "💬 Nhắn tin cho kênh để được tư vấn & báo giá"; 3–5 hashtag cụ thể (#ducthanh), không #fyp. Không số điện thoại.
+- **ĐỌC `_tools/CHUAN-SEO.md` TRƯỚC KHI VIẾT** (chọn từ khoá chính + phụ trước; mục 1–4 và tự kiểm mục 6). Tóm tắt (KHÔNG link, KHÔNG icon đầu caption, không "nhất/số 1", không #quangcao; chỉ điều thấy trong video):
+  - TikTok: `title` = từ khoá + " | Đức Thành"; `text` 150–300 ký tự: câu đầu bắt đầu bằng từ khoá; 1–2 câu tên gọi khác + ngành; "💬 Nhắn tin cho kênh để được tư vấn & báo giá"; 3–5 hashtag cụ thể (#ducthanh), không #fyp. Không số điện thoại.
   - YouTube: `title` 60–80 ký tự, từ khoá trong 50 ký tự đầu, kết thúc "| Đức Thành"; `text` ≤200 ký tự, KHÔNG số điện thoại/Zalo/web, cuối `#shorts` + 3–5 hashtag.
   - Facebook: dòng đầu bắt đầu bằng từ khoá + công dụng; 1–2 câu mô tả; "🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi"; "📞 Hotline/Zalo: 0974 708 603 – 0989 139 855"; 1 câu hỏi mở; 3–5 hashtag.
 

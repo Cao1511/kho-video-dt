@@ -31,6 +31,7 @@ print('CHO DANG:',c)"
 - Đối chiếu ảnh `anh/<STT>/1.png` (tên máy, mã, 3 thông số trên ảnh) để bài viết khớp ảnh.
 
 ## Bước 3 – Viết bài chuẩn SEO (kiểu bài mẫu id 272, 356)
+**Đọc và làm đúng `_tools/CHUAN-SEO.md`** (mục 0 chọn từ khoá, mục 4 bài Facebook, mục 5 web, mục 6 tự kiểm) – các dòng dưới đây là tóm tắt, chỗ nào khác thì theo CHUAN-SEO.md.
 - `name`: tên máy tiếng Việt + mã máy nếu có (vd "Máy viền nắp lọ tự động ZS-YG100"). `slug`: ngắn, không dấu, chứa từ khoá (vd `may-vien-nap-lo-tu-dong`).
 - `short_description`: `<ul class="dt-short">` 4–5 dòng, in đậm số liệu chính.
 - `description` (HTML): h2 Giới thiệu (2 đoạn, in đậm năng suất/điểm chính) → h2 Ứng dụng (ul) → h2 Thông số kỹ thuật (`<table class="dt-spec">`, hàng `<tr><th>…</th><td>…</td></tr>`) → h2 Cấu tạo (ul) → h2 Nguyên lý hoạt động (ol) → h2 Ưu điểm nổi bật (h3 + p) → h2 Lưu ý khi sử dụng (ul) → h2 Câu hỏi thường gặp (h3 + p; câu cuối về giá: `<a href="tel:0974708603">0974 708 603</a>` + `<a href="/lien-he/">trang liên hệ</a>`) → h2 Liên hệ tư vấn và báo giá (CÔNG TY CP SX MÁY ĐỨC THÀNH, hotline `0974 708 603 – 0989 139 855`, 2–3 link nội bộ tới danh mục/sản phẩm liên quan lấy từ Store API).

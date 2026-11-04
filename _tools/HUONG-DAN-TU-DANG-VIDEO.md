@@ -29,7 +29,7 @@ Chọn video: trong dữ liệu Sheet, dòng có Trạng thái "Chờ đăng" v�
 Bài sản phẩm: chỉ nhận khi khớp RÕ 1 bài cùng loại máy (cùng mã máy nếu có); không chắc → không gắn.
 
 ## Bước 1b – Nội dung bài đăng (ưu tiên Sheet)
-Cột **Bài YouTube / Bài Facebook / Bài TikTok** (người dùng có thể đã sửa) – ô có chữ thì dùng, trống thì lấy caption.json. YouTube/TikTok: dòng đầu `Tiêu đề: <title>`, dòng trống, rồi phần text. Facebook: cả ô là caption. Người dùng sửa trái quy tắc → vẫn đăng đúng ý họ, ghi nhắc trong báo cáo.
+Cột **Bài YouTube / Bài Facebook / Bài TikTok** (người dùng có thể đã sửa) – ô có chữ thì dùng, trống thì lấy caption.json. YouTube/TikTok: dòng đầu `Tiêu đề: <title>`, dòng trống, rồi phần text. Facebook: cả ô là caption. Người dùng sửa trái quy tắc → vẫn đăng đúng ý họ, ghi nhắc trong báo cáo. Ô trống phải tự viết → theo `_tools/CHUAN-SEO.md`. Caption cũ thiếu chuẩn SEO (vd không có từ khoá ở đầu, sai số hashtag) VÀ ô Sheet giống hệt caption.json (tức người dùng chưa sửa) → được chỉnh lại cho đúng `_tools/CHUAN-SEO.md` (giữ ý, chỉ sửa cho chuẩn) và ghi Bài mới vào Sheet ở Bước 3.
 
 ## Bước 2 – Đăng 3 kênh qua Buffer (gọi 3 create_post liền nhau)
 Org `6ae460e02880bef151572737`, `schedulingType: automatic`, `mode: shareNow`, `assets: [{"video":{"url": "<Link video raw>"}}]` (MẢNG):
