@@ -1,0 +1,23 @@
+{
+ "thu_muc": "may-tao-nang-mem-0b7ea41f",
+ "goc": "video-goc/may-tao-nang-mem-0b7ea41f.mp4",
+ "pill": "XEM MÁY CHẠY THỰC TẾ",
+ "line1": "MÁY TẠO",
+ "line2": "NANG MỀM",
+ "notes": [
+  "Tạo viên nang mềm",
+  "Viên ra liên tục",
+  "Băng tải đưa viên ra"
+ ],
+ "note_pos": "bottom",
+ "am_thanh": "nhac",
+ "caption": null,
+ "cho_caption": true,
+ "sheet": {
+  "stt": "moi",
+  "fields": {
+   "Tên máy": "Máy tạo nang mềm",
+   "Trạng thái": "Chờ đăng"
+  }
+ }
+}
