@@ -1,0 +1,45 @@
+{
+ "ok": false,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 400,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-dang-set-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 400
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 401,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-dang-set-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 401
+   },
+   "step": "alt2"
+  },
+  {
+   "ok": false,
+   "error": "TimeoutError('The read operation timed out')",
+   "step": "sp"
+  }
+ ],
+ "time": "2026-11-05 03:47:23"
+}
