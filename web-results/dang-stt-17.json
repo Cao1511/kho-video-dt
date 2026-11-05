@@ -1,0 +1,167 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 407,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-nang-cung-tu-dong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 407
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 408,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-nang-cung-tu-dong-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 408
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 409,
+    "slug": "may-dong-nang-cung-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=409"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 409,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-nang-cung-tu-dong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 15,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 409,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-nang-cung-tu-dong/",
+    "meta_data": [
+     {
+      "id": 1537,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1555,
+      "key": "dtfb_message",
+      "value": "Máy đóng nang cứng tự động NJP-2200D – nạp bột vào nang cứng 2.200 viên/phút, 18 lỗ khuôn.\n\nNạp nang bằng tay chậm, liều lượng dễ lệch? Máy đóng nang cứng (máy nạp nang, máy đóng viên nang) tự cấp nang, nạp bột, loại nang lỗi và khóa nang, điều khiển bằng PLC và màn hình cảm ứng.\n\n✅ Năng suất 2.200 viên/phút, 18 lỗ khuôn\n✅ Cỡ nang 00#, 0#, 1#, 2#, 3#, 4#, 5#\n✅ Tỷ lệ cấp nang đạt ≥ 99%\n✅ Tự dừng và cảnh báo khi lỗi hoặc thiếu nguyên liệu\n✅ Điện 380V – 50Hz, công suất 6,82 kW\n🎯 Phù hợp: sản xuất viên nang thực phẩm chức năng, dược liệu dạng bột\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang đóng nang loại bột nào, cỡ nang bao nhiêu? Nhắn tin cho Đức Thành để được tư vấn nhé.\n\n#maydongnangcung #maydongnang #maydongvien #thietbiduocpham #ducthanh"
+     },
+     {
+      "id": 1556,
+      "key": "rank_math_title",
+      "value": "Máy đóng nang cứng tự động NJP-2200D | Đức Thành"
+     },
+     {
+      "id": 1557,
+      "key": "rank_math_description",
+      "value": "Máy đóng nang cứng tự động NJP-2200D: 2.200 viên/phút, 18 lỗ khuôn, PLC cảm ứng, nang 00#–5#. Tư vấn, báo giá: 0974 708 603."
+     },
+     {
+      "id": 1558,
+      "key": "rank_math_focus_keyword",
+      "value": "máy đóng nang cứng"
+     },
+     {
+      "id": 1559,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132609109472642"
+     },
+     {
+      "id": 1560,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-05 16:44:50 (ID 1369168222940597_122132609109472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-nang-cung-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 49,
+    "vua_nap": 44,
+    "san_co": 5
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "17",
+      "ok": true,
+      "row": 19,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-05 09:45:57"
+}
