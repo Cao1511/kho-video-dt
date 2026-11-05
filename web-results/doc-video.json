@@ -118,7 +118,7 @@
      "Bài Facebook": "Máy chiết đóng nắp 6 vòi tự động – chiết dung dịch vào chai và đóng nắp liên tục, phù hợp chai nhỏ trong dược phẩm, mỹ phẩm, thực phẩm.\nBơm nhu động đưa dung dịch qua 6 vòi cùng lúc, chai chạy trên băng tải rồi vào cụm đóng nắp tự động.\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nXưởng bạn đang chiết loại dung dịch nào, dung tích chai bao nhiêu ml?\n#maychietdongnap #maychietrot #maydonggoi #ducthanh",
      "Bài TikTok": "Tiêu đề: Máy chiết đóng nắp 6 vòi tự động | Đức Thành\n\nMáy chiết đóng nắp 6 vòi tự động giúp chiết dung dịch vào chai và đóng nắp liên tục, gọn và đều tay. Phù hợp máy chiết rót chai nhỏ, dược phẩm, mỹ phẩm, thực phẩm.\n💬 Nhắn tin cho kênh để được tư vấn & báo giá\n#maychietdongnap #maychietrot #maydonggoi #ducthanh",
      "Trạng thái": "Đã đăng",
-     "Thời gian đăng": "05/11/2026 14:28",
+     "Thời gian đăng": "05/11/2026 17:26",
      "Link YouTube": "Xem YouTube",
      "Link Facebook": "Xem Facebook",
      "Link TikTok": "",
@@ -208,19 +208,9 @@
    "ok": true,
    "data": [
     {
-     "id": 402,
-     "name": "Máy chiết rót dạng sệt bơm rotor KPX-950",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set/"
-    },
-    {
-     "id": 397,
-     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
-    },
-    {
-     "id": 394,
-     "name": "Máy chiết rót chất lỏng một vòi G1WY",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+     "id": 391,
+     "name": "Máy cấp nắp rung tự động",
+     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
     },
     {
      "id": 381,
@@ -228,37 +218,54 @@
      "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
     },
     {
+     "id": 371,
+     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+    },
+    {
      "id": 368,
      "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
      "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 356,
-     "name": "Máy viền nắp lọ tự động ZS-YG100",
-     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
-    },
-    {
-     "id": 352,
-     "name": "Máy chiết rót liên tục ZS-SV6X",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    },
-    {
-     "id": 333,
-     "name": "Máy dán nhãn chai lọ tự động ZS-TB500",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-lo-tu-dong/"
     },
     {
      "id": 319,
      "name": "Máy gấp hộp giấy bán tự động",
      "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
-    },
-    {
-     "id": 272,
-     "name": "Máy chiết rót 4 vòi tự động",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-4-voi/"
     }
    ],
-   "step": "tim_cddbcf09"
+   "step": "tim_0"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 391,
+     "name": "Máy cấp nắp rung tự động",
+     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
+    },
+    {
+     "id": 381,
+     "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
+     "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
+    },
+    {
+     "id": 371,
+     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
+    },
+    {
+     "id": 368,
+     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
+     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
+    },
+    {
+     "id": 319,
+     "name": "Máy gấp hộp giấy bán tự động",
+     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
+    }
+   ],
+   "step": "tim_1"
   },
   {
    "status": 200,
@@ -315,7 +322,7 @@
      "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
     }
    ],
-   "step": "tim_de4897a1"
+   "step": "tim_2"
   },
   {
    "status": 200,
@@ -372,7 +379,7 @@
      "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
     }
    ],
-   "step": "tim_1cded05e"
+   "step": "tim_3"
   },
   {
    "status": 200,
@@ -384,8 +391,8 @@
      "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
     }
    ],
-   "step": "tim_0b7ea41f"
+   "step": "tim_4"
   }
  ],
- "time": "2026-11-05 10:23:12"
+ "time": "2026-11-05 13:23:16"
 }
