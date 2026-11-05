@@ -1,0 +1,26 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "24",
+      "ok": true,
+      "row": 26,
+      "ghi": [
+       "Trạng thái",
+       "Link ảnh",
+       "Tên máy"
+      ]
+     }
+    ]
+   },
+   "step": 0
+  }
+ ],
+ "time": "2026-11-05 02:39:44"
+}
