@@ -1,45 +1,133 @@
 {
- "ok": false,
+ "ok": true,
  "steps": [
   {
-   "status": 201,
-   "ok": true,
-   "data": {
-    "id": 400,
-    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-dang-set-duc-thanh.webp"
-   },
-   "step": "anh"
-  },
-  {
    "status": 200,
    "ok": true,
    "data": {
-    "id": 400
+    "id": 402,
+    "slug": "may-chiet-rot-dang-set",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=402"
    },
-   "step": "alt"
-  },
-  {
-   "status": 201,
-   "ok": true,
-   "data": {
-    "id": 401,
-    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-dang-set-duc-thanh-2.webp"
-   },
-   "step": "anh2"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": {
-    "id": 401
-   },
-   "step": "alt2"
-  },
-  {
-   "ok": false,
-   "error": "TimeoutError('The read operation timed out')",
    "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 402,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 402,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set/",
+    "meta_data": [
+     {
+      "id": 1475,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1493,
+      "key": "dtfb_message",
+      "value": "Máy chiết rót dạng sệt bơm rotor KPX-950 – chiết kem, sốt, gel độ nhớt cao chính xác từng chai.\n\nRót nguyên liệu đặc bằng tay dễ hao hụt, chai đầy chai vơi? Máy chiết dịch sệt (hay máy chiết kem, máy chiết sốt) dùng bơm rotor servo định lượng theo từng vòng quay, giúp mỗi chai đều nhau.\n\n✅ Dải chiết 5–5000 ml\n✅ Độ chính xác dưới ±1%\n✅ Bơm rotor LX3A dẫn động servo\n✅ Phần tiếp xúc nguyên liệu inox 304\n✅ Điện 220V, công suất 750W\n\n🎯 Phù hợp: kem dưỡng, gel, sốt, mật ong, hoá chất gia dụng dạng đặc\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn đặc cỡ nào và cần chiết bao nhiêu ml mỗi chai? Nhắn tin để Đức Thành tư vấn nhé!\n\n#maychietrotdangset #maychietrot #maychietkem #mayduocmypham #ducthanh"
+     },
+     {
+      "id": 1494,
+      "key": "rank_math_title",
+      "value": "Máy chiết rót dạng sệt KPX-950 | Đức Thành"
+     },
+     {
+      "id": 1495,
+      "key": "rank_math_description",
+      "value": "Máy chiết rót dạng sệt bơm rotor KPX-950: chiết 5–5000 ml, chính xác dưới ±1%, inox 304, điện 220V. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1496,
+      "key": "rank_math_focus_keyword",
+      "value": "máy chiết rót dạng sệt"
+     },
+     {
+      "id": 1497,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132537763472642"
+     },
+     {
+      "id": 1498,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-05 10:49:32 (ID 1369168222940597_122132537763472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-chiet-rot-dang-set/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 5
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 46,
+    "vua_nap": 30,
+    "san_co": 16
+   },
+   "step": 6
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "15",
+      "ok": true,
+      "row": 17,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 7
   }
  ],
- "time": "2026-11-05 03:47:23"
+ "time": "2026-11-05 03:52:25"
 }
