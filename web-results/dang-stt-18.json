@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 410,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-nang-cung-tu-dong-duc-thanh-1.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 410
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 411,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-nang-cung-tu-dong-duc-thanh-2-1.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 411
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 412,
+    "slug": "may-dong-nang-cung-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=412"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 412,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-nang-cung-tu-dong-2/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 412,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-nang-cung-tu-dong-2/",
+    "meta_data": [
+     {
+      "id": 1567,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1585,
+      "key": "dtfb_message",
+      "value": "Máy đóng nang cứng tự động – nạp bột, hạt, pellet vào nang cứng, tự định vị, tách, nạp và khóa nang.\n\nCòn nạp nang bằng tay? Máy đóng viên nang cứng (máy nạp bột vào nang) giúp làm liên tục trên một máy, dùng cho dược phẩm và thực phẩm chức năng.\n\n✅ Cỡ nang 00#, 0#, 1#, 2#, 3#, 4#, 5#\n✅ Điều khiển PLC, màn hình cảm ứng\n✅ Cảm biến tự dừng khi hết bột, hết nang, cửa mở\n✅ Phần tiếp xúc nguyên liệu bằng thép không gỉ\n🎯 Phù hợp: dược phẩm, thực phẩm chức năng, bột thảo dược, xưởng sản xuất nhỏ\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nBạn đang đóng nang loại bột nào, cỡ nang nào? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydongnangcung #maydongviennang #mayduocpham #maythucphamchucnang #ducthanh"
+     },
+     {
+      "id": 1586,
+      "key": "rank_math_title",
+      "value": "Máy đóng nang cứng tự động | Đức Thành"
+     },
+     {
+      "id": 1587,
+      "key": "rank_math_description",
+      "value": "Máy đóng nang cứng tự động: cỡ nang 00#–5#, điều khiển PLC cảm ứng, tự dừng khi hết bột/nang, inox tiếp xúc nguyên liệu. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1588,
+      "key": "rank_math_focus_keyword",
+      "value": "máy đóng nang cứng tự động"
+     },
+     {
+      "id": 1590,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132658405472642"
+     },
+     {
+      "id": 1591,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-05 19:50:20 (ID 1369168222940597_122132658405472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-nang-cung-tu-dong-2/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 50,
+    "vua_nap": 34,
+    "san_co": 16
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "18",
+      "ok": true,
+      "row": 20,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-05 12:51:48"
+}
