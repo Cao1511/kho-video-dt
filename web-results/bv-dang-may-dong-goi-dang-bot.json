@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 398,
+    "link": "https://mayducthanh.vn/?p=398",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 398,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-bot/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 398,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-bot/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy đóng gói dạng bột: chọn sao cho túi đủ cân, ít bụi?\n\nĐóng bột khó hơn đóng hạt vì bột bay bụi, dễ vón và dễ làm bẩn mép hàn. Chọn đúng ngay từ đầu giúp xưởng đỡ hao hụt và đỡ vệ sinh.\n\n🔹 Biết đặc tính bột: mịn, thô, có hút ẩm hay không\n🔹 Bột mịn thường hợp định lượng bằng trục vít\n🔹 Phễu kín, có cánh khuấy để bột không đóng cầu\n🔹 Cân nhắc hút bụi tại điểm rót khi bột rất mịn\n🔹 Cấp liệu chân không giúp giảm bụi, đỡ bê vác\n🔹 Chạy thử bằng chính loại bột của xưởng\n\nXưởng bạn đang đóng loại bột nào, mỗi túi bao nhiêu gram?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#maydonggoidangbot #maydonggoi #dongoibot #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-05 09:11:04 (ID 1369168222940597_122132523345472642)",
+     "dtfb_fb_id": "1369168222940597_122132523345472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 45,
+    "vua_nap": 11,
+    "san_co": 34
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "6",
+      "ok": true,
+      "row": 8,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-05 02:12:19"
+}
