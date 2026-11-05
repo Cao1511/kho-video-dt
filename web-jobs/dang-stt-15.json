@@ -1,0 +1,106 @@
+{
+ "steps": [
+  {
+   "id": "sp",
+   "method": "PUT",
+   "path": "/wc/v3/products/402",
+   "body": {
+    "images": [
+     {
+      "id": 400
+     },
+     {
+      "id": 401
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy chiết rót dạng sệt bơm rotor KPX-950 – chiết kem, sốt, gel độ nhớt cao chính xác từng chai.\n\nRót nguyên liệu đặc bằng tay dễ hao hụt, chai đầy chai vơi? Máy chiết dịch sệt (hay máy chiết kem, máy chiết sốt) dùng bơm rotor servo định lượng theo từng vòng quay, giúp mỗi chai đều nhau.\n\n✅ Dải chiết 5–5000 ml\n✅ Độ chính xác dưới ±1%\n✅ Bơm rotor LX3A dẫn động servo\n✅ Phần tiếp xúc nguyên liệu inox 304\n✅ Điện 220V, công suất 750W\n\n🎯 Phù hợp: kem dưỡng, gel, sốt, mật ong, hoá chất gia dụng dạng đặc\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn đặc cỡ nào và cần chiết bao nhiêu ml mỗi chai? Nhắn tin để Đức Thành tư vấn nhé!\n\n#maychietrotdangset #maychietrot #maychietkem #mayduocmypham #ducthanh"
+     }
+    ],
+    "categories": [
+     {
+      "id": 26
+     },
+     {
+      "id": 24
+     }
+    ],
+    "description": "<h2>Giới thiệu máy chiết rót dạng sệt bơm rotor KPX-950</h2>\n<p><strong>Máy chiết rót dạng sệt bơm rotor KPX-950</strong> dùng để chiết rót định lượng kem, sốt và các nguyên liệu đặc, nhớt vào chai, hũ, túi. Máy dùng bơm rotor LX3A dẫn động bằng động cơ servo, lượng chiết được tính theo dung tích mỗi vòng quay của rotor nên mỗi lần rót ra gần như một lượng cố định.</p>\n<p>Máy chiết được từ <strong>5 đến 5000 ml</strong>, độ chính xác <strong>dưới ±1%</strong>, phù hợp cả nguyên liệu có độ nhớt cao và nguyên liệu có hạt, miễn là nguyên liệu còn chảy được. Phần tiếp xúc nguyên liệu làm bằng <strong>thép không gỉ 304</strong>, dễ vệ sinh. Đây là lựa chọn đáng cân nhắc cho xưởng sản xuất mỹ phẩm, thực phẩm, hoá chất gia dụng cần một máy chiết dịch sệt gọn, chạy bằng điện 220V.</p>\n<h2>Ứng dụng của máy chiết rót dịch sệt, kem, sốt</h2>\n<ul>\n<li><strong>Mỹ phẩm, chăm sóc cá nhân:</strong> kem dưỡng, kem body, sữa rửa mặt, gel, dầu gội, sữa tắm dạng đặc.</li>\n<li><strong>Thực phẩm:</strong> sốt, mật ong, mứt, tương ớt, tương cà, bơ đậu phộng, nguyên liệu có hạt nhỏ khi bơm được.</li>\n<li><strong>Hoá chất gia dụng:</strong> nước rửa tay, nước rửa chén đặc, keo, chất bôi trơn dạng sệt.</li>\n<li><strong>Dược phẩm dùng ngoài:</strong> thuốc mỡ, gel bôi, kem bôi đóng chai hoặc tuýp.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\"><tbody>\n<tr><th>Model</th><td>KPX-950</td></tr>\n<tr><th>Loại bơm</th><td>Bơm rotor LX3A, dẫn động servo</td></tr>\n<tr><th>Dải chiết</th><td>5–5000 ml</td></tr>\n<tr><th>Độ chính xác chiết</th><td>&lt; ±1%</td></tr>\n<tr><th>Nguồn điện</th><td>220V, 1 pha, 50Hz</td></tr>\n<tr><th>Công suất</th><td>750 W</td></tr>\n<tr><th>Kích thước</th><td>1150 × 480 × 520 mm</td></tr>\n<tr><th>Khối lượng</th><td>41 kg</td></tr>\n<tr><th>Vật liệu phần tiếp xúc nguyên liệu</th><td>Thép không gỉ 304</td></tr>\n</tbody></table>\n<h2>Cấu tạo máy chiết rót dạng sệt KPX-950</h2>\n<ul>\n<li><strong>Bơm rotor LX3A:</strong> đẩy nguyên liệu theo từng vòng quay, cho lượng chiết đồng đều.</li>\n<li><strong>Động cơ servo:</strong> dẫn động bơm, điều chỉnh lượng chiết chính xác.</li>\n<li><strong>Phễu chứa nguyên liệu:</strong> chứa nguyên liệu sệt cấp cho bơm.</li>\n<li><strong>Vòi chiết và cụm điều khiển khí nén:</strong> đóng mở vòi, hạn chế nhỏ giọt.</li>\n<li><strong>Màn hình điều khiển:</strong> cài dung tích chiết và các thông số chạy máy.</li>\n<li><strong>Bàn đạp điều khiển:</strong> người vận hành đạp để chiết từng lần, hai tay giữ chai.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Đổ nguyên liệu dạng sệt vào phễu chứa.</li>\n<li>Cài dung tích chiết trên màn hình điều khiển.</li>\n<li>Đặt chai hoặc hũ dưới vòi, đạp bàn đạp để khởi động chu trình chiết.</li>\n<li>Động cơ servo quay rotor LX3A, đẩy một lượng nguyên liệu cố định ra vòi chiết vào bao bì.</li>\n<li>Vòi đóng lại, lấy sản phẩm ra và lặp lại cho lần chiết tiếp theo.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Chiết chính xác nguyên liệu độ nhớt cao</h3>\n<p>Bơm rotor định lượng theo dung tích mỗi vòng quay, kết hợp động cơ servo cho độ chính xác dưới ±1%, giảm hao hụt nguyên liệu và đồng đều giữa các chai.</p>\n<h3>Dải chiết rộng 5–5000 ml</h3>\n<p>Một máy chiết được từ lọ nhỏ vài chục ml đến can lớn, thuận tiện khi xưởng đóng nhiều quy cách.</p>\n<h3>Vật liệu inox 304, dễ vệ sinh</h3>\n<p>Phần tiếp xúc nguyên liệu bằng thép không gỉ 304, phù hợp thực phẩm, mỹ phẩm; tháo rửa khi đổi sản phẩm.</p>\n<h3>Nhỏ gọn, dùng điện 220V</h3>\n<p>Máy nặng 41 kg, kích thước 1150 × 480 × 520 mm, công suất 750 W, dễ bố trí ở xưởng nhỏ.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Gửi mẫu nguyên liệu và độ nhớt để Đức Thành tư vấn cấu hình bơm, vòi phù hợp.</li>\n<li>Nguyên liệu có hạt chỉ chiết được khi hạt đủ nhỏ và nguyên liệu vẫn chảy qua bơm.</li>\n<li>Vệ sinh phễu, bơm và vòi chiết sau mỗi ca hoặc khi đổi sản phẩm.</li>\n<li>Chiết thử vài chai đầu ca và cân kiểm tra trước khi chạy hàng loạt.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy chiết rót dạng sệt KPX-950 chiết được dung tích bao nhiêu?</h3>\n<p>Máy chiết từ 5 đến 5000 ml mỗi lần, độ chính xác dưới ±1%.</p>\n<h3>Máy chiết được những sản phẩm nào?</h3>\n<p>Kem, sốt, gel và các chất lỏng có độ nhớt cao; nguyên liệu có hạt nhỏ cũng chiết được nếu nguyên liệu còn khả năng chảy.</p>\n<h3>Máy dùng điện áp nào?</h3>\n<p>Máy dùng điện 220V, 1 pha, 50Hz, công suất 750 W.</p>\n<h3>Phần tiếp xúc nguyên liệu làm bằng vật liệu gì?</h3>\n<p>Phần tiếp xúc nguyên liệu làm bằng thép không gỉ 304.</p>\n<h3>Giá máy chiết rót dạng sệt KPX-950 bao nhiêu?</h3>\n<p>Giá tùy cấu hình và nhu cầu sản xuất. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-duoc-my-pham/\">máy dược &amp; mỹ phẩm</a>, <a href=\"/may-chiet-rot-chat-long/\">máy chiết rót chất lỏng</a>, <a href=\"/may-chiet-rot-han-kin-ong-nhua/\">máy chiết rót hàn kín ống nhựa ZS-FS120</a>.</p>\n",
+    "short_description": "<ul class=\"dt-short\">\n<li>Bơm rotor LX3A, động cơ servo, chiết dải <strong>5–5000 ml</strong></li>\n<li>Độ chính xác chiết <strong>dưới ±1%</strong></li>\n<li>Chiết kem, sốt, gel và nguyên liệu <strong>độ nhớt cao</strong></li>\n<li>Phần tiếp xúc nguyên liệu <strong>thép không gỉ 304</strong></li>\n<li>Điện <strong>220V</strong>, 750 W, nặng 41 kg</li>\n</ul>"
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy chiết rót dạng sệt KPX-950 | Đức Thành",
+     "rank_math_description": "Máy chiết rót dạng sệt bơm rotor KPX-950: chiết 5–5000 ml, chính xác dưới ±1%, inox 304, điện 220V. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy chiết rót dạng sệt"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}"
+   ]
+  },
+  {
+   "warm_all": true
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "15",
+     "fields": {
+      "Tên máy": "Máy chiết rót dạng sệt bơm rotor KPX-950",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
