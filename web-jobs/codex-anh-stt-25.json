@@ -1,0 +1,25 @@
+{
+ "steps": [
+  {
+   "sheet_update": [
+    {
+     "stt": "25",
+     "fields": {
+      "Trạng thái": "Đã có ảnh",
+      "Link ảnh": [
+       {
+        "text": "Ảnh 1",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/25/1.png"
+       },
+       {
+        "text": "Ảnh 2",
+        "url": "https://raw.githubusercontent.com/Cao1511/kho-video-dt/video/anh/25/2.png"
+       }
+      ],
+      "Tên máy": "Máy dán nhãn túi phẳng tự động"
+     }
+    }
+   ]
+  }
+ ]
+}
