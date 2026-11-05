@@ -1,0 +1,167 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 404,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 404
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 405,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 405
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 406,
+    "slug": "may-han-mieng-tui-lien-tuc",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=406"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 406,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-han-mieng-tui-lien-tuc/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 406,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-han-mieng-tui-lien-tuc/",
+    "meta_data": [
+     {
+      "id": 1507,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1525,
+      "key": "dtfb_message",
+      "value": "Máy hàn miệng túi liên tục FR-770 – hàn kín miệng túi màng nhựa nối tiếp trên băng tải tự động.\nXưởng đóng gói đang tìm máy ép miệng túi nilon hàn nhanh, đường hàn đều mà không phải hàn tay từng túi? Máy hàn túi liên tục FR-770 đáp ứng nhu cầu này.\n✅ Điều khiển nhiệt độ không đổi bằng điện tử\n✅ Băng tải vận chuyển túi tự động\n✅ Tốc độ băng tải điều chỉnh vô cấp\n✅ Chiều dài hàn không giới hạn\n✅ Tùy chọn bánh in dập nổi ký hiệu trên đường hàn\n🎯 Phù hợp: túi màng nhựa đựng thực phẩm, mỹ phẩm và hàng tiêu dùng\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nBạn đang đóng loại túi gì, kích thước bao nhiêu? Nhắn tin để Đức Thành tư vấn nhé.\n#mayhanmiengtuilientuc #mayhantui #maydonggoi #ducthanh"
+     },
+     {
+      "id": 1526,
+      "key": "rank_math_title",
+      "value": "Máy hàn miệng túi liên tục FR-770 | Đức Thành"
+     },
+     {
+      "id": 1527,
+      "key": "rank_math_description",
+      "value": "Máy hàn miệng túi liên tục FR-770: băng tải tự động, giữ nhiệt điện tử, tốc độ chỉnh vô cấp, hàn không giới hạn chiều dài. Hotline 0974 708 603."
+     },
+     {
+      "id": 1528,
+      "key": "rank_math_focus_keyword",
+      "value": "máy hàn miệng túi liên tục"
+     },
+     {
+      "id": 1529,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132566977472642"
+     },
+     {
+      "id": 1530,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-05 13:44:54 (ID 1369168222940597_122132566977472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-han-mieng-tui-lien-tuc/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 48,
+    "vua_nap": 35,
+    "san_co": 13
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "16",
+      "ok": true,
+      "row": 18,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-05 06:46:40"
+}
