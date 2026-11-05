@@ -72,13 +72,13 @@
      "Bài YouTube": "Tiêu đề: Máy dán nhãn tem nhỏ – dán ống, lọ nhỏ chính xác, chạy liên tục | Đức Thành\n\nMáy dán nhãn tem nhỏ chạy trên băng tải, dán tem đều lên ống và lọ nhỏ. Dùng cho dán nhãn ống nghiệm, sản phẩm nhỏ. #shorts #maydannhan #dannhan #maydonggoi #ducthanh",
      "Bài Facebook": "Máy dán nhãn tem nhỏ giúp dán tem chính xác lên ống, lọ và sản phẩm kích thước nhỏ, chạy liên tục trên băng tải.\nTem được dán đều, đúng vị trí trên từng sản phẩm, phù hợp dán nhãn ống nghiệm, ống thuốc, sản phẩm nhỏ.\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\nSản phẩm của bạn kích thước bao nhiêu, cần dán tem loại nào?\n#maydannhan #maydannhantemnho #dannhan #ducthanh",
      "Bài TikTok": "Tiêu đề: Máy dán nhãn tem nhỏ | Đức Thành\n\nMáy dán nhãn tem nhỏ dán chính xác lên ống, lọ nhỏ, băng tải chạy liên tục. Phù hợp dán nhãn ống nghiệm, ống thuốc, sản phẩm nhỏ cần dán tem đều tay. 💬 Nhắn tin cho kênh để được tư vấn & báo giá #maydannhan #maydannhantemnho #dannhanongnho #ducthanh",
-     "Trạng thái": "Chờ đăng",
-     "Thời gian đăng": "",
-     "Link YouTube": "",
-     "Link Facebook": "",
+     "Trạng thái": "Đã đăng",
+     "Thời gian đăng": "04/11/2026 20:24",
+     "Link YouTube": "Xem YouTube",
+     "Link Facebook": "Xem Facebook",
      "Link TikTok": "",
-     "Link bài web": "",
-     "Ghi chú": "nhạc nhà"
+     "Link bài web": "Chưa có bài",
+     "Ghi chú": "TikTok đang xử lý"
     },
     {
      "STT": "5",
@@ -208,6 +208,11 @@
    "ok": true,
    "data": [
     {
+     "id": 397,
+     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
+    },
+    {
      "id": 394,
      "name": "Máy chiết rót chất lỏng một vòi G1WY",
      "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
@@ -254,6 +259,11 @@
    "status": 200,
    "ok": true,
    "data": [
+    {
+     "id": 397,
+     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
+    },
     {
      "id": 394,
      "name": "Máy chiết rót chất lỏng một vòi G1WY",
@@ -302,6 +312,11 @@
    "ok": true,
    "data": [
     {
+     "id": 397,
+     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
+    },
+    {
      "id": 391,
      "name": "Máy cấp nắp rung tự động",
      "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
@@ -345,11 +360,6 @@
      "id": 352,
      "name": "Máy chiết rót liên tục ZS-SV6X",
      "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    },
-    {
-     "id": 335,
-     "name": "Máy dán nhãn tự động chai tròn và chai dẹt ZS-TB300L",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-det-tu-dong/"
     }
    ],
    "step": "tim_de4897a1"
@@ -359,62 +369,10 @@
    "ok": true,
    "data": [
     {
-     "id": 394,
-     "name": "Máy chiết rót chất lỏng một vòi G1WY",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
+     "id": 397,
+     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
     },
-    {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 381,
-     "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
-     "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
-    },
-    {
-     "id": 377,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB260R",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/"
-    },
-    {
-     "id": 374,
-     "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 360,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
-    },
-    {
-     "id": 358,
-     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
-    },
-    {
-     "id": 356,
-     "name": "Máy viền nắp lọ tự động ZS-YG100",
-     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
-    },
-    {
-     "id": 352,
-     "name": "Máy chiết rót liên tục ZS-SV6X",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-lien-tuc-zs-sv6x/"
-    }
-   ],
-   "step": "tim_1cded05e"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [
     {
      "id": 394,
      "name": "Máy chiết rót chất lỏng một vòi G1WY",
@@ -439,11 +397,6 @@
      "id": 374,
      "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
      "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
-    },
-    {
-     "id": 371,
-     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
     },
     {
      "id": 368,
@@ -466,7 +419,7 @@
      "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/"
     }
    ],
-   "step": "tim_d8ac7235"
+   "step": "tim_1cded05e"
   },
   {
    "status": 200,
@@ -533,5 +486,5 @@
    "step": "tim_d8d4636e"
   }
  ],
- "time": "2026-11-04 13:23:42"
+ "time": "2026-11-05 01:22:52"
 }
