@@ -1,0 +1,1 @@
+{"steps":[{"id":"t","method":"GET","path":"/wc/v3/products?search=KPX-950&status=any&_fields=id,slug,status,permalink,name","pick":["id","slug","status","permalink","name"]}]}
