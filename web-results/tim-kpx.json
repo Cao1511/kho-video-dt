@@ -1,0 +1,20 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 402,
+     "slug": "may-chiet-rot-dang-set",
+     "status": "draft",
+     "permalink": "https://mayducthanh.vn/?post_type=product&p=402",
+     "name": "Máy chiết rót dạng sệt bơm rotor KPX-950"
+    }
+   ],
+   "step": "t"
+  }
+ ],
+ "time": "2026-11-05 03:48:11"
+}
