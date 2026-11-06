@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 413,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 413
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 414,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 414
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 415,
+    "slug": "may-chiet-rot-han-kin-ong-nhua-ggs-260a",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=415"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 415,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua-ggs-260a/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 415,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua-ggs-260a/",
+    "meta_data": [
+     {
+      "id": 1598,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1616,
+      "key": "dtfb_message",
+      "value": "Máy chiết rót hàn kín ống nhựa tự động GGS-260A – đóng ống dung dịch uống, siro, tinh dầu liều nhỏ 1–30 ml.\n\nCần đóng ống liều nhỏ số lượng lớn? Máy đóng ống nhựa (máy chiết ống bẻ) GGS-260A tự tạo hình ống từ màng, chiết bằng 7 đầu bơm nhu động, hàn kín và cắt thành phẩm.\n\n✅ 7 đầu chiết đồng thời, bơm nhu động điện tử\n✅ Dung tích chiết 1–30 ml\n✅ Tốc độ 100–260 lần/phút\n✅ Phần tiếp xúc nguyên liệu inox 316L\n✅ Điều khiển PLC, màn hình cảm ứng, kéo màng servo\n🎯 Phù hợp: dung dịch uống, siro, tinh dầu, nhũ tương, mỹ phẩm\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn đóng ống bao nhiêu ml, cần công suất bao nhiêu? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maychietrotongnhua #maydongong #mayduocpham #maymypham #ducthanh"
+     },
+     {
+      "id": 1617,
+      "key": "rank_math_title",
+      "value": "Máy chiết rót hàn kín ống nhựa GGS-260A | Đức Thành"
+     },
+     {
+      "id": 1618,
+      "key": "rank_math_description",
+      "value": "Máy chiết rót hàn kín ống nhựa GGS-260A: 7 đầu chiết bơm nhu động, 1–30 ml, 100–260 lần/phút, inox 316L. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1619,
+      "key": "rank_math_focus_keyword",
+      "value": "máy chiết rót hàn kín ống nhựa"
+     },
+     {
+      "id": 1620,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132799513472642"
+     },
+     {
+      "id": 1621,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-06 07:43:53 (ID 1369168222940597_122132799513472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua-ggs-260a/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 51,
+    "vua_nap": 34,
+    "san_co": 17
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "19",
+      "ok": true,
+      "row": 21,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-06 00:45:03"
+}
