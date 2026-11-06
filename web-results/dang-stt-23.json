@@ -1,0 +1,181 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 427,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-nhu-hoa-chan-khong-300l-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 427
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 428,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-nhu-hoa-chan-khong-300l-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 428
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 429,
+    "slug": "may-nhu-hoa-chan-khong-300l",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=429"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 429,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-nhu-hoa-chan-khong-300l/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 429,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-nhu-hoa-chan-khong-300l/",
+    "meta_data": [
+     {
+      "id": 1728,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1746,
+      "key": "dtfb_message",
+      "value": "Máy nhũ hóa chân không 300L SH-EM300 – trộn, đồng hóa, nhũ hóa kem mỹ phẩm, thuốc mỡ, kem đánh răng.\n\nLàm kem, lotion, gel độ nhớt cao mà muốn nhũ hóa mịn, ít bọt? Máy trộn nhũ hóa chân không (máy khuấy nhũ hóa) SH-EM300 gồm bồn chính, bồn dầu và bồn nước trên cùng một hệ thống.\n\n✅ Bồn nhũ hóa 300 L, bồn dầu 100 L, bồn nước 240 L\n✅ Bộ đồng hóa 7,5 kW, tối đa 3.000 vòng/phút\n✅ Gia nhiệt tối đa 140°C\n✅ Khử bọt chân không, nâng thủy lực\n🎯 Phù hợp: kem mỹ phẩm, lotion, gel, kem tay, thuốc mỡ, kem đánh răng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn làm mỗi mẻ bao nhiêu kg kem? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maynhuhoachankhong #maytronmypham #mayduocpham #maymypham #ducthanh"
+     },
+     {
+      "id": 1747,
+      "key": "rank_math_title",
+      "value": "Máy nhũ hóa chân không 300L SH-EM300 | Đức Thành"
+     },
+     {
+      "id": 1748,
+      "key": "rank_math_description",
+      "value": "Máy nhũ hóa chân không 300L SH-EM300: đồng hóa 7,5 kW, gia nhiệt ≤140°C, khử bọt chân không, làm kem mỹ phẩm. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1749,
+      "key": "rank_math_focus_keyword",
+      "value": "máy nhũ hóa chân không"
+     },
+     {
+      "id": 1750,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132944503472642"
+     },
+     {
+      "id": 1751,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-06 19:44:43 (ID 1369168222940597_122132944503472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-nhu-hoa-chan-khong-300l/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-tron-nguyen-lieu/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 56,
+    "vua_nap": 35,
+    "san_co": 21
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "23",
+      "ok": true,
+      "row": 25,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-06 12:47:23"
+}
