@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 418,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 418
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 419,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 419
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 420,
+    "slug": "may-dong-goi-tui-dung-tu-dong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=420"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 420,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-tui-dung-tu-dong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 420,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-tui-dung-tu-dong/",
+    "meta_data": [
+     {
+      "id": 1638,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1656,
+      "key": "dtfb_message",
+      "value": "Máy đóng gói túi đứng tự động Arc056 – tự tạo túi, nạp liệu và hàn kín cho bột, hạt, ngũ cốc.\n\nCần đóng gói hạt, ngũ cốc, snack số lượng lớn mà đóng tay mất công? Máy đóng gói hạt tự động Arc056 tạo túi từ cuộn màng, nạp liệu và hàn kín liên tục.\n\n✅ Điều khiển PLC, màn hình cảm ứng\n✅ Kéo màng bằng động cơ servo\n✅ Điều khiển nhiệt thông minh\n✅ Định lượng tuỳ chọn: cốc đong, trục vít, điện tử, cân tổ hợp\n✅ Túi gối hoặc túi có lỗ treo theo tuỳ chọn\n🎯 Phù hợp: hạt điều, ngũ cốc, đậu, snack, bột\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đóng loại hạt nào, bao nhiêu gram mỗi túi? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydonggoituidung #maydonggoihat #maydonggoi #ducthanh"
+     },
+     {
+      "id": 1657,
+      "key": "rank_math_title",
+      "value": "Máy đóng gói túi đứng tự động Arc056 | Đức Thành"
+     },
+     {
+      "id": 1658,
+      "key": "rank_math_description",
+      "value": "Máy đóng gói túi đứng tự động Arc056: điều khiển PLC, kéo màng servo, điều khiển nhiệt thông minh, đóng bột và hạt. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1659,
+      "key": "rank_math_focus_keyword",
+      "value": "máy đóng gói túi đứng tự động"
+     },
+     {
+      "id": 1660,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132830905472642"
+     },
+     {
+      "id": 1661,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-06 10:49:32 (ID 1369168222940597_122132830905472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-goi-tui-dung-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dong-goi/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 53,
+    "vua_nap": 35,
+    "san_co": 18
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "20",
+      "ok": true,
+      "row": 22,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-06 03:51:03"
+}
