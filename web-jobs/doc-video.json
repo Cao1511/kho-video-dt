@@ -1,3 +1,0 @@
-{"steps":[{"sheet":{"tab":"DS video"}},
-{"id":"tim_ong","method":"GET","path":"/wc/v3/products?search=ch%E1%BB%89t%20%E1%BB%91ng%20b%E1%BA%BB&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]},
-{"id":"tim_nhan","method":"GET","path":"/wc/v3/products?search=d%C3%A1n%20nh%C3%A3n%20chai&status=publish&_fields=id,name,permalink","pick":["id","name","permalink"]}]}
