@@ -1,0 +1,158 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-dong-goi-tra-tui-loc-duc-thanh.webp",
+   "filename": "may-dong-goi-tra-tui-loc-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy đóng gói trà túi lọc trong ngoài tự động – Đức Thành",
+    "title": "Máy đóng gói trà túi lọc trong ngoài tự động"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-dong-goi-tra-tui-loc-duc-thanh-2.webp",
+   "filename": "may-dong-goi-tra-tui-loc-duc-thanh-2.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh2.id}}",
+   "body": {
+    "alt_text": "Máy đóng gói trà túi lọc trong ngoài tự động – ảnh máy – Đức Thành",
+    "title": "Máy đóng gói trà túi lọc trong ngoài tự động – ảnh máy"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy đóng gói trà túi lọc trong ngoài tự động",
+    "slug": "may-dong-goi-tra-tui-loc",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy đóng gói trà túi lọc trong ngoài tự động</h2>\n<p><strong>Máy đóng gói trà túi lọc trong ngoài tự động</strong> tự định lượng trà, tạo túi lọc bên trong rồi bao thêm túi ngoài, hàn ba biên trên cùng một máy. Máy dùng cơ cấu định lượng cốc xoay, dẫn màng và kẹp túi tự động, thay cho công đoạn đóng trà túi lọc thủ công.</p>\n<p>Máy đóng được <strong>1–5 g/túi</strong> với năng suất <strong>30–50 túi/phút</strong>. Máy phù hợp cơ sở sản xuất trà túi lọc, trà thảo mộc và đóng gói nguyên liệu trà dạng lá, dạng hạt.</p>\n<h2>Ứng dụng của máy đóng trà túi lọc</h2>\n<ul>\n<li><strong>Trà lá, trà hạt:</strong> đóng túi lọc định lượng 1–5 g.</li>\n<li><strong>Trà thảo mộc, trà hoa:</strong> nguyên liệu dạng lá, dạng hạt nhỏ phù hợp định lượng cốc xoay.</li>\n<li><strong>Cơ sở trà đóng gói:</strong> cần túi lọc bên trong và bao túi ngoài bảo quản.</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tbody>\n<tr><th>Kiểu hàn</th><td>Hàn ba biên</td></tr>\n<tr><th>Dải định lượng</th><td>1–5 g/túi</td></tr>\n<tr><th>Túi trong (D × R)</th><td>50–75 × 50–75 mm</td></tr>\n<tr><th>Túi ngoài (D × R)</th><td>85–120 × 75–95 mm</td></tr>\n<tr><th>Kích thước tem</th><td>25 × 25 mm</td></tr>\n<tr><th>Năng suất</th><td>30–50 túi/phút</td></tr>\n<tr><th>Điện áp</th><td>220V/50Hz (1 pha)</td></tr>\n<tr><th>Tổng công suất</th><td>3,7 kW</td></tr>\n<tr><th>Khối lượng</th><td>650 kg</td></tr>\n<tr><th>Kích thước (D × R × C)</th><td>1050 × 700 × 1300 mm</td></tr>\n</tbody>\n</table>\n<h2>Cấu tạo máy đóng gói trà túi lọc</h2>\n<ul>\n<li><strong>Phễu chứa nguyên liệu:</strong> chứa trà cấp cho cụm định lượng.</li>\n<li><strong>Cụm định lượng cốc xoay:</strong> chia lượng trà mỗi túi.</li>\n<li><strong>Cụm tạo túi và dẫn màng:</strong> tạo túi lọc bên trong.</li>\n<li><strong>Cơ cấu kẹp túi tự động:</strong> kẹp và đưa túi sang công đoạn bao ngoài.</li>\n<li><strong>Bảng điều khiển cảm ứng:</strong> cài đặt và theo dõi máy.</li>\n<li><strong>Băng tải ra sản phẩm:</strong> đưa thành phẩm ra ngoài.</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Trà được cấp vào phễu và đi xuống cụm định lượng cốc xoay.</li>\n<li>Cốc xoay định lượng 1–5 g trà cho mỗi túi lọc.</li>\n<li>Màng được dẫn, tạo túi lọc bên trong và hàn kín.</li>\n<li>Túi trong được kẹp sang cụm bao túi ngoài và hàn ba biên.</li>\n<li>Thành phẩm theo băng tải ra ngoài, máy chạy liên tục.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Đóng túi trong và túi ngoài trên một máy</h3>\n<p>Công đoạn tạo túi lọc và bao túi ngoài thực hiện liên tục, giảm nhân công so với làm thủ công.</p>\n<h3>Năng suất ổn định</h3>\n<p>Máy đóng 30–50 túi/phút, đáp ứng cơ sở sản xuất trà túi lọc quy mô vừa.</p>\n<h3>Định lượng theo nhu cầu</h3>\n<p>Dải định lượng 1–5 g/túi, kích thước túi trong và túi ngoài điều chỉnh trong khoảng thông số.</p>\n<h3>Vận hành thuận tiện</h3>\n<p>Bảng điều khiển cảm ứng giúp cài đặt thông số nhanh, dùng điện 220V/50Hz.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Gửi mẫu trà và kích thước túi cần đóng để Đức Thành tư vấn cấu hình phù hợp.</li>\n<li>Dùng nguyên liệu trà khô, kích cỡ đồng đều để định lượng chính xác.</li>\n<li>Kiểm tra trọng lượng và mối hàn vài túi đầu ca trước khi chạy hàng loạt.</li>\n<li>Vệ sinh phễu và cụm định lượng khi đổi loại trà.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy đóng trà túi lọc đóng được bao nhiêu gram mỗi túi?</h3>\n<p>Máy định lượng 1–5 g/túi, phù hợp trà lá, trà hạt và nguyên liệu trà tương tự.</p>\n<h3>Máy đóng được bao nhiêu túi mỗi phút?</h3>\n<p>Năng suất 30–50 túi/phút tùy nguyên liệu và kích thước túi.</p>\n<h3>Máy có đóng cả túi trong và túi ngoài không?</h3>\n<p>Có. Máy tạo túi lọc bên trong rồi bao túi ngoài, hàn ba biên.</p>\n<h3>Máy dùng điện áp nào?</h3>\n<p>Máy dùng điện 220V/50Hz một pha, tổng công suất 3,7 kW.</p>\n<h3>Giá máy đóng gói trà túi lọc bao nhiêu?</h3>\n<p>Giá tùy cấu hình và kích thước túi. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-dong-goi-vi-nhom-tu-dong/\">máy đóng gói vỉ nhôm tự động ZS-DPP180H</a>, <a href=\"/may-dong-goi-tui-dung-tu-dong/\">máy đóng gói túi đứng tự động Arc056</a>.</p>\n",
+    "short_description": "<ul class=\"dt-short\">\n<li>Đóng <strong>túi lọc trong – túi ngoài</strong> tự động, hàn ba biên</li>\n<li>Định lượng <strong>1–5 g/túi</strong> bằng cốc xoay</li>\n<li>Năng suất <strong>30–50 túi/phút</strong></li>\n<li>Điện <strong>220V/50Hz</strong>, công suất 3,7 kW, bảng điều khiển cảm ứng</li>\n<li>Phù hợp: trà lá, trà hạt, trà thảo mộc</li>\n</ul>",
+    "categories": [
+     {
+      "id": 22
+     },
+     {
+      "id": 20
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     },
+     {
+      "id": "{{anh2.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy đóng gói trà túi lọc trong ngoài tự động – định lượng 1–5 g/túi, đóng 30–50 túi/phút.\n\nCần đóng trà túi lọc có bao túi ngoài? Máy đóng trà túi lọc (máy làm trà túi lọc) tạo túi trong, bao túi ngoài và hàn ba biên trên cùng một máy.\n\n✅ Túi lọc trong + túi ngoài, hàn ba biên\n✅ Định lượng 1–5 g/túi, cốc xoay\n✅ Năng suất 30–50 túi/phút\n✅ Điện 220V/50Hz, công suất 3,7 kW\n✅ Bảng điều khiển cảm ứng, kẹp túi tự động\n🎯 Phù hợp: trà lá, trà hạt, trà thảo mộc\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nBạn đang đóng loại trà nào, mỗi túi bao nhiêu gram? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydonggoitra #maydongtrataloc #maydonggoi #maydonggoitudong #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy đóng gói trà túi lọc tự động | Đức Thành",
+     "rank_math_description": "Máy đóng gói trà túi lọc trong ngoài tự động: định lượng 1–5 g/túi, 30–50 túi/phút, hàn ba biên, điện 220V. Báo giá: 0974 708 603.",
+     "rank_math_focus_keyword": "máy đóng gói trà túi lọc"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-dong-goi-tui-dung-tu-dong/"
+   ]
+  },
+  {
+   "warm_all": true
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "22",
+     "fields": {
+      "Tên máy": "Máy đóng gói trà túi lọc trong ngoài tự động",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
