@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 416,
+    "link": "https://mayducthanh.vn/?p=416",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 416,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-hat/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 416,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-hat/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy đóng gói dạng hạt: dùng cốc đong hay cân điện tử cho xưởng của bạn?\n\nHai kiểu định lượng này khác nhau ở cách đo: một bên đo theo thể tích, một bên đo theo khối lượng thực. Chọn đúng giúp bạn đỡ hao nguyên liệu và đỡ tốn tiền đầu tư.\n\n🔹 Cốc đong: đơn giản, chạy nhanh, dễ bảo trì, hợp với hạt khá đồng đều\n🔹 Cân điện tử: chính xác hơn khi hạt thay đổi lô, hợp nguyên liệu giá trị cao\n🔹 Cốc đong đo thể tích nên kết quả phụ thuộc tỷ trọng và độ ẩm của hạt\n🔹 Cân điện tử cần hiệu chuẩn cảm biến định kỳ\n🔹 Nên cân thử vài chục gói liên tiếp để biết mức dao động thật trước khi chốt quy cách\n🔹 Giữ phễu cấp liệu ổn định và vệ sinh sau mỗi ca để gói luôn đều\n\nXưởng bạn đang đóng loại hạt nào và mỗi gói nặng bao nhiêu gram?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#maydonggoidanghat #maydonggoi #dongoithucpham #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-06 09:10:32 (ID 1369168222940597_122132814885472642)",
+     "dtfb_fb_id": "1369168222940597_122132814885472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 52,
+    "vua_nap": 11,
+    "san_co": 41
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "7",
+      "ok": true,
+      "row": 9,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-06 02:11:33"
+}
