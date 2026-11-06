@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 424,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 424
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 425,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 425
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 426,
+    "slug": "may-dong-goi-tra-tui-loc",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=426"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 426,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-tra-tui-loc/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 426,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dong-goi-tra-tui-loc/",
+    "meta_data": [
+     {
+      "id": 1698,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1716,
+      "key": "dtfb_message",
+      "value": "Máy đóng gói trà túi lọc trong ngoài tự động – định lượng 1–5 g/túi, đóng 30–50 túi/phút.\n\nCần đóng trà túi lọc có bao túi ngoài? Máy đóng trà túi lọc (máy làm trà túi lọc) tạo túi trong, bao túi ngoài và hàn ba biên trên cùng một máy.\n\n✅ Túi lọc trong + túi ngoài, hàn ba biên\n✅ Định lượng 1–5 g/túi, cốc xoay\n✅ Năng suất 30–50 túi/phút\n✅ Điện 220V/50Hz, công suất 3,7 kW\n✅ Bảng điều khiển cảm ứng, kẹp túi tự động\n🎯 Phù hợp: trà lá, trà hạt, trà thảo mộc\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nBạn đang đóng loại trà nào, mỗi túi bao nhiêu gram? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydonggoitra #maydongtrataloc #maydonggoi #maydonggoitudong #ducthanh"
+     },
+     {
+      "id": 1717,
+      "key": "rank_math_title",
+      "value": "Máy đóng gói trà túi lọc tự động | Đức Thành"
+     },
+     {
+      "id": 1718,
+      "key": "rank_math_description",
+      "value": "Máy đóng gói trà túi lọc trong ngoài tự động: định lượng 1–5 g/túi, 30–50 túi/phút, hàn ba biên, điện 220V. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1719,
+      "key": "rank_math_focus_keyword",
+      "value": "máy đóng gói trà túi lọc"
+     },
+     {
+      "id": 1720,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122132899311472642"
+     },
+     {
+      "id": 1721,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-06 16:44:51 (ID 1369168222940597_122132899311472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dong-goi-tra-tui-loc/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dong-goi-tui-dung-tu-dong/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 55,
+    "vua_nap": 37,
+    "san_co": 18
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "22",
+      "ok": true,
+      "row": 24,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-06 09:46:28"
+}
