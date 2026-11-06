@@ -136,9 +136,9 @@
      "Thời gian đăng": "05/11/2026 20:24",
      "Link YouTube": "Xem YouTube",
      "Link Facebook": "Xem Facebook",
-     "Link TikTok": "",
+     "Link TikTok": "Xem TikTok",
      "Link bài web": "Chưa có bài",
-     "Ghi chú": "TikTok đang xử lý"
+     "Ghi chú": ""
     },
     {
      "STT": "9",
@@ -147,13 +147,13 @@
      "Bài YouTube": "Tiêu đề: Máy tạo nang mềm – viên nang ra liên tục, đều đẹp | Đức Thành\n\nMáy tạo nang mềm chạy thực tế, viên nang ra liên tục trên băng tải. Dùng làm viên nang mềm, softgel cho dược phẩm, thực phẩm chức năng. #shorts #maytaonangmem #softgel #maydongnang",
      "Bài Facebook": "Máy tạo nang mềm giúp sản xuất viên nang mềm (softgel) cho dược phẩm và thực phẩm chức năng.\n\nTrong video: viên nang được tạo ra liên tục rồi theo băng tải ra ngoài để thu gom.\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang sản xuất loại viên nang mềm nào, công suất bao nhiêu viên/giờ?\n\n#maytaonangmem #softgel #thucphamchucnang #ducthanh",
      "Bài TikTok": "Tiêu đề: Máy tạo nang mềm | Đức Thành\n\nMáy tạo nang mềm chạy liên tục, viên nang ra đều và được băng tải đưa ra ngoài. Máy làm viên nang mềm, softgel cho ngành dược phẩm, thực phẩm chức năng. 💬 Nhắn tin cho kênh để được tư vấn & báo giá #maytaonangmem #maynangmem #softgel #thucphamchucnang #ducthanh",
-     "Trạng thái": "Chờ đăng",
-     "Thời gian đăng": "",
-     "Link YouTube": "",
-     "Link Facebook": "",
+     "Trạng thái": "Đã đăng",
+     "Thời gian đăng": "06/11/2026 08:25",
+     "Link YouTube": "Xem YouTube",
+     "Link Facebook": "Xem Facebook",
      "Link TikTok": "",
-     "Link bài web": "",
-     "Ghi chú": "nhạc nhà"
+     "Link bài web": "Chưa có bài",
+     "Ghi chú": "TikTok đang xử lý"
     },
     {
      "STT": "10",
@@ -208,134 +208,25 @@
    "ok": true,
    "data": [
     {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 381,
-     "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
-     "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
-    },
-    {
      "id": 371,
      "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
      "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 319,
-     "name": "Máy gấp hộp giấy bán tự động",
-     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
     }
    ],
-   "step": "tim_71688d17"
+   "step": "tim_a"
   },
   {
    "status": 200,
    "ok": true,
    "data": [
-    {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 381,
-     "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
-     "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
-    },
-    {
-     "id": 371,
-     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 319,
-     "name": "Máy gấp hộp giấy bán tự động",
-     "permalink": "https://mayducthanh.vn/may-gap-hop-giay/"
-    }
-   ],
-   "step": "tim_9c8d04a1"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [
-    {
-     "id": 402,
-     "name": "Máy chiết rót dạng sệt bơm rotor KPX-950",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set/"
-    },
-    {
-     "id": 397,
-     "name": "Máy chiết rót dạng sệt hai vòi G2WG",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-dang-set-hai-voi/"
-    },
-    {
-     "id": 394,
-     "name": "Máy chiết rót chất lỏng một vòi G1WY",
-     "permalink": "https://mayducthanh.vn/may-chiet-rot-chat-long-mot-voi/"
-    },
-    {
-     "id": 391,
-     "name": "Máy cấp nắp rung tự động",
-     "permalink": "https://mayducthanh.vn/may-cap-nap-rung-tu-dong/"
-    },
-    {
-     "id": 381,
-     "name": "Dây chuyền chiết rót đóng nắp dán nhãn chai xịt ZS-MPCL1",
-     "permalink": "https://mayducthanh.vn/day-chuyen-chiet-rot-dong-nap-dan-nhan/"
-    },
-    {
-     "id": 377,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB260R",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-zs-tb260r/"
-    },
     {
      "id": 374,
      "name": "Máy dán nhãn chai dẹt hai mặt tự động ZS-TB600",
      "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-det-hai-mat/"
-    },
-    {
-     "id": 368,
-     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
-     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/"
-    },
-    {
-     "id": 360,
-     "name": "Máy dán nhãn chai tròn tự động ZS-TB822",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-chai-tron-tu-dong/"
-    },
-    {
-     "id": 358,
-     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D",
-     "permalink": "https://mayducthanh.vn/may-dan-nhan-nap-va-chai-tron/"
     }
    ],
-   "step": "tim_1cded05e"
-  },
-  {
-   "status": 200,
-   "ok": true,
-   "data": [
-    {
-     "id": 321,
-     "name": "Máy trộn thùng IBC 1500 lít",
-     "permalink": "https://mayducthanh.vn/may-tron-thung-ibc-1500l/"
-    }
-   ],
-   "step": "tim_0b7ea41f"
+   "step": "tim_c"
   }
  ],
- "time": "2026-11-06 01:22:36"
+ "time": "2026-11-06 04:22:27"
 }
