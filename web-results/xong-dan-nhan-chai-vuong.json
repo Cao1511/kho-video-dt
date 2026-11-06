@@ -1,0 +1,39 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "11",
+      "ok": true,
+      "row": 13,
+      "ghi": [
+       "Link TikTok",
+       "Ghi chú"
+      ]
+     },
+     {
+      "stt": "12",
+      "ok": true,
+      "row": 14,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link YouTube",
+       "Link Facebook",
+       "Link video",
+       "Link bài web",
+       "Ghi chú"
+      ]
+     }
+    ]
+   },
+   "step": 0
+  }
+ ],
+ "time": "2026-11-06 10:24:39"
+}
