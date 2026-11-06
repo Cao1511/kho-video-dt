@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "12",
+      "ok": true,
+      "row": 14,
+      "ghi": [
+       "Link TikTok",
+       "Ghi chú"
+      ]
+     }
+    ]
+   },
+   "step": 0
+  }
+ ],
+ "time": "2026-11-06 13:24:39"
+}
