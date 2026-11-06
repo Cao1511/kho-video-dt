@@ -1,0 +1,6 @@
+{"steps":[
+ {"warm_all":true},
+ {"tab":"DS video","sheet_update":[
+ {"stt":"9","fields":{"Link TikTok":[{"text":"Xem TikTok","url":"https://tiktok.com/@maydonggoiducthanh/video/7704861223409437953"}],"Ghi chú":""}},
+ {"stt":"10","fields":{"Trạng thái":"Đã đăng","Thời gian đăng":"06/11/2026 11:23","Link YouTube":[{"text":"Xem YouTube","url":"https://www.youtube.com/shorts/T0O3Y7YyB3A"}],"Link Facebook":[{"text":"Xem Facebook","url":"https://facebook.com/1369168222940597_122132836059472642"}],"Link TikTok":[{"text":"Xem TikTok","url":"https://tiktok.com/@maydonggoiducthanh/video/7704909288216579349"}],"Link video":"https://www.youtube.com/shorts/T0O3Y7YyB3A","Link bài web":"Chưa có bài","Ghi chú":""}},
+ {"stt":"11","fields":{"Trạng thái":"Đã đăng","Thời gian đăng":"{{now.vn}}","Link YouTube":[{"text":"Xem YouTube","url":"https://www.youtube.com/watch?v=HTwvNcWA1OY"}],"Link Facebook":[{"text":"Xem Facebook","url":"https://facebook.com/1369168222940597_122132869839472642"}],"Link video":"https://www.youtube.com/watch?v=HTwvNcWA1OY","Link bài web":"Chưa có bài","Ghi chú":"TikTok đang xử lý"}}]}]}
