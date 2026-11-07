@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 445,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/bon-chua-ibc-inox-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 445
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 446,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/bon-chua-ibc-inox-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 446
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 447,
+    "slug": "bon-chua-ibc-inox",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=447"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 447,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/bon-chua-ibc-inox/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 447,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/bon-chua-ibc-inox/",
+    "meta_data": [
+     {
+      "id": 1890,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1908,
+      "key": "dtfb_message",
+      "value": "Bồn chứa IBC inox 1500L – chứa và vận chuyển chất lỏng trong sản xuất thực phẩm, đồ uống, hóa chất.\n\nCần bồn chứa inox dung tích lớn, dễ vệ sinh và di chuyển bằng xe nâng? Bồn IBC inox (tank IBC inox) dạng khối vuông giúp xếp gọn trong kho và trung chuyển nguyên liệu thuận tiện.\n\n✅ Dung tích 1500 lít\n✅ Inox SUS304 / SUS316L tùy chọn\n✅ Độ nhám mặt trong Ra 0,8 μm\n✅ Nắp trên dạng kẹp, khung đỡ có khe cho xe nâng\n🎯 Phù hợp: chất lỏng trong ngành thực phẩm, đồ uống, hóa chất.\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn cần chứa loại chất lỏng nào, mỗi lần bao nhiêu lít? Nhắn tin để Đức Thành tư vấn vật liệu phù hợp.\n\n#bonchuaibcinox #bonibc #thietbiinox #ducthanh"
+     },
+     {
+      "id": 1909,
+      "key": "rank_math_title",
+      "value": "Bồn chứa IBC inox 1500L SUS304/316L | Đức Thành"
+     },
+     {
+      "id": 1910,
+      "key": "rank_math_description",
+      "value": "Bồn chứa IBC inox 1500L dạng khối vuông, SUS304/SUS316L, độ nhám Ra 0,8 μm, khung đỡ xe nâng. Hotline 0974 708 603."
+     },
+     {
+      "id": 1911,
+      "key": "rank_math_focus_keyword",
+      "value": "bồn chứa IBC inox"
+     },
+     {
+      "id": 1912,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122133327753472642"
+     },
+     {
+      "id": 1913,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-07 19:46:05 (ID 1369168222940597_122133327753472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/bon-chua-ibc-inox/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-nhu-hoa-chan-khong-300l/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 62,
+    "vua_nap": 42,
+    "san_co": 20
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "28",
+      "ok": true,
+      "row": 30,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-07 12:47:33"
+}
