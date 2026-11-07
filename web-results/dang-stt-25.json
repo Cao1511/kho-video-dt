@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 436,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dan-nhan-tui-phang-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 436
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 437,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dan-nhan-tui-phang-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 437
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 438,
+    "slug": "may-dan-nhan-tui-phang",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=438"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 438,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-tui-phang/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 438,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-dan-nhan-tui-phang/",
+    "meta_data": [
+     {
+      "id": 1800,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1818,
+      "key": "dtfb_message",
+      "value": "Máy dán nhãn túi phẳng tự động SH-TB832 – dán nhãn mặt trên túi nhựa, túi đứng, thẻ treo, hộp phẳng 40–80 sp/phút.\n\nXưởng còn dán nhãn túi bằng tay, nhãn lệch và chậm? Máy dán nhãn mặt phẳng SH-TB832 tự tách phôi, đưa sản phẩm qua băng tải và dán nhãn thẳng hàng, rất hợp xưởng đóng gói túi, thẻ treo, hộp.\n\n✅ Tốc độ dán nhãn 40–80 sản phẩm/phút\n✅ Sai số dán khoảng ±1 mm\n✅ Sản phẩm 40–200 × 25–200 mm, dày 0,2–2 mm\n✅ Nhãn rộng 10–250 mm, cao 10–130 mm\n✅ Nguồn 110V/220V, công suất 820W\n🎯 Phù hợp: túi nhựa, túi đứng rỗng, thẻ treo quần áo, thẻ giấy, hộp phẳng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nBạn đang cần dán nhãn lên loại túi hay thẻ nào, kích thước bao nhiêu? Nhắn Fanpage để Đức Thành tư vấn cấu hình phù hợp.\n\n#maydannhantuiphang #maydannhan #maydongoi #maydannhantudong #ducthanh"
+     },
+     {
+      "id": 1819,
+      "key": "rank_math_title",
+      "value": "Máy dán nhãn túi phẳng SH-TB832 | Đức Thành"
+     },
+     {
+      "id": 1820,
+      "key": "rank_math_description",
+      "value": "Máy dán nhãn túi phẳng SH-TB832: dán 40–80 sp/phút, sai số ±1 mm, nhận túi, thẻ treo, hộp phẳng. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1821,
+      "key": "rank_math_focus_keyword",
+      "value": "máy dán nhãn túi phẳng"
+     },
+     {
+      "id": 1822,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122133206457472642"
+     },
+     {
+      "id": 1823,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-07 10:44:15 (ID 1369168222940597_122133206457472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-dan-nhan-tui-phang/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dan-nhan/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 59,
+    "vua_nap": 39,
+    "san_co": 20
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "25",
+      "ok": true,
+      "row": 27,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-07 03:45:44"
+}
