@@ -1,0 +1,158 @@
+{
+ "steps": [
+  {
+   "id": "anh",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh.webp",
+   "filename": "may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh.id}}",
+   "body": {
+    "alt_text": "Máy nhũ hóa chân không gia nhiệt điện 1000L – Đức Thành",
+    "title": "Máy nhũ hóa chân không gia nhiệt điện 1000L"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "anh2",
+   "method": "POST",
+   "path": "/wp/v2/media",
+   "file": "may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh-2.webp",
+   "filename": "may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh-2.webp",
+   "pick": [
+    "id",
+    "source_url"
+   ]
+  },
+  {
+   "id": "alt2",
+   "method": "POST",
+   "path": "/wp/v2/media/{{anh2.id}}",
+   "body": {
+    "alt_text": "Máy nhũ hóa chân không gia nhiệt điện 1000L – ảnh máy – Đức Thành",
+    "title": "Máy nhũ hóa chân không gia nhiệt điện 1000L – ảnh máy"
+   },
+   "pick": [
+    "id"
+   ]
+  },
+  {
+   "id": "sp",
+   "method": "POST",
+   "path": "/wc/v3/products",
+   "body": {
+    "name": "Máy nhũ hóa chân không gia nhiệt điện 1000L",
+    "slug": "may-nhu-hoa-chan-khong-gia-nhiet-1000l",
+    "status": "draft",
+    "type": "simple",
+    "description": "<h2>Giới thiệu máy nhũ hóa chân không gia nhiệt điện 1000L</h2>\n<p><strong>Máy nhũ hóa chân không gia nhiệt điện 1000L</strong> là thiết bị sản xuất theo mẻ, kết hợp khuấy, đồng hóa, vận hành chân không và gia nhiệt điện trong cùng một hệ thống. Máy phù hợp với các xưởng sản xuất kem, gel, lotion, sốt thực phẩm và một số hỗn hợp hóa chất chuyên dụng cần trộn mịn, đồng đều.</p>\n<p>Với dung tích danh định 1000 L, máy là lựa chọn cho cơ sở đã vượt quy mô thử nghiệm và cần mẻ lớn ổn định. Chế độ chân không hỗ trợ giảm khí cuốn trong thành phẩm, còn gia nhiệt điện giúp nấu, hòa tan nguyên liệu và giữ nhiệt độ theo yêu cầu công thức. Đây là dòng <em>máy đồng hóa chân không</em> (còn gọi là <em>nồi nhũ hóa chân không</em>) thường dùng trong ngành mỹ phẩm, thực phẩm và hóa chất.</p>\n<h2>Ứng dụng</h2>\n<ul>\n<li>Nhũ tương mỹ phẩm: kem dưỡng, lotion, gel</li>\n<li>Sốt thực phẩm và các hỗn hợp dạng sệt cần trộn mịn</li>\n<li>Mẻ hóa chất chuyên dụng, tuỳ cấu hình đặt hàng</li>\n<li>Các công thức có độ nhớt phù hợp với hệ khuấy và đồng hóa</li>\n</ul>\n<h2>Thông số kỹ thuật</h2>\n<table class=\"dt-spec\">\n<tr><th>Dung tích danh định</th><td>1000 L (dung tích làm việc xác nhận theo cấu hình)</td></tr>\n<tr><th>Hệ trộn</th><td>Cánh khuấy kết hợp đầu đồng hóa (cấu hình xác nhận theo đơn hàng)</td></tr>\n<tr><th>Truyền động</th><td>Động cơ AC; công suất và tốc độ tuỳ yêu cầu quy trình</td></tr>\n<tr><th>Chức năng quá trình</th><td>Vận hành chân không và gia nhiệt điện</td></tr>\n<tr><th>Điều khiển và vật liệu</th><td>Xác định theo yêu cầu mẻ, vệ sinh và điều kiện tại xưởng</td></tr>\n</table>\n<p>Công suất động cơ, tốc độ, mác inox, hệ điều khiển và cấu hình cuối cùng được chốt cùng khách hàng theo công thức và điều kiện nhà xưởng.</p>\n<h2>Cấu tạo</h2>\n<ul>\n<li>Bồn khuấy và đồng hóa theo cấu hình</li>\n<li>Động cơ AC</li>\n<li>Hệ thống vận hành chân không</li>\n<li>Bộ gia nhiệt điện</li>\n<li>Cụm nâng nắp và trục khuấy</li>\n<li>Bồn phụ, sàn thao tác, cầu thang và bảng điều khiển theo cấu hình đặt hàng</li>\n</ul>\n<h2>Nguyên lý hoạt động</h2>\n<ol>\n<li>Nguyên liệu pha dầu, pha nước được cấp vào bồn chính (có thể qua bồn phụ).</li>\n<li>Bộ gia nhiệt điện nâng nhiệt để hòa tan, nấu chảy nguyên liệu theo công thức.</li>\n<li>Cánh khuấy và đầu đồng hóa hoạt động cùng lúc, tạo nhũ tương mịn, đồng đều.</li>\n<li>Hệ thống chân không hút bớt khí cuốn trong hỗn hợp, giúp thành phẩm mịn hơn.</li>\n<li>Kết thúc mẻ, thành phẩm được xả ra để đóng gói hoặc chuyển công đoạn sau.</li>\n</ol>\n<h2>Ưu điểm nổi bật</h2>\n<h3>Khuấy và đồng hóa trong một bồn</h3>\n<p>Một thiết bị đảm nhận cả trộn và nhũ hóa, giúp rút gọn quy trình và hạn chế chuyển liệu giữa nhiều máy.</p>\n<h3>Chân không giảm khí cuốn</h3>\n<p>Vận hành trong chân không hỗ trợ giảm bọt khí trong kem, gel, sốt, giúp thành phẩm mịn và đẹp hơn.</p>\n<h3>Gia nhiệt điện chủ động</h3>\n<p>Nhiệt độ được nâng và giữ theo công thức, thuận tiện cho các công đoạn nấu, hòa tan và nhũ hóa.</p>\n<h3>Cấu hình theo đơn hàng</h3>\n<p>Công suất, vật liệu, điều khiển và các tuỳ chọn được chốt theo yêu cầu thực tế của từng xưởng.</p>\n<h2>Lưu ý khi sử dụng</h2>\n<ul>\n<li>Cho Đức Thành biết sản phẩm cần làm, độ nhớt và dung tích mẻ để chọn cấu hình phù hợp.</li>\n<li>Dung tích 1000 L là danh định; dung tích làm việc thực tế cần xác nhận theo cấu hình.</li>\n<li>Kiểm tra nguồn điện, mặt bằng và chiều cao nhà xưởng trước khi lắp đặt vì máy có cụm nâng nắp và sàn thao tác.</li>\n<li>Vệ sinh bồn, đầu đồng hóa và gioăng sau mỗi mẻ để bảo đảm chân không và an toàn thực phẩm/mỹ phẩm.</li>\n<li>Chạy thử mẻ đầu với công thức thật để chỉnh tốc độ, nhiệt độ và thời gian nhũ hóa.</li>\n</ul>\n<h2>Câu hỏi thường gặp</h2>\n<h3>Máy nhũ hóa chân không gia nhiệt điện 1000L có những chức năng gì?</h3>\n<p>Máy kết hợp khuấy, đồng hóa, vận hành chân không và gia nhiệt điện, dùng cho sản xuất theo mẻ.</p>\n<h3>Máy dùng để sản xuất sản phẩm nào?</h3>\n<p>Máy phù hợp với nhũ tương mỹ phẩm, kem, gel, sốt thực phẩm và mẻ hóa chất chuyên dụng, tuỳ cấu hình đặt hàng.</p>\n<h3>Dung tích làm việc của máy là bao nhiêu?</h3>\n<p>Dung tích danh định là 1000 L. Dung tích làm việc cần xác nhận theo cấu hình và độ nhớt sản phẩm.</p>\n<h3>Máy có tuỳ chọn cấu hình không?</h3>\n<p>Có. Công suất động cơ, tốc độ, vật liệu inox, hệ điều khiển và bồn phụ được chốt theo đơn hàng.</p>\n<h3>Giá máy nhũ hóa chân không gia nhiệt điện 1000L bao nhiêu?</h3>\n<p>Giá tuỳ cấu hình và yêu cầu quy trình. Anh chị vui lòng gọi <a href=\"tel:0974708603\">0974 708 603</a> hoặc gửi yêu cầu tại <a href=\"/lien-he/\">trang liên hệ</a> để nhận báo giá.</p>\n<h2>Liên hệ tư vấn và báo giá</h2>\n<p><strong>CÔNG TY CP SX MÁY ĐỨC THÀNH</strong> tư vấn, lắp đặt và bảo hành tận nơi. Hotline/Zalo: <a href=\"tel:0974708603\">0974 708 603</a> – <a href=\"tel:0989139855\">0989 139 855</a>.</p>\n<p>Xem thêm: <a href=\"/may-duoc-my-pham/\">máy dược &amp; mỹ phẩm</a>, <a href=\"/may-nhu-hoa-chan-khong-300l/\">máy nhũ hóa chân không 300L SH-EM300</a>, <a href=\"/may-tron-nguyen-lieu/\">máy trộn nguyên liệu</a>.</p>",
+    "short_description": "<ul class=\"dt-short\">\n<li>Dung tích danh định <strong>1000 L</strong>, vận hành theo mẻ</li>\n<li>Kết hợp <strong>khuấy + đồng hóa</strong> trong cùng một bồn</li>\n<li>Có <strong>chân không</strong> giúp giảm khí cuốn trong kem, gel, sốt</li>\n<li><strong>Gia nhiệt điện</strong> hỗ trợ nấu, hòa tan và nhũ hóa</li>\n<li>Truyền động bằng <strong>động cơ AC</strong>, cấu hình theo đơn hàng</li>\n</ul>",
+    "categories": [
+     {
+      "id": 27
+     },
+     {
+      "id": 28
+     }
+    ],
+    "catalog_visibility": "visible",
+    "images": [
+     {
+      "id": "{{anh.id}}"
+     },
+     {
+      "id": "{{anh2.id}}"
+     }
+    ],
+    "meta_data": [
+     {
+      "key": "dtfb_message",
+      "value": "Máy nhũ hóa chân không gia nhiệt điện 1000L – khuấy, đồng hóa, hút chân không và gia nhiệt trong cùng một bồn.\n\nXưởng kem, gel, sốt cần mẻ lớn, mịn và ít bọt khí? Máy nhũ hóa chân không (hay nồi đồng hóa chân không) 1000L trộn theo mẻ, giảm khí cuốn nhờ chân không, nâng nhiệt bằng điện theo công thức.\n\n✅ Dung tích danh định 1000 L\n✅ Khuấy kết hợp đồng hóa\n✅ Vận hành chân không\n✅ Gia nhiệt điện\n✅ Động cơ AC, cấu hình theo đơn hàng\n🎯 Phù hợp: kem, gel, lotion mỹ phẩm, sốt thực phẩm, mẻ hóa chất chuyên dụng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang làm sản phẩm gì, mỗi mẻ khoảng bao nhiêu lít?\n\n#maynhuhoachankhong #maydonghoa #maymypham #ducthanh"
+     }
+    ]
+   },
+   "pick": [
+    "id",
+    "slug",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "id": "seo",
+   "method": "POST",
+   "path": "/rankmath/v1/updateMeta",
+   "body": {
+    "objectID": "{{sp.id}}",
+    "objectType": "post",
+    "meta": {
+     "rank_math_title": "Máy nhũ hóa chân không 1000L gia nhiệt điện | Đức Thành",
+     "rank_math_description": "Máy nhũ hóa chân không gia nhiệt điện 1000L: khuấy, đồng hóa, chân không, gia nhiệt điện cho kem, gel, sốt. Hotline 0974 708 603.",
+     "rank_math_focus_keyword": "máy nhũ hóa chân không"
+    }
+   },
+   "pick": []
+  },
+  {
+   "id": "pub",
+   "method": "PUT",
+   "path": "/wc/v3/products/{{sp.id}}",
+   "body": {
+    "status": "publish"
+   },
+   "pick": [
+    "id",
+    "status",
+    "permalink"
+   ]
+  },
+  {
+   "wait": 12
+  },
+  {
+   "id": "kt",
+   "method": "GET",
+   "path": "/wc/v3/products/{{sp.id}}?_fields=id,status,permalink,meta_data",
+   "pick": [
+    "id",
+    "status",
+    "permalink",
+    "meta_data"
+   ]
+  },
+  {
+   "warm": [
+    "/",
+    "{{pub.permalink}}",
+    "/may-duoc-my-pham/"
+   ]
+  },
+  {
+   "warm_all": true
+  },
+  {
+   "sheet_update": [
+    {
+     "stt": "26",
+     "fields": {
+      "Tên máy": "Máy nhũ hóa chân không gia nhiệt điện 1000L",
+      "Trạng thái": "Đã đăng",
+      "Thời gian đăng": "{{now.vn}}",
+      "Link web": "{{pub.permalink}}",
+      "Link Facebook": "{{kt.fb_link}}"
+     }
+    }
+   ]
+  }
+ ]
+}
