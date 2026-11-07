@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 434,
+    "link": "https://mayducthanh.vn/?p=434",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 434,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-chat-long/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 434,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-chat-long/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy đóng gói chất lỏng: chọn đúng loại theo độ đặc sản phẩm để chiết đều, ít hao hụt.\nChất lỏng loãng và dịch sệt cần cách định lượng khác nhau. Chọn sai là chiết lệch, nhỏ giọt, tốn nguyên liệu.\n🔹 Phân biệt loãng và sệt: nước, cồn, nước mắm khác hẳn sốt, gel, kem\n🔹 Định lượng piston chính xác, trọng lực đơn giản, bơm rotor êm với dịch sệt\n🔹 Đóng túi, chai hay lọ sẽ quyết định cấu hình máy\n🔹 Bộ phận chạm sản phẩm nên bằng inox dễ vệ sinh\n🔹 Tính công suất theo sản lượng thật, đừng chỉ nhìn số tối đa\n🔹 Súc rửa đúng cách sau mỗi mẻ để tránh tắc, nhiễm mùi\nSản phẩm của bạn đang là loại loãng hay sệt, và đóng vào chai hay túi?\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n#maydonggoichatlong #maychietrot #dongoi #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-07 09:10:28 (ID 1369168222940597_122133189909472642)",
+     "dtfb_fb_id": "1369168222940597_122133189909472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 58,
+    "vua_nap": 13,
+    "san_co": 45
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "8",
+      "ok": true,
+      "row": 10,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-07 02:11:29"
+}
