@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 442,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/bom-nhu-hoa-duong-ong-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 442
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 443,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/bom-nhu-hoa-duong-ong-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 443
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 444,
+    "slug": "bom-nhu-hoa-duong-ong",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=444"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 444,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/bom-nhu-hoa-duong-ong/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 444,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/bom-nhu-hoa-duong-ong/",
+    "meta_data": [
+     {
+      "id": 1860,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1878,
+      "key": "dtfb_message",
+      "value": "Bơm nhũ hóa đường ống 3 cấp 11 kW – đồng hóa, nhũ hóa nguyên liệu ngay trên đường chuyển liệu.\n\nXưởng làm kem, lotion, dầu gội hay sốt thường cần hỗn hợp mịn và đều. Máy đồng hóa đường ống (bơm đồng hóa cắt cao) lắp thẳng vào đường ống hoặc vòng tuần hoàn, không cần thêm bồn riêng.\n\n✅ Công suất 11 kW (15 HP)\n✅ Cụm rotor–stator 3 tầng nối tiếp\n✅ Inox SUS304 / SUS316L tùy chọn\n✅ Phớt cơ khí cartridge, có thể gắn biến tần\n🎯 Phù hợp: sốt, nhũ tương thực phẩm, kem mỹ phẩm, lotion, dầu gội.\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang nhũ hóa sản phẩm gì, mỗi mẻ bao nhiêu lít? Nhắn tin để Đức Thành tư vấn cấu hình phù hợp.\n\n#bomnhuhoaduongong #maynhuhoa #maytronnguyenlieu #ducthanh"
+     },
+     {
+      "id": 1879,
+      "key": "rank_math_title",
+      "value": "Bơm nhũ hóa đường ống 3 cấp 11 kW | Đức Thành"
+     },
+     {
+      "id": 1880,
+      "key": "rank_math_description",
+      "value": "Bơm nhũ hóa đường ống 3 cấp 11 kW (15 HP): rotor–stator 3 tầng, inox 304/316L, lắp trên đường ống. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1881,
+      "key": "rank_math_focus_keyword",
+      "value": "bơm nhũ hóa đường ống"
+     },
+     {
+      "id": 1882,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122133275583472642"
+     },
+     {
+      "id": 1883,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-07 16:45:22 (ID 1369168222940597_122133275583472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/bom-nhu-hoa-duong-ong/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-nhu-hoa-chan-khong-300l/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 61,
+    "vua_nap": 39,
+    "san_co": 22
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "27",
+      "ok": true,
+      "row": 29,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-07 09:47:32"
+}
