@@ -1,0 +1,155 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 24,
+     "slug": "may-chiet-rot",
+     "name": "Máy chiết rót"
+    },
+    {
+     "id": 25,
+     "slug": "may-chiet-rot-chat-long",
+     "name": "Máy chiết rót chất lỏng"
+    },
+    {
+     "id": 26,
+     "slug": "may-chiet-rot-dich-set-kem",
+     "name": "Máy chiết rót dịch sệt, kem"
+    },
+    {
+     "id": 30,
+     "slug": "may-dan-nhan",
+     "name": "Máy dán nhãn"
+    },
+    {
+     "id": 20,
+     "slug": "may-dong-goi",
+     "name": "Máy đóng gói"
+    },
+    {
+     "id": 21,
+     "slug": "may-dong-goi-dang-bot",
+     "name": "Máy đóng gói dạng bột"
+    },
+    {
+     "id": 22,
+     "slug": "may-dong-goi-dang-hat",
+     "name": "Máy đóng gói dạng hạt"
+    },
+    {
+     "id": 23,
+     "slug": "may-dong-goi-dang-long-dich-set",
+     "name": "Máy đóng gói dạng lỏng, dịch sệt"
+    },
+    {
+     "id": 27,
+     "slug": "may-duoc-my-pham",
+     "name": "Máy dược &amp; mỹ phẩm"
+    },
+    {
+     "id": 31,
+     "slug": "may-in-date",
+     "name": "Máy in date"
+    },
+    {
+     "id": 32,
+     "slug": "may-seal-mang",
+     "name": "Máy seal màng"
+    },
+    {
+     "id": 28,
+     "slug": "may-tron-nguyen-lieu",
+     "name": "Máy trộn nguyên liệu"
+    },
+    {
+     "id": 33,
+     "slug": "may-vien-mi-lon",
+     "name": "Máy viền mí lon"
+    },
+    {
+     "id": 29,
+     "slug": "thiet-bi-phu-tro",
+     "name": "Thiết bị phụ trợ"
+    },
+    {
+     "id": 16,
+     "slug": "uncategorized",
+     "name": "Uncategorized"
+    }
+   ],
+   "step": "c"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 429,
+     "slug": "may-nhu-hoa-chan-khong-300l",
+     "name": "Máy nhũ hóa chân không 300L SH-EM300"
+    },
+    {
+     "id": 423,
+     "slug": "may-chiet-ong-be-ggs-260b",
+     "name": "Máy chiết ống bẻ 5 kim 1 cuộn màng GGS-260B"
+    },
+    {
+     "id": 415,
+     "slug": "may-chiet-rot-han-kin-ong-nhua-ggs-260a",
+     "name": "Máy chiết rót hàn kín ống nhựa tự động GGS-260A"
+    },
+    {
+     "id": 412,
+     "slug": "may-dong-nang-cung-tu-dong-2",
+     "name": "Máy đóng nang cứng tự động"
+    },
+    {
+     "id": 409,
+     "slug": "may-dong-nang-cung-tu-dong",
+     "name": "Máy đóng nang cứng tự động NJP-2200D"
+    },
+    {
+     "id": 397,
+     "slug": "may-chiet-rot-dang-set-hai-voi",
+     "name": "Máy chiết rót dạng sệt hai vòi G2WG"
+    },
+    {
+     "id": 371,
+     "slug": "may-chiet-rot-han-kin-ong-nhua",
+     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120"
+    },
+    {
+     "id": 368,
+     "slug": "may-suc-rua-lo-bang-khi",
+     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48"
+    },
+    {
+     "id": 366,
+     "slug": "may-tao-hat-tang-soi",
+     "name": "Máy sấy tầng sôi tạo hạt FL-120"
+    },
+    {
+     "id": 358,
+     "slug": "may-dan-nhan-nap-va-chai-tron",
+     "name": "Máy dán nhãn nắp và chai tròn tự động ZS-TB822D"
+    },
+    {
+     "id": 356,
+     "slug": "may-vien-nap-lo-tu-dong",
+     "name": "Máy viền nắp lọ tự động ZS-YG100"
+    },
+    {
+     "id": 352,
+     "slug": "may-chiet-rot-lien-tuc-zs-sv6x",
+     "name": "Máy chiết rót liên tục ZS-SV6X"
+    }
+   ],
+   "step": "p"
+  }
+ ],
+ "time": "2026-11-07 06:43:08"
+}
