@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 430,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 430
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 431,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 431
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 432,
+    "slug": "may-co-mang-nhiet-tuan-hoan",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=432"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 432,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-co-mang-nhiet-tuan-hoan/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 432,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-co-mang-nhiet-tuan-hoan/",
+    "meta_data": [
+     {
+      "id": 1758,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1776,
+      "key": "dtfb_message",
+      "value": "Máy co màng nhiệt tuần hoàn SH-BSP4522 – co màng PVC, POF quanh hộp hàng, bao bì.\n\nBọc màng xong mà màng chưa ôm sát sản phẩm? Máy co màng (lò co màng nhiệt) SH-BSP4522 dùng buồng nhiệt tuần hoàn bên trong, chỉnh được độ cao và hướng gió.\n\n✅ Co màng PVC, POF\n✅ Công suất 15 kW, điện áp 220–380V\n✅ Buồng nhiệt khoảng 1500 × 450 × 220 mm\n✅ Tốc độ vận chuyển 0–15 m/phút\n🎯 Phù hợp: hộp hàng, bao bì bọc màng co PVC, POF\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nSản phẩm của bạn kích thước bao nhiêu, bọc màng PVC hay POF? Nhắn Fanpage để Đức Thành tư vấn.\n\n#macomangnhiet #macoman #maydonggoi #ducthanh"
+     },
+     {
+      "id": 1777,
+      "key": "rank_math_title",
+      "value": "Máy co màng nhiệt tuần hoàn SH-BSP4522 | Đức Thành"
+     },
+     {
+      "id": 1778,
+      "key": "rank_math_description",
+      "value": "Máy co màng nhiệt tuần hoàn SH-BSP4522: co màng PVC, POF, công suất 15 kW, băng tải 0–15 m/phút. Báo giá: 0974 708 603."
+     },
+     {
+      "id": 1779,
+      "key": "rank_math_focus_keyword",
+      "value": "máy co màng nhiệt"
+     },
+     {
+      "id": 1780,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122133176493472642"
+     },
+     {
+      "id": 1781,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-07 07:43:40 (ID 1369168222940597_122133176493472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-co-mang-nhiet-tuan-hoan/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-dong-goi/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 57,
+    "vua_nap": 39,
+    "san_co": 18
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "24",
+      "ok": true,
+      "row": 26,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-07 00:44:56"
+}
