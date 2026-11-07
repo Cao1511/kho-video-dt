@@ -1,0 +1,174 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 439,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh.webp"
+   },
+   "step": "anh"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 439
+   },
+   "step": "alt"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 440,
+    "source_url": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-nhu-hoa-chan-khong-gia-nhiet-1000l-duc-thanh-2.webp"
+   },
+   "step": "anh2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 440
+   },
+   "step": "alt2"
+  },
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 441,
+    "slug": "may-nhu-hoa-chan-khong-gia-nhiet-1000l",
+    "status": "draft",
+    "permalink": "https://mayducthanh.vn/?post_type=product&p=441"
+   },
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 441,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-nhu-hoa-chan-khong-gia-nhiet-1000l/"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 7
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 441,
+    "status": "publish",
+    "permalink": "https://mayducthanh.vn/may-nhu-hoa-chan-khong-gia-nhiet-1000l/",
+    "meta_data": [
+     {
+      "id": 1830,
+      "key": "rank_math_internal_links_processed",
+      "value": "1"
+     },
+     {
+      "id": 1848,
+      "key": "dtfb_message",
+      "value": "Máy nhũ hóa chân không gia nhiệt điện 1000L – khuấy, đồng hóa, hút chân không và gia nhiệt trong cùng một bồn.\n\nXưởng kem, gel, sốt cần mẻ lớn, mịn và ít bọt khí? Máy nhũ hóa chân không (hay nồi đồng hóa chân không) 1000L trộn theo mẻ, giảm khí cuốn nhờ chân không, nâng nhiệt bằng điện theo công thức.\n\n✅ Dung tích danh định 1000 L\n✅ Khuấy kết hợp đồng hóa\n✅ Vận hành chân không\n✅ Gia nhiệt điện\n✅ Động cơ AC, cấu hình theo đơn hàng\n🎯 Phù hợp: kem, gel, lotion mỹ phẩm, sốt thực phẩm, mẻ hóa chất chuyên dụng\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\nXưởng bạn đang làm sản phẩm gì, mỗi mẻ khoảng bao nhiêu lít?\n\n#maynhuhoachankhong #maydonghoa #maymypham #ducthanh"
+     },
+     {
+      "id": 1849,
+      "key": "rank_math_title",
+      "value": "Máy nhũ hóa chân không 1000L gia nhiệt điện | Đức Thành"
+     },
+     {
+      "id": 1850,
+      "key": "rank_math_description",
+      "value": "Máy nhũ hóa chân không gia nhiệt điện 1000L: khuấy, đồng hóa, chân không, gia nhiệt điện cho kem, gel, sốt. Hotline 0974 708 603."
+     },
+     {
+      "id": 1851,
+      "key": "rank_math_focus_keyword",
+      "value": "máy nhũ hóa chân không"
+     },
+     {
+      "id": 1852,
+      "key": "dtfb_fb_id",
+      "value": "1369168222940597_122133240849472642"
+     },
+     {
+      "id": 1853,
+      "key": "dtfb_status",
+      "value": "Đã đăng 2026-11-07 13:44:29 (ID 1369168222940597_122133240849472642)"
+     }
+    ]
+   },
+   "step": "kt"
+  },
+  {
+   "warm": [
+    [
+     "/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "https://mayducthanh.vn/may-nhu-hoa-chan-khong-gia-nhiet-1000l/",
+     [
+      "200",
+      "hit"
+     ]
+    ],
+    [
+     "/may-duoc-my-pham/",
+     [
+      "200",
+      "hit"
+     ]
+    ]
+   ],
+   "step": 9
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 60,
+    "vua_nap": 39,
+    "san_co": 21
+   },
+   "step": 10
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "26",
+      "ok": true,
+      "row": 28,
+      "ghi": [
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 11
+  }
+ ],
+ "time": "2026-11-07 06:46:02"
+}
