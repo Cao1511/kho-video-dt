@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 450,
+    "link": "https://mayducthanh.vn/?p=450",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 450,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-chiet-rot-my-pham/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 450,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-chiet-rot-my-pham/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy chiết rót mỹ phẩm cho kem, gel, serum: chọn sao cho chiết đều, không kéo sợi, không nhỏ giọt?\n\nChọn máy theo độ đặc của sản phẩm và sản lượng mỗi ngày sẽ đỡ tốn tiền sửa, đổi máy về sau. Một vài ý chính:\n\n🔹 Chia sản phẩm làm 3 nhóm: lỏng loãng, sệt vừa, đặc/kem/gel – mỗi nhóm cần bơm khác nhau\n🔹 Bơm piston hợp kem và gel đặc, bơm rotor chạy êm cho dạng sệt cần giữ độ mịn\n🔹 Bộ phận chạm sản phẩm nên bằng inox, tháo rửa nhanh để đổi mùi hương trong ca\n🔹 Xưởng mới nên bắt đầu máy một vòi, đơn tăng thì lên hai vòi\n🔹 Bao bì chai, hũ hay ống nhựa sẽ quyết định kiểu vòi chiết và máy đi kèm\n🔹 Thử máy bằng mẫu thật, đúng độ đặc và nhiệt độ khi chiết\n\nSản phẩm của bạn đang là kem, gel hay serum, và mỗi ngày chiết khoảng bao nhiêu chai?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#maychietrotmypham #maychietrot #mypham #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-09 09:10:25 (ID 1369168222940597_122133947457472642)",
+     "dtfb_fb_id": "1369168222940597_122133947457472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 64,
+    "vua_nap": 14,
+    "san_co": 50
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "10",
+      "ok": true,
+      "row": 12,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-09 02:11:36"
+}
