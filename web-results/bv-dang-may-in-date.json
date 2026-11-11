@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 452,
+    "link": "https://mayducthanh.vn/?p=452",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 452,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-in-date/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 452,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-in-date/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy in date: in nhiệt, in phun hay in laser, xưởng bạn nên chọn loại nào?\n\nNgày sản xuất, hạn sử dụng, số lô phải rõ nét và bền. Mỗi loại máy in date phù hợp một nhóm bao bì khác nhau, chọn sai sẽ mờ mã hoặc tốn vật tư.\n\n🔹 In nhiệt: dùng ribbon, hợp với màng, túi, nhãn phẳng, hay gắn ngay trên máy đóng gói.\n🔹 In phun: không chạm vào sản phẩm, in được lên chai, lon, hộp, thùng; cần chọn đúng mực.\n🔹 In laser: khắc mã bền, gần như không dùng mực; vốn đầu tư thường cao hơn.\n🔹 Chọn theo bao bì trước: vật liệu, bề mặt phẳng hay cong, tốc độ băng tải.\n🔹 Tính cả chi phí vận hành: ribbon, mực, vệ sinh, không chỉ giá mua máy.\n🔹 Mã mờ hoặc trôi thường do ribbon, đầu in bẩn hoặc cảm biến lệch.\n\nXưởng bạn đang in date lên loại bao bì nào, túi, chai hay hộp?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#mayindate #maydannhan #daychuyendonggoi #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-11 09:10:46 (ID 1369168222940597_122134560801472642)",
+     "dtfb_fb_id": "1369168222940597_122134560801472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 65,
+    "vua_nap": 12,
+    "san_co": 53
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "11",
+      "ok": true,
+      "row": 13,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-11 02:11:51"
+}
