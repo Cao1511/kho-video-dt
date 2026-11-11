@@ -1,5 +1,0 @@
-{"steps":[
- {"id":"sp","method":"GET","path":"/wc/v3/products?search=in%20date&status=publish&per_page=10&_fields=id,name,permalink,images","pick":["id","name","permalink","images"]},
- {"id":"sp2","method":"GET","path":"/wc/v3/products?search=in%20ng%C3%A0y&status=publish&per_page=10&_fields=id,name,permalink,images","pick":["id","name","permalink","images"]},
- {"id":"dm","method":"GET","path":"/wc/v3/products/categories?per_page=50&_fields=id,name,slug,count","pick":["id","name","slug","count"]},
- {"id":"bv","method":"GET","path":"/wp/v2/posts?per_page=20&_fields=id,title,link","pick":["id","title","link"]}]}
