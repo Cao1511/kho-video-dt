@@ -1,0 +1,46 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 406,
+     "name": "Máy hàn miệng túi liên tục FR-770",
+     "permalink": "https://mayducthanh.vn/may-han-mieng-tui-lien-tuc/",
+     "images": [
+      {
+       "id": 404,
+       "date_created": "2026-11-05T20:44:33",
+       "date_created_gmt": "2026-11-05T06:44:33",
+       "date_modified": "2026-11-05T20:44:37",
+       "date_modified_gmt": "2026-11-05T06:44:37",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh.webp",
+       "name": "Máy hàn miệng túi liên tục FR-770",
+       "alt": "Máy hàn miệng túi liên tục FR-770 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 405,
+       "date_created": "2026-11-05T20:44:39",
+       "date_created_gmt": "2026-11-05T06:44:39",
+       "date_modified": "2026-11-05T20:44:43",
+       "date_modified_gmt": "2026-11-05T06:44:43",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2.webp",
+       "name": "Máy hàn miệng túi liên tục FR-770 – ảnh máy",
+       "alt": "Máy hàn miệng túi liên tục FR-770 – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-300x300.webp"
+      }
+     ]
+    }
+   ],
+   "step": "sp"
+  }
+ ],
+ "time": "2026-11-12 02:09:37"
+}
