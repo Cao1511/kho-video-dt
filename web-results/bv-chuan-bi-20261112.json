@@ -1,0 +1,491 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": [],
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 432,
+     "name": "Máy co màng nhiệt tuần hoàn SH-BSP4522",
+     "permalink": "https://mayducthanh.vn/may-co-mang-nhiet-tuan-hoan/",
+     "images": [
+      {
+       "id": 430,
+       "date_created": "2026-11-07T14:43:23",
+       "date_created_gmt": "2026-11-07T00:43:23",
+       "date_modified": "2026-11-07T14:43:26",
+       "date_modified_gmt": "2026-11-07T00:43:26",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh.webp",
+       "name": "Máy co màng nhiệt tuần hoàn SH-BSP4522",
+       "alt": "Máy co màng nhiệt tuần hoàn SH-BSP4522 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 431,
+       "date_created": "2026-11-07T14:43:27",
+       "date_created_gmt": "2026-11-07T00:43:27",
+       "date_modified": "2026-11-07T14:43:29",
+       "date_modified_gmt": "2026-11-07T00:43:29",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2.webp",
+       "name": "Máy co màng nhiệt tuần hoàn SH-BSP4522 – ảnh máy",
+       "alt": "Máy co màng nhiệt tuần hoàn SH-BSP4522 – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-co-mang-nhiet-tuan-hoan-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 426,
+     "name": "Máy đóng gói trà túi lọc trong ngoài tự động",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tra-tui-loc/",
+     "images": [
+      {
+       "id": 424,
+       "date_created": "2026-11-06T23:44:32",
+       "date_created_gmt": "2026-11-06T09:44:32",
+       "date_modified": "2026-11-06T23:44:35",
+       "date_modified_gmt": "2026-11-06T09:44:35",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh.webp",
+       "name": "Máy đóng gói trà túi lọc trong ngoài tự động",
+       "alt": "Máy đóng gói trà túi lọc trong ngoài tự động – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 425,
+       "date_created": "2026-11-06T23:44:37",
+       "date_created_gmt": "2026-11-06T09:44:37",
+       "date_modified": "2026-11-06T23:44:40",
+       "date_modified_gmt": "2026-11-06T09:44:40",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2.webp",
+       "name": "Máy đóng gói trà túi lọc trong ngoài tự động – ảnh máy",
+       "alt": "Máy đóng gói trà túi lọc trong ngoài tự động – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2.webp 750w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2-225x300.webp 225w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2-600x800.webp 600w",
+       "sizes": "(max-width: 750px) 100vw, 750px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tra-tui-loc-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 423,
+     "name": "Máy chiết ống bẻ 5 kim 1 cuộn màng GGS-260B",
+     "permalink": "https://mayducthanh.vn/may-chiet-ong-be-ggs-260b/",
+     "images": [
+      {
+       "id": 421,
+       "date_created": "2026-11-06T20:45:14",
+       "date_created_gmt": "2026-11-06T06:45:14",
+       "date_modified": "2026-11-06T20:45:19",
+       "date_modified_gmt": "2026-11-06T06:45:19",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh.webp",
+       "name": "Máy chiết ống bẻ 5 kim 1 cuộn màng GGS-260B",
+       "alt": "Máy chiết ống bẻ GGS-260B – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 422,
+       "date_created": "2026-11-06T20:45:21",
+       "date_created_gmt": "2026-11-06T06:45:21",
+       "date_modified": "2026-11-06T20:45:23",
+       "date_modified_gmt": "2026-11-06T06:45:23",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-2.webp",
+       "name": "Máy chiết ống bẻ 5 kim 1 cuộn màng GGS-260B – ảnh máy",
+       "alt": "Máy chiết ống bẻ GGS-260B – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-2.webp 750w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-2-225x300.webp 225w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-2-600x800.webp 600w",
+       "sizes": "(max-width: 750px) 100vw, 750px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-ong-be-ggs-260b-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 420,
+     "name": "Máy đóng gói túi đứng tự động Arc056",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-tui-dung-tu-dong/",
+     "images": [
+      {
+       "id": 418,
+       "date_created": "2026-11-06T17:49:12",
+       "date_created_gmt": "2026-11-06T03:49:12",
+       "date_modified": "2026-11-06T17:49:16",
+       "date_modified_gmt": "2026-11-06T03:49:16",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh.webp",
+       "name": "Máy đóng gói túi đứng tự động Arc056",
+       "alt": "Máy đóng gói túi đứng tự động Arc056 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 419,
+       "date_created": "2026-11-06T17:49:18",
+       "date_created_gmt": "2026-11-06T03:49:18",
+       "date_modified": "2026-11-06T17:49:20",
+       "date_modified_gmt": "2026-11-06T03:49:20",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2.webp",
+       "name": "Máy đóng gói túi đứng tự động Arc056 – ảnh máy",
+       "alt": "Máy đóng gói túi đứng tự động Arc056 – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2.webp 750w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2-225x300.webp 225w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2-600x800.webp 600w",
+       "sizes": "(max-width: 750px) 100vw, 750px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-tui-dung-tu-dong-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 415,
+     "name": "Máy chiết rót hàn kín ống nhựa tự động GGS-260A",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua-ggs-260a/",
+     "images": [
+      {
+       "id": 413,
+       "date_created": "2026-11-06T14:43:36",
+       "date_created_gmt": "2026-11-06T00:43:36",
+       "date_modified": "2026-11-06T14:43:39",
+       "date_modified_gmt": "2026-11-06T00:43:39",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh.webp",
+       "name": "Máy chiết rót hàn kín ống nhựa tự động GGS-260A",
+       "alt": "Máy chiết rót hàn kín ống nhựa GGS-260A – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 414,
+       "date_created": "2026-11-06T14:43:40",
+       "date_created_gmt": "2026-11-06T00:43:40",
+       "date_modified": "2026-11-06T14:43:43",
+       "date_modified_gmt": "2026-11-06T00:43:43",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2.webp",
+       "name": "Máy chiết rót hàn kín ống nhựa tự động GGS-260A – ảnh máy",
+       "alt": "Máy chiết rót hàn kín ống nhựa GGS-260A – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-ggs-260a-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 406,
+     "name": "Máy hàn miệng túi liên tục FR-770",
+     "permalink": "https://mayducthanh.vn/may-han-mieng-tui-lien-tuc/",
+     "images": [
+      {
+       "id": 404,
+       "date_created": "2026-11-05T20:44:33",
+       "date_created_gmt": "2026-11-05T06:44:33",
+       "date_modified": "2026-11-05T20:44:37",
+       "date_modified_gmt": "2026-11-05T06:44:37",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh.webp",
+       "name": "Máy hàn miệng túi liên tục FR-770",
+       "alt": "Máy hàn miệng túi liên tục FR-770 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 405,
+       "date_created": "2026-11-05T20:44:39",
+       "date_created_gmt": "2026-11-05T06:44:39",
+       "date_modified": "2026-11-05T20:44:43",
+       "date_modified_gmt": "2026-11-05T06:44:43",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2.webp",
+       "name": "Máy hàn miệng túi liên tục FR-770 – ảnh máy",
+       "alt": "Máy hàn miệng túi liên tục FR-770 – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-han-mieng-tui-lien-tuc-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 371,
+     "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
+     "permalink": "https://mayducthanh.vn/may-chiet-rot-han-kin-ong-nhua/",
+     "images": [
+      {
+       "id": 369,
+       "date_created": "2026-11-04T05:02:56",
+       "date_created_gmt": "2026-11-03T15:02:56",
+       "date_modified": "2026-11-04T18:35:45",
+       "date_modified_gmt": "2026-11-04T04:35:45",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh.webp",
+       "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120",
+       "alt": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-300x300.webp"
+      },
+      {
+       "id": 370,
+       "date_created": "2026-11-04T05:03:05",
+       "date_created_gmt": "2026-11-03T15:03:05",
+       "date_modified": "2026-11-04T18:35:50",
+       "date_modified_gmt": "2026-11-04T04:35:50",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2.webp",
+       "name": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120 – ảnh máy",
+       "alt": "Máy chiết ống bẻ 5 kim 2 cuộn màng ZS-FS120 – ảnh máy – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-chiet-rot-han-kin-ong-nhua-duc-thanh-2-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 368,
+     "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
+     "permalink": "https://mayducthanh.vn/may-suc-rua-lo-bang-khi/",
+     "images": [
+      {
+       "id": 367,
+       "date_created": "2026-11-02T17:45:21",
+       "date_created_gmt": "2026-11-02T03:45:21",
+       "date_modified": "2026-11-02T17:45:39",
+       "date_modified_gmt": "2026-11-02T03:45:39",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh.webp",
+       "name": "Máy súc rửa lọ bằng khí tự động ZS-WB48",
+       "alt": "Máy súc rửa lọ bằng khí tự động ZS-WB48 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-suc-rua-lo-bang-khi-duc-thanh-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 362,
+     "name": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H",
+     "permalink": "https://mayducthanh.vn/may-dong-goi-vi-nhom-tu-dong/",
+     "images": [
+      {
+       "id": 361,
+       "date_created": "2026-11-01T23:54:54",
+       "date_created_gmt": "2026-11-01T09:54:54",
+       "date_modified": "2026-11-01T23:54:57",
+       "date_modified_gmt": "2026-11-01T09:54:57",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh.webp",
+       "name": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H",
+       "alt": "Máy đóng gói vỉ nhôm tự động ZS-DPP180H – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/11/may-dong-goi-vi-nhom-tu-dong-duc-thanh-300x300.webp"
+      }
+     ]
+    },
+    {
+     "id": 356,
+     "name": "Máy viền nắp lọ tự động ZS-YG100",
+     "permalink": "https://mayducthanh.vn/may-vien-nap-lo-tu-dong/",
+     "images": [
+      {
+       "id": 355,
+       "date_created": "2026-10-31T23:12:05",
+       "date_created_gmt": "2026-10-31T09:12:05",
+       "date_modified": "2026-10-31T23:12:11",
+       "date_modified_gmt": "2026-10-31T09:12:11",
+       "src": "https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh.webp",
+       "name": "Máy viền nắp lọ tự động ZS-YG100",
+       "alt": "Máy viền nắp lọ tự động ZS-YG100 – Đức Thành",
+       "srcset": "https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh.webp 1000w, https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-300x300.webp 300w, https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-150x150.webp 150w, https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-768x768.webp 768w, https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-600x600.webp 600w, https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-100x100.webp 100w",
+       "sizes": "(max-width: 1000px) 100vw, 1000px",
+       "thumbnail": "https://mayducthanh.vn/wp-content/uploads/2026/10/may-vien-nap-lo-tu-dong-zs-yg100-duc-thanh-300x300.webp"
+      }
+     ]
+    }
+   ],
+   "step": "sp2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 24,
+     "name": "Máy chiết rót",
+     "slug": "may-chiet-rot",
+     "count": 9
+    },
+    {
+     "id": 25,
+     "name": "Máy chiết rót chất lỏng",
+     "slug": "may-chiet-rot-chat-long",
+     "count": 7
+    },
+    {
+     "id": 26,
+     "name": "Máy chiết rót dịch sệt, kem",
+     "slug": "may-chiet-rot-dich-set-kem",
+     "count": 2
+    },
+    {
+     "id": 30,
+     "name": "Máy dán nhãn",
+     "slug": "may-dan-nhan",
+     "count": 7
+    },
+    {
+     "id": 20,
+     "name": "Máy đóng gói",
+     "slug": "may-dong-goi",
+     "count": 8
+    },
+    {
+     "id": 21,
+     "name": "Máy đóng gói dạng bột",
+     "slug": "may-dong-goi-dang-bot",
+     "count": 2
+    },
+    {
+     "id": 22,
+     "name": "Máy đóng gói dạng hạt",
+     "slug": "may-dong-goi-dang-hat",
+     "count": 3
+    },
+    {
+     "id": 23,
+     "name": "Máy đóng gói dạng lỏng, dịch sệt",
+     "slug": "may-dong-goi-dang-long-dich-set",
+     "count": 1
+    },
+    {
+     "id": 27,
+     "name": "Máy dược &amp; mỹ phẩm",
+     "slug": "may-duoc-my-pham",
+     "count": 16
+    },
+    {
+     "id": 31,
+     "name": "Máy in date",
+     "slug": "may-in-date",
+     "count": 0
+    },
+    {
+     "id": 32,
+     "name": "Máy seal màng",
+     "slug": "may-seal-mang",
+     "count": 1
+    },
+    {
+     "id": 28,
+     "name": "Máy trộn nguyên liệu",
+     "slug": "may-tron-nguyen-lieu",
+     "count": 6
+    },
+    {
+     "id": 33,
+     "name": "Máy viền mí lon",
+     "slug": "may-vien-mi-lon",
+     "count": 0
+    },
+    {
+     "id": 29,
+     "name": "Thiết bị phụ trợ",
+     "slug": "thiet-bi-phu-tro",
+     "count": 13
+    },
+    {
+     "id": 16,
+     "name": "Uncategorized",
+     "slug": "uncategorized",
+     "count": 0
+    }
+   ],
+   "step": "dm"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": [
+    {
+     "id": 452,
+     "title": {
+      "rendered": "Máy in date: in nhiệt, in phun hay in laser, chọn loại nào?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-in-date/"
+    },
+    {
+     "id": 450,
+     "title": {
+      "rendered": "Máy chiết rót mỹ phẩm: chọn loại nào cho kem, gel, serum?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-chiet-rot-my-pham/"
+    },
+    {
+     "id": 448,
+     "title": {
+      "rendered": "Máy dán nhãn chai tròn: bán tự động hay tự động, chọn sao?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dan-nhan-chai-tron/"
+    },
+    {
+     "id": 434,
+     "title": {
+      "rendered": "Máy đóng gói chất lỏng: chọn loại nào cho xưởng nhỏ?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-chat-long/"
+    },
+    {
+     "id": 416,
+     "title": {
+      "rendered": "Máy đóng gói dạng hạt: cốc đong hay cân điện tử, chọn loại nào?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-hat/"
+    },
+    {
+     "id": 398,
+     "title": {
+      "rendered": "Máy đóng gói dạng bột: chọn trục vít, chống bụi, định lượng"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-goi-dang-bot/"
+    },
+    {
+     "id": 339,
+     "title": {
+      "rendered": "Giá máy đóng gói: 7 yếu tố quyết định chi phí đầu tư"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/gia-may-dong-goi/"
+    },
+    {
+     "id": 291,
+     "title": {
+      "rendered": "So sánh máy trộn bột: máy trộn lập phương, chữ V và nằm ngang"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/so-sanh-may-tron-bot/"
+    },
+    {
+     "id": 290,
+     "title": {
+      "rendered": "Hướng dẫn vệ sinh và bảo dưỡng máy đóng gói đúng cách"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/ve-sinh-bao-duong-may-dong-goi/"
+    },
+    {
+     "id": 289,
+     "title": {
+      "rendered": "Máy chiết rót piston và máy chiết rót trọng lực: nên chọn loại nào?"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-chiet-rot-piston-va-trong-luc/"
+    },
+    {
+     "id": 242,
+     "title": {
+      "rendered": "Cách chọn máy đóng gói phù hợp: 6 tiêu chí cần biết"
+     },
+     "link": "https://mayducthanh.vn/kien-thuc-may-moc/cach-chon-may-dong-goi/"
+    }
+   ],
+   "step": "bv"
+  }
+ ],
+ "time": "2026-11-12 02:09:16"
+}
