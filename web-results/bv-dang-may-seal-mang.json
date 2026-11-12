@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 454,
+    "link": "https://mayducthanh.vn/?p=454",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 454,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-seal-mang/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 454,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-seal-mang/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy seal màng nhôm cảm ứng hay seal nhiệt – loại nào hợp với chai, lọ, hộp của bạn?\n\nSeal màng giúp chống rò rỉ và chống mở trộm cho sản phẩm. Hai cách dán phổ biến là cảm ứng và nhiệt, mỗi loại hợp một kiểu bao bì.\n\n🔹 Seal cảm ứng: dán màng nhôm sau khi đã vặn nắp, hợp chai, lọ, hũ nắp vặn\n🔹 Seal nhiệt: đầu gia nhiệt ép màng lên miệng cốc, hộp, khay hoặc hàn miệng túi\n🔹 Chọn theo loại bao bì, vật liệu miệng và nắp, sản lượng, dây chuyền hiện có\n🔹 Màng không dính thường do nhiệt chưa đủ hoặc đầu cảm ứng đặt quá xa nắp\n🔹 Màng bị cháy, co rúm thường do nhiệt quá cao hoặc băng tải chạy quá chậm\n🔹 Chạy thử mẫu và ghi lại thông số tốt cho từng loại bao bì\n\nXưởng bạn đang đóng loại chai, lọ hay hộp nào, sản lượng khoảng bao nhiêu mỗi giờ?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#mayseal #maysealmang #maydonggoi #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-12 09:10:46 (ID 1369168222940597_122134826787472642)",
+     "dtfb_fb_id": "1369168222940597_122134826787472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 66,
+    "vua_nap": 14,
+    "san_co": 52
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "12",
+      "ok": true,
+      "row": 14,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-12 02:11:46"
+}
