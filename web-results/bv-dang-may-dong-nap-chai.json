@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 456,
+    "link": "https://mayducthanh.vn/?p=456",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 456,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-nap-chai/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 456,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-dong-nap-chai/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy đóng nắp chai: vặn nắp, ép nắp hay viền nắp, loại nào hợp với sản phẩm của bạn?\n\nNhiều xưởng chọn máy chỉ vì thấy đóng được nắp, rồi gặp nắp lỏng, nắp méo hoặc chạy chậm hơn dự tính. Chọn đúng kiểu đóng ngay từ đầu giúp chai kín và đẹp hơn.\n\n🔹 Nắp vặn (có ren): cần chỉnh đúng lực siết, lỏng thì rò rỉ, chặt quá thì nứt nắp\n🔹 Nắp ép (không ren): máy đơn giản, dễ vệ sinh nhưng nắp và miệng chai phải đúng kích thước\n🔹 Nắp viền kim loại: dùng khi cần độ kín cơ học cao, thường cho dòng sản phẩm ổn định\n🔹 Sản lượng vài trăm chai/ngày: máy bán tự động thường đã đủ; chạy cả ca thì nên cân nhắc máy tự động\n🔹 Chạy tự động nên có bộ cấp nắp để nắp luôn đúng chiều\n🔹 Tốc độ máy đóng nắp cần cùng nhịp với khâu chiết rót và dán nhãn\n\n💬 Xưởng bạn đang đóng nắp loại nào, nắp vặn hay nắp ép, và bao nhiêu chai mỗi ngày?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#maydongnapchai #maydongnap #daychuyenchietrot #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-13 09:10:14 (ID 1369168222940597_122135134977472642)",
+     "dtfb_fb_id": "1369168222940597_122135134977472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 67,
+    "vua_nap": 17,
+    "san_co": 50
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "13",
+      "ok": true,
+      "row": 15,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-13 02:11:20"
+}
