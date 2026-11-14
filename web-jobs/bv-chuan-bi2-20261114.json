@@ -1,2 +1,0 @@
-{"steps":[
- {"id":"sp","method":"GET","path":"/wc/v3/products?category=28&status=publish&per_page=10&_fields=id,name,permalink,images","pick":["id","name","permalink","images"]}]}
