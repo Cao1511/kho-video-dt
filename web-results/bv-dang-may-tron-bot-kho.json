@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 458,
+    "link": "https://mayducthanh.vn/?p=458",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 458,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-tron-bot-kho/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 458,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/may-tron-bot-kho/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Máy trộn bột khô nên chọn dung tích bao nhiêu lít? Đây là câu hỏi đầu tiên của hầu hết xưởng mới.\n\nChọn nhỏ quá thì không kịp đơn, chọn lớn quá thì tốn tiền và trộn kém đều. Cách tính dưới đây giúp bạn có con số rõ ràng trước khi hỏi giá.\n\n🔹 Dung tích thùng khác với khối lượng mỗi mẻ: kg mỗi mẻ = lít làm việc × tỷ trọng bột\n🔹 Bột cần khoảng trống để đảo, đừng nạp đầy thùng cho \"nhanh\"\n🔹 Cân thử 1 lít nguyên liệu để biết tỷ trọng thật của bột\n🔹 Tính theo sản lượng ngày, số mẻ mỗi ngày rồi quy ra lít\n🔹 Xưởng mới nên chọn vừa đủ 1–2 năm tới, lớn hơn thì thêm máy thứ hai\n🔹 Mẻ lớn có thể dùng thùng IBC để giảm công nạp – xả\n\nXưởng bạn đang trộn loại bột nào và mỗi ngày khoảng bao nhiêu kg?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#maytronbot #maytronbotkho #maytronnguyenlieu #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-14 09:10:37 (ID 1369168222940597_122135528601472642)",
+     "dtfb_fb_id": "1369168222940597_122135528601472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 68,
+    "vua_nap": 19,
+    "san_co": 49
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "14",
+      "ok": true,
+      "row": 16,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-14 02:11:50"
+}
