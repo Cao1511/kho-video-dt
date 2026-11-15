@@ -1,0 +1,36 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script nonce=\"Hhl+Oz/AvjsuCxwAK0Ze3A==\">\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }(",
+   "step": "sp"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script nonce=\"3HvZrTIqdj5Z7AKwQ7YylA==\">\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }(",
+   "step": "sp2"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script nonce=\"RRLtMYMqCKA8Tw5aKo1KQg==\">\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }(",
+   "step": "sp3"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script nonce=\"k8wlvzFQI0QUTx6zqgxn+A==\">\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }(",
+   "step": "dm"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n  <script nonce=\"lSkZ0RjQ4yaCMaNfyq1wMg==\">\n      (function(){\n          setTimeout(function(){\n              window.location.reload();\n          }, 5000);\n      }(",
+   "step": "bv"
+  }
+ ],
+ "time": "2026-11-15 02:11:03"
+}
