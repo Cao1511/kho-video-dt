@@ -1,0 +1,85 @@
+{
+ "ok": true,
+ "steps": [
+  {
+   "status": 201,
+   "ok": true,
+   "data": {
+    "id": 460,
+    "link": "https://mayducthanh.vn/?p=460",
+    "status": "draft"
+   },
+   "step": "bv"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {},
+   "step": "seo"
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 460,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/day-chuyen-chiet-rot/",
+    "status": "publish"
+   },
+   "step": "pub"
+  },
+  {
+   "wait": 12,
+   "step": 3
+  },
+  {
+   "status": 200,
+   "ok": true,
+   "data": {
+    "id": 460,
+    "link": "https://mayducthanh.vn/kien-thuc-may-moc/day-chuyen-chiet-rot/",
+    "status": "publish",
+    "meta": {
+     "dtfb_message": "Dây chuyền chiết rót cho xưởng mới: làm sao chọn máy và bố trí để chạy đồng bộ, không nghẽn chai?\n\nNhiều xưởng mua máy trước, tính bao bì sau rồi mới thấy các máy chạy lệch nhau. Dưới đây là những điểm nên cân nhắc trước khi lập dây chuyền.\n\n🔹 Thứ tự cơ bản: cấp chai – chiết rót – đóng nắp – dán nhãn – in date – xếp thùng\n🔹 Bắt đầu từ sản phẩm (loãng hay sệt) và bao bì (chai, miệng chai, loại nắp), chưa phải từ máy\n🔹 Năng suất các máy nên gần nhau, máy sau không chậm hơn máy trước\n🔹 Bố trí đi một chiều, có băng tải nối và đoạn đệm giữa các máy\n🔹 Chừa lối bảo trì và chỗ để mở rộng sau này\n🔹 Có thể đầu tư từng bước nếu vốn còn hạn chế, nhưng chọn máy có khả năng nối vào dây chuyền\n\nXưởng bạn đang chiết loại sản phẩm nào và dự kiến bao nhiêu chai mỗi ca?\n\n🏭 Đức Thành – tư vấn, lắp đặt & bảo hành tận nơi\n📞 Hotline/Zalo: 0974 708 603 – 0989 139 855\n\n#daychuyenchietrot #maychietrot #maydannhan #maydongnap #ducthanh",
+     "dtfb_status": "Đã đăng 2026-11-15 09:13:02 (ID 1369168222940597_122135818611472642)",
+     "dtfb_fb_id": "1369168222940597_122135818611472642",
+     "dtfb_skip": "",
+     "footnotes": ""
+    }
+   },
+   "step": "kt"
+  },
+  {
+   "ok": true,
+   "warm_all": {
+    "tong": 69,
+    "vua_nap": 20,
+    "san_co": 49
+   },
+   "step": 5
+  },
+  {
+   "ok": true,
+   "status": 200,
+   "data": {
+    "ok": true,
+    "results": [
+     {
+      "stt": "15",
+      "ok": true,
+      "row": 17,
+      "ghi": [
+       "Tiêu đề bài viết",
+       "Từ khoá chính",
+       "Trạng thái",
+       "Thời gian đăng",
+       "Link web",
+       "Link Facebook"
+      ]
+     }
+    ]
+   },
+   "step": 6
+  }
+ ],
+ "time": "2026-11-15 02:14:06"
+}
